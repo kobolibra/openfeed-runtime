@@ -151,7 +151,16 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "1c7ede2f7e826f14252ad4414976": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T23:18:30.720626+00:00",
+      "run_id": "42128035866",
+      "result": {
+        "status": "error",
+        "found": 0,
+        "inserted": 0,
+        "message": "Upstream HTTP 403"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "07de956e60ce611abe2801aa6819": {
       "status": "not_tested"
@@ -496,7 +505,16 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "32e834db8257908a0c3a65af6380": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T23:18:30.720626+00:00",
+      "run_id": "42128035866",
+      "result": {
+        "status": "success",
+        "found": 30,
+        "inserted": 2,
+        "message": "1 page(s), 30 unique item(s); unknown_dates=30"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "08fe279c6ae8bead34f181910bc2": {
       "status": "not_tested"
@@ -685,7 +703,16 @@
       "status": "not_tested"
     },
     "dc2ef05fcbd3301f4f94d0dbc05e": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T23:18:30.720626+00:00",
+      "run_id": "42128035866",
+      "result": {
+        "status": "success",
+        "found": 40,
+        "inserted": 0,
+        "message": "1 page(s), 40 unique item(s); unknown_dates=40"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "694dbeab087f3ed0ca6f243a435b": {
       "checked_at": "2026-11-05T12:21:55.441119+00:00",
@@ -712,7 +739,16 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "dadf863cd0e414b20259bf3aae52": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T23:18:30.720626+00:00",
+      "run_id": "42128035866",
+      "result": {
+        "status": "success",
+        "found": 2,
+        "inserted": 0,
+        "message": "1 page(s), 2 unique item(s); unknown_dates=2"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "699220e8404ce3dbb1ed996edbcc": {
       "status": "not_tested"
