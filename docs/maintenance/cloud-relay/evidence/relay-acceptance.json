@@ -37,5 +37,9 @@
   "paid_resources_enabled": false,
   "deadline": "2026-11-07T12:09:45Z",
   "interval_seconds": 600,
-  "url": "https://github.com/kobolibra/openfeed-feeds/actions/runs/42058671579"
+  "url": "https://github.com/kobolibra/openfeed-feeds/actions/runs/42058671579",
+  "first_child_whole_workflow_success": true,
+  "second_automatic_child": "42060360129",
+  "second_child_generation": 2,
+  "second_child_crawl_acceptance": "in progress, not yet accepted"
 }

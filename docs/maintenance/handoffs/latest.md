@@ -8,3 +8,5 @@
 授权：用户明确“允许，直接部署并验收”，专指新增HMAC Secret与签名自动接续，保持既定48h、单写入者、不收费。不要重复询问相同授权，也不要把它解释成允许提前停Mac。
 证据：本chat work/cloud-evidence/relay-acceptance.json、relay-deployment.json、state-verification.json、cloud-validation-matrix.json；source docs/maintenance/cloud-relay内代码/测试/已脱敏证据，ops/public-wrapper.yml是实际部署文件。所有本地密钥在本chat work/cloud-auth，禁止公开、打印、打包。源private main文档更新不会改变公开workflow固定的b9516dab。
 回滚：停用feeds runtime-cloud.yml即可停止relay；保留Mac生产。不用影子库覆盖Mac。
+
+23:59北京时间补验：首个bot child42058671579整项workflow已success，并自行发起第二个bot child42060360129，generation2 claim已推进。已连续观察两次自动接续；第二自动轮抓取仍进行，未冒称其checkpoint完成。原生schedule仍未观察。Mac快照UTC15:56：Cantor当前error（last_success UTC11月4日17:58），CEPR/VoxEU当前healthy（last_success UTC11月5日05:41），与云403观察不同时间，不能据此断言403根因或云端已恢复。

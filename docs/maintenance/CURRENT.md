@@ -108,3 +108,5 @@ M1最终验证：source cwd完整470通过、1第三方警告。首次根cwd4项
 - 明确边界：自动relay已验证，原生event=schedule仍未观察；Mac仍唯一生产、云publish_enabled=false；未完成生产切换，不把机器人workflow_dispatch冒称原生cron成功。不启用收费，runtime保持private。既定11月7日20:09:45北京时间到期自停，未延长。
 - Pages只读预检：legacy main根目录，最新build built且commit1bccaf2，原地址现状正常；这不是云RSS发布验收。生产发布前须补GITHUB_TOKEN显式Pages构建/发布并核验HTTP，完成全源/两个周期及最终Mac停写/快照。
 下一步：保持单云写入者，完成剩余143源历史矩阵与两个12小时正常周期；针对403做跨环境原配方复核，不降质量；补Pages完整发布与故障恢复，最后才能单写者切换和Mac离线验收。
+
+23:59北京时间补验：首个bot child42058671579整项workflow已success，并自行发起第二个bot child42060360129，generation2 claim已推进。已连续观察两次自动接续；第二自动轮抓取仍进行，未冒称其checkpoint完成。原生schedule仍未观察。Mac快照UTC15:56：Cantor当前error（last_success UTC11月4日17:58），CEPR/VoxEU当前healthy（last_success UTC11月5日05:41），与云403观察不同时间，不能据此断言403根因或云端已恢复。
