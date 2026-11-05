@@ -328,7 +328,16 @@
       "status": "not_tested"
     },
     "694dbeab087f3ed0ca6f243a435b": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T12:21:55.441119+00:00",
+      "run_id": "42025905503",
+      "result": {
+        "status": "success",
+        "found": 8,
+        "inserted": 0,
+        "message": "1 page(s), 8 unique item(s); unknown_dates=8"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "d1beae3498463bcfe85cc730c54e": {
       "status": "not_tested"
@@ -346,7 +355,16 @@
       "status": "not_tested"
     },
     "b5b0e3074525c1f2745d3cfb76ee": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T12:21:55.441119+00:00",
+      "run_id": "42025905503",
+      "result": {
+        "status": "success",
+        "found": 10,
+        "inserted": 0,
+        "message": "1 page(s), 10 unique item(s)"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "ced67fb8de120a2c2dcce160c07d": {
       "status": "not_tested"
@@ -391,7 +409,16 @@
       "status": "not_tested"
     },
     "543d52f0b4288c9dc8dec0cdf4fc": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T12:21:55.441119+00:00",
+      "run_id": "42025905503",
+      "result": {
+        "status": "success",
+        "found": 36,
+        "inserted": 0,
+        "message": "1 page(s), 36 unique item(s)"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "d9babe8486d2816ff18022162de9": {
       "checked_at": "2026-11-05T10:15:01.073973+00:00",
@@ -526,7 +553,16 @@
       "status": "not_tested"
     },
     "d30386f6fe165ba7b2acc2d1985d": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T12:21:55.441119+00:00",
+      "run_id": "42025905503",
+      "result": {
+        "status": "success",
+        "found": 0,
+        "inserted": 0,
+        "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "ed79f317cdb848275389669e5500": {
       "status": "not_tested"
