@@ -202,7 +202,16 @@
       "status": "not_tested"
     },
     "8e0482e5b14d62a7eb44e554e981": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T22:48:16.587346+00:00",
+      "run_id": "42123917902",
+      "result": {
+        "status": "success",
+        "found": 1,
+        "inserted": 0,
+        "message": "1 page(s), 1 unique item(s); unknown_dates=1"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "c54068f31b1adb0688bb6a286a12": {
       "status": "not_tested"
@@ -211,7 +220,16 @@
       "status": "not_tested"
     },
     "b908808ce01b5af7d359ee520cab": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T22:48:16.587346+00:00",
+      "run_id": "42123917902",
+      "result": {
+        "status": "success",
+        "found": 6,
+        "inserted": 0,
+        "message": "1 page(s), 6 unique item(s)"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "95d1c47e63b41f814f17d344646a": {
       "status": "not_tested"
@@ -352,7 +370,16 @@
       "status": "not_tested"
     },
     "a77c24dc79b43142711bac328f95": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T22:48:16.587346+00:00",
+      "run_id": "42123917902",
+      "result": {
+        "status": "success",
+        "found": 10,
+        "inserted": 0,
+        "message": "1 page(s), 10 unique item(s)"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "936e9a2aea1b91691a2c48e5bc19": {
       "status": "not_tested"
@@ -736,7 +763,16 @@
       "status": "not_tested"
     },
     "c17d6f96fa7ba97986add02f8a98": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T22:48:16.587346+00:00",
+      "run_id": "42123917902",
+      "result": {
+        "status": "success",
+        "found": 56,
+        "inserted": 0,
+        "message": "1 page(s), 56 unique item(s)"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "132114da2be6a7af5f9cb6f59af3": {
       "checked_at": "2026-11-05T15:52:35.498700+00:00",
