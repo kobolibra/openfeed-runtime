@@ -1,0 +1,78 @@
+name: Private cloud shadow cycle
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        type: choice
+        options: [plan, shadow-live]
+        default: plan
+      feed_id:
+        description: One source ID for controlled validation
+        required: true
+        default: '050884e1881fdd777f12cc9cb14e'
+permissions:
+  contents: write
+concurrency:
+  group: openfeed-private-state-writer
+  cancel-in-progress: false
+jobs:
+  shadow:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          ref: shadow-state
+          path: private-state
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install locked runtime
+        run: python -m pip install -r requirements-runtime.lock
+      - name: Run bounded private shadow
+        env:
+          CYCLE_MODE: ${{ inputs.mode }}
+          FEED_ID: ${{ inputs.feed_id }}
+        run: >-
+          python ops/run_cycle.py --input-db private-state/openfeed.sqlite3
+          --output cycle --mode "$CYCLE_MODE" --feed-id "$FEED_ID"
+          --max-feeds 1 --budget-seconds 120
+      - name: Save durable private checkpoint
+        if: inputs.mode == 'shadow-live'
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          python ops/shadow_checkpoint.py --state private-state/openfeed.sqlite3 --cycle cycle --run-id "$RUN_ID"
+          python - <<'PY'
+          import json,os,hashlib
+          from pathlib import Path
+          p=Path('private-state/checkpoint.json');d=json.loads(p.read_text())
+          d['source_sha']=os.environ['SOURCE_SHA']
+          d['rss_manifest_sha256']=hashlib.sha256(Path('cycle/manifest.json').read_bytes()).hexdigest()
+          p.write_text(json.dumps(d,indent=2))
+          PY
+          cp cycle/report.json private-state/last-report.json
+          cp cycle/manifest.json private-state/rss-manifest.json
+          cd private-state
+          git config user.name openfeed-shadow
+          git config user.email openfeed-shadow@users.noreply.github.com
+          git add openfeed.sqlite3 checkpoint.json last-report.json rss-manifest.json
+          git commit -m "Private shadow checkpoint $RUN_ID"
+          git push origin HEAD:shadow-state
+      - name: Summarize without private source data
+        if: always()
+        run: |
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          p=Path('cycle/report.json')
+          if p.exists():
+              d=json.loads(p.read_text())
+              summary={'shadow_only':True,'published':False,'results':d['results'],'deferred':d['deferred'],'input_db_unchanged':d['input_db_unchanged']}
+              with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:f.write('```json\n'+json.dumps(summary,indent=2)+'\n```\n')
+          PY
