@@ -172,7 +172,16 @@
       "status": "not_tested"
     },
     "416de8491686141bd23c3bd9cba8": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T21:37:16.109023+00:00",
+      "run_id": "42113596574",
+      "result": {
+        "status": "success",
+        "found": 6,
+        "inserted": 0,
+        "message": "1 page(s), 6 unique item(s); unknown_dates=6"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "772e3af9bb4db92095756ce4d940": {
       "status": "not_tested"
@@ -586,7 +595,16 @@
       "status": "not_tested"
     },
     "9ac0bd99916b794c2381b0dc4583": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T21:37:16.109023+00:00",
+      "run_id": "42113596574",
+      "result": {
+        "status": "success",
+        "found": 23,
+        "inserted": 6,
+        "message": "1 page(s), 23 unique item(s)"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "543d52f0b4288c9dc8dec0cdf4fc": {
       "checked_at": "2026-11-05T12:21:55.441119+00:00",
@@ -736,10 +754,28 @@
       "status": "not_tested"
     },
     "1fb675c7150057b0f6a08733bf33": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T21:37:16.109023+00:00",
+      "run_id": "42113596574",
+      "result": {
+        "status": "success",
+        "found": 16,
+        "inserted": 0,
+        "message": "1 page(s), 16 unique item(s)"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "5667928b6c41735f365c5d6d946b": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T21:37:16.109023+00:00",
+      "run_id": "42113596574",
+      "result": {
+        "status": "success",
+        "found": 5,
+        "inserted": 0,
+        "message": "1 page(s), 5 unique item(s); unknown_dates=5"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "919e9a690c678ca8a4505010dcb0": {
       "status": "not_tested"
