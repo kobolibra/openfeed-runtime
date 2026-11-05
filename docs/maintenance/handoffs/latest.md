@@ -1,8 +1,10 @@
-# M1接续交接
-维护者：接手agent，2026-11-05 Asia/Shanghai
-部署状态：未部署；Mac Stage19仍为生产，未发布或启用云调度。
-验证：八项shadow专项通过；完整最终469通过/6失败/1警告，六项均Chromium宿主启动权限拒绝；不宣称完整回归通过。393文件交接manifest一致；M1 ZIP CRC无误。Brookings旧响应复演4条/3新增，输入不变，历史身份及相位校验见work/m1-continuation/preservation.json。最新快照见latest-snapshot.json。
-未完成：M1仍in_progress；真实隔离browser、进程硬中断/重启、recipe变化与deadline边界、M2原子checkpoint与单写者；M3-M6尚未完成。短批次保守启动间隔影响容量，留M4测量，不放宽既定约束。
-下一步：在可启动Chromium环境复跑六项，并补M1剩余验收；不要重复一次性远端连通性诊断。以前轮shadow.sqlite3为输入可串联节流，禁止当生产权威持久化方案；从旧基线分叉不共享锁。
-改动：ops/run_cycle.py、tests/test_shadow_cycle.py及维护记录；输出清单是RSS字节SHA256，非语义清单，后续M5补语义差异发布。
-证据：source/work/m1-continuation；没有临时生产写入者，测试已结束。回滚：仅回退上述开发代码，生产无需回滚。
+# 签名自动接续已实跑，生产切换未完成
+维护者：当前agent，2026-11-05
+部署状态：public feeds workflow commit1bccaf28d8121a520401f0cad6ef8d86679c2259逐字核对，固定private app b9516dab；OPENFEED_RELAY_HMAC已按用户明确授权加密配置。runtime private；旧private写workflow disabled。Mac仍生产、云shadow/publish_enabled=false，没有收费资源。
+验证：8项签名/篡改/越权/重复generation/并行root/截止专项通过；全部inline Python编译。parent42056964516完整success，十分钟后由github-actions[bot]自动发起child42058671579。child HMAC guard、generation1 claim、实际抓取、private checkpoint真实通过，非本机重复dispatch。child4源3成功、Cantor HTTP403，历史保留。child DB commit54cc0c2d6006083e98b000cecfffb08dcfd28fc9独立下载4194条，旧4189身份无损/171 source_url、recipe、interval、phase完整保留/SQLite ok。
+未完成：原生event=schedule仍未观察，不把bot workflow_dispatch冒称cron。生产切换未完成。branch coverage24/171；合并单源历史矩阵28观察（23非空、3空、2 HTTP403），143未观察；不是长期通过。两12小时周期、Pages云发布/HTTP和故障恢复、最终Mac停写与在线备份、离线验收均未完成。Mac当前快照只是运行观察，不等于逐源验收。
+下一步：让已验证自动relay继续有限影子覆盖143源与两个周期；复核CEPR/VoxEU和Cantor403，不降质量或清历史。补生产发布显式Pages build/deploy（GITHUB_TOKEN推送不自动触发Pages），校验原地址。满足门禁后才最终Mac在线备份、单写者切换与回滚演练。
+期限：北京时间2026-11-07 20:09:45固定，到期自停，不擅自延长；间隔600秒、queue:max、同一并发组+私有cursor防旧链重放。当前child抓取完成后等待下一slot是正常现象。
+授权：用户明确“允许，直接部署并验收”，专指新增HMAC Secret与签名自动接续，保持既定48h、单写入者、不收费。不要重复询问相同授权，也不要把它解释成允许提前停Mac。
+证据：本chat work/cloud-evidence/relay-acceptance.json、relay-deployment.json、state-verification.json、cloud-validation-matrix.json；source docs/maintenance/cloud-relay内代码/测试/已脱敏证据，ops/public-wrapper.yml是实际部署文件。所有本地密钥在本chat work/cloud-auth，禁止公开、打印、打包。源private main文档更新不会改变公开workflow固定的b9516dab。
+回滚：停用feeds runtime-cloud.yml即可停止relay；保留Mac生产。不用影子库覆盖Mac。

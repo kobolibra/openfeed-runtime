@@ -1,0 +1,10 @@
+{
+  "workflow_sha256": "073c63356c733b73465d04c53643300f842e372de894de4c9c98eb74e188a604",
+  "logic_sha256": "adfb9557fecb5798680e4ae549dce66b63d12e5a699c5ccd36623a8bf8039caa",
+  "bounded_expiry": 1794053385,
+  "interval_seconds": 600,
+  "new_secret": "OPENFEED_RELAY_HMAC",
+  "scope": "signed triggering only; no personal token, no public source/state/logs",
+  "logic_tests_passed": 8,
+  "all_inline_python_compiles": true
+}

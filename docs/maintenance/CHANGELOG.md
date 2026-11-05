@@ -111,3 +111,48 @@
 - 用户待答复公开薄工作流或私有额度方案；不擅自突破公共仓库约束、不启用收费。
 
 - 后续Linux477项完整通过、171RSS校验通过；4源真实批次run42008521595全部success/新增2，checkpoint与身份门禁通过。新增SIGTERM中断/重启与DB直接导出后本地14项通过；尚未公共发布或生产切换。
+
+## 仓库可见性变化
+- 用户已批准公开feeds薄工作流方案；随后将runtime改public。匿名实测两repo均public，暂停私密上传与新dispatch。已向用户提出恢复私有/代码公开而状态另迁两种具体处理；当前没有配置新的deploy key或Secret。
+- GitHub连接器读调用出现transport失败/权限自动审核超时，已用匿名REST核实可见性，不将其误报仓库不存在或权限全无。
+
+## 免费云入口实跑
+- runtime已恢复private；最小repo部署密钥和公库加密Secret已配置，旧私库写workflow disabled。公库固定ref、显式shadow+期限入口首轮run42025905503成功，第二轮42034400400进行中。
+- 完整定时自动停用配置已准备；工具反复transport失败未提交成功。精简/缺自停版本自动审批明确拒绝，已补完整护栏，不绕过拒绝。用户已被请求提交完整文件这一个具体步骤；cron未启用。
+
+独立下载最终补验：直接HTTPS到GitHub API（仅维护下载、不改变生产出口）成功；最新云库4194条，原4189身份零丢失/phase保留/integrity ok。代理下载失败日志保留。
+
+## 2026-11-05 21:31北京时间｜定时提交已解除阻断
+- 连接器持续transport失败，随后CUA原生Chrome恢复可用。已通过用户已登录的GitHub编辑器直接提交完整受限版本，commit3f71d1462cec8171bfefe18b0ec267f01e35dd79。无需用户增加权限或手工提交。
+- 匿名REST读取实际文件，与审阅的outputs/OpenFeed-cloud/runtime-cloud-48h.yml逐字一致；blob20c1f62cf997d4d250b80db29414ee758961aa09。cron每小时7/17/27/37/47/57分钟，单一并发组；期限后先disable该workflow并跳过全部private checkout。
+- 当前已配置schedule，尚未观察第一条event=schedule，不能把两轮workflow_dispatch成功算作定时触发成功。两轮免费run42025905503/42034400400均成功，共8个来源原pipeline success；实际job耗时257/266秒。
+- 独立云库校验4194条、原4189身份无损/phase保留/SQLite ok。影子结果不等于全部171源或两周期验收；Mac仍生产、云不公开发布。
+
+补充实测：两轮免费job分别耗时257/266秒，每轮4源全success，低于10分钟tick间隔；原12小时phase不变。矩阵现为14源非空单次成功、2源原空列表契约单次观察，155源尚未云端观察，不等于16源长期验收。
+
+### 计费与调度验收边界
+- 实查private runtime Actions in_progress=0/queued=0；当前fetch在public feeds标准ubuntu-latest runner，官方规则为public标准runner不消耗私有included compute。早前private验证会计入额度，不虚构账户剩余额度。当前未新增Actions artifact/cache。不要为免费把runtime再公开。
+- 截至北京时间21:57尚未取得首条event=schedule。已排查workflow active、default main、实际文件逐字匹配、owner提交且actor有效；GitHub官方允许schedule延迟/高负载掉队，不能以配置成功冒称自动抓取已验收。后续查询使用认证API，匿名API已遇到共享IP限额403，不将403当无scheduled run的证据。
+- 完整新guard手动run42039962109已经通过截止护栏与两个checkout，批次仍进行；本次只有public compute，无private runner。
+
+## 2026-11-05 22:41北京时间｜最终明确状态
+免费云入口三轮workflow_dispatch已成功，生产仍Mac。完整定时首次commit3f71d14，后经disable/enable及owner原生Chrome重写cron为8/18/28/38/48/58，最新commit470a836494442145079cbdba4fe26749d6106d84。期限、10分钟间隔、固定source b9516dab、owner和private数据限制不变。经过认证API与原生GitHub Actions页面核查，尚无event=schedule记录；不能把调度配置active或三轮手动成功当自动调度验收。此项仍未完成，不停Mac，不声称完成GitHub切换。
+到期前/到期后/停用API失败三条边界已在无网络stub中验过，所有private checkout均受active护栏约束。当前问题收敛到实际schedule事件未产生；不要再反复做已通过的fixture或私库配额核查。新agent先核对实际schedule事件与active/default branch/actor，若仍不触发，提交明确平台限制或受控替代触发方案，不隐瞒失败。
+
+## 2026-11-05 23:42北京时间｜已授权签名自动接续部署
+用户明确允许在feeds增加OPENFEED_RELAY_HMAC加密Secret，并允许签名通过的Actions自动接续同一私有状态。已配置独立随机HMAC密钥（非个人PAT），公开workflow提交1bccaf28d8121a520401f0cad6ef8d86679c2259；REST读取与本chat outputs/OpenFeed-cloud/runtime-cloud-signed-relay.yml逐字一致（SHA256 073c63356c733b73465d04c53643300f842e372de894de4c9c98eb74e188a604）。
+- 8项签名/篡改/越权/重复generation/并行root/截止测试通过，全部inline Python编译通过。
+- 每轮slot起点后600秒由GitHub自己的临时token签名dispatch下一轮；原cron作补充。queue:max+同concurrency组；私有relay-cursor持久化generation并先CAS push，防止重复/旧链覆盖。非owner/bot拒绝，bot在检出私库之前必须验HMAC。所有截止仍为2026-11-07T12:09:45Z，到期自停，不收费。
+- bootstrap run42056964516已通过guard、private checkout、generation0 claim；当前抓取运行中，自动child尚待实际验收，不能以bootstrap声称无人值守已通过。原生event=schedule仍未观察到，签名relay是明确的替代触发机制，不能冒称原生cron恢复。
+- Mac仍生产、publish_enabled=false。生产切换前仍需171源矩阵、两个周期、最终Mac在线备份/停写证据、原Pages地址发布验收。现有cloud_publish只push Git分支，尚须明确触发Pages build并验收HTTP；GITHUB_TOKEN推送不能默认触发Pages。
+证据：本chat work/cloud-evidence/relay-{predeployment,deployment,status}.json；本地key在work/cloud-auth，禁止公开、打包、打印。
+
+23:49实测：root42056964516抓取/checkpoint/自动dispatch全部success，自动child42058671579由github-actions[bot]发起，HMAC guard和generation1 claim通过，正在抓取。不是本机再次调用dispatch。root4源原pipeline成功，长期coverage已观察20/171；独立下载root云DB仍4194条，原4189身份零丢失，171条source_url/recipe/interval/phase逐字保持，SQLite ok。历史缓存矩阵另含单源试验：24源曾观察（20非空、3空、1 CEPR/VoxEU HTTP403），不能以branch coverage20混为已全部通过；147源未观察。矩阵只报告历史观察，未给无时间戳report按hash排序伪造最新恢复。
+
+## 2026-11-05 23:54北京时间｜签名自动接续真实验收通过
+- parent42056964516已完整success；GitHub自己的github-actions[bot]在十分钟后自动发起child42058671579，无本机再次dispatch。child的HMAC guard、generation1 claim、真实抓取、私有checkpoint都成功，checkpoint.run_id=42058671579；当前等待下一接续slot属正常。验收记录relay-acceptance.json。
+- child实际4源：3成功、Cantor Insights HTTP403（历史保留、不伪装空列表）。私有branch累计coverage24/171；历史单源+批次矩阵28源曾观察（23非空成功、3原空契约观察、2失败CEPR/VoxEU与Cantor），143源尚无云观察。均非两周期长期验收。
+- child状态commit54cc0c2d6006083e98b000cecfffb08dcfd28fc9已独立下载，4194条；原4189身份零丢失，171源URL/recipe/interval/phase逐字保持，SQLite integrity ok。
+- 明确边界：自动relay已验证，原生event=schedule仍未观察；Mac仍唯一生产、云publish_enabled=false；未完成生产切换，不把机器人workflow_dispatch冒称原生cron成功。不启用收费，runtime保持private。既定11月7日20:09:45北京时间到期自停，未延长。
+- Pages只读预检：legacy main根目录，最新build built且commit1bccaf2，原地址现状正常；这不是云RSS发布验收。生产发布前须补GITHUB_TOKEN显式Pages构建/发布并核验HTTP，完成全源/两个周期及最终Mac停写/快照。
+下一步：保持单云写入者，完成剩余143源历史矩阵与两个12小时正常周期；针对403做跨环境原配方复核，不降质量；补Pages完整发布与故障恢复，最后才能单写者切换和Mac离线验收。

@@ -95,10 +95,10 @@
     },
     {
       "id": "CLOUD-001",
-      "status": "private_cloud_shadow_running",
+      "status": "automatic_relay_verified_production_not_cutover",
       "summary": "用户授权继续GitHub主运行迁移，本轮优先完整规划/真实资料交接",
-      "evidence": "私库openfeed-runtime；三类云run 42000256852/42000626310/42001095279；云库4189身份无损/相位保留；公开调度尚待用户选择",
-      "next_action": "完成免费/私密持续调度、171源逐行验收、原地址发布与两个周期后才切换Mac；旧私库不存在记录已过时"
+      "evidence": "CUA已提交3f71d14完整有限定时，REST逐字校验；两轮免费8源success/状态无损；首条schedule尚待观察；2026-11-05用户明确授权HMAC，签名relay部署1bccaf2，8项专项通过，root42056964516已运行；自动child待验；北京时间23:53自动child42058671579（github-actions[bot]）签名、generation1、实际抓取与private checkpoint通过；child DB4194/旧4189零丢失；Cantor403未掩盖",
+      "next_action": "完成143未观察源、两正常周期、两处403诊断、Pages明确构建及生产单写者切换；原生cron仍未观察，relay不冒称schedule。"
     }
   ]
 }

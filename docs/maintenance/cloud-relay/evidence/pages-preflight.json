@@ -1,0 +1,14 @@
+{
+  "site_url": "https://kobolibra.github.io/openfeed-feeds/",
+  "source": {
+    "branch": "main",
+    "path": "/"
+  },
+  "build_type": "legacy",
+  "last_build_status": "built",
+  "last_build_commit": "1bccaf28d8121a520401f0cad6ef8d86679c2259",
+  "cloud_publish_enabled": false,
+  "production_still_mac": true,
+  "remaining_pages_gate": "GITHUB_TOKEN content pushes need explicit supported Pages build/deploy; verify exact published commit and all original RSS URLs before cutover",
+  "official_reference": "https://docs.github.com/en/rest/pages/pages#request-a-github-pages-build"
+}

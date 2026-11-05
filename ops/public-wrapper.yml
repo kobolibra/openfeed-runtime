@@ -1,46 +1,224 @@
-name: OpenFeed cloud tick
-on:
-  workflow_dispatch:
+name: OpenFeed bounded automatic shadow
 permissions:
   contents: read
+  actions: write
 concurrency:
   group: openfeed-runtime-state-writer
   cancel-in-progress: false
+  queue: max
 jobs:
   shadow:
-    permissions:
-      contents: write
-    if: github.ref == 'refs/heads/main' && github.actor == github.repository_owner
+    if: github.ref == 'refs/heads/main' && (github.actor == github.repository_owner || github.actor == 'github-actions[bot]')
     runs-on: ubuntu-latest
     timeout-minutes: 14
     steps:
-      - uses: actions/checkout@v4
-        with:
-          repository: kobolibra/openfeed-runtime
-          ref: main
-          path: runtime
-          ssh-key: ${{ secrets.OPENFEED_RUNTIME_KEY }}
-          persist-credentials: false
-      - uses: actions/checkout@v4
-        with:
-          repository: kobolibra/openfeed-runtime
-          ref: shadow-state
-          path: runtime/private-state
-          ssh-key: ${{ secrets.OPENFEED_RUNTIME_KEY }}
-      - uses: actions/checkout@v4
-        with:
-          path: public-feeds
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Execute private bounded tick
-        working-directory: runtime
-        env:
-          RUN_ID: ${{ github.run_id }}
-        run: |
-          umask 077
-          exec > "$RUNNER_TEMP/openfeed-private.log" 2>&1
-          python -m pip install -r requirements-runtime.lock
-          python ops/cloud_tick.py --run-id "$RUN_ID" --public-checkout "$GITHUB_WORKSPACE/public-feeds"
-      - name: Report completion
-        run: echo 'Cloud tick completed. Publication follows private cutover control.' >> "$GITHUB_STEP_SUMMARY"
+    - name: Verify signed owner relay and finite deadline
+      id: deadline
+      env:
+        GH_TOKEN: ${{ github.token }}
+        CHAIN_KEY: ${{ secrets.OPENFEED_RELAY_HMAC }}
+        INPUT_ROOT: ${{ inputs.root }}
+        INPUT_GENERATION: ${{ inputs.generation }}
+        INPUT_NOT_BEFORE: ${{ inputs.not_before }}
+        INPUT_SIGNATURE: ${{ inputs.signature }}
+      run: |
+        python3 - <<'PYRELAY'
+        import hashlib,hmac,json,time
+        EXPIRY=1794053385
+        REPO='kobolibra/openfeed-feeds'
+        def signature(key,root,generation,not_before):
+         payload=json.dumps([REPO,str(root),int(generation),int(not_before),EXPIRY],separators=(',',':'))
+         return hmac.new(key.encode(),payload.encode(),hashlib.sha256).hexdigest()
+        def authorize(actor,owner,key,inputs,run_id,now):
+         if now>=EXPIRY:return None
+         if actor==owner and not inputs.get('signature'):return {'root':str(run_id),'generation':0,'not_before':int(now)}
+         if actor not in (owner,'github-actions[bot]'):raise ValueError('Actor not allowed')
+         root=str(inputs['root']);generation=int(inputs['generation']);not_before=int(inputs['not_before'])
+         if not root.isdigit() or generation<1 or not 0<not_before<EXPIRY:raise ValueError('Invalid relay bounds')
+         if not hmac.compare_digest(signature(key,root,generation,not_before),inputs['signature']):raise ValueError('Invalid relay signature')
+         if not_before>now+30:raise ValueError('Relay dispatched before its slot')
+         return {'root':root,'generation':generation,'not_before':not_before}
+        def claim(cursor,root,generation,run_id,now,restart=False):
+         if generation==0:
+          if cursor and now-cursor['at']<1200 and not restart:return None
+         elif not cursor or cursor['root']!=root or cursor['generation']!=generation-1:return None
+         return {'root':root,'generation':generation,'run_id':str(run_id),'at':int(now)}
+        import os,urllib.request,urllib.error,datetime,subprocess
+        from pathlib import Path
+        def output(**rows):
+         with open(os.environ['GITHUB_OUTPUT'],'a') as f:
+          for k,v in rows.items():f.write(str(k)+'='+str(v)+'\n')
+        def api(method,path,data=None):
+         request=urllib.request.Request('https://api.github.com/repos/'+REPO+path,data=json.dumps(data).encode() if data is not None else None,method=method,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','Content-Type':'application/json'})
+         with urllib.request.urlopen(request,timeout=25) as response:return response.status
+
+        assert len(os.environ.get('CHAIN_KEY',''))>=32,'Relay signing secret not configured'
+        inputs={k:os.environ.get('INPUT_'+k.upper(),'') for k in ['root','generation','not_before','signature']}
+        a=authorize(os.environ['GITHUB_ACTOR'],os.environ['GITHUB_REPOSITORY_OWNER'],os.environ['CHAIN_KEY'],inputs,os.environ['GITHUB_RUN_ID'],time.time())
+        if a is None:
+         api('PUT','/actions/workflows/runtime-cloud.yml/disable');output(active='false')
+        else:
+         if a['not_before']>time.time():time.sleep(a['not_before']-time.time())
+         output(active='true',root=a['root'],generation=a['generation'],slot_start=int(time.time()))
+
+        PYRELAY
+    - if: steps.deadline.outputs.active == 'true'
+      uses: actions/checkout@v4
+      with:
+        repository: kobolibra/openfeed-runtime
+        ref: b9516dab926a6eb5d174fe59cee6dd202a9f1d48
+        path: runtime
+        ssh-key: ${{ secrets.OPENFEED_RUNTIME_KEY }}
+        persist-credentials: false
+    - if: steps.deadline.outputs.active == 'true'
+      uses: actions/checkout@v4
+      with:
+        repository: kobolibra/openfeed-runtime
+        ref: shadow-state
+        path: runtime/private-state
+        ssh-key: ${{ secrets.OPENFEED_RUNTIME_KEY }}
+    - if: steps.deadline.outputs.active == 'true'
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - name: Claim a single private-state generation
+      id: claim
+      if: steps.deadline.outputs.active == 'true'
+      working-directory: runtime/private-state
+      env:
+        ROOT_RUN: ${{ steps.deadline.outputs.root }}
+        GENERATION: ${{ steps.deadline.outputs.generation }}
+        RESTART: ${{ inputs.restart }}
+      run: |
+        python3 - <<'PYRELAY'
+        import hashlib,hmac,json,time
+        EXPIRY=1794053385
+        REPO='kobolibra/openfeed-feeds'
+        def signature(key,root,generation,not_before):
+         payload=json.dumps([REPO,str(root),int(generation),int(not_before),EXPIRY],separators=(',',':'))
+         return hmac.new(key.encode(),payload.encode(),hashlib.sha256).hexdigest()
+        def authorize(actor,owner,key,inputs,run_id,now):
+         if now>=EXPIRY:return None
+         if actor==owner and not inputs.get('signature'):return {'root':str(run_id),'generation':0,'not_before':int(now)}
+         if actor not in (owner,'github-actions[bot]'):raise ValueError('Actor not allowed')
+         root=str(inputs['root']);generation=int(inputs['generation']);not_before=int(inputs['not_before'])
+         if not root.isdigit() or generation<1 or not 0<not_before<EXPIRY:raise ValueError('Invalid relay bounds')
+         if not hmac.compare_digest(signature(key,root,generation,not_before),inputs['signature']):raise ValueError('Invalid relay signature')
+         if not_before>now+30:raise ValueError('Relay dispatched before its slot')
+         return {'root':root,'generation':generation,'not_before':not_before}
+        def claim(cursor,root,generation,run_id,now,restart=False):
+         if generation==0:
+          if cursor and now-cursor['at']<1200 and not restart:return None
+         elif not cursor or cursor['root']!=root or cursor['generation']!=generation-1:return None
+         return {'root':root,'generation':generation,'run_id':str(run_id),'at':int(now)}
+
+        import os,subprocess
+        from pathlib import Path
+        def git(*args):return subprocess.run(['git',*args],check=True,capture_output=True,text=True,timeout=90).stdout.strip()
+        def output(value):
+         with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write('claimed='+value+'\n')
+        assert not git('status','--porcelain'),'Dirty private state'
+        p=Path('relay-cursor.json');old=json.loads(p.read_text()) if p.exists() else None
+        new=claim(old,os.environ['ROOT_RUN'],int(os.environ['GENERATION']),os.environ['GITHUB_RUN_ID'],time.time(),os.environ.get('RESTART')=='true' and os.environ['GITHUB_ACTOR']==os.environ['GITHUB_REPOSITORY_OWNER'])
+        if new is None:output('false')
+        else:
+         p.write_text(json.dumps(new,indent=2));git('config','user.name','OpenFeed Relay');git('config','user.email','openfeed@users.noreply.github.com');git('add','--','relay-cursor.json');git('commit','-m','Reserve bounded relay tick '+os.environ['GITHUB_RUN_ID']);git('push','origin','HEAD:shadow-state');output('true')
+
+        PYRELAY
+    - name: Run verified finite shadow only
+      if: steps.deadline.outputs.active == 'true' && steps.claim.outputs.claimed == 'true'
+      working-directory: runtime
+      env:
+        RUN_ID: ${{ github.run_id }}
+        OPENFEED_REQUIRE_SHADOW_DEADLINE: '1'
+      run: |
+        if [ "$(date +%s)" -ge 1794053385 ]; then exit 0; fi
+        umask 077
+        exec > "$RUNNER_TEMP/openfeed-private.log" 2>&1
+        python - <<'PY'
+        import time,json,datetime
+        from pathlib import Path
+        if time.time() >= 1794053385:raise SystemExit(0)
+        c=json.loads(Path('private-state/runtime-control.json').read_text())
+        assert c['mode']=='shadow' and c['publish_enabled'] is False
+        assert time.time()<datetime.datetime.fromisoformat(c['shadow_until']).timestamp()<=1794053386
+        PY
+        python -m pip install -r requirements-runtime.lock
+        python ops/cloud_tick.py --run-id "$RUN_ID"
+    - name: Schedule the next signed cloud tick
+      if: always() && steps.claim.outputs.claimed == 'true'
+      env:
+        GH_TOKEN: ${{ github.token }}
+        CHAIN_KEY: ${{ secrets.OPENFEED_RELAY_HMAC }}
+        ROOT_RUN: ${{ steps.deadline.outputs.root }}
+        GENERATION: ${{ steps.deadline.outputs.generation }}
+        SLOT_START: ${{ steps.deadline.outputs.slot_start }}
+      run: |
+        python3 - <<'PYRELAY'
+        import hashlib,hmac,json,time
+        EXPIRY=1794053385
+        REPO='kobolibra/openfeed-feeds'
+        def signature(key,root,generation,not_before):
+         payload=json.dumps([REPO,str(root),int(generation),int(not_before),EXPIRY],separators=(',',':'))
+         return hmac.new(key.encode(),payload.encode(),hashlib.sha256).hexdigest()
+        def authorize(actor,owner,key,inputs,run_id,now):
+         if now>=EXPIRY:return None
+         if actor==owner and not inputs.get('signature'):return {'root':str(run_id),'generation':0,'not_before':int(now)}
+         if actor not in (owner,'github-actions[bot]'):raise ValueError('Actor not allowed')
+         root=str(inputs['root']);generation=int(inputs['generation']);not_before=int(inputs['not_before'])
+         if not root.isdigit() or generation<1 or not 0<not_before<EXPIRY:raise ValueError('Invalid relay bounds')
+         if not hmac.compare_digest(signature(key,root,generation,not_before),inputs['signature']):raise ValueError('Invalid relay signature')
+         if not_before>now+30:raise ValueError('Relay dispatched before its slot')
+         return {'root':root,'generation':generation,'not_before':not_before}
+        def claim(cursor,root,generation,run_id,now,restart=False):
+         if generation==0:
+          if cursor and now-cursor['at']<1200 and not restart:return None
+         elif not cursor or cursor['root']!=root or cursor['generation']!=generation-1:return None
+         return {'root':root,'generation':generation,'run_id':str(run_id),'at':int(now)}
+        import os,urllib.request,urllib.error,datetime,subprocess
+        from pathlib import Path
+        def output(**rows):
+         with open(os.environ['GITHUB_OUTPUT'],'a') as f:
+          for k,v in rows.items():f.write(str(k)+'='+str(v)+'\n')
+        def api(method,path,data=None):
+         request=urllib.request.Request('https://api.github.com/repos/'+REPO+path,data=json.dumps(data).encode() if data is not None else None,method=method,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','Content-Type':'application/json'})
+         with urllib.request.urlopen(request,timeout=25) as response:return response.status
+
+        next_at=int(os.environ['SLOT_START'])+600
+        while time.time()<min(next_at,EXPIRY):time.sleep(min(20,min(next_at,EXPIRY)-time.time()))
+        if time.time()>=EXPIRY:api('PUT','/actions/workflows/runtime-cloud.yml/disable')
+        else:
+         root=os.environ['ROOT_RUN'];generation=int(os.environ['GENERATION'])+1
+         inputs={'root':root,'generation':str(generation),'not_before':str(next_at),'signature':signature(os.environ['CHAIN_KEY'],root,generation,next_at),'restart':'false'}
+         for attempt in range(2):
+          try:
+           api('POST','/actions/workflows/runtime-cloud.yml/dispatches',{'ref':'main','inputs':inputs});break
+          except (urllib.error.URLError,TimeoutError):
+           if attempt:raise
+           time.sleep(3)
+
+        PYRELAY
+'on':
+  workflow_dispatch:
+    inputs:
+      root:
+        type: string
+        required: false
+        default: ''
+      generation:
+        type: string
+        required: false
+        default: ''
+      not_before:
+        type: string
+        required: false
+        default: ''
+      signature:
+        type: string
+        required: false
+        default: ''
+      restart:
+        type: boolean
+        default: false
+  schedule:
+  - cron: 8,18,28,38,48,58 * * * *

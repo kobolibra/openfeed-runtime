@@ -1,0 +1,9 @@
+# 受限自动接续
+
+实际部署文件在源码 ops/public-wrapper.yml；公开commit 1bccaf28d8121a520401f0cad6ef8d86679c2259。它内嵌这里relay_logic.py的相同函数，公开仅薄调度，应用ref固定b9516dab。
+
+本目录保留签名/单写者的8项测试；在本目录使用项目Python运行pytest test_relay_logic.py。build_relay_workflow.py是本chat生成脚本留档，输入路径相对于原chat目录，不能在此目录直接运行。该脚本生成后做inline Python编译检查、contents只读和固定并发断言；部署逐字校验另见relay-deployment.json。
+
+不将签名key、SSH私钥、SQLite、来源配方或私密日志放入本目录或公库。HMAC key在feeds加密Secret OPENFEED_RELAY_HMAC，随机独立，不是个人PAT。所有运行保留既定到期时间，不可擅自续期。
+
+实际验收必须检查自动child的actor/签名guard/私有cursor generation和对应checkpoint，只有bootstrap或dispatch accepted不足。event=workflow_dispatch的bot自动接续不是原生event=schedule；两者必须分别报告。

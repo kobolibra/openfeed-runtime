@@ -1,8 +1,8 @@
 {
   "updated": "2026-11-05",
-  "current_focus": "M2/M3三类真实云端影子已运行；推进M4免费调度和M5静态发布，尚未切换生产",
+  "current_focus": "签名自动接续已实跑验收；剩余143源/两个周期/Pages发布与生产切换未完成",
   "production_authority": "Mac Docker SQLite；未迁移",
-  "automatic_cloud_crawl_enabled": false,
+  "automatic_cloud_crawl_enabled": true,
   "private_repository_created": true,
   "paid_resources_enabled": false,
   "tasks": [
@@ -35,8 +35,8 @@
       "summary": "私有代码/权威状态持久化、认证与单写入者",
       "deliverable": "仓库/状态设计、最小权限、原子checkpoint、失败回滚测试",
       "owner": "current agent 2026-11-05",
-      "evidence": "私库main源码导入f704115；shadow-state初始05c4ddd；三次云端checkpoint已回写；GitHub连接器workflow写入已解决",
-      "next_action": "完成跨仓库最小权限deploy key、持久锁/轮转和失败注入，当前私有git checkpoint仅影子使用"
+      "evidence": "私库main源码导入f704115；shadow-state初始05c4ddd；三次云端checkpoint已回写；GitHub连接器workflow写入已解决；repo key/加密Secret完成；旧私库写workflow disabled；期限control完成",
+      "next_action": "补状态轮转、生产切换故障验收；单一公库写入口已配置，其他云写入口维持disabled"
     },
     {
       "id": "M3",
@@ -47,8 +47,8 @@
       "summary": "云端小批影子运行，再逐源验收171源",
       "deliverable": "完整分页/浏览器/空列表/质量矩阵；不推断未测来源通过",
       "owner": "current agent 2026-11-05",
-      "evidence": "runs 42000256852 Brookings4条/3新增；42000626310 Woodmac完整原3页9条/0新增；42001095279隔离browser Value Partners100条触及上限/0新增；三次非发布云端checkpoint成功；run42008521595实际4源均成功/2新增；Linux run42007778140完整477通过及171RSS有效",
-      "next_action": "171源逐行验收仍未覆盖；继续全量RSS/历史核验与剩余来源影子运行，触及原提取上限不声称全站完整"
+      "evidence": "runs 42000256852 Brookings4条/3新增；42000626310 Woodmac完整原3页9条/0新增；42001095279隔离browser Value Partners100条触及上限/0新增；三次非发布云端checkpoint成功；run42008521595实际4源均成功/2新增；Linux run42007778140完整477通过及171RSS有效；branch coverage24/171；历史矩阵28曾观察（23非空、3空、2 HTTP403失败），143未观察；原4189身份/171 scope和phase保留",
+      "next_action": "继续自动影子逐源与两个周期；CEPR/VoxEU和Cantor 403必须保留失败并诊断，不清历史或改范围。"
     },
     {
       "id": "M4",
@@ -59,8 +59,8 @@
       "summary": "调度容量、实际分钟与存储成本验证",
       "deliverable": "测量报告、积压/同域并发数据、免费/额度方案；不开付费预算",
       "owner": "current agent 2026-11-05",
-      "evidence": "ops/cloud_tick.py有限4源/330秒；跨批次60/300秒节流；ops/public-wrapper.yml待明确授权部署公开调度；不启用收费",
-      "next_action": "等待用户对公开薄工作流或私有额度选项答复；继续实测容量/积压/费用边界，不在私库开无限定时"
+      "evidence": "ops/cloud_tick.py有限4源/330秒；跨批次60/300秒节流；ops/public-wrapper.yml待明确授权部署公开调度；不启用收费；免费公库run42025905503成功；完整自停定时文件已准备但工具transport故障未提交；CUA直接提交3f71d14定时+自停；REST逐字校验；两轮免费8源success、job257/266秒；API重启登记和owner cron重提交后仍未见schedule事件；三轮免费dispatch成功；用户明确授权HMAC Secret和自动接续；8项专项通过；公开commit1bccaf2逐字核对；root42056964516已claim generation0；自动bot child42058671579的签名/claim/抓取/checkpoint真实通过，parent完整success，10分钟接续；无本机第二次dispatch",
+      "next_action": "自动relay已验收，继续观察积压/周期吞吐/截止自停；原生event=schedule尚未观察。M4总任务仍含容量与长期成本验收，不能以单次自动完成标done。"
     },
     {
       "id": "M5",
@@ -73,7 +73,7 @@
       "deliverable": "原ID/GUID/RSS语义对照、两个正常周期及发布故障验证",
       "owner": "current agent 2026-11-05",
       "evidence": "ops/export_db.py / tests/test_export_db.py：失败旧RSS/OPML/文件白名单、语义hash专项2通过；尚未公开发布",
-      "next_action": "在单发布者方案下做原地址语义对照、发布失败恢复、两个正常周期及Pages HTTP验收"
+      "next_action": "生产发布接线尚须显式Pages build（GITHUB_TOKEN推送不自动构建），再原地址HTTP/语义/历史/两个周期及故障验收；Mac仍唯一生产。"
     },
     {
       "id": "M6",
@@ -88,5 +88,11 @@
       "next_action": "详见CLOUD_HANDOFF相应阶段；开工先登记负责人/时间"
     }
   ],
-  "private_repository": "https://github.com/kobolibra/openfeed-runtime"
+  "private_repository": "https://github.com/kobolibra/openfeed-runtime",
+  "repository_visibility": "private (restored and verified)",
+  "automatic_cloud_schedule_configured": true,
+  "scheduled_event_observed": false,
+  "automatic_relay_configured": true,
+  "automatic_relay_observed": true,
+  "automatic_relay_run": "42058671579"
 }

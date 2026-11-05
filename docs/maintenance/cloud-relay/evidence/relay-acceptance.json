@@ -1,0 +1,41 @@
+{
+  "accepted_at": "2026-11-05T15:53:06.030339+00:00",
+  "parent": "42056964516",
+  "automatic_child": "42058671579",
+  "child_actor": "github-actions[bot]",
+  "event": "workflow_dispatch",
+  "native_schedule_verified": false,
+  "signed_guard_passed": true,
+  "generation": 1,
+  "private_checkpoint_run": "42058671579",
+  "source_identity_preserved": true,
+  "input_db_unchanged": true,
+  "source_results": [
+    {
+      "status": "success",
+      "found": 16,
+      "inserted": 0
+    },
+    {
+      "status": "error",
+      "found": 0,
+      "inserted": 0
+    },
+    {
+      "status": "success",
+      "found": 10,
+      "inserted": 0
+    },
+    {
+      "status": "success",
+      "found": 3,
+      "inserted": 0
+    }
+  ],
+  "runtime_private": true,
+  "production_cutover": false,
+  "paid_resources_enabled": false,
+  "deadline": "2026-11-07T12:09:45Z",
+  "interval_seconds": 600,
+  "url": "https://github.com/kobolibra/openfeed-feeds/actions/runs/42058671579"
+}
