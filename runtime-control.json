@@ -1,0 +1,7 @@
+{
+  "mode": "shadow",
+  "publish_enabled": false,
+  "mac_writer_stopped": false,
+  "shadow_until": "2026-11-07T12:09:45.802208+00:00",
+  "scope": "bounded 48-hour validation; Mac remains production"
+}
