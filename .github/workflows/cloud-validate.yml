@@ -1,0 +1,49 @@
+name: Cloud regression and state integrity
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: shadow-state
+          path: private-state
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-lock.txt
+      - run: python -m playwright install --with-deps chromium
+      - name: Full regression
+        run: python -m pytest -q
+      - name: Validate private SQLite, phases and all RSS
+        run: |
+          python - <<'PY'
+          import sqlite3,json,hashlib,os,sys
+          from pathlib import Path
+          from defusedxml.ElementTree import fromstring
+          from openfeed.storage import Store
+          from openfeed.extract import render_rss
+          db=Path('private-state/openfeed.sqlite3')
+          before=hashlib.sha256(db.read_bytes()).hexdigest()
+          c=sqlite3.connect('file:'+str(db.resolve())+'?mode=ro',uri=True)
+          assert c.execute('pragma integrity_check').fetchone()[0]=='ok'
+          feeds=c.execute('select count(*) from feeds').fetchone()[0]
+          entries=c.execute('select count(*) from items').fetchone()[0]
+          c.close()
+          s=Store(str(db))
+          for f in s.list():
+              raw=render_rss(f,s.entries(f['id'],100),'https://kobolibra.github.io/openfeed-feeds/rss/'+f['id']+'.xml')
+              root=fromstring(raw)
+              guids=[g.text for g in root.findall('./channel/item/guid')]
+              assert len(guids)==len(set(guids))
+          s.close()
+          assert before==hashlib.sha256(db.read_bytes()).hexdigest()
+          summary={'feeds':feeds,'historical_entries':entries,'sqlite':'ok','all_rss_xml_guid':'valid','state_bytes_unchanged':True,'published':False}
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as out:out.write(json.dumps(summary,indent=2))
+          print(json.dumps(summary))
+          PY
