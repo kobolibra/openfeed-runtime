@@ -8,6 +8,8 @@ def promote(state,cycle,run_id):
     expected=report['input_sha256']
     if hashlib.sha256(state.read_bytes()).hexdigest()!=expected:raise ValueError('State changed; refusing stale checkpoint')
     shadow=cycle/'shadow.sqlite3'
+    actual=hashlib.sha256(shadow.read_bytes()).hexdigest()
+    if report.get('shadow_sha256')!=actual:raise ValueError('Candidate hash does not match completed cycle')
     conn=sqlite3.connect('file:'+str(shadow.resolve())+'?mode=ro',uri=True)
     try:
         if conn.execute('pragma integrity_check').fetchone()[0]!='ok':raise ValueError('Invalid candidate SQLite')

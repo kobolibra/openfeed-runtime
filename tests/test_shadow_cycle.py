@@ -102,3 +102,24 @@ def test_same_host_report_explains_deferred_sources(tmp_path):
  d=json.loads((out/'report.json').read_text());assert len(d['selected'])==1
  assert len(d['deferred'])==1 and d['deferred'][0]['reason']=='same_host'
  assert len(d['next_schedule'])==2
+
+def test_bounded_batch_wait_uses_global_gap_without_real_sleep(tmp_path):
+ db,f,m=setup(tmp_path)
+ c=sqlite3.connect(db);c.execute('create table shadow_cycle_starts (host text primary key, started real not null)');c.execute('insert into shadow_cycle_starts values (?,?)',('other.example.com',950));c.commit();c.close()
+ out=tmp_path/'waited'
+ code='''import sys,time,asyncio
+sys.path.insert(0,sys.argv[1])
+from ops import run_cycle
+clock=[1000.0];sleep=asyncio.sleep
+time.time=lambda:clock[0]
+async def virtual_sleep(seconds):
+ clock[0]+=seconds
+ await sleep(0)
+asyncio.sleep=virtual_sleep
+sys.argv=sys.argv[2:]
+run_cycle.main()
+'''
+ r=subprocess.run([sys.executable,'-c',code,str(ROOT),str(ROOT/'ops/run_cycle.py'),'--input-db',str(db),'--output',str(out),'--mode','fixtures','--fixtures',str(m),'--feed-id',f['id'],'--wait-for-start'],capture_output=True,text=True)
+ assert r.returncode==0,r.stderr
+ d=json.loads((out/'report.json').read_text());assert d['results'][0]['result']['status']=='success'
+ c=sqlite3.connect(out/'shadow.sqlite3');assert c.execute('select started from shadow_cycle_starts where host=?',('example.com',)).fetchone()[0]==1010;c.close()

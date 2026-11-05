@@ -26,7 +26,7 @@ def prepare(source,output):
     dest.chmod(0o600)
     return dest
 
-async def cycle(db,output,mode,max_feeds,budget,fixtures,feed_ids,public_base="https://kobolibra.github.io/openfeed-feeds"):
+async def cycle(db,output,mode,max_feeds,budget,fixtures,feed_ids,wait_for_start=False,public_base="https://kobolibra.github.io/openfeed-feeds"):
     if 'openfeed.app' in sys.modules:raise RuntimeError('Use a fresh CLI process, app already imported')
     os.environ['OPENFEED_DB']=str(db);os.environ['OPENFEED_ENABLE_SCHEDULER']='0'
     os.environ['OPENFEED_PUBLIC_URL']=public_base.rstrip('/')
@@ -72,10 +72,18 @@ async def cycle(db,output,mode,max_feeds,budget,fixtures,feed_ids,public_base="h
                 now=time.time()
                 last=app.store.db.execute('SELECT MAX(started) FROM shadow_cycle_starts').fetchone()[0]
                 row=app.store.db.execute('SELECT started FROM shadow_cycle_starts WHERE host=?',(host,)).fetchone()
-                if last is not None and now-last<60:
-                    report['deferred'].append({'id':f['id'],'reason':'global_start_gap'});continue
-                if row and now-row[0]<300:
-                    report['deferred'].append({'id':f['id'],'reason':'domain_start_gap'});continue
+                global_delay=max(0,60-(now-last)) if last is not None else 0
+                domain_delay=max(0,300-(now-row[0])) if row else 0
+                delay=max(global_delay,domain_delay)
+                reason='global_start_gap' if global_delay else 'domain_start_gap'
+                if delay:
+                    # Only global spacing is worth waiting for inside a bounded
+                    # batch. Domain siblings stay for a later tick.
+                    if not wait_for_start or domain_delay or delay+1>=remaining:
+                        report['deferred'].append({'id':f['id'],'reason':reason});continue
+                    await asyncio.sleep(delay)
+                    now=time.time()
+                    remaining=budget-(time.monotonic()-started)
                 with app.store.db:
                     app.store.db.execute('INSERT INTO shadow_cycle_starts VALUES (?,?) ON CONFLICT(host) DO UPDATE SET started=excluded.started',(host,now))
             used.add(host)
@@ -106,11 +114,11 @@ async def cycle(db,output,mode,max_feeds,budget,fixtures,feed_ids,public_base="h
 def main():
     p=argparse.ArgumentParser();p.add_argument('--input-db',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
     p.add_argument('--mode',choices=['plan','fixtures','shadow-live'],default='plan');p.add_argument('--fixtures',type=Path);p.add_argument('--feed-id',action='append',default=[])
-    p.add_argument('--max-feeds',type=int,default=3);p.add_argument('--budget-seconds',type=float,default=120);a=p.parse_args()
+    p.add_argument('--wait-for-start',action='store_true');p.add_argument('--max-feeds',type=int,default=3);p.add_argument('--budget-seconds',type=float,default=120);a=p.parse_args()
     if not 1<=a.max_feeds<=100 or not 0<a.budget_seconds<=3600:p.error('Invalid bounded cycle limits')
     if a.mode=='fixtures' and not a.fixtures:p.error('--fixtures required')
     os.umask(0o077);source=a.input_db.resolve(strict=True);before=digest(source);db=prepare(source,a.output)
-    report=asyncio.run(cycle(db,a.output.resolve(),a.mode,a.max_feeds,a.budget_seconds,a.fixtures.resolve() if a.fixtures else None,a.feed_id))
+    report=asyncio.run(cycle(db,a.output.resolve(),a.mode,a.max_feeds,a.budget_seconds,a.fixtures.resolve() if a.fixtures else None,a.feed_id,a.wait_for_start))
     report['input_db_unchanged']=before==digest(source);report['input_sha256']=before;report['shadow_sha256']=digest(db)
     (a.output/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
     if not report['input_db_unchanged']:raise RuntimeError('Input changed externally; do not use this run as preservation evidence')

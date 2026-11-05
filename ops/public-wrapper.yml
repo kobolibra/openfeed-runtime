@@ -1,0 +1,41 @@
+name: OpenFeed cloud tick
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: openfeed-runtime-state-writer
+  cancel-in-progress: false
+jobs:
+  shadow:
+    if: github.ref == 'refs/heads/main' && github.actor == github.repository_owner
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: kobolibra/openfeed-runtime
+          ref: main
+          path: runtime
+          ssh-key: ${{ secrets.OPENFEED_RUNTIME_KEY }}
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: kobolibra/openfeed-runtime
+          ref: shadow-state
+          path: runtime/private-state
+          ssh-key: ${{ secrets.OPENFEED_RUNTIME_KEY }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Execute private bounded tick
+        working-directory: runtime
+        env:
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          umask 077
+          exec > "$RUNNER_TEMP/openfeed-private.log" 2>&1
+          python -m pip install -r requirements-runtime.lock
+          python ops/cloud_tick.py --run-id "$RUN_ID"
+      - name: Report completion
+        run: echo 'Private shadow tick completed. Production publication is not enabled.' >> "$GITHUB_STEP_SUMMARY"
