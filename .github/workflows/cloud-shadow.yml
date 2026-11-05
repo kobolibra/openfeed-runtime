@@ -10,6 +10,10 @@ on:
         description: One source ID for controlled validation
         required: true
         default: '050884e1881fdd777f12cc9cb14e'
+      isolated_browser:
+        description: Use isolated container browser worker
+        type: boolean
+        default: false
 permissions:
   contents: write
 concurrency:
@@ -19,7 +23,7 @@ jobs:
   shadow:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
@@ -34,6 +38,7 @@ jobs:
       - name: Install locked runtime
         run: python -m pip install -r requirements-runtime.lock
       - name: Run bounded private shadow
+        if: inputs.isolated_browser != true
         env:
           CYCLE_MODE: ${{ inputs.mode }}
           FEED_ID: ${{ inputs.feed_id }}
@@ -41,6 +46,21 @@ jobs:
           python ops/run_cycle.py --input-db private-state/openfeed.sqlite3
           --output cycle --mode "$CYCLE_MODE" --feed-id "$FEED_ID"
           --max-feeds 1 --budget-seconds 120
+      - name: Run isolated browser shadow
+        if: inputs.isolated_browser == true
+        env:
+          CYCLE_MODE: ${{ inputs.mode }}
+          FEED_ID: ${{ inputs.feed_id }}
+        run: |
+          mkdir cloud-io
+          cp private-state/openfeed.sqlite3 cloud-io/input.sqlite3
+          sudo chown -R 10001:10001 cloud-io
+          docker compose -f compose.cloud.yaml run --build --rm cycle --input-db /cloud-io/input.sqlite3 --output /cloud-io/cycle --mode "$CYCLE_MODE" --feed-id "$FEED_ID" --max-feeds 1 --budget-seconds 120
+          sudo chown -R "$(id -u):$(id -g)" cloud-io
+          mv cloud-io/cycle cycle
+      - name: Stop isolated worker
+        if: always() && inputs.isolated_browser == true
+        run: docker compose -f compose.cloud.yaml down --volumes
       - name: Save durable private checkpoint
         if: inputs.mode == 'shadow-live'
         env:
