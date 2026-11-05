@@ -1,8 +1,8 @@
 {
-  "run_id": "42000626310",
-  "previous_sha256": "06985a0b48e61a729ef08f7190c058c30492e76d9b5c09a86f635f91ce65cfaf",
-  "database_sha256": "d2b681524d89cf06584d6e8c24c0f18eeda496e1b8f519cb4216a98b950776cb",
+  "run_id": "42001095279",
+  "previous_sha256": "d2b681524d89cf06584d6e8c24c0f18eeda496e1b8f519cb4216a98b950776cb",
+  "database_sha256": "9105f67950111f2d84c239d858713b2a9e8284125b9da6fa56c1e3f8667c61ee",
   "scope": "private shadow validation only; no production cutover",
-  "source_sha": "b9f42bfa9fa5f7a5f087be50cbd3b4d846b7192e",
-  "rss_manifest_sha256": "f4ba4af1e69381c936f132a109e18e27276c93673a6547630a5c10b539d0acc0"
+  "source_sha": "c6010a73c511c0afa8b3af8d8153e302455e6667",
+  "rss_manifest_sha256": "9d8812db4e1e9a115c6483e100d40ced0bc4530da1e1d2d988bba89d6bf9d896"
 }
