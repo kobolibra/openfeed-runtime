@@ -2,14 +2,21 @@
   "mode": "shadow-live",
   "shadow_only": true,
   "published": false,
-  "selected": [],
-  "results": [],
-  "deferred": [
+  "selected": [
+    "359aa798df9f6a2148c28e65cba3"
+  ],
+  "results": [
     {
       "id": "359aa798df9f6a2148c28e65cba3",
-      "reason": "domain_start_gap"
+      "result": {
+        "status": "success",
+        "found": 0,
+        "inserted": 0,
+        "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
+      }
     }
   ],
+  "deferred": [],
   "next_schedule": [
     {
       "id": "132114da2be6a7af5f9cb6f59af3",
@@ -884,8 +891,8 @@
     }
   ],
   "cooldowns": [],
-  "elapsed_seconds": 0.39,
+  "elapsed_seconds": 3.262,
   "input_db_unchanged": true,
   "input_sha256": "1cc7698959364d94fff5c12f4123e5b7dc63f92d40fd417fa8c7484e7b0d99c8",
-  "shadow_sha256": "36530328946240cf614538c9e59d0b6023459648df18a0bff9399b4f17544af5"
+  "shadow_sha256": "fbf66b79d968c13692154981c7bb5ba99b3d14650876b6a20fa38d51635a3bca"
 }
