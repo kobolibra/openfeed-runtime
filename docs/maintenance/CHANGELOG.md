@@ -102,3 +102,12 @@
 ## 2026-11-05 GitHub实际迁移推进
 - 用户指出私有仓库已存在；实测kobolibra/openfeed-runtime private=true/admin+push=true，main仅README、无workflow/run。旧TASKS私库字段过时，立即更正。
 - 开工M2/M3基础设施：在既有私库导入白名单源码；shadow-state保留私密基线、shadow workflow单一并发组与CAS git push，无生产发布/无schedule。M1未完成项保留，不冒称其done。
+
+### GitHub真实部署结果
+- 私有源码main已导入、shadow-state已初始化，三类实际云端抓取及checkpoint回写成功。workflow权限通过新连接的GitHub插件解决，未重复创建仓库。
+- 云端SQLite已下载验证4189历史身份无损/相位保留/完整性ok；保持Mac生产和单公共发布者。
+- clean Linux回归首轮474通过/1缺dns依赖，已加入项目已有固定dnspython重跑。原宿主6项Chromium权限失败在Linux上均通过。
+- 新增cloud_tick有限批次/身份门禁/覆盖矩阵，修复candidate hash校验；11项专项通过。数据库直接静态导出及语义校验2项通过。
+- 用户待答复公开薄工作流或私有额度方案；不擅自突破公共仓库约束、不启用收费。
+
+- 后续Linux477项完整通过、171RSS校验通过；4源真实批次run42008521595全部success/新增2，checkpoint与身份门禁通过。新增SIGTERM中断/重启与DB直接导出后本地14项通过；尚未公共发布或生产切换。

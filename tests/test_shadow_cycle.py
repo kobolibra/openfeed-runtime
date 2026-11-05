@@ -123,3 +123,35 @@ run_cycle.main()
  assert r.returncode==0,r.stderr
  d=json.loads((out/'report.json').read_text());assert d['results'][0]['result']['status']=='success'
  c=sqlite3.connect(out/'shadow.sqlite3');assert c.execute('select started from shadow_cycle_starts where host=?',('example.com',)).fetchone()[0]==1010;c.close()
+
+def test_sigterm_mid_pagination_and_restart_keep_history(tmp_path):
+ import signal,time
+ db,f,m=configured(tmp_path,{'max_pages':2,'next_selector':'a.next','item_selector':'article','fields':{'title':'h2','link':'a@href'}})
+ (tmp_path/'first.html').write_text('<article><h2>First</h2><a href="/first">Read</a></article><a class="next" href="/page2">Next</a>')
+ (tmp_path/'second.html').write_text('<article><h2>Second</h2><a href="/second">Read</a></article>')
+ mapping={}
+ for url,name in [(f['source_url'],'first.html'),('https://example.com/page2','second.html')]:mapping[json.dumps({'url':url,'options':{}},sort_keys=True)]={'path':name}
+ m.write_text(json.dumps(mapping));out=tmp_path/'interrupted'
+ env={**os.environ,'OPENFEED_PAGE_DELAY_SECONDS':'10'}
+ p=subprocess.Popen([sys.executable,str(ROOT/'ops/run_cycle.py'),'--input-db',str(db),'--output',str(out),'--mode','fixtures','--fixtures',str(m),'--feed-id',f['id']],env=env,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
+ try:
+  deadline=time.monotonic()+10
+  while time.monotonic()<deadline:
+   try:
+    c=sqlite3.connect('file:'+str(out/'shadow.sqlite3')+'?mode=ro',uri=True)
+    ready=c.execute('select count(*) from shadow_cycle_starts').fetchone()[0]>0;c.close()
+    if ready:break
+   except sqlite3.Error:pass
+   time.sleep(.03)
+  else:raise AssertionError('Cycle never reached fetch lifecycle')
+  p.send_signal(signal.SIGTERM);p.communicate(timeout=5);assert p.returncode!=0
+ finally:
+  if p.poll() is None:p.kill();p.communicate(timeout=5)
+ assert not (out/'report.json').exists()
+ c=sqlite3.connect(out/'shadow.sqlite3');assert c.execute('pragma integrity_check').fetchone()[0]=='ok';assert c.execute('select count(*) from items').fetchone()[0]==1
+ assert c.execute('select count(*) from runs').fetchone()[0]==1
+ c.execute('update shadow_cycle_starts set started=started-301');c.commit();c.close()
+ restarted=tmp_path/'restarted'
+ r=invoke(out/'shadow.sqlite3',f,restarted,m);assert r.returncode==0,r.stderr
+ d=json.loads((restarted/'report.json').read_text());assert d['results'][0]['result']['status']=='success'
+ c=sqlite3.connect(restarted/'shadow.sqlite3');assert c.execute('select count(*) from items').fetchone()[0]==3;c.close()

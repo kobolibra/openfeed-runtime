@@ -95,10 +95,10 @@
     },
     {
       "id": "CLOUD-001",
-      "status": "m1_in_progress",
+      "status": "private_cloud_shadow_running",
       "summary": "用户授权继续GitHub主运行迁移，本轮优先完整规划/真实资料交接",
-      "evidence": "ops/run_cycle.py；tests/test_shadow_cycle.py八项通过；source/work/m1-continuation最终完整469通过/6项宿主浏览器启动权限失败；未部署",
-      "next_action": "继续M1真实隔离browser与进程中断/规则变更验收；在可启动Chromium环境复跑失败六项，之后推进M2私密状态。"
+      "evidence": "私库openfeed-runtime；三类云run 42000256852/42000626310/42001095279；云库4189身份无损/相位保留；公开调度尚待用户选择",
+      "next_action": "完成免费/私密持续调度、171源逐行验收、原地址发布与两个周期后才切换Mac；旧私库不存在记录已过时"
     }
   ]
 }

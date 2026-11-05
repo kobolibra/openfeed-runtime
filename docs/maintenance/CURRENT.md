@@ -1,6 +1,6 @@
 # 当前接手状态｜2026-11-05｜Stage19
 
-**本轮首要任务：完整迁移规划与真实资料交接。下一位从CLOUD_HANDOFF.md / TASKS_CLOUD.json的M1继续，不重读整段聊天。** 用户希望以GitHub长期承担核心运行，尚未实施生产迁移。
+**最新：GitHub私有源码、私密影子状态和三类代表源云端运行已落地；Mac仍为生产。以TASKS_CLOUD.json及本页末尾最新进展为准。**
 
 ## 当前生产与最新证据
 
@@ -42,3 +42,19 @@ M1最终验证：source cwd完整470通过、1第三方警告。首次根cwd4项
 - 最终完整回归469通过、6失败、1警告；失败全部为当前宿主Chromium启动权限拒绝（mach bootstrap/Crashpad），未删除或跳过测试。不能沿用上轮470通过作为本轮全绿证据。
 - Brookings旧捕获响应复演4条/副本新增3，输入hash未变；无live抓取或发布。证据source/work/m1-continuation。生产仍Stage19 Mac；M1保持in_progress。
 - 下一步：具备Chromium启动权限的环境复跑6项；补真实browser、进程SIGTERM/硬中断恢复、规则变更与deadline边界；持续状态单写者与原子checkpoint在M2。默认间隔保守、无等待，短周期通常仅启动一源，容量需M4验证。
+
+## 2026-11-05 GitHub切换实际推进
+- 用户纠正私库事实：kobolibra/openfeed-runtime已存在。实测private/admin/push成立；核对当时仅README。已导入224个源码文件与shadow-state私密基线，GitHub连接后创建cloud-shadow工作流。
+- 三类真实云端run均成功回写checkpoint：Brookings4条/3新增；Woodmac原3页9条/0新增；隔离浏览器Value Partners100条/0新增（触及提取上限，非无限范围完整性验收）。未发布。
+- 实际下载云库核验：原4189 GUID+first_seen身份零丢失、171源相位保留，当前4192条，integrity_check ok。不是最后切换数据库。
+- Linux完整回归首轮474通过/1失败，缺dnspython固定依赖；已加入requirements-host-egress.txt重跑，最终结果另记。不跳过测试。
+- 新增有限批次tick（4源/330秒）、跨批启动间隔、候选DB hash校验、171行逐源覆盖记录；11项相关专项通过。源码私库main 9afb4c1。
+- 原地址发布准备：数据库在线副本直接导出RSS/OPML，失败保留旧内容、白名单、字节及语义hash；2项专项通过，尚未部署到公共发布。
+- 免费长期方案：公开仓库只运行通用薄工作流，源码/状态/配方/日志仍私密；文件ops/public-wrapper.yml已备好。因旧约束仅静态/诊断workflow，已向用户询问明确允许新增运行workflow，答复前不部署该公开入口。尚未启用云schedule或收费，Mac未停。
+- 新证据在本chat工作区work/cloud-evidence；源码内备份work/cloud-switch。下一步先确认Linux完整回归，再按用户选择配置有限影子持续调度和171源矩阵，不能宣称切换完成。
+
+### 后续实测
+- Linux run42007778140在源码9afb4c1完整477 passed/1 warning，171RSS/GUID及私有DB不变性检查全通过。
+- run42008521595多源tick实际处理4个到期来源全部success，新增2条，历史/phase门禁与私有checkpoint通过。不是全171源验收。
+- 新增SIGTERM分页中断/重启验收及数据库导出专项后，本地相关14 passed；这些新增项尚未包含在上述477计数。
+- 猎聘上海公司浏览器真实云任务已dispatch，结果待收；不绕验证、不替换推荐职位。

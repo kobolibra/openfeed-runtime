@@ -1,7 +1,7 @@
 # OpenFeed：所有维护 agent 的入口
 
 ## 当前主任务入口
-GitHub主运行迁移的完整接手资料：先读 `docs/maintenance/CLOUD_HANDOFF.md` 和 `TASKS_CLOUD.json`。当前仅规划/交接完成，生产仍在Mac；不得把远端诊断当已迁移。后续agent每轮都更新任务、证据、部署状态与交接门禁。
+GitHub主运行迁移的完整接手资料：先读 `docs/maintenance/CLOUD_HANDOFF.md` 和 `TASKS_CLOUD.json`。GitHub私库与真实影子运行已落地，生产仍在Mac；以TASKS_CLOUD与CURRENT最新段落为准，不得把影子运行当生产已切换。后续agent每轮都更新任务、证据、部署状态与交接门禁。
 
 ## 开始工作
 1. 读 `docs/maintenance/README.md`，再读 `CURRENT.md`、`DECISIONS.md`、`CHANGELOG.md` 和 `ISSUES.json`（均在同目录）。只按需查旧报告，不重读整段聊天。
