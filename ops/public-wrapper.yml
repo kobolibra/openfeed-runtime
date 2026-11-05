@@ -8,6 +8,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   shadow:
+    permissions:
+      contents: write
     if: github.ref == 'refs/heads/main' && github.actor == github.repository_owner
     runs-on: ubuntu-latest
     timeout-minutes: 14
@@ -25,6 +27,9 @@ jobs:
           ref: shadow-state
           path: runtime/private-state
           ssh-key: ${{ secrets.OPENFEED_RUNTIME_KEY }}
+      - uses: actions/checkout@v4
+        with:
+          path: public-feeds
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -36,6 +41,6 @@ jobs:
           umask 077
           exec > "$RUNNER_TEMP/openfeed-private.log" 2>&1
           python -m pip install -r requirements-runtime.lock
-          python ops/cloud_tick.py --run-id "$RUN_ID"
+          python ops/cloud_tick.py --run-id "$RUN_ID" --public-checkout "$GITHUB_WORKSPACE/public-feeds"
       - name: Report completion
-        run: echo 'Private shadow tick completed. Production publication is not enabled.' >> "$GITHUB_STEP_SUMMARY"
+        run: echo 'Cloud tick completed. Publication follows private cutover control.' >> "$GITHUB_STEP_SUMMARY"
