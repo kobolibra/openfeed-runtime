@@ -1,6 +1,8 @@
 {
-  "scope": "private shadow only; Mac remains production",
-  "database_sha256": "d56e43c731af22569533a20a0841bfd467e13d14a651592232db20e6fefbb7de",
-  "source_sha": "f70411576469473ef5310a2924af12e9d8d34099",
-  "baseline": "2026-11-05 handoff online backup; not final cutover snapshot"
+  "run_id": "42000256852",
+  "previous_sha256": "d56e43c731af22569533a20a0841bfd467e13d14a651592232db20e6fefbb7de",
+  "database_sha256": "06985a0b48e61a729ef08f7190c058c30492e76d9b5c09a86f635f91ce65cfaf",
+  "scope": "private shadow validation only; no production cutover",
+  "source_sha": "b9f42bfa9fa5f7a5f087be50cbd3b4d846b7192e",
+  "rss_manifest_sha256": "217873b36e1e5c8a3f90ad178c38d97630468ee28c989689194e9f2ec6b6e508"
 }
