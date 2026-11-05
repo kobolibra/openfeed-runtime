@@ -1,0 +1,91 @@
+services:
+  browser-volume-init:
+    image: busybox:1.36
+    command:
+    - sh
+    - -c
+    - mkdir -p /jobs/pending /jobs/done && chown -R 10001:10001 /jobs && chmod -R
+      700 /jobs
+    volumes:
+    - browser-jobs:/jobs
+    restart: 'no'
+  browser-worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.browser-worker
+    networks:
+    - browser-private
+    volumes:
+    - browser-jobs:/browser-jobs
+    depends_on:
+      browser-volume-init:
+        condition: service_completed_successfully
+      egress-proxy:
+        condition: service_started
+    environment:
+      OPENFEED_BROWSER_JOB_DIR: /browser-jobs
+      OPENFEED_BROWSER_EGRESS_PROXY: http://egress-proxy:8899
+      OPENFEED_BROWSER_EXECUTABLE: /usr/bin/chromium
+    restart: 'no'
+    read_only: true
+    tmpfs:
+    - /tmp:size=256m,nosuid
+    - /home/openfeed:size=32m,nosuid,uid=10001,gid=10001,mode=0700
+    shm_size: 256m
+    security_opt:
+    - no-new-privileges:true
+    cap_drop:
+    - ALL
+    pids_limit: 256
+    mem_limit: 800m
+    init: true
+  egress-proxy:
+    environment:
+      OPENFEED_DNS_MODE: ${OPENFEED_DNS_MODE:-auto}
+    build:
+      context: .
+      dockerfile: Dockerfile.egress-proxy
+    networks:
+    - browser-private
+    - outbound
+    restart: 'no'
+    read_only: true
+    tmpfs:
+    - /tmp:size=32m,nosuid,noexec
+    security_opt:
+    - no-new-privileges:true
+    cap_drop:
+    - ALL
+    pids_limit: 64
+    mem_limit: 128m
+  cycle:
+    build:
+      context: .
+      dockerfile: Dockerfile.cloud
+    environment:
+      OPENFEED_BROWSER_SANDBOXED_WORKER: '1'
+      OPENFEED_BROWSER_JOB_DIR: /browser-jobs
+      OPENFEED_ENABLE_SCHEDULER: '0'
+    volumes:
+    - browser-jobs:/browser-jobs
+    - ./cloud-io:/cloud-io
+    read_only: true
+    tmpfs:
+    - /tmp:size=64m,noexec,nosuid
+    security_opt:
+    - no-new-privileges:true
+    cap_drop:
+    - ALL
+    mem_limit: 512m
+    pids_limit: 160
+    depends_on:
+      browser-volume-init:
+        condition: service_completed_successfully
+      browser-worker:
+        condition: service_started
+networks:
+  browser-private:
+    internal: true
+  outbound: {}
+volumes:
+  browser-jobs: null
