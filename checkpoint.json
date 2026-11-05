@@ -1,10 +1,8 @@
 {
-  "run_id": "42008521595",
-  "previous_sha256": "9105f67950111f2d84c239d858713b2a9e8284125b9da6fa56c1e3f8667c61ee",
+  "run_id": "42009285872",
+  "previous_sha256": "1cc7698959364d94fff5c12f4123e5b7dc63f92d40fd417fa8c7484e7b0d99c8",
   "database_sha256": "1cc7698959364d94fff5c12f4123e5b7dc63f92d40fd417fa8c7484e7b0d99c8",
-  "scope": "private scheduled shadow only; Mac remains production",
+  "scope": "private shadow validation only; no production cutover",
   "source_sha": "f18a00d5460723005a19dcc483868dc34b335a99",
-  "previous_state_commit": "597001c4269d68b4eb11f1d700ccf7534c38cc2c",
-  "rss_manifest_sha256": "c16ed39d6b563f09bbf9f2256ae20f8f2192d21f85085e934343eb7f252d4507",
-  "source_identity_preserved": true
+  "rss_manifest_sha256": "c16ed39d6b563f09bbf9f2256ae20f8f2192d21f85085e934343eb7f252d4507"
 }
