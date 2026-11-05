@@ -307,7 +307,16 @@
       "status": "not_tested"
     },
     "f3a3f345cb25a68a0ed3494f64b8": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T23:08:15.876976+00:00",
+      "run_id": "42126666989",
+      "result": {
+        "status": "success",
+        "found": 32,
+        "inserted": 1,
+        "message": "1 page(s), 32 unique item(s); unknown_dates=32"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "139a43ef9fbf25faac5eb96b0dea": {
       "checked_at": "2026-11-05T22:37:57.011473+00:00",
@@ -562,7 +571,16 @@
       "status": "not_tested"
     },
     "0e7c2071c58e62d85882c8234eea": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T23:08:15.876976+00:00",
+      "run_id": "42126666989",
+      "result": {
+        "status": "success",
+        "found": 100,
+        "inserted": 0,
+        "message": "1 page(s), 100 unique item(s); extraction limit reached"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "6c90db0503be0fd60e5eec3bd965": {
       "status": "not_tested"
@@ -1048,10 +1066,28 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "919e9a690c678ca8a4505010dcb0": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T23:08:15.876976+00:00",
+      "run_id": "42126666989",
+      "result": {
+        "status": "success",
+        "found": 10,
+        "inserted": 0,
+        "message": "1 page(s), 10 unique item(s); unknown_dates=10"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "8e2712e008f356d7e3910ce3657b": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T23:08:15.876976+00:00",
+      "run_id": "42126666989",
+      "result": {
+        "status": "success",
+        "found": 0,
+        "inserted": 0,
+        "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "8ec4c9da20a6ac465cf510ca03ee": {
       "status": "not_tested"

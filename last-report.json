@@ -3,54 +3,50 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "2de645ce3f85b2c6bae4c65ee4ed",
-    "3bcda00f9ea95e035f30edbca2ce",
-    "ed79f317cdb848275389669e5500",
-    "85e660c0da021a19c7cc2928767b"
+    "8e2712e008f356d7e3910ce3657b",
+    "f3a3f345cb25a68a0ed3494f64b8",
+    "919e9a690c678ca8a4505010dcb0",
+    "0e7c2071c58e62d85882c8234eea"
   ],
   "results": [
     {
-      "id": "2de645ce3f85b2c6bae4c65ee4ed",
+      "id": "8e2712e008f356d7e3910ce3657b",
       "result": {
         "status": "success",
-        "found": 11,
+        "found": 0,
         "inserted": 0,
-        "message": "1 page(s), 11 unique item(s); unknown_dates=11"
+        "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
       }
     },
     {
-      "id": "3bcda00f9ea95e035f30edbca2ce",
+      "id": "f3a3f345cb25a68a0ed3494f64b8",
       "result": {
         "status": "success",
-        "found": 20,
-        "inserted": 0,
-        "message": "1 page(s), 20 unique item(s)"
+        "found": 32,
+        "inserted": 1,
+        "message": "1 page(s), 32 unique item(s); unknown_dates=32"
       }
     },
     {
-      "id": "ed79f317cdb848275389669e5500",
+      "id": "919e9a690c678ca8a4505010dcb0",
       "result": {
         "status": "success",
-        "found": 8,
+        "found": 10,
         "inserted": 0,
-        "message": "1 page(s), 8 unique item(s)"
+        "message": "1 page(s), 10 unique item(s); unknown_dates=10"
       }
     },
     {
-      "id": "85e660c0da021a19c7cc2928767b",
+      "id": "0e7c2071c58e62d85882c8234eea",
       "result": {
         "status": "success",
-        "found": 4,
+        "found": 100,
         "inserted": 0,
-        "message": "1 page(s), 4 unique item(s); unknown_dates=4"
+        "message": "1 page(s), 100 unique item(s); extraction limit reached"
       }
     }
   ],
   "deferred": [
-    {
-      "id": "8e2712e008f356d7e3910ce3657b",
-      "reason": "same_host"
-    },
     {
       "id": "32e834db8257908a0c3a65af6380",
       "reason": "same_host"
@@ -76,24 +72,12 @@
       "reason": "same_host"
     },
     {
-      "id": "f3a3f345cb25a68a0ed3494f64b8",
-      "reason": "max_feeds"
-    },
-    {
-      "id": "919e9a690c678ca8a4505010dcb0",
-      "reason": "max_feeds"
-    },
-    {
       "id": "1cdb06f59e215f1506a980c3b207",
-      "reason": "max_feeds"
+      "reason": "same_host"
     },
     {
       "id": "aae695eb5428e0c959f34d512150",
-      "reason": "max_feeds"
-    },
-    {
-      "id": "0e7c2071c58e62d85882c8234eea",
-      "reason": "max_feeds"
+      "reason": "same_host"
     },
     {
       "id": "dadf863cd0e414b20259bf3aae52",
@@ -609,7 +593,7 @@
     },
     {
       "id": "8e2712e008f356d7e3910ce3657b",
-      "next_run": "2026-11-05T08:16:50+00:00",
+      "next_run": "2026-11-06T08:16:50+00:00",
       "schedule_phase_seconds": 29810
     },
     {
@@ -1029,12 +1013,12 @@
     },
     {
       "id": "0e7c2071c58e62d85882c8234eea",
-      "next_run": "2026-11-05T10:06:18+00:00",
+      "next_run": "2026-11-06T10:06:18+00:00",
       "schedule_phase_seconds": 36378
     },
     {
       "id": "919e9a690c678ca8a4505010dcb0",
-      "next_run": "2026-11-05T09:53:41+00:00",
+      "next_run": "2026-11-06T09:53:41+00:00",
       "schedule_phase_seconds": 35621
     },
     {
@@ -1309,7 +1293,7 @@
     },
     {
       "id": "f3a3f345cb25a68a0ed3494f64b8",
-      "next_run": "2026-11-05T09:49:28+00:00",
+      "next_run": "2026-11-06T09:49:28+00:00",
       "schedule_phase_seconds": 35368
     },
     {
@@ -1415,8 +1399,8 @@
   ],
   "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 181.116,
+  "elapsed_seconds": 181.516,
   "input_db_unchanged": true,
-  "input_sha256": "6b95f1b954b13dfaf29d4a8f2256a3479869e123f63af97a18643ac940218692",
-  "shadow_sha256": "56850dd40201218a7aa975c114382681768604ea5fcc3e016f004811a0bc2390"
+  "input_sha256": "a808ac7567a1011dc077d0f5b357a1b7ae42776756f98885d17ad6fcc4f2b0eb",
+  "shadow_sha256": "fa01dc75dc3a5c71058b1a0e98c4d86dbbc54462f7f9c58526cab40da2a17df4"
 }
