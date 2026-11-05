@@ -3,54 +3,50 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "a0bd76a4450ea8c9a93141ca0a56",
-    "e367743c892e462a0843d6125e91",
-    "a7627d5c8cc7e356db3cf8d3d11f",
-    "e54297981a0dc41c175aca45f9d8"
+    "b33479b74b661b29d5788aef2ebc",
+    "ec6c0c383aa439816af5328b9426",
+    "f3aeed2b77be805012e0b45a2b4c",
+    "b0df736b3824c38c66fd391c5ad9"
   ],
   "results": [
     {
-      "id": "a0bd76a4450ea8c9a93141ca0a56",
+      "id": "b33479b74b661b29d5788aef2ebc",
       "result": {
         "status": "success",
-        "found": 1,
-        "inserted": 0,
-        "message": "1 page(s), 1 unique item(s); unknown_dates=1"
-      }
-    },
-    {
-      "id": "e367743c892e462a0843d6125e91",
-      "result": {
-        "status": "success",
-        "found": 10,
-        "inserted": 0,
-        "message": ""
-      }
-    },
-    {
-      "id": "a7627d5c8cc7e356db3cf8d3d11f",
-      "result": {
-        "status": "error",
         "found": 0,
         "inserted": 0,
-        "message": "Page exceeds maximum fetch size"
+        "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
       }
     },
     {
-      "id": "e54297981a0dc41c175aca45f9d8",
+      "id": "ec6c0c383aa439816af5328b9426",
       "result": {
         "status": "success",
-        "found": 96,
+        "found": 100,
         "inserted": 0,
-        "message": "1 page(s), 96 unique item(s)"
+        "message": "1 page(s), 100 unique item(s); extraction limit reached"
+      }
+    },
+    {
+      "id": "f3aeed2b77be805012e0b45a2b4c",
+      "result": {
+        "status": "success",
+        "found": 24,
+        "inserted": 0,
+        "message": "1 page(s), 24 unique item(s)"
+      }
+    },
+    {
+      "id": "b0df736b3824c38c66fd391c5ad9",
+      "result": {
+        "status": "success",
+        "found": 9,
+        "inserted": 0,
+        "message": "1 page(s), 9 unique item(s); unknown_dates=9"
       }
     }
   ],
   "deferred": [
-    {
-      "id": "b33479b74b661b29d5788aef2ebc",
-      "reason": "same_host"
-    },
     {
       "id": "3187fad822221523e6f592197f84",
       "reason": "same_host"
@@ -68,20 +64,8 @@
       "reason": "same_host"
     },
     {
-      "id": "ec6c0c383aa439816af5328b9426",
-      "reason": "max_feeds"
-    },
-    {
-      "id": "f3aeed2b77be805012e0b45a2b4c",
-      "reason": "max_feeds"
-    },
-    {
       "id": "8e0482e5b14d62a7eb44e554e981",
-      "reason": "max_feeds"
-    },
-    {
-      "id": "b0df736b3824c38c66fd391c5ad9",
-      "reason": "max_feeds"
+      "reason": "same_host"
     },
     {
       "id": "f2ece936cef432e42b8a44a63cf1",
@@ -746,7 +730,7 @@
     },
     {
       "id": "b33479b74b661b29d5788aef2ebc",
-      "next_run": "2026-11-05T06:44:12+00:00",
+      "next_run": "2026-11-06T06:44:12+00:00",
       "schedule_phase_seconds": 24252
     },
     {
@@ -896,7 +880,7 @@
     },
     {
       "id": "b0df736b3824c38c66fd391c5ad9",
-      "next_run": "2026-11-05T07:55:47+00:00",
+      "next_run": "2026-11-06T07:55:47+00:00",
       "schedule_phase_seconds": 28547
     },
     {
@@ -1066,7 +1050,7 @@
     },
     {
       "id": "ec6c0c383aa439816af5328b9426",
-      "next_run": "2026-11-05T07:43:09+00:00",
+      "next_run": "2026-11-06T07:43:09+00:00",
       "schedule_phase_seconds": 27789
     },
     {
@@ -1471,7 +1455,7 @@
     },
     {
       "id": "f3aeed2b77be805012e0b45a2b4c",
-      "next_run": "2026-11-05T07:47:22+00:00",
+      "next_run": "2026-11-06T07:47:22+00:00",
       "schedule_phase_seconds": 28042
     },
     {
@@ -1527,8 +1511,8 @@
   ],
   "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 181.819,
+  "elapsed_seconds": 185.698,
   "input_db_unchanged": true,
-  "input_sha256": "19e02fcbfca4ca46db0dff55f39f7a85608989c02cb88930f855d0bed085076b",
-  "shadow_sha256": "001f2799d8375545305fcc18a874889eed59c30623e389762ab7d40a6e2a1f88"
+  "input_sha256": "ebe50ed85f15b9bc3e7b5323764c12f65dc1844655912a88403b72cdb6dc4965",
+  "shadow_sha256": "d0c136eb3b0ae15c2f769155af4e9b66b54be0563174176cd148892542135b67"
 }
