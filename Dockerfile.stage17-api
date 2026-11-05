@@ -1,0 +1,4 @@
+FROM openfeed-live-openfeed
+COPY openfeed/storage.py /app/openfeed/storage.py
+COPY openfeed/app.py /app/openfeed/app.py
+COPY openfeed/security.py /app/openfeed/security.py

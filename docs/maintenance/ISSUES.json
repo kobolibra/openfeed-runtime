@@ -1,0 +1,104 @@
+{
+  "updated": "2026-11-05",
+  "note": "这是问题台账，不是实时错误列表；需结合最新快照。",
+  "issues": [
+    {
+      "id": "NET-001",
+      "status": "open",
+      "summary": "20源对照远端HTTP全部200，17首屏原规则通过，尚未生产迁移",
+      "evidence": "work/stage19/local-validation.json、remote-validation.json及逐源CSV；不是全171源通过",
+      "next_action": "基于现有正文与矩阵实施M1-M5，保留本地可用与browser例外；不要再全量盲刷"
+    },
+    {
+      "id": "ACCESS-001",
+      "status": "open",
+      "summary": "China Law两项/Guggenheim此前403；CEPR本轮已修规则单次恢复",
+      "evidence": "2026-11-04 CEPR实际12张结果卡，原body选择器导致只取1；精确卡片规则保存刷新12条成功；work/stage15",
+      "next_action": "观察CEPR后续自动刷新；其余403使用合法公开接口调查，不绕过访问控制"
+    },
+    {
+      "id": "JPM-001",
+      "status": "open",
+      "summary": "J.P.Morgan HTTP超时且browser未取到原文章区域",
+      "evidence": "stage13 browser预览证据",
+      "next_action": "先保留有界页面证据再判断规则变化，不自动改广泛选择器"
+    },
+    {
+      "id": "REL-001",
+      "status": "deployed_tested",
+      "summary": "同域持久化Retry-After冷却",
+      "evidence": "Stage15：持久化同主机冷却；新增5项测试、完整451通过；实际容器app/storage指纹一致；不等于真实429长期观察通过",
+      "next_action": "观察真实429/503冷却效果；重定向目标及浏览器子资源另行设计"
+    },
+    {
+      "id": "REL-002",
+      "status": "deployed_tested",
+      "summary": "延迟恢复任务与12小时正常调度分离",
+      "evidence": "Stage17持久化有界恢复已部署；458项完整+2项截止测试；真实API已观察到恢复记录；长期自动成功率尚待验证",
+      "next_action": "观察恢复到期实际运行与成功清除；浏览器/POST恢复另行设计，保持次数预算"
+    },
+    {
+      "id": "REL-003",
+      "status": "planned",
+      "summary": "有界脱敏失败现场自动留存",
+      "evidence": "目前主要人工快照",
+      "next_action": "容量/保留期/敏感字段策略必须一起实现"
+    },
+    {
+      "id": "REL-004",
+      "status": "planned",
+      "summary": "分层成功率与新鲜度监控",
+      "evidence": "端口/RSS正常不代表抓取正常",
+      "next_action": "分别记录抓取、提取、RSS、发布、Reader验收"
+    },
+    {
+      "id": "SCOPE-001",
+      "status": "unverified",
+      "summary": "IMF原abstract China查询及Amundi中银招聘",
+      "evidence": "旧交接未验收，非171已建RSS全部通过的含义",
+      "next_action": "保留原范围，不以总栏目替换"
+    },
+    {
+      "id": "FIX-001",
+      "status": "single_success",
+      "summary": "Value Partners浏览器抓取",
+      "evidence": "stage13保存刷新61条；不是长期稳定结论",
+      "next_action": "观察后续自动刷新，不扩大到全源自动切换"
+    },
+    {
+      "id": "REL-005",
+      "status": "partial_deployed",
+      "summary": "分阶段诊断与统一任务deadline",
+      "evidence": "Stage17 HTTP总deadline、Stage19宿主连接共享预算/多地址公平回退与DNS/TCP阶段已部署；466回归通过",
+      "next_action": "继续多页/浏览器统一任务预算、持久阶段现场；不把部分实现当全部完成"
+    },
+    {
+      "id": "REL-006",
+      "status": "planned",
+      "summary": "有界站点会话与浏览器池",
+      "evidence": "2026-11-04专业方案调研；outputs/OpenFeed-抓取故障专业方案-20261104/专业方案调研.md",
+      "next_action": "先同出口对照验证会话价值，隔离Cookie并限定TTL容量"
+    },
+    {
+      "id": "REL-007",
+      "status": "planned",
+      "summary": "可插拔传输与授权独立出口",
+      "evidence": "2026-11-04专业方案调研；outputs/OpenFeed-抓取故障专业方案-20261104/专业方案调研.md",
+      "next_action": "先保留安全校验与质量契约；真实备用出口未取得，不能宣称已故障切换"
+    },
+    {
+      "id": "BRK-001",
+      "status": "remote_diagnosed_not_migrated",
+      "summary": "Brookings China本机连接失败，旧候选TCP可连但TLS重置",
+      "evidence": "Stage19远端run41965774214 HTTP200/0.122秒、原规则4条；本地stage=tcp失败",
+      "next_action": "无需重做远端可达性试验；在M3/M5验证完整状态/RSS闭环，不把4条预览当已持续迁移"
+    },
+    {
+      "id": "CLOUD-001",
+      "status": "m1_in_progress",
+      "summary": "用户授权继续GitHub主运行迁移，本轮优先完整规划/真实资料交接",
+      "evidence": "ops/run_cycle.py；tests/test_shadow_cycle.py八项通过；source/work/m1-continuation最终完整469通过/6项宿主浏览器启动权限失败；未部署",
+      "next_action": "继续M1真实隔离browser与进程中断/规则变更验收；在可启动Chromium环境复跑失败六项，之后推进M2私密状态。"
+    }
+  ]
+}

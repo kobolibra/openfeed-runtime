@@ -1,0 +1,14 @@
+FROM python:3.12-slim-bookworm
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends chromium ca-certificates fonts-liberation \
+    && rm -rf /var/lib/apt/lists/*
+COPY requirements-browser.txt requirements.txt requirements-browser.lock ./
+RUN pip install --no-cache-dir -r requirements-browser.lock \
+    && groupadd -g 10001 openfeed && useradd -u 10001 -g 10001 -m openfeed
+COPY openfeed/ ./openfeed/
+USER 10001:10001
+ENV OPENFEED_BROWSER_EXECUTABLE=/usr/bin/chromium \
+    OPENFEED_BROWSER_JOB_DIR=/browser-jobs \
+    OPENFEED_BROWSER_EGRESS_PROXY=http://egress-proxy:8899
+CMD ["python", "-m", "openfeed.sandbox_worker"]

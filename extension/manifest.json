@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "OpenFeed Studio — Live Picker",
+  "version": "0.7.0",
+  "description": "Select article cards and RSS fields on the website you are browsing; send rules to your own OpenFeed Studio.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {"default_popup": "popup.html", "default_title": "OpenFeed live picker"},
+  "background": {"service_worker": "background.js"}
+}

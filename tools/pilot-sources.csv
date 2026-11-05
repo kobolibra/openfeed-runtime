@@ -1,0 +1,21 @@
+name,source_url,type,proposed_strategy,test_focus
+Oaktree Memos,https://www.oaktreecapital.com/Insights/memos,research,html_css,static pilot
+BofA Institute Transformation,https://institute.bankofamerica.com/transformation.html,research,html_css,static pilot
+World Gold Council,https://www.gold.org/industry-insights,research,html_css,date extraction
+Capital Group Institutional,https://www.capitalgroup.com/institutional/insights.html,research,conditional,investor consent
+KKR Insights,https://www.kkr.com/insights,research,browser_or_json,dynamic pilot
+CEPR VoxEU China,https://cepr.org/voxeu/columns?title=China,filtered_search,native_or_filter,original URL may be outdated
+Nomura Connects,https://www.nomuraconnects.com/articles,research,html_css,links and topics
+Citi Careers China,https://jobs.citi.com/search-jobs/China/287/2/1814991/35/105/50/2,jobs,html_css,job identity
+Liepin Company 8652522,https://www.liepin.com/company-jobs/8652522/,jobs,official_alert,challenge observed
+Liepin Company 13388671,https://www.liepin.com/company-jobs/13388671/,jobs,official_alert,challenge likely; unverified
+China Rhodium Research,https://rhg.com/china/research/,research,html_css,publication type
+AQR Research,https://www.aqr.com/Insights/Research,research,html_css,filter and PDF
+Apollo Daily Spark,https://www.apolloacademy.com/daily-spark/,research,recheck_url,destination drift
+Goldman ICBCWM Careers,https://www.gs-icbcwm.com/career.html,jobs,html_css,job location
+China Law Insight,https://www.chinalawinsight.com/,legal,native_feed,check topic feed
+Atlantic Council,https://www.atlanticcouncil.org/issue/economy-business/,thinktank,native_or_filter,topic vs site RSS
+Rhodium China,https://rhg.com/china/services/,research,needs_review,services vs publication
+World Bank China Data,https://data.worldbank.org/country/china?view=chart,data,api_or_change,not article list
+KKR competitor Carlyle,https://www.carlyle.com/global-insights,research,browser_or_json,filter
+Oxford Economics China,https://www.oxfordeconomics.com/china-economy/,research,conditional,subscription

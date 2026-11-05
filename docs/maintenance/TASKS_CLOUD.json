@@ -1,0 +1,91 @@
+{
+  "updated": "2026-11-05",
+  "current_focus": "M1影子原型已实现，继续补验收；M2-M6未开始",
+  "production_authority": "Mac Docker SQLite；未迁移",
+  "automatic_cloud_crawl_enabled": false,
+  "private_repository_created": false,
+  "paid_resources_enabled": false,
+  "tasks": [
+    {
+      "id": "M0",
+      "status": "done",
+      "depends_on": [],
+      "summary": "完整规划、真实源码/私密状态和证据交接",
+      "deliverable": "本轮私密交接包、manifest、验证结果",
+      "owner": "当前对话agent（2026-11-05规划交接）",
+      "evidence": "outputs/OpenFeed-迁移总交接-20261105/VALIDATION.txt；393文件私密包、SQL完整性/ID/GUID/phase及损坏/缺失负向验证通过",
+      "next_action": "已完成；下一位领取M1，在scratch副本开发"
+    },
+    {
+      "id": "M1",
+      "status": "in_progress",
+      "depends_on": [],
+      "summary": "无副作用单轮runner与scratch状态测试",
+      "deliverable": "影子单轮入口、精确fixture、持久启动间隔、RSS校验清单/下一计划；未部署",
+      "owner": "接手agent 2026-11-05 M1补验收",
+      "evidence": "ops/run_cycle.py；tests/test_shadow_cycle.py 8 passed；work/m1-continuation完整469 passed/6 browser启动权限失败；Brookings旧捕获4条/3新增/input unchanged",
+      "next_action": "补真实隔离browser、进程强制中断、规则变化验收；6项宿主Chromium权限失败需复跑。串联影子状态仅开发验证，M2补原子checkpoint与单写者。"
+    },
+    {
+      "id": "M2",
+      "status": "planned",
+      "depends_on": [
+        "M1"
+      ],
+      "summary": "私有代码/权威状态持久化、认证与单写入者",
+      "deliverable": "仓库/状态设计、最小权限、原子checkpoint、失败回滚测试",
+      "owner": null,
+      "evidence": null,
+      "next_action": "详见CLOUD_HANDOFF相应阶段；开工先登记负责人/时间"
+    },
+    {
+      "id": "M3",
+      "status": "planned",
+      "depends_on": [
+        "M2"
+      ],
+      "summary": "云端小批影子运行，再逐源验收171源",
+      "deliverable": "完整分页/浏览器/空列表/质量矩阵；不推断未测来源通过",
+      "owner": null,
+      "evidence": null,
+      "next_action": "详见CLOUD_HANDOFF相应阶段；开工先登记负责人/时间"
+    },
+    {
+      "id": "M4",
+      "status": "planned",
+      "depends_on": [
+        "M1"
+      ],
+      "summary": "调度容量、实际分钟与存储成本验证",
+      "deliverable": "测量报告、积压/同域并发数据、免费/额度方案；不开付费预算",
+      "owner": null,
+      "evidence": null,
+      "next_action": "详见CLOUD_HANDOFF相应阶段；开工先登记负责人/时间"
+    },
+    {
+      "id": "M5",
+      "status": "planned",
+      "depends_on": [
+        "M3",
+        "M4"
+      ],
+      "summary": "原Pages地址发布完整闭环",
+      "deliverable": "原ID/GUID/RSS语义对照、两个正常周期及发布故障验证",
+      "owner": null,
+      "evidence": null,
+      "next_action": "详见CLOUD_HANDOFF相应阶段；开工先登记负责人/时间"
+    },
+    {
+      "id": "M6",
+      "status": "planned",
+      "depends_on": [
+        "M5"
+      ],
+      "summary": "单写入者切换、Mac离线验证与回滚演练",
+      "deliverable": "最终状态hash、启动项清单、云首轮状态、回滚验证",
+      "owner": null,
+      "evidence": null,
+      "next_action": "详见CLOUD_HANDOFF相应阶段；开工先登记负责人/时间"
+    }
+  ]
+}

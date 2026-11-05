@@ -1,0 +1,2 @@
+FROM openfeed-live-egress-proxy
+COPY openfeed/egress_proxy.py /app/openfeed/egress_proxy.py

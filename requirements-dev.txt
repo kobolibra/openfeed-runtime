@@ -1,0 +1,6 @@
+-r requirements.txt
+-r requirements-browser.txt
+feedparser>=6,<7
+pytest>=8,<10
+pytest-asyncio>=0.23,<2
+PyYAML>=6,<7

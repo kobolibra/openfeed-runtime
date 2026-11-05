@@ -1,0 +1,2 @@
+FROM openfeed-live-openfeed
+COPY openfeed/diagnostics.py /app/openfeed/diagnostics.py

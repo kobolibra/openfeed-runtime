@@ -1,0 +1,2 @@
+FROM openfeed-live-openfeed
+COPY openfeed/security.py /app/openfeed/security.py
