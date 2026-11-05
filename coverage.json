@@ -61,7 +61,16 @@
       "status": "not_tested"
     },
     "3a5915df96d8f9e31c307348f558": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T13:58:55.507924+00:00",
+      "run_id": "42039962109",
+      "result": {
+        "status": "success",
+        "found": 3,
+        "inserted": 0,
+        "message": "1 page(s), 3 unique item(s)"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "9de058f25996c675723754e58c24": {
       "status": "not_tested"
@@ -193,7 +202,16 @@
       "status": "not_tested"
     },
     "ecbecdfc89c70e22710fef16c8f2": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T13:58:55.507924+00:00",
+      "run_id": "42039962109",
+      "result": {
+        "status": "success",
+        "found": 11,
+        "inserted": 0,
+        "message": "1 page(s), 11 unique item(s); unknown_dates=11"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "ce1637cba6137211a97fcfad09a3": {
       "status": "not_tested"
@@ -547,7 +565,16 @@
       "status": "not_tested"
     },
     "f1d1dcc47c44790edd8d92ce14c5": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T13:58:55.507924+00:00",
+      "run_id": "42039962109",
+      "result": {
+        "status": "error",
+        "found": 0,
+        "inserted": 0,
+        "message": "Upstream HTTP 403"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "4f0c0cbd0ddda6cc579749f7813d": {
       "status": "not_tested"
@@ -562,7 +589,16 @@
       "status": "not_tested"
     },
     "aa79d80f04758b239618ca451c3d": {
-      "status": "not_tested"
+      "checked_at": "2026-11-05T13:58:55.507924+00:00",
+      "run_id": "42039962109",
+      "result": {
+        "status": "success",
+        "found": 14,
+        "inserted": 0,
+        "message": "1 page(s), 14 unique item(s); unknown_dates=14"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "e6ded12656af1d9314e2ff76a8a1": {
       "status": "not_tested"
