@@ -7,7 +7,7 @@ import argparse,hashlib,json,os,re,shutil,sqlite3,subprocess,sys
 from pathlib import Path
 from datetime import datetime,timezone
 from shadow_checkpoint import promote
-from cloud_publish import publication_intent,publish_committed_state
+from cloud_publish import publication_intent,publish_committed_state,freeze_publication,complete_publication
 ROOT=Path(__file__).resolve().parents[1]
 
 def run(*args,cwd=ROOT):
@@ -83,14 +83,19 @@ def tick(run_id,public_checkout=None):
     intent=publication_intent(state)
     if intent:
         if public_checkout is None:raise ValueError('Public checkout required for production mode')
-        (state/'publication-state.json').write_text(json.dumps(intent,indent=2))
+        intent=freeze_publication(state,intent)
     run('git','config','user.name','OpenFeed Cloud Shadow',cwd=state)
     run('git','config','user.email','openfeed-shadow@users.noreply.github.com',cwd=state)
     run('git','add','--','openfeed.sqlite3','checkpoint.json','last-report.json','rss-manifest.json','coverage.json',cwd=state)
-    if intent:run('git','add','--','publication-state.json',cwd=state)
+    if intent:run('git','add','--','publication-state.json','publication-candidate.sqlite3',cwd=state)
     run('git','commit','-m','Private shadow tick '+str(run_id),cwd=state)
     run('git','push','origin','HEAD:shadow-state',cwd=state)
     publication=publish_committed_state(state,public_checkout) if intent else None
+    if publication:
+        complete_publication(state,publication)
+        run('git','add','--','publication-state.json',cwd=state)
+        run('git','commit','-m','Confirm built publication '+str(run_id),cwd=state)
+        run('git','push','origin','HEAD:shadow-state',cwd=state)
     return {'shadow_only':not production,'published':bool(publication and publication['result']=='pushed'),'processed':len(report['results']),'publication':publication}
 
 def main():
