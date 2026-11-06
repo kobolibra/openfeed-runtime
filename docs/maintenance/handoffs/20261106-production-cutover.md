@@ -7,3 +7,5 @@
 证据：/Users/time/Documents/Codex/2026-11-05/users-time-documents-codex-2026-10-3/work/cloud-evidence/production-cutover-20261106/；重点first-cloud-publication.json、public-rss-validation.json、final-union-validation.json、final-status.json、mac-final-identity.json。完整私密数据库与49条时间provenance均在此；禁止上传公共仓库。
 回滚：先停云入口，等在途工作结束，取最新云状态并验证，再单独恢复Mac自动抓取/发布。*.before只恢复启动配置，不得恢复旧库丢弃云端新历史。原订阅URL/GUID继续保持。
 本机维护：旧桥PID16451通过活动监视器正常退出，新桥由原health启动项恢复；修正版桥不会disable云workflow，Mac离线不阻断云端。仅改OpenFeed组件，个人VPN未动。
+
+费用保护复核：三个私库workflow均disabled_manually，公开生产保持active；最新快照已刷新。

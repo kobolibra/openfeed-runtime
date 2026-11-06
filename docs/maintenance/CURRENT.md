@@ -22,3 +22,5 @@
 
 回滚：先停云runtime workflow并等当前工作完成，取得**最新**云DB/配置/历史；写入本机后再恢复scheduler/publisher。不能恢复旧Mac快照覆盖新云历史。原compose/publisher脚本保存在证据目录*.before；先移除cloud-production.json门闩才能恢复本机发布，严禁双发布者。
 下一步：独立处理两源403；观察12h正常周期质量、发布新鲜度及管理编辑实际使用反馈。不要再把主迁移当未部署重新做。
+
+费用保护复核：私库三个Actions入口现全部disabled_manually（包含旧手动regression），生产及后续必要回归均使用已批准的公开标准runner；此前旧私库历史运行不作账单返还承诺。
