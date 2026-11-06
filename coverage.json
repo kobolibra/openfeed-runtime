@@ -184,8 +184,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "d16e70f789387258e7baf6d59226": {
-      "checked_at": "2026-11-06T04:43:22.107993+00:00",
-      "run_id": "42163566535",
+      "checked_at": "2026-11-06T05:54:20.919825+00:00",
+      "run_id": "42170537613",
       "result": {
         "status": "success",
         "found": 19,
@@ -389,7 +389,16 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "359aa798df9f6a2148c28e65cba3": {
-      "status": "not_tested"
+      "checked_at": "2026-11-06T05:54:20.919825+00:00",
+      "run_id": "42170537613",
+      "result": {
+        "status": "success",
+        "found": 0,
+        "inserted": 0,
+        "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "b908808ce01b5af7d359ee520cab": {
       "checked_at": "2026-11-05T22:48:16.587346+00:00",
@@ -464,7 +473,16 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "3ec1fb4da7d5967e5b136eb3db03": {
-      "status": "not_tested"
+      "checked_at": "2026-11-06T05:54:20.919825+00:00",
+      "run_id": "42170537613",
+      "result": {
+        "status": "success",
+        "found": 30,
+        "inserted": 1,
+        "message": "1 page(s), 30 unique item(s); unknown_dates=30"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "c32e683ece138c00a16b94e0ad54": {
       "checked_at": "2026-11-05T21:26:57.695419+00:00",
@@ -587,8 +605,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "4401a5b18d5dd07acc8ee80b9a65": {
-      "checked_at": "2026-11-06T04:33:35.110456+00:00",
-      "run_id": "42162567623",
+      "checked_at": "2026-11-06T05:54:20.919825+00:00",
+      "run_id": "42170537613",
       "result": {
         "status": "success",
         "found": 72,
