@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "sources": {
+    "132114da2be6a7af5f9cb6f59af3": {
+      "title": "Cantor \u00b7 Insights",
+      "deleted_at": "2026-11-06T08:01:04.579909+00:00",
+      "reason": "Explicit user request: remove Man, Eurasia and unresolved Cantor",
+      "history_archived_privately": true
+    },
+    "4eb10889d95da4ae84cfe4ab1d46": {
+      "title": "Man Group \u00b7 Insights",
+      "deleted_at": "2026-11-06T08:01:04.579909+00:00",
+      "reason": "Explicit user request: remove Man, Eurasia and unresolved Cantor",
+      "history_archived_privately": true
+    },
+    "95d1c47e63b41f814f17d344646a": {
+      "title": "Eurasia Group \u00b7 China Search",
+      "deleted_at": "2026-11-06T08:01:04.579909+00:00",
+      "reason": "Explicit user request: remove Man, Eurasia and unresolved Cantor",
+      "history_archived_privately": true
+    }
+  }
+}

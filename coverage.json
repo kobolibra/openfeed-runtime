@@ -420,18 +420,6 @@
       "identity_preserved": true,
       "scope": "single cloud observation, not long-term acceptance"
     },
-    "95d1c47e63b41f814f17d344646a": {
-      "checked_at": "2026-11-06T03:12:11.343148+00:00",
-      "run_id": "42154414944",
-      "result": {
-        "status": "error",
-        "found": 0,
-        "inserted": 0,
-        "message": "No valid items extracted; existing RSS was preserved"
-      },
-      "identity_preserved": true,
-      "scope": "single cloud observation, not long-term acceptance"
-    },
     "416de8491686141bd23c3bd9cba8": {
       "checked_at": "2026-11-06T06:55:39.421751+00:00",
       "run_id": "42176865534",
@@ -1440,18 +1428,6 @@
       "identity_preserved": true,
       "scope": "single cloud observation, not long-term acceptance"
     },
-    "132114da2be6a7af5f9cb6f59af3": {
-      "checked_at": "2026-11-06T06:04:31.268084+00:00",
-      "run_id": "42171511621",
-      "result": {
-        "status": "error",
-        "found": 0,
-        "inserted": 0,
-        "message": "Upstream HTTP 403"
-      },
-      "identity_preserved": true,
-      "scope": "single cloud observation, not long-term acceptance"
-    },
     "81b5366df03ba7abccbddefaa2c7": {
       "checked_at": "2026-11-06T04:53:38.342685+00:00",
       "run_id": "42164542257",
@@ -1688,18 +1664,6 @@
         "found": 100,
         "inserted": 1,
         "message": "1 page(s), 100 unique item(s); extraction limit reached; unknown_dates=100"
-      },
-      "identity_preserved": true,
-      "scope": "single cloud observation, not long-term acceptance"
-    },
-    "4eb10889d95da4ae84cfe4ab1d46": {
-      "checked_at": "2026-11-06T02:51:04.008813+00:00",
-      "run_id": "42152294936",
-      "result": {
-        "status": "error",
-        "found": 0,
-        "inserted": 0,
-        "message": "No valid items extracted; existing RSS was preserved"
       },
       "identity_preserved": true,
       "scope": "single cloud observation, not long-term acceptance"
