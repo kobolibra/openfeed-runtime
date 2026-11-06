@@ -1,5 +1,5 @@
 """Read-only source response evidence, committed only to a separate private ref."""
-import argparse,asyncio,hashlib,json,os,sqlite3,sys,time
+import argparse,asyncio,hashlib,json,os,re,sqlite3,sys,time
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from openfeed.security import fetch
@@ -18,5 +18,17 @@ async def probe(db,ident,output):
     (output/'response.bin').write_bytes(body)
     result={'source_id':ident,'final_url':final,'bytes':len(body),'response_sha256':hashlib.sha256(body).hexdigest(),'articles':len(articles),'selector':selector,'input_db_unchanged':hashlib.sha256(db.read_bytes()).hexdigest()==before,'production_written':False,'published':False}
     assert result['input_db_unchanged'];(output/'result.json').write_text(json.dumps(result,indent=2))
+async def probes(db,identifiers,output):
+    ids=list(dict.fromkeys(identifiers.split(',')))
+    if len(ids)>5 or any(not re.fullmatch('[a-f0-9]{20,64}',ident) for ident in ids):raise ValueError('Invalid bounded diagnostic IDs')
+    failed=False
+    for index,ident in enumerate(ids):
+        if index:await asyncio.sleep(60)
+        target=output/ident if len(ids)>1 else output
+        try:await probe(db,ident,target)
+        except Exception as error:
+            failed=True;target.mkdir(parents=True,exist_ok=True);(target/'error.json').write_text(json.dumps({'source_id':ident,'error':str(error),'production_written':False,'published':False},indent=2))
+    if failed:raise SystemExit(1)
+
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--db',type=Path,required=True);p.add_argument('--feed-id',required=True);p.add_argument('--output',type=Path,required=True);a=p.parse_args();os.umask(0o077);asyncio.run(probe(a.db,a.feed_id,a.output))
+    p=argparse.ArgumentParser();p.add_argument('--db',type=Path,required=True);p.add_argument('--feed-id',required=True);p.add_argument('--output',type=Path,required=True);a=p.parse_args();os.umask(0o077);asyncio.run(probes(a.db,a.feed_id,a.output))
