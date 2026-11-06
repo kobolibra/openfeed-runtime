@@ -22,7 +22,6 @@ services:
       browser-volume-init:
         condition: service_completed_successfully
       egress-proxy:
-    profiles: [browser]
         condition: service_started
     environment:
       OPENFEED_BROWSER_JOB_DIR: /browser-jobs
@@ -42,6 +41,7 @@ services:
     mem_limit: 800m
     init: true
   egress-proxy:
+    profiles: [browser]
     environment:
       OPENFEED_DNS_MODE: ${OPENFEED_DNS_MODE:-auto}
     build:
