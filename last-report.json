@@ -3,36 +3,26 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "b38bc1a473f6f10e07bb88a7def2",
-    "db44423d9c9c11a529bf77cca6fb",
-    "1192bfe3fc600887efa0ba6e8f10"
+    "00c8b28e8d6c8e70207d6c928f57",
+    "3e6e71ced7e2d7b4adc6e87d068c"
   ],
   "results": [
     {
-      "id": "b38bc1a473f6f10e07bb88a7def2",
+      "id": "00c8b28e8d6c8e70207d6c928f57",
+      "result": {
+        "status": "success",
+        "found": 30,
+        "inserted": 0,
+        "message": "1 page(s), 30 unique item(s); unknown_dates=30"
+      }
+    },
+    {
+      "id": "3e6e71ced7e2d7b4adc6e87d068c",
       "result": {
         "status": "success",
         "found": 0,
         "inserted": 0,
         "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
-      }
-    },
-    {
-      "id": "db44423d9c9c11a529bf77cca6fb",
-      "result": {
-        "status": "success",
-        "found": 10,
-        "inserted": 0,
-        "message": ""
-      }
-    },
-    {
-      "id": "1192bfe3fc600887efa0ba6e8f10",
-      "result": {
-        "status": "success",
-        "found": 3,
-        "inserted": 0,
-        "message": "1 page(s), 3 unique item(s); unknown_dates=3"
       }
     }
   ],
@@ -185,7 +175,7 @@
     },
     {
       "id": "3e6e71ced7e2d7b4adc6e87d068c",
-      "next_run": "2026-11-06T13:41:03+00:00",
+      "next_run": "2026-11-07T01:41:03+00:00",
       "schedule_phase_seconds": 6063
     },
     {
@@ -695,7 +685,7 @@
     },
     {
       "id": "00c8b28e8d6c8e70207d6c928f57",
-      "next_run": "2026-11-06T13:36:50+00:00",
+      "next_run": "2026-11-07T01:36:50+00:00",
       "schedule_phase_seconds": 5810
     },
     {
@@ -881,8 +871,8 @@
   ],
   "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 121.216,
+  "elapsed_seconds": 61.321,
   "input_db_unchanged": true,
-  "input_sha256": "170780caf029d74b75ab10eeca2c812f5754dfe4d5f2e3d5e15ce3ebce7b9085",
-  "shadow_sha256": "5ddb1677d8d41314f84db2df7bcd9454ce66a4c85150d2f482ee0efcfeaa2ea5"
+  "input_sha256": "4a3cd7a342859b9feb561a629fb298354dcb44412ae0814f20c1fb3a3a38327e",
+  "shadow_sha256": "8dcb7cfc3d2dc0c15677fc62656d74f0af02009a059d5dd7b33fc76d3c4b382a"
 }
