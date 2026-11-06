@@ -3,26 +3,36 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "df1b1d03d8267129ae36122ad4ae",
-    "16dc1431f0ff881305c8538482fc"
+    "c3d7cf91ab2b9b298d1fc57a39e7",
+    "936e9a2aea1b91691a2c48e5bc19",
+    "e7cb7af265d1d7d9339caac421c2"
   ],
   "results": [
     {
-      "id": "df1b1d03d8267129ae36122ad4ae",
+      "id": "c3d7cf91ab2b9b298d1fc57a39e7",
       "result": {
         "status": "success",
-        "found": 9,
+        "found": 16,
         "inserted": 0,
-        "message": "1 page(s), 9 unique item(s)"
+        "message": "1 page(s), 16 unique item(s)"
       }
     },
     {
-      "id": "16dc1431f0ff881305c8538482fc",
+      "id": "936e9a2aea1b91691a2c48e5bc19",
       "result": {
         "status": "success",
-        "found": 14,
+        "found": 0,
         "inserted": 0,
-        "message": "1 page(s), 14 unique item(s); unknown_dates=14"
+        "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
+      }
+    },
+    {
+      "id": "e7cb7af265d1d7d9339caac421c2",
+      "result": {
+        "status": "success",
+        "found": 4,
+        "inserted": 0,
+        "message": "1 page(s), 4 unique item(s); unknown_dates=4"
       }
     }
   ],
@@ -45,7 +55,7 @@
     },
     {
       "id": "936e9a2aea1b91691a2c48e5bc19",
-      "next_run": "2026-11-06T14:10:31+00:00",
+      "next_run": "2026-11-07T02:10:31+00:00",
       "schedule_phase_seconds": 7831
     },
     {
@@ -620,7 +630,7 @@
     },
     {
       "id": "c3d7cf91ab2b9b298d1fc57a39e7",
-      "next_run": "2026-11-06T14:06:18+00:00",
+      "next_run": "2026-11-07T02:06:18+00:00",
       "schedule_phase_seconds": 7578
     },
     {
@@ -850,7 +860,7 @@
     },
     {
       "id": "e7cb7af265d1d7d9339caac421c2",
-      "next_run": "2026-11-06T14:14:44+00:00",
+      "next_run": "2026-11-07T02:14:44+00:00",
       "schedule_phase_seconds": 8084
     },
     {
@@ -871,8 +881,8 @@
   ],
   "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 61.01,
+  "elapsed_seconds": 120.635,
   "input_db_unchanged": true,
-  "input_sha256": "b8b8d68f0fa6824be67db071c2594101d877e557f563824619077566a78701be",
-  "shadow_sha256": "590a492a1fe58da684494bd09e559346866b83feffdb25bd698e00509b78b057"
+  "input_sha256": "bbfc138814eceb5ad05ab0e016d0137b06dc4886d4e5b9d7b27c7763849626e6",
+  "shadow_sha256": "335fb58481ed9abf056566584dd662c7246420680a2070b08dfd9dad723094d3"
 }
