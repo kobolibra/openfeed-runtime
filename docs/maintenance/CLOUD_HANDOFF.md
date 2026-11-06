@@ -1,3 +1,5 @@
+> 最新：Actions优化已上线并连续自动实跑；先读CURRENT。平台环境计时不占运行机，应用pin14d068b，原生cron只作小时兜底。
+
 > 当前事实更新：2026-11-06T08:54:43.857375+00:00：云端生产切换已完成，原地址真实云发布/Pages/自动接续成功；管理界面留本机。先读CURRENT.md及TASKS_CLOUD.json。下文旧分阶段描述为历史合同，不是当前部署状态。
 
 > 2026-11-05当前部署：免费公库薄workflow已通过Chrome提交3f71d14并REST逐字校验，固定私库source b9516dab、私有state分支；两轮免费8源通过。每10分钟schedule已配置、Nov7 20:09北京时间自动停用。首条schedule事件尚未观察，生产仍Mac；不要重复让用户公开runtime/增加权限/手工提交。GitHub connector可transport失败，原生Chrome CUA现可用。

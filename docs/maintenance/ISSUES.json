@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T08:54:43.857375+00:00",
+  "updated": "2026-11-06T15:36:38.594329+00:00",
   "note": "这是问题台账，不是实时错误列表；需结合最新快照。",
   "issues": [
     {
@@ -127,6 +127,13 @@
       "summary": "本机管理桥读取云状态已验收，真实编辑链路尚未生产实测",
       "evidence": "ops/local_cloud_sync.py/local_cloud_ui.py；6+2隔离测试；实际/api/cloud-status=synced；自动审批拒绝未授权的真实测试编辑，未执行",
       "next_action": "用户正常使用真实编辑时核查云ack；如需主动改真实来源做端到端验收，先取得该测试改动的明确授权；异常拒绝覆盖并保留本机修改。"
+    },
+    {
+      "id": "CLOUD-006",
+      "status": "deployed_verified",
+      "summary": "移除运行机空等；保留平台计时可靠接续、按需容器与私密边界",
+      "evidence": "/Users/time/Documents/Codex/2026-11-05/users-time-documents-codex-2026-10-3/work/optimization-20261106/final-receipt.json",
+      "next_action": "观察正常周期和平台限制；不得退回未验证的纯原生cron方案。"
     }
   ]
 }

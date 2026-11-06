@@ -1,0 +1,75 @@
+{
+  "verified_at": "2026-11-06T15:36:38.594329+00:00",
+  "workflow_commit": "bf568e72fcf9a59f8384140a924592dd9d81cc79",
+  "runtime_source_pin": "14d068b0cf3fa3239c3862bec10bd048d13664be",
+  "automatic_chain": "multiple signed bot generations verified over several hours",
+  "platform_timer_wait_allocates_runner": false,
+  "native_cron": "hourly fallback only; observed long delays, not relied upon as sole scheduler",
+  "old_samples": [
+    {
+      "run_id": 42195974469,
+      "runtime_seconds": 137.0,
+      "sleeping_relay_seconds": 459.0
+    },
+    {
+      "run_id": 42194687240,
+      "runtime_seconds": 371.0,
+      "sleeping_relay_seconds": 225.0
+    },
+    {
+      "run_id": 42193391197,
+      "runtime_seconds": 140.0,
+      "sleeping_relay_seconds": 455.0
+    },
+    {
+      "run_id": 42192099674,
+      "runtime_seconds": 195.0,
+      "sleeping_relay_seconds": 401.0
+    }
+  ],
+  "new_samples": [
+    {
+      "run_id": 42232174246,
+      "runner_seconds": 209.0
+    },
+    {
+      "run_id": 42230672092,
+      "runner_seconds": 167.0
+    },
+    {
+      "run_id": 42229243271,
+      "runner_seconds": 168.0
+    }
+  ],
+  "old_average_runner_seconds": 595.75,
+  "new_average_runner_seconds": 181.33,
+  "sample_runner_reduction_percent": 69.6,
+  "comparison_limit": "Different real batches, observational comparison, not a same-workload benchmark",
+  "linux_full_tests_passed": 524,
+  "docker_smoke_run": 42200002379,
+  "docker_smoke": "HTTP plan without browser; isolated browser launch; input unchanged; zero source fetches",
+  "clock_security_tests": 30,
+  "data": {
+    "feeds": 168,
+    "items": 4106,
+    "status": {
+      "error": 2,
+      "healthy": 166
+    },
+    "original_4102_guid_first_seen_preserved": true,
+    "scope_phase_unchanged": true
+  },
+  "local_sync": {
+    "status": "synced",
+    "checked_at": "2026-11-06T15:35:42.391751+00:00",
+    "cloud_run_id": "42243184972",
+    "database_sha256": "1fa361faa6187f99901aac6707c985bfcc34927fabe8741e871575cb9bef6c23"
+  },
+  "private_workflows": "all disabled",
+  "paid_features_enabled": false,
+  "rss_urls_guids_changed": false,
+  "remaining_known_external_issues": [
+    "Julius/CEPR 403; preserve history"
+  ],
+  "rollback": "Restore previous known working signed-relay workflow if necessary, keeping latest private DB. Do not roll back to native-cron-only experiment or old database."
+}

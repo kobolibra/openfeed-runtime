@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-06T08:54:43.857375+00:00",
-  "current_focus": "云端生产已上线；管理留本机；168源166最近成功/2个403待独立处理",
+  "updated": "2026-11-06T15:36:38.594329+00:00",
+  "current_focus": "云端生产效率优化已验收：平台无运行机计时、按需浏览器/预检；保留原RSS和历史",
   "production_authority": "Private shadow-state branch is canonical production; Mac UI is a management mirror",
   "automatic_cloud_crawl_enabled": true,
   "private_repository_created": true,
   "paid_resources_enabled": false,
   "new_operations_review_block": null,
-  "latest_readonly_observation": "2026-11-06T08:49:58.218264+00:00",
+  "latest_readonly_observation": "2026-11-06T15:36:38.594329+00:00",
   "handoff_gate_after_new_publication_changes": "Current snapshot refreshed; gate result recorded in handoffs/latest.md",
   "tasks": [
     {
