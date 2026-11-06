@@ -1,0 +1,892 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html  class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="stylesheet" href="/css/normalize.min.css" />
+<link rel="stylesheet" href="/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/css/main.min.css?v=1.0" />
+<link rel="stylesheet" href="/css/slick.css" />
+<link rel="stylesheet" href="/css/eurasia-live.min.css" />
+<link rel="stylesheet" href="/css/jquery-ui.css" />
+<link rel="stylesheet" href="/css/ipad-ls.min.css" media="only screen and (max-width: 1024px)">
+<link rel="stylesheet" href="/css/ipad-p.min.css" media="only screen and (max-width: 768px)">
+<link rel="stylesheet" href="/css/mobile.min.css" media="only screen and (max-width: 767px)">
+
+<link rel="stylesheet" href="/css/feature-boxes.css" />
+
+<link rel="stylesheet" href="/js/fancybox/jquery.fancybox.css" />
+
+<link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
+
+<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png" />
+
+<link rel="shortcut icon" href="/img/favicon.ico">
+<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="//html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+<![endif]-->
+
+<script src="/js/jquery-1.11.2.min.js"></script>
+<script src="/js/jquery-ui.min.js"></script>
+
+<script src="https://use.typekit.net/syu0fhu.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '558254041400951');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1"
+src="https://www.facebook.com/tr?id=558254041400951&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+
+</head>
+
+
+<body class="globalSearch">
+<!-- -->
+<span class="js-prevent-default init-hidden"></span>
+<header class="font-industry-bold print-hidden">
+	<div class="js-go-back nav-mobile-go-back"></div>
+	<div class="container clearfix">
+		<a href="/" class="logo-v2">
+			<img src="/img/logo.svg" class="pdf-hidden" />
+		</a>
+		<!--<a href="/" class="logo">
+			<img src="/img/logo.png" alt="" class="pdf-hidden">
+		</a>-->
+		<div class="burger-menu init-hidden js-trigger-nav"></div>
+		<div class="user-nav-wrapper js-second-tier">
+			<div class="css-table">
+				<nav class="user-nav">
+					<form class="header-search init-hidden" action="/global-search-results" onSubmit="return validateForm(this);">
+						<input type="text" name="keyword" class="autoSuggest font-default" placeholder="Site Search" autocomplete="off" data-url="/ajax/all_suggest_1.cfm" >					
+						<input type="submit" class="btn-search " value="SEARCH">
+						<ul></ul>
+					</form>
+					<ul><li class="js-populate-me"></li></ul>
+				</nav>
+			</div>
+		</div>
+		<div class="user-nav-wrapper js-first-tier">
+			<div class="css-table">
+				<nav class="user-nav">
+					
+	<ul>
+    
+		
+			<li class="first-tier ">
+				
+				
+				<a href="/in-the-news">In The News</a>
+					
+				
+			</li>
+		
+			<li class="first-tier ">
+				
+				
+				<a href="/whoweare">Who We Are</a>
+					
+				
+									<ul class="second-tier">
+                                    	
+										<li>
+											<a href="/our-story">Our Story</a>
+										</li>
+										
+										<li>
+											<a href="/our-values">Our Values</a>
+										</li>
+										
+										<li>
+											<a href="/our-people">Our People</a>
+										</li>
+										
+										<li>
+											<a href="/for-the-media">For the Media</a>
+										</li>
+										
+										<li>
+											<a href="/contact-us">Contact Us</a>
+										</li>
+										
+									</ul>
+								
+								<div class="nav-box-content">
+												
+								</div>
+							
+			</li>
+		
+			<li class="first-tier ">
+				
+				
+				<a href="/services/whatwedo">What We Do</a>
+					
+				
+                    <ul class="second-tier">
+                    	
+                    	
+                        	<li >
+                                <a href="/services/political-risk-advisory">Political risk advisory</a>
+								
+                            </li>
+                        
+                        	<li >
+                                <a href="/services/management-consulting">Management consulting</a>
+								
+                            </li>
+                        
+                        	<li >
+                                <a href="/services/thought-leadership">Thought Leadership</a>
+								
+                            </li>
+                        
+                        	<li >
+                                <a href="/services/speaking-engagements">Speaking</a>
+								
+                            </li>
+                        
+                        	<li >
+                                <a href="/services/events">Events</a>
+								
+                            </li>
+                         
+                    </ul>
+					
+			</li>
+		
+			<li class="first-tier japannav-li">
+				
+					<a href="/services/japan" class="japannav  navitem_360" >
+				日本語</a>
+				
+                    <ul class="second-tier">
+                    	
+                        	<li >
+                                <a href="/services/about-us-japan">ユーラシアグループについて · 概要</a>
+								
+                            </li>
+                        
+                        	<li >
+                                <a href="/services/in-the-news-japan"> ニュース · メディア</a>
+								
+                            </li>
+                        
+                        	<li >
+                                <a href="/services/services-japan"> サービス</a>
+								
+                            </li>
+                        
+                        	<li >
+                                <a href="/services/contact-japan"> お問い合わせ</a>
+								
+                            </li>
+                         
+                    </ul>
+                    
+			</li>
+		
+	</ul>
+
+					<span class="small-nav">
+			
+
+			<a href="/careers" class=" navitem_360" >
+				Careers
+			</a>
+			
+		
+			
+
+			<a href="https://app.eurasiagroup.net/" class=" navitem_237"  target="_blank">
+				Client Portal
+			</a>
+			
+		</span>
+					<ul class="mobile-search-link">
+						<li class="first-tier" >
+							<a href="javascript:void(0)" class="js-search-tier">SEARCH</a>
+						</li>
+					</ul>
+					<a href="javascript:void(0)" class="search-icon js-search"></a>				
+					<form class="header-search init-hidden" action="/global-search-results" onSubmit="return validateForm(this);">
+						<input type="text" name="keyword" class="autoSuggest font-default" placeholder="Site Search" autocomplete="off" data-url="/ajax/all_suggest_1.cfm" >					
+						<input type="submit" class="btn-search" value="SEARCH" >
+						<ul></ul>
+					</form>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="print-only print-header">
+	<img src="/img/logo-footer-2x-1.png" alt="" />
+</div>
+
+
+<style>
+
+
+	table.cfdump_wddx,
+	table.cfdump_xml,
+	table.cfdump_struct,
+	table.cfdump_varundefined,
+	table.cfdump_array,
+	table.cfdump_query,
+	table.cfdump_cfc,
+	table.cfdump_object,
+	table.cfdump_binary,
+	table.cfdump_udf,
+	table.cfdump_udfbody,
+	table.cfdump_varnull,
+	table.cfdump_udfarguments {
+		font-size: xx-small;
+		font-family: verdana, arial, helvetica, sans-serif;
+	}
+
+	table.cfdump_wddx th,
+	table.cfdump_xml th,
+	table.cfdump_struct th,
+	table.cfdump_varundefined th,
+	table.cfdump_array th,
+	table.cfdump_query th,
+	table.cfdump_cfc th,
+	table.cfdump_object th,
+	table.cfdump_binary th,
+	table.cfdump_udf th,
+	table.cfdump_udfbody th,
+	table.cfdump_varnull th,
+	table.cfdump_udfarguments th {
+		text-align: left;
+		color: white;
+		padding: 5px;
+	}
+
+	table.cfdump_wddx td,
+	table.cfdump_xml td,
+	table.cfdump_struct td,
+	table.cfdump_varundefined td,
+	table.cfdump_array td,
+	table.cfdump_query td,
+	table.cfdump_cfc td,
+	table.cfdump_object td,
+	table.cfdump_binary td,
+	table.cfdump_udf td,
+	table.cfdump_udfbody td,
+	table.cfdump_varnull td,
+	table.cfdump_udfarguments td {
+		padding: 3px;
+		background-color: #ffffff;
+		vertical-align : top;
+	}
+
+	table.cfdump_wddx {
+		background-color: #000000;
+	}
+	table.cfdump_wddx th.wddx {
+		background-color: #444444;
+	}
+
+
+	table.cfdump_xml {
+		background-color: #888888;
+	}
+	table.cfdump_xml th.xml {
+		background-color: #aaaaaa;
+	}
+	table.cfdump_xml td.xml {
+		background-color: #dddddd;
+	}
+
+	table.cfdump_struct {
+		background-color: #0000cc ;
+	}
+	table.cfdump_struct th.struct {
+		background-color: #4444cc ;
+	}
+	table.cfdump_struct td.struct {
+		background-color: #ccddff;
+	}
+
+	table.cfdump_varundefined {
+		background-color: #CC3300 ;
+	}
+	table.cfdump_varundefined th.varundefined {
+		background-color: #CC3300 ;
+	}
+	table.cfdump_varundefined td.varundefined {
+		background-color: #ccddff;
+	}
+
+	table.cfdump_array {
+		background-color: #006600 ;
+	}
+	table.cfdump_array th.array {
+		background-color: #009900 ;
+	}
+	table.cfdump_array td.array {
+		background-color: #ccffcc ;
+	}
+
+	table.cfdump_query {
+		background-color: #884488 ;
+	}
+	table.cfdump_query th.query {
+		background-color: #aa66aa ;
+	}
+	table.cfdump_query td.query {
+		background-color: #ffddff ;
+	}
+
+
+	table.cfdump_cfc {
+		background-color: #ff0000;
+	}
+	table.cfdump_cfc th.cfc{
+		background-color: #ff4444;
+	}
+	table.cfdump_cfc td.cfc {
+		background-color: #ffcccc;
+	}
+
+
+	table.cfdump_object {
+		background-color : #ff0000;
+	}
+	table.cfdump_object th.object{
+		background-color: #ff4444;
+	}
+
+	table.cfdump_binary {
+		background-color : #eebb00;
+	}
+	table.cfdump_binary th.binary {
+		background-color: #ffcc44;
+	}
+	table.cfdump_binary td {
+		font-size: x-small;
+	}
+	table.cfdump_udf {
+		background-color: #aa4400;
+	}
+	table.cfdump_udf th.udf {
+		background-color: #cc6600;
+	}
+	table.cfdump_udfarguments {
+		background-color: #dddddd;
+	}
+	table.cfdump_udfarguments th {
+		background-color: #eeeeee;
+		color: #000000;
+	}
+
+</style> 
+			<table class="cfdump_struct">
+			<tr><th class="struct" colspan="2">struct</th></tr> 
+					<tr>
+					<td class="struct">Detail</td>
+					<td>
+					It has been configured as http://localhost:8993/solr 
+					</td>
+					</tr>
+					
+					<tr>
+					<td class="struct">Message</td>
+					<td>
+					SOLR server is not accessible. 
+					</td>
+					</tr>
+					
+					<tr>
+					<td class="struct">StackTrace</td>
+					<td>
+					coldfusion.tagext.search.core.SolrExceptions$SolrNotRunning: SOLR server is not accessible.
+	at coldfusion.tagext.search.SearchTag.doSearch(SearchTag.java:237)
+	at coldfusion.tagext.search.SearchTag.doStartTag(SearchTag.java:190)
+	at coldfusion.runtime.CfJspPage._emptyTcfTag(CfJspPage.java:5274)
+	at cfglobal2ecfc1413333869$funcFNCFILESEARCHBYTYPE.runFunction(C:\inetpub\wwwroot\clients\production_frontend\com\global.cfc:179)
+	at coldfusion.runtime.UDFMethod.invoke(UDFMethod.java:654)
+	at coldfusion.runtime.UDFMethod$ReturnTypeFilter.invoke(UDFMethod.java:584)
+	at coldfusion.runtime.UDFMethod$ArgumentCollectionFilter.invoke(UDFMethod.java:547)
+	at coldfusion.filter.FunctionAccessFilter.invoke(FunctionAccessFilter.java:95)
+	at coldfusion.runtime.UDFMethod.runFilterChain(UDFMethod.java:470)
+	at coldfusion.runtime.UDFMethod.runFilterChain(UDFMethod.java:443)
+	at coldfusion.runtime.UDFMethod.invoke(UDFMethod.java:315)
+	at coldfusion.runtime.TemplateProxy.invoke(TemplateProxy.java:975)
+	at coldfusion.runtime.TemplateProxy.invoke(TemplateProxy.java:696)
+	at coldfusion.runtime.TemplateProxy.invoke(TemplateProxy.java:503)
+	at coldfusion.runtime.CfJspPage._invoke(CfJspPage.java:4327)
+	at coldfusion.runtime.CfJspPage._invoke(CfJspPage.java:4290)
+	at cfsite_search_results2einc27763015.runPage(C:\inetpub\wwwroot\clients\production_frontend\includes\site_search_results.inc:26)
+	at coldfusion.runtime.CfJspPage.invoke(CfJspPage.java:257)
+	at coldfusion.tagext.lang.IncludeTag.handlePageInvoke(IncludeTag.java:749)
+	at coldfusion.tagext.lang.IncludeTag.doStartTag(IncludeTag.java:578)
+	at coldfusion.runtime.CfJspPage._emptyTcfTag(CfJspPage.java:5274)
+	at cfindex2ecfm1608311978.runPage(C:\inetpub\wwwroot\clients\production_frontend\index.cfm:18)
+	at coldfusion.runtime.CfJspPage.invoke(CfJspPage.java:257)
+	at coldfusion.tagext.lang.IncludeTag.handlePageInvoke(IncludeTag.java:749)
+	at coldfusion.tagext.lang.IncludeTag.doStartTag(IncludeTag.java:578)
+	at coldfusion.filter.CfincludeFilter.invoke(CfincludeFilter.java:65)
+	at coldfusion.filter.ApplicationFilter.invoke(ApplicationFilter.java:573)
+	at coldfusion.filter.RequestMonitorFilter.invoke(RequestMonitorFilter.java:43)
+	at coldfusion.filter.MonitoringFilter.invoke(MonitoringFilter.java:40)
+	at coldfusion.filter.PathFilter.invoke(PathFilter.java:162)
+	at coldfusion.filter.IpFilter.invoke(IpFilter.java:45)
+	at coldfusion.filter.ExceptionFilter.invoke(ExceptionFilter.java:97)
+	at coldfusion.filter.ClientScopePersistenceFilter.invoke(ClientScopePersistenceFilter.java:28)
+	at coldfusion.filter.BrowserFilter.invoke(BrowserFilter.java:38)
+	at coldfusion.filter.NoCacheFilter.invoke(NoCacheFilter.java:60)
+	at coldfusion.filter.GlobalsFilter.invoke(GlobalsFilter.java:38)
+	at coldfusion.filter.DatasourceFilter.invoke(DatasourceFilter.java:22)
+	at coldfusion.filter.CachingFilter.invoke(CachingFilter.java:62)
+	at coldfusion.CfmServlet.service(CfmServlet.java:231)
+	at coldfusion.bootstrap.BootstrapServlet.service(BootstrapServlet.java:311)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:197)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at coldfusion.monitor.event.MonitoringServletFilter.doFilter(MonitoringServletFilter.java:46)
+	at coldfusion.bootstrap.BootstrapFilter.doFilter(BootstrapFilter.java:47)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at jdk.internal.reflect.GeneratedMethodAccessor126.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.intergral.fusionreactor.j2ee.filterchain.WrappedFilterChain.doFilter(WrappedFilterChain.java:134)
+	at com.intergral.fusionreactor.j2ee.filter.FusionReactorRequestHandler.doNext(FusionReactorRequestHandler.java:772)
+	at com.intergral.fusionreactor.j2ee.filter.FusionReactorRequestHandler.doHttpServletRequest(FusionReactorRequestHandler.java:344)
+	at com.intergral.fusionreactor.j2ee.filter.FusionReactorRequestHandler.doFusionRequest(FusionReactorRequestHandler.java:207)
+	at com.intergral.fusionreactor.j2ee.filter.FusionReactorRequestHandler.handle(FusionReactorRequestHandler.java:809)
+	at com.intergral.fusionreactor.j2ee.filter.FusionReactorCoreFilter.doFilter(FusionReactorCoreFilter.java:36)
+	at jdk.internal.reflect.GeneratedMethodAccessor138.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.intergral.fusionreactor.j2ee.filterchain.WrappedFilterChain.doFilter(WrappedFilterChain.java:71)
+	at jdk.internal.reflect.GeneratedMethodAccessor122.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.intergral.fusionreactor.agent.filter.FusionReactorStaticFilter.doFilter(FusionReactorStaticFilter.java:54)
+	at com.intergral.fusionreactor.agent.pointcuts.NewFilterChainPointCut$1.invoke(NewFilterChainPointCut.java:42)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.ajp.AjpProcessor.service(AjpProcessor.java:452)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:834) 
+					</td>
+					</tr>
+					
+					<tr>
+					<td class="struct">Suppressed</td>
+					<td>
+					
+				<table class="cfdump_array">
+				<tr><th class="array" colspan="2">array[empty]
+				</th></tr>
+				
+			</table>
+		
+					</td>
+					</tr>
+					
+					<tr>
+					<td class="struct">TagContext</td>
+					<td>
+					
+				<table class="cfdump_array">
+				<tr><th class="array" colspan="2">array
+				</th></tr>
+				
+					<tr><td class="array">1</td>
+					<td> 
+			<table class="cfdump_struct">
+			<tr><th class="struct" colspan="2">struct</th></tr> 
+					<tr>
+					<td class="struct">COLUMN</td>
+					<td>
+					0 
+					</td>
+					</tr>
+					
+					<tr>
+					<td class="struct">ID</td>
+					<td>
+					CFSEARCH 
+					</td>
+					</tr>
+					
+					<tr>
+					<td class="struct">LINE</td>
+					<td>
+					179 
+					</td>
+					</tr>
+					
+					<tr>
+					<td class="struct">RAW_TRACE</td>
+					<td>
+					at cfglobal2ecfc1413333869$funcFNCFILESEARCHBYTYPE.runFunction(C:\inetpub\wwwroot\clients\production_frontend\com\global.cfc:179) 
+					</td>
+					</tr>
+					
+					<tr>
+					<td class="struct">TEMPLATE</td>
+					<td>
+					C:\inetpub\wwwroot\clients\production_frontend\com\global.cfc 
+					</td>
+					</tr>
+					
+					<tr>
+					<td class="struct">TYPE</td>
+					<td>
+					CFML 
+					</td>
+					</tr>
+					
+			</table>
+		</td></tr> 
+					<tr><td class="array">2</td>
+					<td> 
+			<table class="cfdump_struct">
+			<tr><th class="struct" colspan="2">struct</th></tr> 
+					<tr>
+					<td class="struct">COLUMN</td>
+					<td>
+					0 
+					</td>
+					</tr>
+					
+					<tr>
+					<td class="struct">ID</td>
+					<td>
+					CF_TEMPLATEPROXY 
+					</td>
+					</tr>
+					
+					<tr>
+					<td class="struct">LINE</td>
+					<td>
+					26 
+					</td>
+					</tr>
+					
+					<tr>
+					<td class="struct">RAW_TRACE</td>
+					<td>
+					at cfsite_search_results2einc27763015.runPage(C:\inetpub\wwwroot\clients\production_frontend\includes\site_search_results.inc:26) 
+					</td>
+					</tr>
+					
+					<tr>
+					<td class="struct">TEMPLATE</td>
+					<td>
+					C:\inetpub\wwwroot\clients\production_frontend\includes\site_search_results.inc 
+					</td>
+					</tr>
+					
+					<tr>
+					<td class="struct">TYPE</td>
+					<td>
+					CFML 
+					</td>
+					</tr>
+					
+			</table>
+		</td></tr> 
+					<tr><td class="array">3</td>
+					<td> 
+			<table class="cfdump_struct">
+			<tr><th class="struct" colspan="2">struct</th></tr> 
+					<tr>
+					<td class="struct">COLUMN</td>
+					<td>
+					0 
+					</td>
+					</tr>
+					
+					<tr>
+					<td class="struct">ID</td>
+					<td>
+					CFINCLUDE 
+					</td>
+					</tr>
+					
+					<tr>
+					<td class="struct">LINE</td>
+					<td>
+					18 
+					</td>
+					</tr>
+					
+					<tr>
+					<td class="struct">RAW_TRACE</td>
+					<td>
+					at cfindex2ecfm1608311978.runPage(C:\inetpub\wwwroot\clients\production_frontend\index.cfm:18) 
+					</td>
+					</tr>
+					
+					<tr>
+					<td class="struct">TEMPLATE</td>
+					<td>
+					C:\inetpub\wwwroot\clients\production_frontend\index.cfm 
+					</td>
+					</tr>
+					
+					<tr>
+					<td class="struct">TYPE</td>
+					<td>
+					CFML 
+					</td>
+					</tr>
+					
+			</table>
+		</td></tr> 
+			</table>
+		
+					</td>
+					</tr>
+					
+					<tr>
+					<td class="struct">Type</td>
+					<td>
+					Application 
+					</td>
+					</tr>
+					
+					<tr>
+					<td class="struct">url</td>
+					<td>
+					http://localhost:8993/solr 
+					</td>
+					</tr>
+					
+			</table>
+		
+<SCRIPT>
+$(".js-email-req").change(function(){
+	if ($(".js-email-req").prop('checked')) {
+		$("#privacyPolicy-error").remove();
+	}
+})
+
+$(".js-email-submit").submit(function(){
+	$d = $(this)
+	if ($(".js-email-req").prop('checked')) {
+		$("#privacyPolicy-error").remove();
+	} else {
+		if ($("#privacyPolicy-error").length < 1) {
+			$('<label id="privacyPolicy-error" class="error" style="color:#ff2f00">This field is required.</label>').insertAfter('.custom-checkbox')
+		}
+		
+		return false;
+	}
+})
+</SCRIPT>
+
+
+
+
+<!-- -->
+				
+<footer class="footer_block font-industry">
+	<div class="container clearfix">
+		<div class="pull-left footer-contents">
+			<ul class="social-icons print-hidden clearfix">
+				<li class="twitter"><a href="http://twitter.com/EurasiaGroup" target="_blank"><span class="sr-only">Twitter</span></a></li>
+				<li class="facebook"><a href="http://www.facebook.com/pages/Eurasia-Group/96710501132" target="_blank"><span class="sr-only">Facebook</span></a></li>
+				<li class="linkedin"><a href="https://www.linkedin.com/company/eurasia-group" target="_blank"><span class="sr-only">LinkedIn</span></a></li>
+				<!-- <li class="youtube"><a href="https://www.youtube.com/channel/UCdxtKCndefqYg9y2-U9KHhg" target="_blank"><span class="sr-only">YouTube</span></a></li> -->
+				<li class="rss"><a href="/subscribe"><span class="sr-only">RSS</span></a></li>
+				
+			</ul>
+			<div class="ipad-mobile-only"></div>
+			
+			<ul class="footer-nav print-hidden clearfix">
+									
+						<li><a href="/">Home</a></li>
+										
+						<li><a href="/contact-us">Contact Us</a></li>
+										
+						<li><a href="https://www.gzeromedia.com/subscribe/" target="_blank">Subscribe</a></li>
+										
+						<li><a href="/site-map">Site Map</a></li>
+										
+						<li><a href="/legal-notices">Privacy Policy</a></li>
+										
+						<li><a href="/accessibility">Accessibility</a></li>
+										
+						<li><a href="/terms-of-use">Terms Of Use</a></li>
+					
+			</ul>
+			<a class="footer-logo ipad-mobile-only" href="/"></a>
+			<p class="copywrite">&copy; Eurasia Group 2026. Any copying or distribution of Eurasia Group materials is prohibited. <span class="site-by">Site by <a href="http://www.odgis.com/?eg" target="_blank">Odgis+Co</a> and <a href="https://www.icvmhawk.com/" target="_blank">ICVM Hawk</a>.</span></p>
+
+		</div>
+		<a class="pull-right footer-logo ipad-mobile-hidden" href="/"></a>
+		
+<!-- 		
+-->
+	</div>
+</footer>
+
+<!-- Cookie Stuff -->
+
+<style>
+ #cookie-banner{background-color:#B32535;color:#fff;padding:25px 0;position:fixed;bottom:0;width:100%;left:0;z-index:10000;box-sizing:border-box;opacity:1;transition:all .5s ease 0s;-webkit-transition:all .5s ease 0s;font-size:18px}#cookie-banner.faded,#cookie-banner.hidden{bottom:-100%}#cookie-banner p{margin:0;line-height:26px;font-weight:600}#cookie-banner .rtf{padding-right:290px}#cookie-banner a{color:#fff;text-decoration:underline}#cookie-banner a.close-btn{position:absolute;right:30px;top:50%;margin-top:-22px;text-decoration:none;background-color:#f7323f}#cookie-banner a.close-btn:hover{background-color:#000}@media (max-width:768px){#cookie-banner{font-size:16px}#cookie-banner .container{text-align:center}#cookie-banner .rtf{padding-right:0}#cookie-banner a.close-btn{position:static;margin:10px auto 0;font-size:16px;height: auto;
+    padding: 6px 20px 4px 20px;
+    line-height: normal;font-family: "industry-n5", "industry", sans-serif; font-weight: 500}}@media print{#cookie-banner{display:none}}
+</style>
+<div id="cookie-banner" class="hidden">  
+	<div class="container">
+	  <div class="rtf clearfix">    
+	    <p>
+    		We have updated our <a href="/legal-notices#privacypolicy" target="_blank" rel="noopener">Privacy Policy</a> and <a href="/terms-of-use" target="_blank" rel="noopener">Terms of Use</a> for Eurasia Group and its affiliates to clarify the types of data we collect, how we collect it, how we use data and with whom we share data. This website uses cookies. By using our website you consent to our Terms and Conditions and Privacy Policy, including the transfer of your personal data to the United States from your country of residence (if different), and our use of cookies as described in our <a href="/legal-notices#cookiepolicy" target="_blank" rel="noopener">Cookie Policy</a>.
+	    </p>  
+	  </div>  
+	  <a class="js-close-banner close-btn btn-block font-industry-bold" href="javascript:void(0)">CLOSE</a>
+  </div>
+</div>
+<script type="text/javascript" src="/scripts/js.cookie.min.js"></script>
+<script>
+  
+  var ls_val = "agreedToCookies";
+  var cFlag = Cookies.get(ls_val);
+
+  function setcFlag() {
+    document.getElementById("cookie-banner").classList.add('faded');
+    setTimeout(function(){document.getElementById("cookie-banner").classList.add('hidden'); },500);
+    Cookies.set(ls_val, '1', { expires: 365 } );
+  }
+
+  if (typeof cFlag == 'undefined' || cFlag != '1') {
+    setTimeout(function(){document.getElementById("cookie-banner").classList.remove('hidden');},2000);
+    document.querySelector(".js-close-banner").addEventListener("click", setcFlag);
+  } else {
+    var elem = document.getElementById("cookie-banner");
+    if(elem !== null)
+      elem.parentNode.removeChild(elem);
+  }
+
+</script>
+
+<!-- end of cookie stuff -->
+
+<link media="screen" rel="stylesheet" href="/css/colorbox.css">
+<script type="text/javascript" src="/js/jquery.colorbox-min.js"></script>
+<script>
+
+
+var cboxOptions
+$(document).ready(function(e) {
+
+	cboxOptions = {
+		width: '90%',
+		height: '90%',
+		maxWidth: '750px',
+		maxHeight: '570px'
+	}
+    $('a.playVid').colorbox(cboxOptions);
+});
+	
+$(window).resize(function(){
+    $.colorbox.resize({
+      width: window.innerWidth > parseInt(cboxOptions.maxWidth) ? cboxOptions.maxWidth : cboxOptions.width,
+      height: window.innerHeight > parseInt(cboxOptions.maxHeight) ? cboxOptions.maxHeight : cboxOptions.height
+    });
+});
+	
+</script><script src="/js/jquery.slick.min.js"></script>
+<script src="/js/jquery.bxslider.min.js"></script>
+<script src="/js/fancybox/jquery.fancybox.js"></script>
+<script src="/js/main.js?v=1.4"></script>
+
+ 
+<!-- Hotjar Tracking Code for https://eurasiagroup.net -->
+
+<script>
+
+    (function(h,o,t,j,a,r){
+
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+
+        h._hjSettings={hjid:1709622,hjsv:6};
+
+        a=o.getElementsByTagName('head')[0];
+
+        r=o.createElement('script');r.async=1;
+
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+
+        a.appendChild(r);
+
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+
+</script>
+
+<!-- Twitter universal website tag code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','o29wp');
+twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+
+
+<div class="popup-holder init-hidden">
+	<div class="popup lightbox" id="popup-social">
+		<div class="social-header font-industry-medium blue-or-red">
+			SHARE
+		</div>
+		<div class="holder social-holder">
+			<strong class="title"><span>Eurasia</span></strong>
+			<p class="popup-text">You may share a link to this page on any of the sites listed below.</p>
+			
+			<ul class="shareIcons clearfix">
+				<li class="linkedin"><a href="http://www.linkedin.com/shareArticle?mini=true&title=&summary=&source=www.eurasiagroup.net&url=https://www.eurasiagroup.net/global-search-results&keyword=China" target="_blank"><span></span>LinkedIn</a></li>
+				<li class="facebook"><a href="http://www.facebook.com/share.php?u=https://www.eurasiagroup.net/global-search-results&keyword=China" target="_blank"><span></span>Facebook</a></li>
+				<li class="twitter"><a href="https://twitter.com/share?url=https://www.eurasiagroup.net/global-search-results&keyword=China" target="_blank"><span></span>X</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="load-overlay"><div class="spinner-text text-center all-caps font-industry-bold">Searching...</div></div>
+</body>
+</html> 

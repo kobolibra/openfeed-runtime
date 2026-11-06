@@ -1,0 +1,11 @@
+{
+  "source_id": "95d1c47e63b41f814f17d344646a",
+  "final_url": "https://www.eurasiagroup.net/global-search-results?keyword=China",
+  "bytes": 30579,
+  "response_sha256": "781ece6456eaa0009541fd10857735e432cccf0fb1a1e07eaaf51539b8d33e4c",
+  "articles": 0,
+  "selector": "(//section[contains(@class,'search-section-publications')]//li[contains(@class,'has-image')][.//p[contains(@class,'news-abstract')]/a[contains(concat(' ',normalize-space(@class),' '),' bold ')]])[position()<=100]",
+  "input_db_unchanged": true,
+  "production_written": false,
+  "published": false
+}
