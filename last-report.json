@@ -3,36 +3,26 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "dc84124b59341b4a2ee85458bae1",
-    "1ff79b2b49af40183397003d1e6a",
-    "aaaa6fe16f2220d3446b7e2401a0"
+    "d4195c70b086e1a849e1266295e5",
+    "36a875f2330c7b86f1bab851a010"
   ],
   "results": [
     {
-      "id": "dc84124b59341b4a2ee85458bae1",
+      "id": "d4195c70b086e1a849e1266295e5",
       "result": {
         "status": "success",
-        "found": 12,
+        "found": 24,
         "inserted": 0,
-        "message": "1 page(s), 12 unique item(s); unknown_dates=12"
+        "message": "1 page(s), 24 unique item(s); unknown_dates=24"
       }
     },
     {
-      "id": "1ff79b2b49af40183397003d1e6a",
+      "id": "36a875f2330c7b86f1bab851a010",
       "result": {
         "status": "success",
-        "found": 30,
-        "inserted": 1,
-        "message": "1 page(s), 30 unique item(s); unknown_dates=30"
-      }
-    },
-    {
-      "id": "aaaa6fe16f2220d3446b7e2401a0",
-      "result": {
-        "status": "success",
-        "found": 14,
+        "found": 16,
         "inserted": 0,
-        "message": "1 page(s), 14 unique item(s); unknown_dates=14"
+        "message": "1 page(s), 16 unique item(s); unknown_dates=16"
       }
     }
   ],
@@ -590,7 +580,7 @@
     },
     {
       "id": "36a875f2330c7b86f1bab851a010",
-      "next_run": "2026-11-06T15:05:15+00:00",
+      "next_run": "2026-11-07T03:05:15+00:00",
       "schedule_phase_seconds": 11115
     },
     {
@@ -870,7 +860,7 @@
     },
     {
       "id": "d4195c70b086e1a849e1266295e5",
-      "next_run": "2026-11-06T15:01:03+00:00",
+      "next_run": "2026-11-07T03:01:03+00:00",
       "schedule_phase_seconds": 10863
     },
     {
@@ -881,8 +871,8 @@
   ],
   "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 121.172,
+  "elapsed_seconds": 61.688,
   "input_db_unchanged": true,
-  "input_sha256": "d245f0c24f7a679f77f8de0df4dd109c521fb71fc350d7a257320097ee441a72",
-  "shadow_sha256": "009b09a06eeb182ed6120d9552d1a7b6c020ebbdf1622e5323017ed3843fb972"
+  "input_sha256": "dd03a9ed6dcc07259ecf44664a00700385021184e49e0778a3886669e52d8c0e",
+  "shadow_sha256": "6b4ba500385bf8bb573a5330c58bbc452110df92d79bf1dc369d7f4a7ae5d34c"
 }
