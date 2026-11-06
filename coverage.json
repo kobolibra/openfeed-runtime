@@ -644,7 +644,16 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "936e9a2aea1b91691a2c48e5bc19": {
-      "status": "not_tested"
+      "checked_at": "2026-11-06T05:24:00.128903+00:00",
+      "run_id": "42167556210",
+      "result": {
+        "status": "success",
+        "found": 0,
+        "inserted": 0,
+        "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "b107d4252ea0aa97e2da71ff1ed0": {
       "checked_at": "2026-11-06T04:53:38.342685+00:00",
@@ -731,8 +740,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "eab7c97f85c7acad581b4df1a474": {
-      "checked_at": "2026-11-06T04:33:35.110456+00:00",
-      "run_id": "42162567623",
+      "checked_at": "2026-11-06T05:24:00.128903+00:00",
+      "run_id": "42167556210",
       "result": {
         "status": "success",
         "found": 100,
@@ -1745,7 +1754,16 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "b6d176e550c91408a6fd0e5c7269": {
-      "status": "not_tested"
+      "checked_at": "2026-11-06T05:24:00.128903+00:00",
+      "run_id": "42167556210",
+      "result": {
+        "status": "success",
+        "found": 0,
+        "inserted": 0,
+        "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "263e0efaca3a799363c747ea1e13": {
       "checked_at": "2026-11-06T04:23:18.362277+00:00",
@@ -1760,12 +1778,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "aa79d80f04758b239618ca451c3d": {
-      "checked_at": "2026-11-06T04:33:35.110456+00:00",
-      "run_id": "42162567623",
+      "checked_at": "2026-11-06T05:24:00.128903+00:00",
+      "run_id": "42167556210",
       "result": {
         "status": "success",
         "found": 14,
-        "inserted": 1,
+        "inserted": 0,
         "message": "1 page(s), 14 unique item(s); unknown_dates=14"
       },
       "identity_preserved": true,
