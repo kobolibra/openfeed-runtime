@@ -67,7 +67,16 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "96908363d036fb892f9d26df303e": {
-      "status": "not_tested"
+      "checked_at": "2026-11-06T02:29:33.923741+00:00",
+      "run_id": "42150202033",
+      "result": {
+        "status": "success",
+        "found": 6,
+        "inserted": 0,
+        "message": "1 page(s), 6 unique item(s); unknown_dates=6"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "aaaa6fe16f2220d3446b7e2401a0": {
       "status": "not_tested"
@@ -895,7 +904,16 @@
       "status": "not_tested"
     },
     "3ab48d8d725c91abcc3f423217b6": {
-      "status": "not_tested"
+      "checked_at": "2026-11-06T02:29:33.923741+00:00",
+      "run_id": "42150202033",
+      "result": {
+        "status": "success",
+        "found": 100,
+        "inserted": 0,
+        "message": "1 page(s), 100 unique item(s); extraction limit reached"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "dc84124b59341b4a2ee85458bae1": {
       "status": "not_tested"
@@ -940,7 +958,16 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "34a75f7c670dc6110f22df3cb6c2": {
-      "status": "not_tested"
+      "checked_at": "2026-11-06T02:29:33.923741+00:00",
+      "run_id": "42150202033",
+      "result": {
+        "status": "success",
+        "found": 1,
+        "inserted": 0,
+        "message": "1 page(s), 1 unique item(s)"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "c17d6f96fa7ba97986add02f8a98": {
       "checked_at": "2026-11-05T22:48:16.587346+00:00",
@@ -1081,7 +1108,16 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "1cdb06f59e215f1506a980c3b207": {
-      "status": "not_tested"
+      "checked_at": "2026-11-06T02:29:33.923741+00:00",
+      "run_id": "42150202033",
+      "result": {
+        "status": "success",
+        "found": 6,
+        "inserted": 0,
+        "message": "1 page(s), 6 unique item(s); unknown_dates=6"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "e9dadbc6101abc3b47a5bca9caa8": {
       "status": "not_tested"
