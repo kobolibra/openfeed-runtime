@@ -1,13 +1,10 @@
 {
-  "run_id": "42185367481",
-  "previous_sha256": "baee7c643fce05d6ebdfdce6d424ed34abf910eccd7ba42a146965ba93d759b9",
-  "database_sha256": "4bf95f17c4b83f39ef895792a056e90b23921dec628fade02ce29b73efc5234e",
-  "scope": "Production cutover merged 168-source state; Mac scheduler/publisher stopped",
+  "run_id": "42187231139",
+  "previous_sha256": "4bf95f17c4b83f39ef895792a056e90b23921dec628fade02ce29b73efc5234e",
+  "database_sha256": "1b26505c901c85d238d5f5040bf498a364a77f786f1bb36e2149a7719618d306",
+  "scope": "production cloud state",
   "source_sha": "e1054f460fa20002d204704aa8554efa59fddd70",
-  "previous_state_commit": "d9f98040182ad9efbb763270b4497ccd6c5a2852",
-  "rss_manifest_sha256": "be64673b68b5e10eefbbd4dcb6317a2fa274a2bf079afe494d0813cdebaab860",
-  "source_identity_preserved": true,
-  "cutover_at": "2026-11-06T08:21:53.167613+00:00",
-  "final_mac_snapshot_sha256": "ad300098edcc78a6eb3bc2eacf64bf886469ee544f1d98503a4d1c097801c62a",
-  "union_items": 4102
+  "previous_state_commit": "dde5223d7254dfff47911fba67121cd33867ca89",
+  "rss_manifest_sha256": "eded10ae97bc4a6467494ee490c6ae81498a25e9170794e770786315d985d9ea",
+  "source_identity_preserved": true
 }
