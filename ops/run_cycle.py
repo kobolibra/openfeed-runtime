@@ -82,7 +82,7 @@ async def cycle(db,output,mode,max_feeds,budget,fixtures,feed_ids,wait_for_start
                 global_delay=max(0,60-(now-last)) if last is not None else 0
                 domain_delay=max(0,300-(now-row[0])) if row else 0
                 delay=max(global_delay,domain_delay)
-                reason='global_start_gap' if global_delay else 'domain_start_gap'
+                reason='domain_start_gap' if domain_delay>global_delay else 'global_start_gap'
                 if delay:
                     # Wait only when the unchanged persisted gap fits the budget.
                     if not wait_for_start or delay+1>=remaining:

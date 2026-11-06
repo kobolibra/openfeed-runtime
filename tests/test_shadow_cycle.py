@@ -57,7 +57,7 @@ def test_three_post_pages_and_repeat_preserve_guid_and_first_seen(tmp_path):
  first=sqlite3.connect(out/'shadow.sqlite3');identity=first.execute('select guid,first_seen_at from items order by guid').fetchall();phase=first.execute('select schedule_phase_seconds from feeds').fetchone();first.close()
  # Immediate restart must retain the global start gap rather than fetch again.
  blocked=tmp_path/'blocked';r=invoke(out/'shadow.sqlite3',f,blocked,m);assert r.returncode==0,r.stderr
- d=json.loads((blocked/'report.json').read_text());assert d['results']==[] and d['deferred'][0]['reason']=='global_start_gap'
+ d=json.loads((blocked/'report.json').read_text());assert d['results']==[] and d['deferred'][0]['reason']=='domain_start_gap'
  # After the global gap but inside the domain gap, the domain guard applies.
  c=sqlite3.connect(out/'shadow.sqlite3');c.execute('update shadow_cycle_starts set started=started-61');c.commit();c.close()
  blocked=tmp_path/'domain-blocked';r=invoke(out/'shadow.sqlite3',f,blocked,m);assert r.returncode==0,r.stderr
