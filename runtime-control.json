@@ -1,7 +1,10 @@
 {
-  "mode": "shadow",
-  "publish_enabled": false,
-  "mac_writer_stopped": false,
-  "shadow_until": "2026-11-07T12:09:45.802208+00:00",
-  "scope": "bounded 48-hour validation; Mac remains production"
+  "mode": "production",
+  "publish_enabled": true,
+  "mac_writer_stopped": true,
+  "scope": "bounded 48-hour validation; Mac remains production",
+  "final_mac_snapshot_sha256": "ad300098edcc78a6eb3bc2eacf64bf886469ee544f1d98503a4d1c097801c62a",
+  "cutover_at": "2026-11-06T08:21:53.167613+00:00",
+  "operation_duration": "long_term_free_user_authorized",
+  "local_management_location": "Mac loopback; no public admin or secrets"
 }

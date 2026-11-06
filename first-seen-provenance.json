@@ -1,0 +1,345 @@
+[
+  {
+    "feed_id": "75ed9b961c603c710d884a710e4c",
+    "guid": "c5137a4f091ce0b88ca1ea4fbb5885198f6661584250811c32dd629559e16347",
+    "mac_first_seen_at": "2026-11-05T18:48:32.952232+00:00",
+    "cloud_first_seen_at": "2026-11-05T21:26:46.426380+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "75ed9b961c603c710d884a710e4c",
+    "guid": "e91d72871e99171c67219bc2207c4ad3cf032bc9bba6599c539287ab5eda9fe9",
+    "mac_first_seen_at": "2026-11-05T18:48:32.952232+00:00",
+    "cloud_first_seen_at": "2026-11-05T21:26:46.426380+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "6331d34fefc82a4878f20374e167",
+    "guid": "b6b460cc6903e3275d42de92fe5823662b9c30bed574d4feec4e3c9dbee0ad50",
+    "mac_first_seen_at": "2026-11-05T08:42:09.917043+00:00",
+    "cloud_first_seen_at": "2026-11-05T22:25:37.271552+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "f6bab3047fb0d17ce44759aebc23",
+    "guid": "e704738715445935f5ba2a04ee7352385cc0c4f32c89cc3d6466fabdf893bcb1",
+    "mac_first_seen_at": "2026-11-06T02:02:31.345331+00:00",
+    "cloud_first_seen_at": "2026-11-05T22:27:36.657905+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "f3a3f345cb25a68a0ed3494f64b8",
+    "guid": "135e241dc9784cd8ba30d99903c35b360bbc0c415a7afcbf7e0afd9078c1d6b2",
+    "mac_first_seen_at": "2026-11-06T02:14:34.066702+00:00",
+    "cloud_first_seen_at": "2026-11-05T23:06:05.761882+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "32e834db8257908a0c3a65af6380",
+    "guid": "c32c6a6c5ac8078f5a8d84214b98ae364f62886d3c0868aaec320ad48a4982a8",
+    "mac_first_seen_at": "2026-11-05T08:33:44.856107+00:00",
+    "cloud_first_seen_at": "2026-11-05T23:15:20.831579+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "32e834db8257908a0c3a65af6380",
+    "guid": "06e46bbe3bc668bb4dbdaa0979a2c8ba7fdc8659fd8dcc9ab6a5e9dc79c80ab8",
+    "mac_first_seen_at": "2026-11-05T08:33:44.856107+00:00",
+    "cloud_first_seen_at": "2026-11-05T23:15:20.831579+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "936118451e7c30bce94e2b27eefe",
+    "guid": "6f3441ffc17b76fa84f6d36ad71e33f17654d523be1863a559c1b60304508576",
+    "mac_first_seen_at": "2026-11-06T02:28:32.935086+00:00",
+    "cloud_first_seen_at": "2026-11-06T01:49:01.435172+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "3e5d5d28ba616b756241c0a1d5c1",
+    "guid": "d64e1ec0bc3ca84d43eebcd5e52127f37b83aac6065ac64d31552b1e270d383b",
+    "mac_first_seen_at": "2026-11-06T02:32:33.637620+00:00",
+    "cloud_first_seen_at": "2026-11-06T01:59:05.199176+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "3e5d5d28ba616b756241c0a1d5c1",
+    "guid": "a9f5cf3b44c8b16936fb5a35090c157ef326990f7f67d38a7b2a85daf3d4f645",
+    "mac_first_seen_at": "2026-11-06T02:32:33.637620+00:00",
+    "cloud_first_seen_at": "2026-11-06T01:59:05.199176+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "3e5d5d28ba616b756241c0a1d5c1",
+    "guid": "f415dc65e428200b8a6ae0f9fde52ee138094c9faa6860b29f7a3f817b82045f",
+    "mac_first_seen_at": "2026-11-06T02:32:33.637620+00:00",
+    "cloud_first_seen_at": "2026-11-06T01:59:05.199176+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "8d3f0932248a8dba20382b54a3e2",
+    "guid": "7c3f9b1cb4e02311fc2e5b17f62e6f59239f94a84c797977479fff08b62d950c",
+    "mac_first_seen_at": "2026-11-06T02:34:33.849463+00:00",
+    "cloud_first_seen_at": "2026-11-06T02:08:00.837782+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "e6ded12656af1d9314e2ff76a8a1",
+    "guid": "b6ddc11cf04a93e87f65d3f4ed2aff3624bbd9f317c8fffef3a8368535cfa6d7",
+    "mac_first_seen_at": "2026-11-06T02:38:36.069915+00:00",
+    "cloud_first_seen_at": "2026-11-06T02:18:22.043859+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "a5108315a70ff1a860a0d4658bbf",
+    "guid": "7641ea346e17be1aca5dce48c02ed4ce8f102974728b99353893af31d987c407",
+    "mac_first_seen_at": "2026-11-05T12:59:30.161747+00:00",
+    "cloud_first_seen_at": "2026-11-06T03:01:55.459503+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "f451dd0c3d136d6d947486868007",
+    "guid": "5a6931662777458757752237d0f2a2215647e7613eb2ee412c6369e7521b698b",
+    "mac_first_seen_at": "2026-11-06T03:03:35.982612+00:00",
+    "cloud_first_seen_at": "2026-11-06T03:20:09.474425+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "0f26170745cc27fae679d587b933",
+    "guid": "d64e1ec0bc3ca84d43eebcd5e52127f37b83aac6065ac64d31552b1e270d383b",
+    "mac_first_seen_at": "2026-11-06T03:04:34.043923+00:00",
+    "cloud_first_seen_at": "2026-11-06T03:21:08.723706+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "df1b1d03d8267129ae36122ad4ae",
+    "guid": "df21c1e1a8c1e70f61488cb001a8df388d17bacb0e481af0a3422ecccd7e9689",
+    "mac_first_seen_at": "2026-11-06T03:06:35.706891+00:00",
+    "cloud_first_seen_at": "2026-11-06T03:22:08.817785+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "e7cb7af265d1d7d9339caac421c2",
+    "guid": "bdd5bf43dd11cf8a15c221f514c93cb03a1f4e19e48e704be2a78c751972ea0c",
+    "mac_first_seen_at": "2026-11-05T14:14:49.982983+00:00",
+    "cloud_first_seen_at": "2026-11-06T03:30:49.040848+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "5212e04a4df16d4dd515c6d42559",
+    "guid": "731ed190b317cafa6fb17c2d7b5f92d1974f85a2a2afcb01d807afde5d3b3442",
+    "mac_first_seen_at": "2026-11-05T14:27:36.895708+00:00",
+    "cloud_first_seen_at": "2026-11-06T03:32:56.420757+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "8389032946da1f30a08c5055d886",
+    "guid": "6b163e46b55c183116d308db8db2eae29a5cda04cd65177b79645260855202c1",
+    "mac_first_seen_at": "2026-11-05T12:09:47.472027+00:00",
+    "cloud_first_seen_at": "2026-11-06T03:47:45.358686+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "73e7bbee1f53155010dc341b69ac",
+    "guid": "bbceda62fbde2a79fb8cf62ffd2a26190a70a02f1ff7855491580eddbc8e946d",
+    "mac_first_seen_at": "2026-11-05T15:45:45.133094+00:00",
+    "cloud_first_seen_at": "2026-11-06T03:59:14.733040+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "ced67fb8de120a2c2dcce160c07d",
+    "guid": "30e73eebfda37701ded19100886bca7c01e50e02807b9dc9fe34512adf7328a9",
+    "mac_first_seen_at": "2026-11-06T04:00:05.262185+00:00",
+    "cloud_first_seen_at": "2026-11-06T04:03:17.124756+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "f0ce0ac0c2d5fff18126e0c0562d",
+    "guid": "eb75a6b09ed09a8e9e3df49208a06d912ad6050531f7b5537bd0b901c042cdd1",
+    "mac_first_seen_at": "2026-11-06T04:08:30.608902+00:00",
+    "cloud_first_seen_at": "2026-11-06T04:08:54.246768+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "f0ce0ac0c2d5fff18126e0c0562d",
+    "guid": "57e1a61c8b9ceef3140cf848164e51f6462082e7f13a4a123bd47628e8bf18c8",
+    "mac_first_seen_at": "2026-11-06T04:08:30.608902+00:00",
+    "cloud_first_seen_at": "2026-11-06T04:08:54.246768+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "f0ce0ac0c2d5fff18126e0c0562d",
+    "guid": "7a4f0cb5dfb807c6a7f096ed30fbb3bef58805bee50c88228eece92045976c72",
+    "mac_first_seen_at": "2026-11-06T04:08:30.608902+00:00",
+    "cloud_first_seen_at": "2026-11-06T04:08:54.246768+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "263e0efaca3a799363c747ea1e13",
+    "guid": "8959e36a9f88ae4fd937154b12f5cf3e75807fd6b6bde8b69c20dec29761bdfb",
+    "mac_first_seen_at": "2026-11-06T03:25:34.621440+00:00",
+    "cloud_first_seen_at": "2026-11-06T04:18:08.108183+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "694dbeab087f3ed0ca6f243a435b",
+    "guid": "bc540a59798665a90aa6721b96988ba3469ef045043ea5edd921fdbe9412aafe",
+    "mac_first_seen_at": "2026-11-06T04:46:24.784925+00:00",
+    "cloud_first_seen_at": "2026-11-06T04:21:07.003380+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "694dbeab087f3ed0ca6f243a435b",
+    "guid": "33bf39010a1e88b6f4298d3147944c5b8dd14e370c81b3f16df1a15fce0969fb",
+    "mac_first_seen_at": "2026-11-06T04:46:24.784925+00:00",
+    "cloud_first_seen_at": "2026-11-06T04:21:07.003380+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "694dbeab087f3ed0ca6f243a435b",
+    "guid": "e22d04b314a4ed0b98bd064f8c97db2319d2ae0744d59ef4473d343896ef5158",
+    "mac_first_seen_at": "2026-11-06T04:46:24.784925+00:00",
+    "cloud_first_seen_at": "2026-11-06T04:21:07.003380+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "694dbeab087f3ed0ca6f243a435b",
+    "guid": "43015dd9a2880838acf5e3d7d1b7bd8323b7f8fc5122a46b29859b295dcb8b75",
+    "mac_first_seen_at": "2026-11-06T04:46:24.784925+00:00",
+    "cloud_first_seen_at": "2026-11-06T04:21:07.003380+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "aa79d80f04758b239618ca451c3d",
+    "guid": "ccc4d745e1498d9c0ae7ef3f0396d7a9b6d50faec892334c73d39c57f5d925f6",
+    "mac_first_seen_at": "2026-11-06T05:15:51.038337+00:00",
+    "cloud_first_seen_at": "2026-11-06T04:31:20.114741+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "76cef2b248308d8c8948ac4dce42",
+    "guid": "328740621ef7ec2105b478206b2e043131302d6f1d0b4752ec977958e3bb084a",
+    "mac_first_seen_at": "2026-11-05T18:06:22.402369+00:00",
+    "cloud_first_seen_at": "2026-11-06T04:41:11.220521+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "76cef2b248308d8c8948ac4dce42",
+    "guid": "0d7e2b4e5806848f9f0be2b5904dd892a078fed689b4f14b3faab647cee84c93",
+    "mac_first_seen_at": "2026-11-05T18:06:22.402369+00:00",
+    "cloud_first_seen_at": "2026-11-06T04:41:11.220521+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "76cef2b248308d8c8948ac4dce42",
+    "guid": "56e3b4524f970e132ae3bca54974d7f14b86ba7e390ced8c13624e8432951e5a",
+    "mac_first_seen_at": "2026-11-05T18:06:22.402369+00:00",
+    "cloud_first_seen_at": "2026-11-06T04:41:11.220521+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "772e3af9bb4db92095756ce4d940",
+    "guid": "3c3c069c77788a3858d33875ba2cc40bd10b65a108c35aeee79bcdf72cad5ba4",
+    "mac_first_seen_at": "2026-11-06T07:09:41.638944+00:00",
+    "cloud_first_seen_at": "2026-11-06T04:49:30.442776+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "811d717a73c0b4bbe48616d78842",
+    "guid": "1c2e6f539f6d84f419b98541a5863ca5b07e8664b7692da49ede5095bfeeadf3",
+    "mac_first_seen_at": "2026-11-06T04:16:57.047218+00:00",
+    "cloud_first_seen_at": "2026-11-06T05:29:19.233541+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "1ff79b2b49af40183397003d1e6a",
+    "guid": "b11088ef716129fa95bb1a81e08fa5cd59aee2351785a8c94bda30c8feee4e09",
+    "mac_first_seen_at": "2026-11-06T04:22:52.382109+00:00",
+    "cloud_first_seen_at": "2026-11-06T05:34:02.585485+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "1ff79b2b49af40183397003d1e6a",
+    "guid": "3ee04af8647fa83a5098a35cfa96fd642336aa45f086b9e1fc4442c8a12f2688",
+    "mac_first_seen_at": "2026-11-06T04:22:52.382109+00:00",
+    "cloud_first_seen_at": "2026-11-06T05:34:02.585485+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "1ff79b2b49af40183397003d1e6a",
+    "guid": "6fdebdf0643390555e1821288210e073222a468d01a5868bce25b54c2919ad96",
+    "mac_first_seen_at": "2026-11-06T04:22:52.382109+00:00",
+    "cloud_first_seen_at": "2026-11-06T05:34:02.585485+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "1ff79b2b49af40183397003d1e6a",
+    "guid": "2ae48bda119ef48ba251b4b80d7b7c5e7ded31cf0f3af2ddeaa1d2b371506837",
+    "mac_first_seen_at": "2026-11-06T04:22:52.382109+00:00",
+    "cloud_first_seen_at": "2026-11-06T05:34:02.585485+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "1ff79b2b49af40183397003d1e6a",
+    "guid": "cf77c3d740a6f0142b712437466dade2a82d9e211256731394ddf0609be4f185",
+    "mac_first_seen_at": "2026-11-06T04:22:52.382109+00:00",
+    "cloud_first_seen_at": "2026-11-06T05:34:02.585485+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "1ff79b2b49af40183397003d1e6a",
+    "guid": "1dbb5f70514c3ffdbc1e1fb7e6827103f8dd9bf92102a1b3c79da0554059801a",
+    "mac_first_seen_at": "2026-11-06T04:22:52.382109+00:00",
+    "cloud_first_seen_at": "2026-11-06T05:34:02.585485+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "1ff79b2b49af40183397003d1e6a",
+    "guid": "3badec691bd20d00af94c5f381949e64d4cbd4894ab23e0f24a843bcce94c6a8",
+    "mac_first_seen_at": "2026-11-05T14:52:42.800587+00:00",
+    "cloud_first_seen_at": "2026-11-06T05:34:02.585485+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "3ec1fb4da7d5967e5b136eb3db03",
+    "guid": "db93da32c718a9185343efdfd4af42d4ecc73b0a17a816f319de7fef8468166e",
+    "mac_first_seen_at": "2026-11-05T15:39:01.461857+00:00",
+    "cloud_first_seen_at": "2026-11-06T05:54:09.997099+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "c32e683ece138c00a16b94e0ad54",
+    "guid": "a4963ed674ea78edcb21fb6fdd26dc337801e91af174ba9bdbea04582361dd5f",
+    "mac_first_seen_at": "2026-11-06T06:40:06.713868+00:00",
+    "cloud_first_seen_at": "2026-11-06T06:43:15.744053+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "75ed9b961c603c710d884a710e4c",
+    "guid": "b66485712c070b681a8732b258e368e0f63cf562442b1e9ca2372d6374dc1444",
+    "mac_first_seen_at": "2026-11-06T06:48:33.179676+00:00",
+    "cloud_first_seen_at": "2026-11-06T06:51:30.565334+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "75ed9b961c603c710d884a710e4c",
+    "guid": "8163db03e6ee9eb85fcc47a6d86acf55da10cc98ef8dab4c8e8b657d2ef3c726",
+    "mac_first_seen_at": "2026-11-06T06:48:33.179676+00:00",
+    "cloud_first_seen_at": "2026-11-06T06:51:30.565334+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "9de058f25996c675723754e58c24",
+    "guid": "30709bb9ac21fade5c668f5f1e5fb52a5ddb43a5a055ecde9816e4743325641c",
+    "mac_first_seen_at": "2026-11-05T15:09:36.509279+00:00",
+    "cloud_first_seen_at": "2026-11-06T07:21:03.361324+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  },
+  {
+    "feed_id": "8e0482e5b14d62a7eb44e554e981",
+    "guid": "327e56cc51ffe83fd0de020bac87e5b8ee6b635b93fb575fc5550eeeecc7a819",
+    "mac_first_seen_at": "2026-11-06T07:51:39.010701+00:00",
+    "cloud_first_seen_at": "2026-11-06T08:10:15.866375+00:00",
+    "selected": "Mac production first_seen; cloud provenance retained here"
+  }
+]
