@@ -54,6 +54,13 @@ async def cycle(db,output,mode,max_feeds,budget,fixtures,feed_ids,wait_for_start
         # Explicit IDs are a deliberate fixture/manual shadow check only;
         # normal cycles use due() including persisted recovery candidates.
         candidates=[f for f in all_feeds if f['id'] in feed_ids and f['enabled']] if feed_ids else app.store.due(10000)
+        if wait_for_start and mode!='plan':
+            # Give distinct hosts their first turn before waiting for a sibling.
+            seen=set();first=[];siblings=[]
+            for candidate in candidates:
+                host=urlsplit(candidate['recipe'].get('fetch_url') or candidate['source_url']).hostname
+                (siblings if host in seen else first).append(candidate);seen.add(host)
+            candidates=first+siblings
         report={'mode':mode,'shadow_only':True,'published':False,'selected':[],'results':result,'deferred':[]}
         # Persist starts in the shadow DB so a subsequent cycle based on this
         # checkpoint cannot evade spacing by restarting the Python process.
@@ -63,7 +70,7 @@ async def cycle(db,output,mode,max_feeds,budget,fixtures,feed_ids,wait_for_start
             if len(result)>=max_feeds:
                 report['deferred'].append({'id':f['id'],'reason':'max_feeds'});continue
             host=urlsplit(f['recipe'].get('fetch_url') or f['source_url']).hostname
-            if host in used:
+            if host in used and (not wait_for_start or mode=='plan'):
                 report['deferred'].append({'id':f['id'],'reason':'same_host'});continue
             remaining=budget-(time.monotonic()-started)
             if remaining<=0:
@@ -77,9 +84,8 @@ async def cycle(db,output,mode,max_feeds,budget,fixtures,feed_ids,wait_for_start
                 delay=max(global_delay,domain_delay)
                 reason='global_start_gap' if global_delay else 'domain_start_gap'
                 if delay:
-                    # Only global spacing is worth waiting for inside a bounded
-                    # batch. Domain siblings stay for a later tick.
-                    if not wait_for_start or domain_delay or delay+1>=remaining:
+                    # Wait only when the unchanged persisted gap fits the budget.
+                    if not wait_for_start or delay+1>=remaining:
                         report['deferred'].append({'id':f['id'],'reason':reason});continue
                     await asyncio.sleep(delay)
                     now=time.time()
