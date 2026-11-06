@@ -3,7 +3,7 @@
 All application output stays in the ephemeral runner's private log. No public
 RSS publishing or production cutover occurs in this command.
 """
-import argparse,hashlib,json,os,shutil,sqlite3,subprocess,sys
+import argparse,hashlib,json,os,re,shutil,sqlite3,subprocess,sys
 from pathlib import Path
 from datetime import datetime,timezone
 from shadow_checkpoint import promote
@@ -20,6 +20,16 @@ def identities(path):
         return (set(c.execute('SELECT id,schedule_phase_seconds FROM feeds')),
                 set(c.execute('SELECT feed_id,guid,first_seen_at FROM items')))
     finally:c.close()
+
+def shadow_targets(control,environ):
+    value=environ.get('OPENFEED_SHADOW_TARGET_IDS','').strip()
+    if not value:return []
+    if control.get('mode')!='shadow' or environ.get('OPENFEED_ALLOW_SHADOW_TARGETS')!='true':
+        raise ValueError('Explicit shadow targets require an owner bootstrap in shadow mode')
+    ids=list(dict.fromkeys(value.split(',')))
+    if len(ids)>5 or any(not re.fullmatch('[a-f0-9]{20,64}',x) for x in ids):
+        raise ValueError('Invalid bounded shadow target IDs')
+    return ids
 
 def tick(run_id,public_checkout=None):
     state=ROOT/'private-state';db=state/'openfeed.sqlite3'
@@ -40,13 +50,14 @@ def tick(run_id,public_checkout=None):
         if deadline.tzinfo is None:raise ValueError('Shadow deadline must include timezone')
         if datetime.now(timezone.utc)>=deadline:
             return {'shadow_only':True,'published':False,'processed':0,'reason':'validation_deadline_reached'}
+    targets=shadow_targets(control,os.environ)
     previous=run('git','rev-parse','HEAD',cwd=state)
     before=identities(db)
     io=ROOT/'cloud-io';io.mkdir(mode=0o700);shutil.copyfile(db,io/'input.sqlite3')
     run('sudo','chown','-R','10001:10001',str(io))
     compose=['docker','compose','-f',str(ROOT/'compose.cloud.yaml')]
     try:
-        run(*compose,'run','--build','--rm','cycle','--input-db','/cloud-io/input.sqlite3','--output','/cloud-io/cycle','--mode','shadow-live','--max-feeds','4','--budget-seconds','330','--wait-for-start')
+        run(*compose,'run','--build','--rm','cycle','--input-db','/cloud-io/input.sqlite3','--output','/cloud-io/cycle','--mode','shadow-live','--max-feeds',str(max(4,len(targets))),'--budget-seconds','330','--wait-for-start',*[arg for ident in targets for arg in ['--feed-id',ident]])
     finally:
         run(*compose,'down','--volumes')
         run('sudo','chown','-R',str(os.getuid())+':'+str(os.getgid()),str(io))
