@@ -4,6 +4,7 @@ from pathlib import Path
 from datetime import datetime,timezone
 from export_db import export_db
 from publish_static import sync_files
+from pages_build import build_published_commit
 from openfeed.scheduling import publication_slot
 
 BASE='https://kobolibra.github.io/openfeed-feeds'
@@ -42,4 +43,6 @@ def publish_committed_state(state,public_repo):
             git(public_repo,'-c','user.name=OpenFeed Cloud Publisher','-c','user.email=openfeed@users.noreply.github.com','commit','-m','Update OpenFeed RSS snapshots')
         ahead=int(git(public_repo,'rev-list','--count','origin/main..HEAD'))
         if ahead:git(public_repo,'push','origin','HEAD:main')
-        return {'result':'pushed' if ahead else 'unchanged','changed_files':len(changed),'feeds':report['feeds'],'commit':git(public_repo,'rev-parse','HEAD')}
+        commit=git(public_repo,'rev-parse','HEAD')
+        pages=build_published_commit(commit)
+        return {'result':'pushed' if ahead else 'unchanged','changed_files':len(changed),'feeds':report['feeds'],'commit':commit,'pages':pages}

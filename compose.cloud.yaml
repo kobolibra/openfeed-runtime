@@ -66,6 +66,7 @@ services:
       OPENFEED_BROWSER_SANDBOXED_WORKER: '1'
       OPENFEED_BROWSER_JOB_DIR: /browser-jobs
       OPENFEED_ENABLE_SCHEDULER: '0'
+      OPENFEED_MAX_FETCH_BYTES: '8000000'
     volumes:
     - browser-jobs:/browser-jobs
     - ./cloud-io:/cloud-io
