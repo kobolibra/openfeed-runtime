@@ -3,26 +3,36 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "9ba09558fb3b7fdf34768dfeecbb",
-    "f6bab3047fb0d17ce44759aebc23"
+    "139a43ef9fbf25faac5eb96b0dea",
+    "24ba3f8f2edd5be1043e25cdd271",
+    "e182f39fee8d45ac923dcddfd7a1"
   ],
   "results": [
     {
-      "id": "9ba09558fb3b7fdf34768dfeecbb",
+      "id": "139a43ef9fbf25faac5eb96b0dea",
       "result": {
         "status": "success",
-        "found": 12,
+        "found": 9,
         "inserted": 0,
-        "message": "1 page(s), 12 unique item(s)"
+        "message": "1 page(s), 9 unique item(s); unknown_dates=9"
       }
     },
     {
-      "id": "f6bab3047fb0d17ce44759aebc23",
+      "id": "24ba3f8f2edd5be1043e25cdd271",
       "result": {
         "status": "success",
-        "found": 15,
+        "found": 2,
         "inserted": 0,
-        "message": "1 page(s), 15 unique item(s); unknown_dates=15"
+        "message": "1 page(s), 2 unique item(s); unknown_dates=2"
+      }
+    },
+    {
+      "id": "e182f39fee8d45ac923dcddfd7a1",
+      "result": {
+        "status": "success",
+        "found": 3,
+        "inserted": 0,
+        "message": "1 page(s), 3 unique item(s); unknown_dates=3"
       }
     }
   ],
@@ -365,7 +375,7 @@
     },
     {
       "id": "24ba3f8f2edd5be1043e25cdd271",
-      "next_run": "2026-11-06T08:58:56+00:00",
+      "next_run": "2026-11-06T20:58:56+00:00",
       "schedule_phase_seconds": 32336
     },
     {
@@ -660,7 +670,7 @@
     },
     {
       "id": "e182f39fee8d45ac923dcddfd7a1",
-      "next_run": "2026-11-06T09:03:09+00:00",
+      "next_run": "2026-11-06T21:03:09+00:00",
       "schedule_phase_seconds": 32589
     },
     {
@@ -790,7 +800,7 @@
     },
     {
       "id": "139a43ef9fbf25faac5eb96b0dea",
-      "next_run": "2026-11-06T08:54:44+00:00",
+      "next_run": "2026-11-06T20:54:44+00:00",
       "schedule_phase_seconds": 32084
     },
     {
@@ -871,8 +881,8 @@
   ],
   "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 60.715,
+  "elapsed_seconds": 120.806,
   "input_db_unchanged": true,
-  "input_sha256": "0ad3905de9dab971ff70bb1ffa26746271c5cd953465837e6ffb4e823b06af12",
-  "shadow_sha256": "37949cf657a42c480c5cb70d3449b90cfcce6b918a7cc2375db4f0236d7c6db7"
+  "input_sha256": "bb72e10fae74f0cf1f569ae4003e464251a3b4ddbcc6f152bbd9881835065799",
+  "shadow_sha256": "e031367f4ce6e811b280ffa310dfb0782efdcda38c5af364e4494e7a0f30a7f9"
 }
