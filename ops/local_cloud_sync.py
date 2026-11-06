@@ -1,10 +1,10 @@
 """Local-only bridge. Config edits wait for the current cloud cycle, then commit with CAS; cloud scheduling is never disabled."""
 import os,sys,subprocess,sqlite3,json,hashlib,httpx,base64,time,datetime,fcntl,tempfile,shutil
 from pathlib import Path
-BASE=Path('/Users/time/Documents/Codex/2026-10-22/referenced-chatgpt-conversation-this-is-an-3');SRC=BASE/'work/local-trial/source';sys.path.insert(0,str(SRC));sys.path.insert(0,str(SRC/'ops'))
+BASE=Path('/Users/time/Documents/Codex/2026-10-22/referenced-chatgpt-conversation-this-is-an-3');SRC=Path(__file__).resolve().parents[1];sys.path.insert(0,str(SRC));sys.path.insert(0,str(SRC/'ops'))
 from openfeed.storage import Store
 from export_db import export_db
-SYNC_DIR=SRC/'.openfeed-local/cloud-sync';SYNC_DIR.mkdir(mode=0o700,exist_ok=True)
+SYNC_DIR=SRC/'.openfeed-local/cloud-sync'
 DOCKER=['/opt/homebrew/bin/docker','--host','unix:///Users/time/Documents/Codex/.openfeed-colima/openfeed/docker.sock'];PY=BASE/'work/venv312/bin/python'
 FIELDS=['title','description','source_url','kind','recipe','interval_minutes','enabled','schedule_phase_seconds']
 def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
@@ -137,7 +137,7 @@ def cycle():
   local_state('synced',cloud_run_id=remote['checkpoint'].get('run_id'),database_sha256=identity)
  finally:g.close()
 def main():
- os.umask(0o077)
+ os.umask(0o077);SYNC_DIR.mkdir(mode=0o700,parents=True,exist_ok=True)
  if len(sys.argv)>1 and sys.argv[1]=='initialize':
   p=SYNC_DIR/'baseline.json';assert not p.exists();p.write_text(json.dumps(configs(Path(sys.argv[2]))));print('Initialized local configuration baseline');return
 
