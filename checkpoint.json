@@ -1,17 +1,10 @@
 {
-  "run_id": "42182374969",
-  "previous_sha256": "4c7b313dc28e13f7993284d3930c3d073b60293457784ef1be255a1535f05040",
-  "database_sha256": "baee7c643fce05d6ebdfdce6d424ed34abf910eccd7ba42a146965ba93d759b9",
+  "run_id": "42185367481",
+  "previous_sha256": "baee7c643fce05d6ebdfdce6d424ed34abf910eccd7ba42a146965ba93d759b9",
+  "database_sha256": "dd2820ecb53837d38df86d68ccb5329c95edd2e738b7458fabf913b9c78187b3",
   "scope": "private scheduled shadow only; Mac remains production",
   "source_sha": "e1054f460fa20002d204704aa8554efa59fddd70",
-  "previous_state_commit": "3f4f59a124636a09fb0d5d1a00e78d38aa230834",
-  "rss_manifest_sha256": "9fc1658a37cf47ae0e74fa70b090ac29ed7e0823db14f63bb4b44ec559d68c25",
-  "source_identity_preserved": true,
-  "maintenance_operation": "user_requested_source_removal",
-  "user_deleted_source_ids": [
-    "4eb10889d95da4ae84cfe4ab1d46",
-    "95d1c47e63b41f814f17d344646a",
-    "132114da2be6a7af5f9cb6f59af3"
-  ],
-  "identity_scope": "All remaining source scopes/phases/GUID/first_seen preserved; user explicitly deleted these two sources"
+  "previous_state_commit": "408b27026595e7123731dc232c0a1d1c42a842b6",
+  "rss_manifest_sha256": "5f6fb7357134bf939b819bff1d740aecf1ef1cb132d105666829c3d9fc45fe15",
+  "source_identity_preserved": true
 }
