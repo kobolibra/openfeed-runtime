@@ -3,26 +3,36 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "3e0edd5750433218436481c33691",
-    "e6ded12656af1d9314e2ff76a8a1"
+    "cfc9ad34ec3112b741ae80f567a6",
+    "1281f3238ff3691e5ab36d49b5af",
+    "3ab48d8d725c91abcc3f423217b6"
   ],
   "results": [
     {
-      "id": "3e0edd5750433218436481c33691",
+      "id": "cfc9ad34ec3112b741ae80f567a6",
       "result": {
         "status": "success",
-        "found": 25,
+        "found": 0,
         "inserted": 0,
-        "message": "1 page(s), 25 unique item(s); unknown_dates=25"
+        "message": "; official empty listing confirmed; existing RSS retained"
       }
     },
     {
-      "id": "e6ded12656af1d9314e2ff76a8a1",
+      "id": "1281f3238ff3691e5ab36d49b5af",
       "result": {
         "status": "success",
-        "found": 39,
+        "found": 30,
         "inserted": 0,
-        "message": "1 page(s), 39 unique item(s); unknown_dates=39"
+        "message": "1 page(s), 30 unique item(s); unknown_dates=30"
+      }
+    },
+    {
+      "id": "3ab48d8d725c91abcc3f423217b6",
+      "result": {
+        "status": "success",
+        "found": 100,
+        "inserted": 0,
+        "message": "1 page(s), 100 unique item(s); extraction limit reached"
       }
     }
   ],
@@ -170,7 +180,7 @@
     },
     {
       "id": "cfc9ad34ec3112b741ae80f567a6",
-      "next_run": "2026-11-06T11:51:34+00:00",
+      "next_run": "2026-11-06T23:51:34+00:00",
       "schedule_phase_seconds": 42694
     },
     {
@@ -515,7 +525,7 @@
     },
     {
       "id": "1281f3238ff3691e5ab36d49b5af",
-      "next_run": "2026-11-06T11:55:47+00:00",
+      "next_run": "2026-11-06T23:55:47+00:00",
       "schedule_phase_seconds": 42947
     },
     {
@@ -710,7 +720,7 @@
     },
     {
       "id": "3ab48d8d725c91abcc3f423217b6",
-      "next_run": "2026-11-06T12:00:00+00:00",
+      "next_run": "2026-11-07T00:00:00+00:00",
       "schedule_phase_seconds": 0
     },
     {
@@ -871,8 +881,8 @@
   ],
   "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 62.521,
+  "elapsed_seconds": 121.67,
   "input_db_unchanged": true,
-  "input_sha256": "81e0f8449f88fe54bdf49df99b5cc7b45512739447d266f0003111ea981fa55c",
-  "shadow_sha256": "2090cbf8312c86668291530805914b1a9e6ec3bec3486fc354011542c9818aee"
+  "input_sha256": "2e2d126e8f705a99984944dc9622ad406c01b851b6efeb2ee94c3cf1960cf959",
+  "shadow_sha256": "fc38525da6a9e84e45a37a31d9290b7b9771e846550d7a1bec8ef19d3699bd90"
 }
