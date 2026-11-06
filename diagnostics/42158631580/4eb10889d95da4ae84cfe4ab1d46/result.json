@@ -1,0 +1,11 @@
+{
+  "source_id": "4eb10889d95da4ae84cfe4ab1d46",
+  "final_url": "https://www.man.com/insights",
+  "bytes": 182462,
+  "response_sha256": "c2518b0f8cca9045a47c28318681c98d39572cfae816948c19c62805385f6de0",
+  "articles": 0,
+  "selector": "main .col:has(.card h5)",
+  "input_db_unchanged": true,
+  "production_written": false,
+  "published": false
+}

@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<html  lang="en-us">
+
+<head>
+  <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.eu01.nr-data.net"]},feature_flags:["rum_v2"],distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"416119487",accountID:"2720026",trustKey:"2720026",xpid:"VgEFUVZRDhAEVVdSDgQGVFQ=",licenseKey:"NRJS-016726197bedb887093",applicationID:"416095120",browserID:"416119487"};;/*! For license information please see nr-loader-spa-1.324.1.min.js.LICENSE.txt */
+(()=>{var e={8122(e,t,r){"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),s=0===Object.keys(r).length?e:r;for(let a in s)if(void 0!==e[a])try{if(null===e[a]){r[a]=null;continue}Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):e[a]instanceof Map||e[a]instanceof Set||e[a]instanceof Date||e[a]instanceof RegExp?r[a]=e[a]:"object"==typeof e[a]&&null!==t[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){r[a]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555(e,t,r){"use strict";r.d(t,{f:()=>a});var n=r(384),i=r(8122);const s={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function a(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}r.d(t,["D",0,e=>(0,i.a)(e,s)])},7699(e,t,r){"use strict";var n=r(860);const i=1e6,s={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0};r.d(t,["It",0,i,"KC",0,s,"qh",0,"SESSION_ERROR","zd",0,5e5])},9324(e,t,r){"use strict";r.d(t,["A",0,"@newrelic/rrweb","x",0,"1.324.1"])},981(e,t,r){"use strict";r.d(t,["R",0,{AJAX:"AjaxRequest",PA:"PageAction",UA:"UserAction",BP:"BrowserPerformance",WS:"WebSocket",SPV:"SecurityPolicyViolation",JSE:"JavaScriptError",LOG:"Log",PVE:"PageView",PVT:"PageViewTiming",SR:"SessionReplay",ST:"SessionTrace",BI:"BrowserInteraction"}])},9752(e,t,r){"use strict";const n="newrelic-iframe-",i=n+"timing-update",s=n+"api",a=n+"api-response",o=n+"vitals-update",c=n+"ajax";r.d(t,["$8",0,o,"Gi",0,a,"KU",0,c,"Pl",0,n,"cS",0,s,"cr",0,i])},6154(e,t,r){"use strict";var n=r(1863);const i="undefined"!=typeof window&&!!window.document,s="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===a?.document?.visibilityState),c=""+a?.location,d=/iPad|iPhone|iPod/.test(a.navigator?.userAgent),u=d&&"undefined"==typeof SharedWorker,l=(()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),f=Date.now()-(0,n.t)();r.d(t,["OF",0,d,"RI",0,i,"WN",0,f,"bv",0,s,"gm",0,a,"lR",0,l,"m",0,c,"mw",0,o,"sb",0,u,"zk",0,()=>{const e=a?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<a.performance.now())return e}])},7295(e,t,r){"use strict";r.d(t,{Xv:()=>a,gX:()=>i,iW:()=>s});var n=[];function i(e){if(!e||s(e))return!1;if(0===n.length)return!0;if("*"===n[0].hostname)return!1;for(var t=0;t<n.length;t++){var r=n[t];if(r.hostname.test(e.hostname)&&r.pathname.test(e.pathname))return!1}return!0}function s(e){return void 0===e.hostname}function a(e){if(n=[],e&&e.length)for(var t=0;t<e.length;t++){let r=e[t];if(!r)continue;if("*"===r)return void(n=[{hostname:"*"}]);0===r.indexOf("http://")?r=r.substring(7):0===r.indexOf("https://")&&(r=r.substring(8));const i=r.indexOf("/");let s,a;i>0?(s=r.substring(0,i),a=r.substring(i)):(s=r,a="*");let[c]=s.split(":");n.push({hostname:o(c),pathname:o(a,!0)})}}function o(e,t=!1){const r=e.replace(/[.+?^${}()|[\]\\]/g,e=>"\\"+e).replace(/\*/g,".*?");return new RegExp((t?"^":"")+r+"$")}},3241(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(6154);function i(e={}){try{n.gm.dispatchEvent(new CustomEvent("newrelic",{detail:e}))}catch(e){}}},1687(e,t,r){"use strict";r.d(t,{Ak:()=>o,Ze:()=>d,x3:()=>c});var n=r(3241),i=r(3606),s=r(860),a=r(2646);function o(e,t){if(!e)return;const r={staged:!1,priority:s.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&u(e))}function d(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,u(e)}}function u(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const s=e.ee,o=i.i.handlers;if(s&&!s.aborted&&s.backlog&&o){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=s.backlog[t],r=o[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof a.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}s.isolatedBacklog||delete o[t],s.backlog[t]=null,s.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],s=e[2];n.apply(i,s)}})}},7836(e,t,r){"use strict";var n=r(384),i=r(8990),s=r(2646),a=r(5607);const o="nr@context:".concat(a.W),c=function e(t,r){var n={},a={},u={},l=!1;try{l=16===r.length&&d.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,s){!1!==s&&(s=!0);if(c.aborted&&!i)return;t&&s&&t.emit(e,r,n);var o=h(n);g(e).forEach(e=>{e.apply(o,r)});var d=v()[a[e]];d&&d.push([f,e,r,o]);return o},get:m,listeners:g,context:h,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{a[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[a[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function h(e){return e&&e instanceof s.y?e:e?(0,i.I)(e,o,()=>new s.y(o)):new s.y(o)}function p(e,t){n[e]=g(e).concat(t)}function g(e){return n[e]||[]}function m(t){return u[t]=u[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),d=(0,n.Zm)();d.ee||(d.ee=c),r.d(t,["P",0,o,"ee",0,c])},2646(e,t,r){"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908(e,t,r){"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,s){s?(s.buffer([e],i),s.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606(e,t,r){"use strict";r.d(t,{i:()=>s});var n=r(9908);s.on=a;var i=s.handlers={};function s(e,t,r,s){a(s||n.d,i,e,t,r)}function a(e,t,r,i,s){s||(s="feature"),e||(e=n.d);var a=t[s]=t[s]||{};(a[r]=a[r]||[]).push([e,i])}},3878(e,t,r){"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function s(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>s,jT:()=>n,sp:()=>i})},5607(e,t,r){"use strict";const n=(0,r(9566).bz)();r.d(t,["W",0,n])},9566(e,t,r){"use strict";r.d(t,{LA:()=>a,ZF:()=>o,bz:()=>s,el:()=>c});var n=r(6154);function i(e,t){return e?15&e[t]:16*Math.random()|0}function s(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".split("").map(e=>"x"===e?i(t,r++).toString(16):"y"===e?(3&i()|8).toString(16):e).join("")}function a(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,s=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var o=0;o<e;o++)a.push(i(r,s++).toString(16));return a.join("")}function o(){return a(16)}function c(){return a(32)}},2614(e,t,r){"use strict";r.d(t,["BB",0,18e5,"Wt",0,"NRBA_SESSION::","g",0,{OFF:0,FULL:1,ERROR:2},"iL",0,{SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},"tS",0,{STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},"wk",0,144e5])},733(e,t,r){"use strict";function n(e,t){return function(e){let t=2166136261;for(let r=0;r<e.length;r++)t^=e.charCodeAt(r),t=Math.imul(t,16777619);return(t>>>0).toString(16).padStart(8,"0")}("".concat(String(e),":").concat(String(t)))}r.d(t,{Y:()=>n})},1863(e,t,r){"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},9119(e,t,r){"use strict";r.d(t,{L:()=>s});var n=/([^?#]*)[^#]*(#[^?]*|$).*/,i=/([^?#]*)().*/;function s(e,t){return e?e.replace(t?n:i,"$1$2"):e}},7485(e,t,r){"use strict";r.d(t,{D:()=>i});var n=r(6154);function i(e){if(0===(e||"").indexOf("data:"))return{protocol:"data"};try{const t=new URL(e,location.href),r={port:t.port,hostname:t.hostname,pathname:t.pathname,search:t.search,protocol:t.protocol.slice(0,t.protocol.indexOf(":")),sameOrigin:t.protocol===n.gm?.location?.protocol&&t.host===n.gm?.location?.host};return r.port&&""!==r.port||("http:"===t.protocol&&(r.port="80"),"https:"===t.protocol&&(r.port="443")),r.pathname&&""!==r.pathname?r.pathname.startsWith("/")||(r.pathname="/".concat(r.pathname)):r.pathname="/",r}catch(e){return{}}}},7866(e,t,r){"use strict";r.d(t,["Nc",0,/^\s*at Function code \(Function code:\d+:\d+\)\s*/i,"cn",0,/^\s*(?:([^@]*)(?:\(.*?\))?@)?((?:file|http|https|chrome|safari-extension).*?):(\d+)(?::(\d+))?\s*$/i,"fL",0,/^\s*at .+ \(eval at \S+ \((?:(?:file|http|https):[^)]+)?\)(?:, [^:]*:\d+:\d+)?\)$/i,"h3",0,/function (.+?)\s*\(/,"hB",0,/^\s*at (?:((?:\[object object\])?(?:[^(]*\([^)]*\))*[^()]*(?: \[as \S+\])?) )?\(?((?:file|http|https|chrome-extension):.*?)?:(\d+)(?::(\d+))?\)?\s*$/i])},944(e,t,r){"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},8990(e,t,r){"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389(e,t,r){"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},1910(e,t,r){"use strict";r.d(t,{i:()=>s});var n=r(944);const i=new Map;function s(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),s=t.includes("nrWrapper");return r||s||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},3304(e,t,r){"use strict";r.d(t,{A:()=>i});var n=r(7836);function i(e){try{return JSON.stringify(e,(()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}})())??""}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}return""}}},9232(e,t,r){"use strict";r.d(t,["f",0,{MFE:"MFE",BA:"BA"}])},7560(e,t,r){"use strict";r.d(t,{N:()=>a,j:()=>c});var n=r(9119),i=r(944);const s=(0,r(6389).J)(e=>(0,i.R)(80,e));function a(e){if(!Array.isArray(e?.assets)||!e.assets.length)return;const t=e.assets.map(o).filter(Boolean);return t.length?{assets:t,scripts:t.filter(e=>e.isScript)}:void 0}function o(e){if(!e||"object"!=typeof e)return;const{matcher:t,type:r}=e;let i="string"==typeof t&&t.endsWith(".js");return void 0!==r&&(!function(e){return"script"===e||"asset"===e}(r)?s(r):i=function(e){return"script"===e}(r)),a=t,"[object RegExp]"===Object.prototype.toString.call(a)?{pattern:t,test:e=>(t.lastIndex=0,t.test((0,n.L)(e))),isScript:i}:"string"==typeof t&&t.length>0?{pattern:t,test:e=>(0,n.L)(e).includes(t),isScript:i}:void s(t);var a}function c(e,t,{scriptsOnly:r=!1}={}){if(!e||!t)return!1;return(r?e.scripts:e.assets).some(e=>e.test(t))}},5718(e,t,r){"use strict";r.d(t,{xo:()=>A,AZ:()=>v,cI:()=>g,Qr:()=>S,QL:()=>y});var n=r(6154),i=r(1863),s=r(9119),a=r(7866);class o{dom=new c;performance=new c;constructor(e){this.url=e,this.claimedBy=new Set}get script(){const e=Math.max(this.dom.start,this.performance.end);return{start:e,end:Math.max(this.dom.end,this.performance.end,e)}}}class c{start=0;end=0;value=void 0}function d(e=()=>{},t){return{get:()=>void 0!==t?t:e(),set:e=>{t=e}}}let u;try{u=v(y())[0]}catch(e){u=v(e)[0]}const l=new Map;let f=[];const h=new WeakMap;function p(e){let t=h.get(e);return t||(t={weighedAssetUrls:new Set,widenedAssetUrls:new Set,recordManifestScriptWindow:(t,r)=>{t&&(e.scriptStart=e.scriptStart>0?Math.min(e.scriptStart,t):t),r&&(e.scriptEnd=e.scriptEnd>0?Math.max(e.scriptEnd,r):r)}},h.set(e,t)),t}function g(e){return l.get(e)}function m(e){const t=g(e);if(t)return t;const r=new o(e);if(l.set(e,r),l.size>1e3){const e=l.keys().next().value;l.delete(e)}return r}if(n.gm.MutationObserver&&n.gm.document){new MutationObserver(e=>{e.forEach(e=>{e.addedNodes.forEach(e=>{if("SCRIPT"===e.nodeName&&e.src){const t=m((0,s.L)(e.src));if(t.dom.value)return;t.dom.start=(0,i.t)(),t.dom.value=e;const r=()=>{t.dom.end=(0,i.t)()};["load","error"].forEach(t=>e.addEventListener(t,r,{once:!0}))}})})}).observe(n.gm.document,{childList:!0,subtree:!0})}if(n.gm.PerformanceObserver?.supportedEntryTypes.includes("resource")){new PerformanceObserver(e=>{e.getEntries().forEach(e=>{if((e=>"script"===e.initiatorType||["link","fetch"].includes(e.initiatorType)&&(0,s.L)(e.name).endsWith(".js"))(e)){const t=m((0,s.L)(e.name));t.performance.value||(t.performance.start=Math.floor(e.startTime),t.performance.end=Math.floor(e.responseEnd),t.performance.value=e)}if(!f.length)return;const t=[];f.forEach(({test:r,addedAt:n},s)=>{(r(e)||(0,i.t)()-n>1e4)&&t.push(s)}),f=f.filter((e,r)=>!t.includes(r))})}).observe({type:"resource",buffered:!0})}function v(e){if(!e||"string"!=typeof e)return[];const t=new Set,r=e.split("\n");for(const e of r){const r=e.match(a.cn)||e.match(a.hB)||e.match(a.fL);if(r&&r[2])t.add((0,s.L)(r[2]));else{const r=e.match(/\(([^)]+\.js):\d+:\d+\)/)||e.match(/^\s+at\s+([^\s(]+\.js):\d+:\d+/);r&&r[1]&&t.add((0,s.L)(r[1]))}}return[...t]}function y(){let e;try{const t=Error.stackTraceLimit;Error.stackTraceLimit=50,e=(new Error).stack,Error.stackTraceLimit=t}catch(t){e=(new Error).stack}return e}function b(e,t){return(0,s.L)(e.name)===t}function E(e,t){e.fetchStart=Math.floor(t.startTime),e.fetchEnd=Math.floor(t.responseEnd),e.asset=t.name,e.type=t.initiatorType,w(e,t)}function w(e,t){const r=(0,s.L)(t.name),{weighedAssetUrls:n}=p(e);n.has(r)||(n.add(r),e.totalWeight=(e.totalWeight||0)+(t.transferSize||0),"blocking"===t.renderBlockingStatus?e.renderBlocking=!0:"non-blocking"===t.renderBlockingStatus&&!0!==e.renderBlocking&&(e.renderBlocking=!1))}function R(e,t,r,n,i){if(w(e,t),"scripts"!==i&&"all"!==i)return;const{widenedAssetUrls:a}=p(e),o=(0,s.L)(t.name);if(a.has(o))return;a.add(o);if("all"===i||r.isScript){const r=Math.floor(t.startTime),n=Math.floor(t.responseEnd);e.fetchStart=e.fetchStart>0?Math.min(e.fetchStart,r):r,e.fetchEnd=e.fetchEnd>0?Math.max(e.fetchEnd,n):n}if(r.isScript){const r=g((0,s.L)(t.name));if(r){const t=()=>{const{start:t,end:n}=r.script;p(e).recordManifestScriptWindow(t,n)};t(),!r.dom.end&&r.dom.value&&["load","error"].forEach(e=>r.dom.value.addEventListener(e,t,{once:!0}))}n.resolved||(e.asset=t.name,e.type=t.initiatorType,n.resolved=!0)}}function T(e,t){const r=e.filter(e=>e.test(t.name));return r.find(e=>e.isScript)||r[0]}function A(e,t){const r=t?.manifest;if(!r||!r.assets.length)return;const s={resolved:!1},{assets:a}=r;(n.gm.performance?.getEntriesByType("resource")||[]).forEach(r=>{const n=T(a,r);n&&R(e,r,n,s,t.timingMethod)}),function(e,t,r,s){n.gm.PerformanceObserver?.supportedEntryTypes?.includes("resource")&&f.push({addedAt:(0,i.t)(),test:n=>{const i=T(t,n);return i&&R(e,n,i,r,s),!1}})}(e,a,s,t.timingMethod)}function S(e){const t=e?.id,r={registeredAt:(0,i.t)(),reportedAt:void 0,fetchStart:0,fetchEnd:0,scriptStart:0,scriptEnd:0,asset:void 0,type:"unknown",totalWeight:0,renderBlocking:void 0},a=y();if(!a)return r;const o=n.gm.performance?.getEntriesByType("navigation")?.[0]?.name||"";try{const e=v(a),c=(e.length>1?e.filter(e=>u!==e):e)[0];if(!c)return r;if(o.includes(c))return r.asset=(0,s.L)(o),r.type="inline",r;r.correlation=g(c);const l=r.correlation?.performance.value||n.gm.performance?.getEntriesByType("resource")?.find(e=>b(e,c));if(l)E(r,l);else{(function(e){if(!e||!n.gm.document)return!1;try{const t=n.gm.document.querySelectorAll('link[rel="preload"][as="script"]');for(const r of t)if((0,s.L)(r.href)===e)return!0}catch(e){}return!1})(c)&&(r.asset=c,r.type="preload"),function(e,t){n.gm.PerformanceObserver?.supportedEntryTypes?.includes("resource")&&f.push({addedAt:(0,i.t)(),test:r=>!!b(r,t)&&(E(e,r),!0)})}(r,c)}const h=r.correlation,m=!!t&&!!h?.claimedBy.has(t);h&&t&&h.claimedBy.add(t);const y=()=>{const e=h?.script.start;if(!m||!e)return!1;return r.registeredAt-e>1e4};let w=0,R=0;p(r).recordManifestScriptWindow=(e,t)=>{e&&(w=w>0?Math.min(w,e):e),t&&(R=R>0?Math.max(R,t):t)},Object.defineProperty(r,"scriptStart",d(()=>{const e=y()?r.registeredAt:h?.script.start??r.fetchEnd;return w>0?Math.min(e,w):e})),Object.defineProperty(r,"scriptEnd",d(()=>{const e=y()?r.registeredAt:h?.script.end??r.registeredAt;return R>0?Math.max(e,R):e}))}catch(e){}return r}},5732(e,t,r){"use strict";r.d(t,{$5:()=>m,B5:()=>g,K6:()=>u,M$:()=>o,Ms:()=>d,NG:()=>c,Ux:()=>h,YA:()=>p,yx:()=>l});var n=r(5718),i=r(7560),s=r(9119),a=r(9232);function o(e){return e?.type===a.f.MFE}function c(e,t){if(!y(e,t))return;const r=t.runtime.registeredEntities;return r?.find(t=>t.metadata.target.iframeInterfaceId===e)}function d(e,t){if(!y(e,t))return[];const r=t.runtime.registeredEntities;return r?.filter(t=>String(t.metadata.target.id)===String(e)).map(e=>e.metadata.target)||[]}function u(e,t){if(!y(e,t))return[];const r=t.runtime.registeredEntities,n=(0,s.L)(e),a=r?.filter(t=>{const r=t.metadata.target?.manifest;return r?(0,i.j)(r,e,{scriptsOnly:!1}):!!t.metadata.timings?.asset&&(0,s.L)(t.metadata.timings.asset)===n});return f(a).map(e=>e.metadata.target)}function l(e,t){if(!y(e,t))return[];const r=t.runtime.registeredEntities,n=r?.filter(t=>{const r=t.metadata.target?.manifest;return r?(0,i.j)(r,e,{scriptsOnly:!0}):!!t.metadata.timings?.asset?.endsWith(e)});return f(n).map(e=>e.metadata.target)}function f(e){if(!e?.length)return e||[];const t=new Map,r=[];for(const n of e){const e=n.metadata?.timings?.asset;if(!e){r.push(n);continue}const i="".concat(e,"::").concat(n.metadata?.target?.id),s=t.get(i);if(s){if(s.metadata.target?.blocked&&!n.metadata.target?.blocked){const e=r.indexOf(s);-1!==e&&(r[e]=n),t.set(i,n)}}else t.set(i,n),r.push(n)}return r}function h(e,t){return v(t)?o(e)?e.attributes:t.agentRef.runtime.v2Target.attributes:{}}function p(e,t){return g(e,t)?{"child.id":e.id,"child.type":e.type,...h(void 0,t)}:{}}function g(e,t){return o(e)&&!!v(t)&&t.agentRef.init.api.register.duplicate_data_to_container}function m(e){if(!e?.runtime)return[];if(!y(!0,e)||!e.runtime.registeredEntities?.length)return[e.runtime.v2Target];const t=[];try{var r=(0,n.AZ)((0,n.QL)());let i=r.length-1;for(;r[i];)t.push(...l(r[i--],e))}catch(e){}const i=function(e){const t=new Set,r=[];for(const n of e){const e=n?.instance;t.has(e)||(t.add(e),r.push(n))}return r}(t);return i.length||i.push(e.runtime.v2Target),i}function v(e){return 2===e?.harvestEndpointVersion}function y(e,t){return!!e&&!!t?.init.api.register.enabled}},5289(e,t,r){"use strict";r.d(t,{GG:()=>a,Qr:()=>c,sB:()=>o});var n=r(3878),i=r(6389);function s(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(s())return e();const r=(0,i.J)(e),a=setInterval(()=>{s()&&(clearInterval(a),r())},500);(0,n.sp)("load",r,t)}function o(e){if(s())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(s())return e();(0,n.sp)("popstate",e)}},384(e,t,r){"use strict";r.d(t,{Zm:()=>c,bQ:()=>u,dV:()=>d,pV:()=>l});var n=r(6154),i=r(1863),s=r(944),a=r(1910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function d(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,a.i)(...Object.values(e.o))),e}function u(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,s.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),d(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}r.d(t,["NT",0,o])},2843(e,t,r){"use strict";r.d(t,{G:()=>s,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function s(e,t,r){(0,n.sp)("pagehide",e,t,r)}},8139(e,t,r){"use strict";r.d(t,{u:()=>f});var n=r(7836),i=r(3434),s=r(8990),a=r(6154);const o={},c=a.gm.XMLHttpRequest,d="addEventListener",u="removeEventListener",l="nr@wrapped:".concat(n.P);function f(e,t){var r=function(e){return(e||n.ee).get("events")}(e);if(o[r.debugId]++)return r;o[r.debugId]=1;var f=(0,i.YM)(r,!0,t);function p(e){f.inPlace(e,[d,u],"-",g)}function g(e,t){return e[1]}return"getPrototypeOf"in Object&&(a.RI&&h(document,p),c&&h(c.prototype,p),h(a.gm,p)),r.on(d+"-start",function(e,t){var r=e[1];if(null!==r&&("function"==typeof r||"object"==typeof r)&&"newrelic"!==e[0]){var n=(0,s.I)(r,l,function(){var e={object:function(){if("function"!=typeof r.handleEvent)return;return r.handleEvent.apply(r,arguments)},function:r}[typeof r];return e?f(e,"fn-",null,e.name||"anonymous"):r});this.wrapped=e[1]=n}}),r.on(u+"-start",function(e){e[1]=this.wrapped||e[1]}),r}function h(e,t,...r){let n=e;for(;"object"==typeof n&&!Object.prototype.hasOwnProperty.call(n,d);)n=Object.getPrototypeOf(n);n&&t(n,...r)}},3434(e,t,r){"use strict";r.d(t,{YM:()=>d});var n=r(7836),i=r(5607),s=r(5732);const a="nr@original:".concat(i.W);var o=Object.prototype.hasOwnProperty,c=!1;function d(e,t,r){return e||(e=n.ee),i.inPlace=function(e,t,r,n,s,a){r||(r="");const o="-"===r.charAt(0);for(let c=0;c<t.length;c++){const d=t[c],u=e[d];l(u)||(e[d]=i(u,o?d+r:r,n,d,s,a))}},i.flag=a,i;function i(t,n,i,c,f,h){return l(t)?t:(n||(n=""),nrWrapper[a]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach(function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})}),t}catch(e){u([e],r)}for(var n in e)o.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var a,o,l,p;let g,m;try{o=this,a=[...arguments],m=h?(0,s.$5)(r):[r?.runtime?.v2Target],l="function"==typeof i?i(a,o):i||{}}catch(t){u([t,"",[a,o,c],l],e)}d(n+"start",[a,o,c,m],l,f);const v=performance.now();let y;try{return p=t.apply(o,a),y=performance.now(),p}catch(e){throw y=performance.now(),d(n+"err",[a,o,e,m],l,f),g=e,g}finally{const e=y-v,t={start:v,end:y,duration:e,isLongTask:e>=50,methodName:c,thrownError:g};t.isLongTask&&d("long-task",[t,o,m],l,f),d(n+"end",[a,o,p,m],l,f)}}}function d(r,n,i,s){if(!c||t){var a=c;c=!0;try{e.emit(r,n,i,t,s)}catch(t){u([t,r,n,i],e)}c=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function l(e){return!(e&&"function"==typeof e&&e.apply&&!e[a])}r.d(t,["Jt",0,a])},9300(e,t,r){"use strict";const n=r(860).K7.ajax;r.d(t,["TZ",0,n,"f5",0,"ajaxRequest.id","mo",0,{NONE:"none",FAILURES:"failures",ALL:"all"}])},3333(e,t,r){"use strict";var n=r(981);const i=r(860).K7.genericEvents,s=[n.R.PA,n.R.UA,n.R.BP];r.d(t,["$v",0,{RESOURCES:"experimental.resources",REGISTER:"register"},"TZ",0,i,"Zp",0,["auxclick","click","copy","keydown","paste","scrollend"],"kd",0,s,"qN",0,["focus","blur"]])},6774(e,t,r){"use strict";const n=r(860).K7.jserrors;r.d(t,["T",0,n])},993(e,t,r){"use strict";const n=r(860).K7.logging;r.d(t,["A$",0,{OFF:0,ERROR:1,WARN:2,INFO:3,DEBUG:4,TRACE:5},"TZ",0,n,"p_",0,{ERROR:"ERROR",WARN:"WARN",INFO:"INFO",DEBUG:"DEBUG",TRACE:"TRACE"}])},3785(e,t,r){"use strict";r.d(t,{R:()=>c,b:()=>d});var n=r(9908),i=r(1863),s=r(860),a=r(3969),o=r(993);function c(e,t,r={},c=o.p_.INFO,d=!0,u,l=(0,i.t)()){(0,n.p)(a.xV,["API/logging/".concat(c.toLowerCase(),"/called")],void 0,s.K7.metrics,e),(0,n.p)("log",[l,t,r,c,d,u],void 0,s.K7.logging,e)}function d(e){return"string"==typeof e&&Object.values(o.p_).some(t=>t===e.toUpperCase().trim())}},3969(e,t,r){"use strict";const n=r(860).K7.metrics;r.d(t,["TZ",0,n,"XG",0,"storeEventMetrics","xV",0,"storeSupportabilityMetrics"])},6630(e,t,r){"use strict";const n=r(860).K7.pageViewEvent;r.d(t,["T",0,n])},782(e,t,r){"use strict";const n=r(860).K7.pageViewTiming;r.d(t,["T",0,n])},6344(e,t,r){"use strict";var n=r(2614);const i=r(860).K7.sessionReplay,s={[n.g.ERROR]:15e3,[n.g.FULL]:3e5,[n.g.OFF]:0};r.d(t,["Qb",0,{API:"api",RESUME:"resume",SWITCH_TO_FULL:"switchToFull",INITIALIZE:"initialize",PRELOAD:"preload"},"TZ",0,i,"Vh",0,"errorDuringReplay","_s",0,{DomContentLoaded:0,Load:1,FullSnapshot:2,IncrementalSnapshot:3,Meta:4,Custom:5},"bc",0,{RESET:{message:"Session was reset",sm:"Reset"},IMPORT:{message:"Recorder failed to import",sm:"Import"},TOO_MANY:{message:"429: Too Many Requests",sm:"Too-Many"},TOO_BIG:{message:"Payload was too large",sm:"Too-Big"},CROSS_TAB:{message:"Session Entity was set to OFF on another tab",sm:"Cross-Tab"},ENTITLEMENTS:{message:"Session Replay is not allowed and will not be started",sm:"Entitlement"}},"yP",0,s])},5270(e,t,r){"use strict";r.d(t,{Aw:()=>a,SR:()=>s,rF:()=>o});var n=r(384),i=r(7767);function s(e){return!!(0,n.dV)().o.MO&&(0,i.V)(e)&&!0===e?.session_trace.enabled}function a(e){return!0===e?.session_replay.preload&&s(e)}function o(e,t){try{if("string"==typeof t?.type&&"password"===t.type.toLowerCase())return"*".repeat(e?.length||0);if(void 0!==t?.dataset?.nrUnmask||t?.classList?.contains("nr-unmask"))return e}catch(e){}return"string"==typeof e?e.replace(/[\S]/g,"*"):"*".repeat(e?.length||0)}},3738(e,t,r){"use strict";const n=r(860).K7.sessionTrace,i="-start",s="-end",a="fn"+i,o="fn"+s;r.d(t,["He",0,"bstResource","Kp",0,s,"Lc",0,o,"Rz",0,"pushState","TZ",0,n,"bD",0,"resource","bc",0,{CROSS_TAB:{message:"Session Entity was set to OFF on another tab"},ENTITLEMENTS:{message:"Session Trace is not allowed and will not be started"},RESET:{message:"Session was reset"},SESSION_CHANGED:{message:"Session identifier changed unexpectedly"}},"d3",0,i,"uP",0,a])},3962(e,t,r){"use strict";const n=r(860).K7.softNav;r.d(t,["O2",0,{INITIAL_PAGE_LOAD:"",ROUTE_CHANGE:1,UNSPECIFIED:2},"OV",0,"popstate","Qu",0,{INTERACTION:1,AJAX:2,CUSTOM_END:3,CUSTOM_TRACER:4},"TZ",0,n,"ih",0,{IP:"in progress",PF:"pending finish",FIN:"finished",CAN:"cancelled"},"pP",0,"initialPageLoad","tC",0,["click","keydown","submit"]])},4234(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},7767(e,t,r){"use strict";var n=r(6154);r.d(t,["V",0,e=>n.RI&&!0===e?.privacy.cookies_enabled])},8362(e,t,r){"use strict";r.d(t,{d:()=>s});var n=r(9566),i=r(1741);class s extends i.W{agentIdentifier=(0,n.LA)(16)}},1741(e,t,r){"use strict";r.d(t,{W:()=>s});var n=r(944),i=r(4261);class s{#e(e,...t){if(this[e]!==s.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e("log",e,t)}start(){return this.#e("start")}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},4261(e,t,r){"use strict";r.d(t,["BL",0,"finished","CH",0,"recordReplay","Dl",0,"setUserId","Fw",0,"setPageViewName","PA",0,"setCurrentRouteName","Pv",0,"consent","Tb",0,"pauseReplay","U2",0,"addToTrace","V1",0,"measure","Wb",0,"wrapLogger","bt",0,"setErrorHandler","cD",0,"setCustomAttribute","dT",0,"interaction","eY",0,"register","fF",0,"recordCustomEvent","hG",0,"addPageAction","hw",0,"api-ixn-","k6",0,"addRelease","nb",0,"setApplicationVersion","o5",0,"noticeError"])},1738(e,t,r){"use strict";r.d(t,{U:()=>l,Y:()=>u});var n=r(3241),i=r(9908),s=r(1863),a=r(944),o=r(3969),c=r(8362),d=r(860);function u(e,t,r,s){const u=s||r;!u||u[e]&&u[e]!==c.d.prototype[e]||(u[e]=function(){(0,i.p)(o.xV,["API/"+e+"/called"],void 0,d.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:"api-"+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,a.R)(23,e)}})}function l(e,t,r,n,a){const o=e.info;null===r?delete o.jsAttributes[t]:o.jsAttributes[t]=r,(a||null===r)&&(0,i.p)("api-"+n,[(0,s.t)(),t,r],void 0,"session",e.ee)}},8374(e,t,r){r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860(e,t,r){"use strict";const n="events",i="jserrors",s="browser/blobs",a="browser/logs",o={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},c={[o.pageViewEvent]:1,[o.pageViewTiming]:2,[o.metrics]:3,[o.jserrors]:4,[o.softNav]:5,[o.ajax]:6,[o.sessionTrace]:7,[o.sessionReplay]:8,[o.logging]:9,[o.genericEvents]:10},d={[o.pageViewEvent]:"rum",[o.pageViewTiming]:n,[o.ajax]:n,[o.softNav]:n,[o.metrics]:i,[o.jserrors]:i,[o.sessionTrace]:s,[o.sessionReplay]:s,[o.logging]:a,[o.genericEvents]:"ins"};r.d(t,["$J",0,d,"K7",0,o,"P3",0,c,"XX",0,i,"Yy",0,a,"df",0,s,"hg",0,"connect"])}};const t={};function r(n){const i=t[n];if(void 0!==i)return i.exports;const s=t[n]={exports:{}};return e[n](s,s.exports,r),s.exports}r.m=e,r.d=(e,t)=>{if(Array.isArray(t))for(var n=0;n<t.length;){var i=t[n++],s=t[n++];r.o(e,i)?0===s&&n++:0===s?Object.defineProperty(e,i,{enumerable:!0,value:t[n++]}):Object.defineProperty(e,i,{enumerable:!0,get:s})}else for(var i in t)r.o(t,i)&&!r.o(e,i)&&Object.defineProperty(e,i,{enumerable:!0,get:t[i]})},r.f={},r.e=e=>Promise.all(Object.keys(r.f).reduce((t,n)=>(r.f[n](e,t),t),[])),r.u=e=>({212:"nr-spa-compressor",238:"nr-spa-iframe-message-handler",249:"nr-spa-recorder",478:"nr-spa"}[e]+"-1.324.1.min.js"),r.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),(()=>{const e={},t="NRBA-1.324.1.PROD:";r.l=(n,i,s,a)=>{if(e[n])return void e[n].push(i);let o,c;if(void 0!==s){const e=document.getElementsByTagName("script");for(var d=0;d<e.length;d++){const r=e[d];if(r.getAttribute("src")==n||r.getAttribute("data-webpack")==t+s){o=r;break}}}if(!o){c=!0;var u={478:"sha512-nAmyGQJA9Xa/xLFrjAfteHmCXCj99XBX+KvqWk0WH5UrAa2YHhcGcj9eoazvcLEiczWuHTntO8wwAWs3I+TEeQ==",249:"sha512-8baIx82923Xi5K0q00GExdErVnpK0P6jRsqlNxDXvjHcnmpnTqah0km3pHv/9bQWt052Cdnd4JJs55neaGuLPg==",212:"sha512-ioc+ScgYvw3pO3ke7sekIpBPV27DCyD8gUmnkuTFa/5JXJ+V2qQ3HXw18akD76CdBYA02ciLBV+dcp7tV+Sdqw==",238:"sha512-th2K18c2zreO7LeTIdGLCkPO0xbWs8nmlQNoLHj6wdVdPdBfwsaCyKlRdrl3OJA2Bn1hUBqzN3yRe1ewubPUEg=="};o=document.createElement("script"),o.charset="utf-8",r.nc&&o.setAttribute("nonce",r.nc),o.setAttribute("data-webpack",t+s),o.src=n,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),u[a]&&(o.integrity=u[a])}e[n]=[i];const l=(t,r)=>{o.onerror=o.onload=null,clearTimeout(f);const i=e[n];if(delete e[n],o.parentNode?.removeChild(o),i?.forEach(e=>e(r)),t)return t(r)},f=setTimeout(l.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=l.bind(null,o.onerror),o.onload=l.bind(null,o.onload),c&&document.head.appendChild(o)}})(),r.r=e=>{Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.p="https://js-agent.newrelic.com/",(()=>{const e={38:0,788:0};r.f.j=(t,n)=>{let i=r.o(e,t)?e[t]:void 0;if(0!==i)if(i)n.push(i[2]);else{const s=new Promise((r,n)=>i=e[t]=[r,n]);n.push(i[2]=s);const a=r.p+r.u(t),o=new Error,c=n=>{if(r.o(e,t)&&(i=e[t],0!==i&&(e[t]=void 0),i)){const e=n&&("load"===n.type?"missing":n.type),r=n&&n.target&&n.target.src;o.message="Loading chunk "+t+" failed: ("+e+": "+r+")",o.name="ChunkLoadError",o.type=e,o.request=r,i[1](o)}};r.l(a,c,"chunk-"+t,t)}};const t=(t,n)=>{let[i,s,a]=n;var o,c,d=0;if(i.some(t=>0!==e[t])){for(o in s)r.o(s,o)&&(r.m[o]=s[o]);if(a)a(r)}for(t&&t(n);d<i.length;d++)c=i[d],r.o(e,c)&&e[c]&&e[c][0](),e[c]=0},n=self["webpackChunk:NRBA-1.324.1.PROD"]=self["webpackChunk:NRBA-1.324.1.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{"use strict";r(8374);var e=r(8362),t=r(860);const n=Object.values(t.K7);var i=r(384),s=r(1741);var a=r(2555),o=r(3333),c=r(9300);const d=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var u=r(2614),l=r(944),f=r(8122);const h="[data-nr-mask]",p=e=>(0,f.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1,iframe_bridge:!1,iframe_domains:[]},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0,capture_payloads:c.mo.NONE},api:{register:{get enabled(){return e.feature_flags.includes(o.$v.REGISTER)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1,get allow_iframe_bridge(){return e.feature_flags.includes(o.$v.IFRAME_BRIDGE)||e.experimental.iframe_bridge},set allow_iframe_bridge(t){e.experimental.iframe_bridge=t},get iframe_domains(){return e.experimental.iframe_domains},set iframe_domains(t){Array.isArray(t)?e.experimental.iframe_domains=t:(0,l.R)(1,t)}}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(o.$v.RESOURCES)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:u.wk,inactiveMs:u.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){d(t)?e.mask_selector="".concat(t,",").concat(h):""===t||null===t?e.mask_selector=h:(0,l.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){d(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]},web_sockets:{enabled:!1}}})());var g=r(6154),m=r(9324);let v=0;const y={buildEnv:"PROD",distMethod:"CDN",version:m.x,originTime:g.WN},b={consented:!1},E={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||b.consented},set consented(e){b.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,connector:void 0,harvester:void 0,v2Target:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++v},listeningForIframeMessages:!1};var w=r(9232);var R=r(7836),T=r(3241);const A={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0};var S=r(9908),x=r(9752);function O(e,t={},n,o){let{init:c,info:d,loader_config:u,runtime:l={},exposed:h=!0}=t;if(!d){const e=(0,i.pV)();c=e.init,d=e.info,u=e.loader_config}var m;e.init=p(c||{}),e.loader_config=(m=u||{},(0,f.a)(m,A)),d.jsAttributes??={},g.bv&&(d.jsAttributes.isWorker=!0),e.info=(0,a.D)(d);const v=e.init;e.runtime??=(e=>{const t=(0,f.a)(e,E),r=Object.keys(y).reduce((e,t)=>(e[t]={value:y[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)})(l),e.runtime.v2Target??={type:w.f.BA,instance:e.agentIdentifier,get id(){return e.runtime.appMetadata?.agents?.[0]?.entityGuid},get attributes(){return{"entity.guid":this.id,appId:e.info.applicationID}}},v.proxy.assets&&(e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e})(v.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,i.pV)();Object.getOwnPropertyNames(s.W.prototype).forEach(r=>{const n=s.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let i=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return i?i(...t):n})})}(e),e.runtime.loaderType=n,e.ee=R.ee.get(e.agentIdentifier),e.exposed=h,(0,T.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.init.api.register.allow_iframe_bridge&&g.gm.addEventListener("message",t=>{"string"==typeof t.data?.type&&t.data.type.startsWith(x.Pl)&&(0,S.p)("iframe-message",[t],void 0,"IFRAME",e.ee)}),e.runtime.configured=!0)}var _=r(1863),k=r(4261),N=r(1738);var L=r(1687),M=r(4234),P=r(5289),I=r(5270),j=r(7767),C=r(6389),D=r(7699);const B=new WeakSet,H=new WeakMap;class W extends M.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,C.J)(()=>{(0,L.Ak)(e,this.featureName),t()}))}):(0,L.Ak)(e,t)}importAggregator(e,t,n={}){if(this.featAggregate)return;const i=async()=>{if(await this.deferred,this.#t(e),!(0,a.f)(e.info))return(0,l.R)(43),e.ee.abort(),void this.loadedSuccessfully(!1);try{await async function(e,t,n){if(H.has(e))return H.get(e);const i=(async()=>{if((0,j.V)(e.init))try{const{setupAgentSession:t}=await r.e(478).then(r.bind(r,8766));t(e)}catch(e){(0,l.R)(20,e),t.emit("internal-error",[e]),(0,S.p)(D.qh,[e],void 0,n,t)}if(e.init.api.register.allow_iframe_bridge)try{const{setupIframeMFEMessageListener:t}=await r.e(238).then(r.bind(r,6417));t(e)}catch(e){(0,l.R)(23,e)}const[{Connector:i},{Harvester:s}]=await Promise.all([r.e(478).then(r.bind(r,6589)),r.e(478).then(r.bind(r,5237))]);e.runtime.connector=new i(e),e.runtime.harvester=new s(e);const a=Object.values(e.features).filter(t=>e.runtime.drainRegistry.has(t.featureName));Promise.all(a.map(e=>e.onAggregateImported)).then(()=>e.runtime.harvester.startTimer())})();H.set(e,i),await i}(e,this.ee,this.featureName)}catch(e){return(0,l.R)(79,e),this.ee.abort(),void this.loadedSuccessfully(!1)}try{if(!this.#r(this.featureName,e.runtime.session,e.init))return this.abortHandler?.(),(0,L.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:r}=await t();this.featAggregate=new r(e,n),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,l.R)(34,e),this.abortHandler?.(),(0,L.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1)}};g.RI?(0,P.GG)(()=>i(),!0):i()}#r(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return(0,I.SR)(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}#t(e){if(!B.has(e)&&(B.add(e),!(0,a.f)(e.info))){const t=(0,i.pV)();let r={...t.info?.jsAttributes};try{r={...r,...e.info?.jsAttributes}}catch(e){}O(e,{...t,info:{...t.info,jsAttributes:r},runtime:e.runtime},e.runtime.loaderType)}}}var U=r(6630);class K extends W{static featureName=U.T;constructor(e){var t;super(e,U.T),this.setupInspectionEvents(),t=e,(0,N.Y)(k.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,S.p)("api-"+k.Fw,[(0,_.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>e.init.feature_flags.includes("rum_v2")?r.e(478).then(r.bind(r,908)):r.e(478).then(r.bind(r,7927)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,T.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,P.sB)(t=>{e(t,"DOMContentLoaded")}),(0,P.GG)(t=>{e(t,"load")}),(0,P.Qr)(t=>{e(t,"navigate")}),this.ee.on(u.tS.UPDATE,(e,t)=>{(0,T.W)({type:"lifecycle",name:"session",data:t})})}}class F extends e.d{constructor(e){var t;(super(),g.gm)?(this.features={},(0,i.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(K),O(this,e,e.loaderType||"agent"),t=this,(0,N.Y)(k.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,N.U)(t,e,r,k.cD,n);(0,l.R)(40,typeof r)}else(0,l.R)(39,typeof e)},t),function(e){(0,N.Y)(k.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,l.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,S.p)("api-setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,N.U)(e,"enduser.id",t,k.Dl,!0)},e)}(this),function(e){(0,N.Y)(k.nb,function(t){if("string"==typeof t||null===t)return(0,N.U)(e,"application.version",t,k.nb,!1);(0,l.R)(42,typeof t)},e)}(this),function(e){(0,N.Y)("start",function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,N.Y)(k.Pv,function(t=!0){if("boolean"==typeof t){if((0,S.p)("api-"+k.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum?.()})}}else(0,l.R)(65,typeof t)},e)}(this),this.run()):(0,l.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return n.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),r=[...this.desiredFeatures],i=this.init.feature_flags.includes("rum_v2");r.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),r.forEach(r=>{if(!e[r.featureName]&&(i||r.featureName!==t.K7.pageViewEvent))return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,l.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,l.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,i.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var V=r(2843),z=r(782);class G extends W{static featureName=z.T;constructor(e){super(e,z.T),g.RI&&((0,V.u)(()=>(0,S.p)("docHidden",[(0,_.t)()],void 0,z.T,this.ee),!0),(0,V.G)(()=>(0,S.p)("winPagehide",[(0,_.t)()],void 0,z.T,this.ee)),this.importAggregator(e,()=>r.e(478).then(r.bind(r,9917))))}}var q=r(3969);class Y extends W{static featureName=q.TZ;constructor(e){super(e,q.TZ),this.importAggregator(e,()=>r.e(478).then(r.bind(r,6555)))}}var Z=r(6774),J=r(3878),X=r(3304);class Q{constructor(e,t,r,n,i){this.name="UncaughtError",this.message="string"==typeof e?e:(0,X.A)(e),this.sourceURL=t,this.line=r,this.column=n,this.__newrelic=i}}function ee(e){return ne(e)?e:new Q(void 0!==e?.message?e.message:e,e?.filename||e?.sourceURL,e?.lineno||e?.line,e?.colno||e?.col,e?.__newrelic,e?.cause)}function te(e){const t="Unhandled Promise Rejection: ";if(!e?.reason)return;if(ne(e.reason)){try{e.reason.message.startsWith(t)||(e.reason.message=t+e.reason.message)}catch(e){}return ee(e.reason)}const r=ee(e.reason);return(r.message||"").startsWith(t)||(r.message=t+r.message),r}function re(e){if(e.error instanceof SyntaxError&&!/:\d+$/.test(e.error.stack?.trim())){const t=new Q(e.message,e.filename,e.lineno,e.colno,e.error.__newrelic,e.cause);return t.name=SyntaxError.name,t}return ne(e.error)?e.error:ee(e)}function ne(e){return e instanceof Error&&!!e.stack}function ie(e,r,n,i,s=(0,_.t)()){"string"==typeof e&&(e=new Error(e)),(0,S.p)("err",[e,s,!1,r,n.runtime.isRecording,void 0,i],void 0,t.K7.jserrors,n.ee),(0,S.p)("uaErr",[],void 0,t.K7.genericEvents,n.ee)}var se=r(993),ae=r(3785);function oe(e,{customAttributes:t={},level:r=se.p_.INFO}={},n,i,s=(0,_.t)()){(0,ae.R)(n.ee,e,t,r,!1,i,s)}function ce(e,r,n,i,s=(0,_.t)()){(0,S.p)("api-"+k.hG,[s,e,r,i],void 0,t.K7.genericEvents,n.ee)}function de(e,r,n,i,s=(0,_.t)()){const{start:a,end:o,customAttributes:c}=r||{},d={customAttributes:c||{}};if("object"!=typeof d.customAttributes||"string"!=typeof e||0===e.length)return void(0,l.R)(57);const u=(e,t)=>null==e?t:"number"==typeof e?e:e instanceof PerformanceMark?e.startTime:Number.NaN;if(d.start=u(a,0),d.end=u(o,s),Number.isNaN(d.start)||Number.isNaN(d.end))(0,l.R)(57);else{if(d.duration=d.end-d.start,!(d.duration<0))return(0,S.p)("api-"+k.V1,[d,e,i],void 0,t.K7.genericEvents,n.ee),d;(0,l.R)(58)}}function ue(e,r={},n,i,s=(0,_.t)()){(0,S.p)("api-"+k.fF,[s,e,r,i],void 0,t.K7.genericEvents,n.ee)}var le=r(5718);const fe=(e,t)=>e?.nrMfeId===t.id&&(!e?.nrMfeObserved||e?.nrMfeObserved===t.instance),he=e=>{try{return g.gm.CSS.escape(e)}catch(t){return e}},pe=(e,t={})=>{const r=t.id,n=t.instance;if(!e||!r||!n)return!1;try{let r=1===e.nodeType?e:e.parentElement;for(;r?.tagName;){if(fe(r.dataset,t))return r.dataset.nrMfeObserved=n,!0;r=r.parentNode}}catch(e){}return!1},ge=(e,t)=>{const r=g.gm.document?.querySelectorAll('[data-nr-mfe-id="'.concat(he(e.id),'"]')),n=(Array.from(r)||[]).find(t=>fe(t.dataset,e));let i=!!n;i&&(n.dataset.nrMfeObserved??=e.instance);const s=new g.gm.MutationObserver(r=>{r.forEach(r=>{r.addedNodes.forEach(r=>{const n=1===r.nodeType?r:null;!i&&fe(n?.dataset,e)&&(s.disconnect(),s.observe(n,{childList:!0,subtree:!0}),i=!0,n.dataset.nrMfeObserved=e.instance),(e=>{try{return e?.textContent?.trim()||["img","video","canvas","svg"].includes(e?.nodeName?.toLowerCase())}catch(e){return!1}})(r)&&(i||pe(r,e))&&t(r,s)})})});return s.observe(n||g.gm.document,{childList:!0,subtree:!0}),s},me=(e,t,r)=>{try{const n=new g.gm.PerformanceObserver(e=>{e.getEntries().forEach(r)});return n.observe(t),e.push(n),n}catch(e){return null}};function ve(e,t){let r,n,i=!1;const s=e=>null==e?e:e-(t?.scriptStart||t?.registeredAt||0),a={fcp:{get value(){const e=s(r);return e>1e4?void 0:e},set value(e){i||(r=e)}},lcp:{get value(){if(void 0!==a.fcp.value)return s(n)},set value(e){i||(n=e)}},cls:{value:void 0},inp:{value:void 0},disconnect:()=>{}};if(!(e&&g.RI&&g.gm.MutationObserver&&g.gm.PerformanceObserver))return a;const o=[];setTimeout(()=>{r||a.disconnect()},1e4);const c=()=>{if(!i){if(null==r){const e=(0,_.t)();if(s(e)>1e4)return void a.disconnect();r=e}n??=(0,_.t)(),a.cls.value??=0}},d=ge(e,(e,t)=>{c(),t.disconnect()});o.push(d);let u=0,l=null;const f=new Set;try{l=new g.gm.ResizeObserver(e=>{i||e.forEach(e=>{try{const t=e.contentRect.width*e.contentRect.height;t>u&&(u=t,a.lcp.value=(0,_.t)()),l.unobserve(e.target)}catch(e){}})})}catch(e){}const h=ge(e,e=>{if(c(),l)try{const t=1===e.nodeType?e:e.parentElement;t&&!f.has(t)&&(f.add(t),"IMG"===t.tagName?t.complete?l.observe(t):t.addEventListener("load",()=>{l.observe(t)},{once:!0}):"VIDEO"===t.tagName?t.readyState>=2?l.observe(t):t.addEventListener("loadeddata",()=>{l.observe(t)},{once:!0}):l.observe(t))}catch(e){}});l&&o.push(l),o.push(h),me(o,{type:"layout-shift",buffered:!0},t=>{i||t.hadRecentInput||(t.sources||[]).some(r=>!!pe(r.node,e)&&(c(),a.cls.value+=t.value,!0))}),me(o,{type:"event",buffered:!0,durationThreshold:40},t=>{!i&&t.interactionId&&pe(t.target,e)&&(void 0===a.inp.value||t.duration>a.inp.value)&&(c(),a.inp.value=t.duration)});const p=["pointerdown","keydown"],m=()=>{p.forEach(e=>{g.gm.removeEventListener(e,v,{passive:!0})})};a.disconnect=()=>{i=!0,o.forEach(e=>{try{e?.disconnect()}catch(e){}}),m(),["visibilitychange","pagehide"].forEach(e=>{g.gm.removeEventListener(e,a.disconnect,{once:!0,passive:!0})})};const v=t=>{pe(t?.target,e)&&((()=>{try{h?.disconnect(),l?.disconnect()}catch(e){}})(),m())};p.forEach(e=>{g.gm.addEventListener(e,v,{passive:!0})}),["visibilitychange","pagehide"].forEach(e=>{g.gm.addEventListener(e,a.disconnect,{once:!0,passive:!0})});const y=g.gm.document?.querySelectorAll('[data-nr-mfe-id="'.concat(he(e.id),'"]'));return Array.from(y||[]).some(t=>fe(t.dataset,e))&&c(),a}var ye=r(9566),be=r(7560),Ee=r(9119);const we=["entry","scripts","all"],Re=["name","id","type"],Te=new Map([[ce,"addPageAction"],[oe,"log"],[de,"measure"],[ie,"noticeError"],[ue,"recordCustomEvent"]]),Ae={experimental:(0,C.J)(()=>(0,l.R)(54,"newrelic.register")),disabled:(0,C.J)(()=>(0,l.R)(55)),invalidTarget:(0,C.J)(e=>(0,l.R)(48,e)),deregistered:(0,C.J)(()=>(0,l.R)(68)),invalidTimingMethod:(0,C.J)(e=>(0,l.R)(80,e)),duplicateName:(0,C.J)(e=>(0,l.R)(81,e)),duplicateId:(0,C.J)(e=>(0,l.R)(82,e))};function Se(e){(0,N.Y)(k.eY,function(t){return xe(e,t)},e)}function xe(e,r){Ae.experimental(),r||={},r.instance=(0,ye.LA)(8),r.type=w.f.MFE,r.licenseKey||=e.info.licenseKey,r.blocked=!1,("object"!=typeof r.tags||null===r.tags||Array.isArray(r.tags))&&(r.tags={}),r.parent??={get id(){return e.runtime.appMetadata.agents?.[0].entityGuid},type:w.f.BA},r.manifest=(0,be.N)(r.manifest),void 0===r.timingMethod||we.includes(r.timingMethod)||(Ae.invalidTimingMethod(r.timingMethod),r.timingMethod=void 0);const n=(0,le.Qr)(r);r.manifest&&(0,le.xo)(n,r);const i=ve(r,n),s=(0,Ee.L)(""+location),a={};Object.prototype.hasOwnProperty.call(r,"attributes")||Object.defineProperty(r,"attributes",{get:()=>({...a,"source.id":r.id,"source.name":r.name,"source.type":r.type,"parent.type":r.parent?.type||w.f.BA,"parent.id":r.parent?.id})}),Object.entries(r.tags).forEach(([e,t])=>{Re.includes(e)||(a["source.".concat(e)]=t)});let o=()=>{};const c=e.runtime.registeredEntities,d=e=>{r.blocked=!0,o=e};function u(e){return"string"==typeof e&&!!e.trim()&&e.trim().length<501}e.init.api.register.enabled||d(Ae.disabled),u(r.id)&&u(r.name)||d(()=>Ae.invalidTarget(r)),c.forEach(e=>{try{const{name:t,id:n}=e.metadata.target;t===r.name&&n!==r.id&&Ae.duplicateName(r),n===r.id&&t!==r.name&&Ae.duplicateId(r)}catch(e){}});const f={addPageAction:(t,n={})=>m(ce,[t,{...a,...n},e],r),deregister:()=>{p(),d(Ae.deregistered)},log:(t,n={})=>m(oe,[t,{...n,customAttributes:{...a,...n.customAttributes||{}}},e],r),measure:(t,n={})=>m(de,[t,{...n,customAttributes:{...a,...n.customAttributes||{}}},e],r),noticeError:(t,n={})=>m(ie,[t,{...a,...n},e],r),recordCustomEvent:(t,n={})=>m(ue,[t,{...a,...n},e],r),setApplicationVersion:e=>g("application.version",e),setCustomAttribute:(e,t)=>g(e,t),setUserId:e=>g("enduser.id",e),metadata:{get customAttributes(){return a},target:r,timings:n,vitals:i,events:{latestTimestamp:void 0}}},h=()=>(r.blocked&&o(),r.blocked);function p(){if(n.reportedAt)return;n.reportedAt=(0,_.t)(),i.disconnect(),n.fcp=i.fcp,n.lcp=i.lcp,n.cls=i.cls,n.inp=i.inp;const e=n.fetchEnd-n.fetchStart,t=n.scriptEnd-n.scriptStart,r={assetUrl:n.asset,assetType:n.type,registerUrl:s,deregisterUrl:(0,Ee.L)(""+location),pageUrl:void 0,currentUrl:void 0,timeAlive:n.reportedAt-n.registeredAt,timeToBeRequested:n.fetchStart,timeToExecute:t,timeToFetch:e,timeToLoad:e+t,timeToRegister:n.registeredAt,totalWeight:n.totalWeight,...void 0!==n.renderBlocking&&{renderBlocking:n.renderBlocking},...i.fcp.value>=0&&{"vitals.fcp.value":i.fcp.value},...i.lcp.value>=0&&{"vitals.lcp.value":i.lcp.value},...i.cls.value>=0&&{"vitals.cls.value":i.cls.value},...i.inp.value>=0&&{"vitals.inp.value":i.inp.value}};f.recordCustomEvent("MicroFrontEndTiming",r)}h()||(c.push(f),(0,V.G)(p));const g=(e,t)=>{h()||(a[e]=t)},m=(r,n,i)=>{if(h()&&r!==xe)return;const s=f.metadata.events.latestTimestamp??(0,_.t)();f.metadata.events.latestTimestamp=void 0;const a=Te.get(r)||"unknown";(0,S.p)(q.xV,["API/register/".concat(a,"/called")],void 0,t.K7.metrics,e.ee);try{return r(...n,i,s)}catch(e){(0,l.R)(50,e)}};return f}class Oe extends W{static featureName=Z.T;constructor(e){var t;super(e,Z.T),t=e,(0,N.Y)(k.o5,(e,r)=>ie(e,r,t),t),function(e){(0,N.Y)(k.bt,function(t){e.runtime.onerror=t},e)}(e),function(e){let t=0;(0,N.Y)(k.k6,function(e,r){++t>10||(this.runtime.releaseIds[e.slice(-200)]=(""+r).slice(-200))},e)}(e),Se(e);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("internal-error",(t,r)=>{this.abortHandler&&(0,S.p)("ierr",[ee(t),(0,_.t)(),!0,{},e.runtime.isRecording,r],void 0,this.featureName,this.ee)}),g.gm.addEventListener("unhandledrejection",t=>{this.abortHandler&&(0,S.p)("err",[te(t),(0,_.t)(),!1,{unhandledPromiseRejection:1},e.runtime.isRecording],void 0,this.featureName,this.ee)},(0,J.jT)(!1,this.removeOnAbort?.signal)),g.gm.addEventListener("error",t=>{this.abortHandler&&(0,S.p)("err",[re(t),(0,_.t)(),!1,{},e.runtime.isRecording],void 0,this.featureName,this.ee)},(0,J.jT)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#n,this.importAggregator(e,()=>r.e(478).then(r.bind(r,9377)))}#n(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}var _e=r(8990);let ke=1;function Ne(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===g.gm?0:(0,_e.I)(e,"nr@id",function(){return ke++})}function Le(e){if("string"==typeof e)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,X.A)(e).length}catch(e){return}}}var Me=r(8139),Pe=r(3434),Ie=r(5732);const je={},Ce=["open","send","setRequestHeader"];function De(e,t){var r=e||R.ee;const n=function(e){return(e||R.ee).get("xhr")}(r);if(void 0===g.gm.XMLHttpRequest)return n;if(je[n.debugId]++)return n;je[n.debugId]=1,(0,Me.u)(r,t);var i=(0,Pe.YM)(n,void 0,t),s=g.gm.XMLHttpRequest,a=g.gm.MutationObserver,o=g.gm.Promise,c=g.gm.setInterval,d="readystatechange",u=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],f=[],h=g.gm.XMLHttpRequest=function(e){const r=new s(e),a=n.context(r);a.targets=(0,Ie.$5)(t);try{n.emit("new-xhr",[r],a),r.addEventListener(d,(o=a,function(){var e=this;e.readyState>3&&!o.resolved&&(o.resolved=!0,n.emit("xhr-resolved",[],e)),i.inPlace(e,u,"fn-",E)}),(0,J.jT)(!1))}catch(e){(0,l.R)(15,e);try{n.emit("internal-error",[e])}catch(e){}}var o;return r};function p(e,t){i.inPlace(t,["onreadystatechange"],"fn-",E)}if(function(e,t){for(var r in e)t[r]=e[r]}(s,h),h.prototype=s.prototype,i.inPlace(h.prototype,Ce,"-xhr-",E),n.on("send-xhr-start",function(e,t){p(e,t),function(e){f.push(e),a&&(m?m.then(b):c?c(b):(v=-v,y.data=v))}(t)}),n.on("open-xhr-start",p),a){var m=o&&o.resolve();if(!c&&!o){var v=1,y=document.createTextNode(v);new a(b).observe(y,{characterData:!0})}}else r.on("fn-end",function(e){e[0]&&e[0].type===d||b()});function b(){for(var e=0;e<f.length;e++)p(0,f[e]);f.length&&(f=[])}function E(e,t){return t}return n}var Be="fetch-",He=Be+"body-",We=["arrayBuffer","blob","json","text","formData"],Ue=g.gm.Request,Ke=g.gm.Response,Fe="prototype";const Ve={};function ze(e,t){const r=function(e){return(e||R.ee).get("fetch")}(e);if(!(Ue&&Ke&&g.gm.fetch))return r;if(Ve[r.debugId]++)return r;function n(e,n,i){var s=e[n];"function"==typeof s&&(e[n]=function(){var e=[...arguments];const n={},a=(0,Ie.$5)(t);var o;r.emit(i+"before-start",[e],n),n[R.P]&&n[R.P].dt&&(o=n[R.P].dt);var c=s.apply(this,e);return r.emit(i+"start",[e,o],c),c.then(function(e){return r.emit(i+"end",[null,e,a],c),e},function(e){throw r.emit(i+"end",[e,void 0,a],c),e})})}return Ve[r.debugId]=1,We.forEach(e=>{n(Ue[Fe],e,He),n(Ke[Fe],e,He)}),n(g.gm,"fetch",Be),r.on(Be+"end",function(e,n,i){var s=this;if(s.targets=i||[t.runtime.v2Target],n){var a=n.headers.get("content-length");null!==a&&(s.rxSize=a),r.emit(Be+"done",[null,n],s)}else r.emit(Be+"done",[e],s)}),r}var Ge=r(7485);class qe{constructor(e){this.agentRef=e}generateTracePayload(e){const t=this.agentRef.loader_config;if(!this.shouldGenerateTrace(e)||!t)return null;var r=(t.accountID||"").toString()||null,n=(t.agentID||"").toString()||null,i=(t.trustKey||"").toString()||null;if(!r||!n)return null;var s,a=(0,ye.ZF)(),o=(0,ye.el)(),c=Date.now();this.agentRef.runtime?.timeKeeper?.ready&&(s=Math.floor(this.agentRef.runtime.timeKeeper.correctAbsoluteTimestamp(c)));var d={spanId:a,traceId:o,timestamp:c,timestampCorrected:s};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(d.traceContextParentHeader=this.generateTraceContextParentHeader(a,o),d.traceContextStateHeader=this.generateTraceContextStateHeader(a,s??c,r,n,i)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(d.newrelicHeader=this.generateTraceHeader(a,o,s??c,r,n,i)),d}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,s){if(!("function"==typeof g.gm?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return s&&n!==s&&(a.d.tk=s),btoa((0,X.A)(a))}shouldGenerateTrace(e){return this.agentRef.init?.distributed_tracing?.enabled&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1;const r=this.agentRef.init?.distributed_tracing;if(e.sameOrigin)t=!0;else if(r?.allowed_origins instanceof Array)for(var n=0;n<r.allowed_origins.length;n++){var i=(0,Ge.D)(r.allowed_origins[n]);if(e.hostname===i.hostname&&e.protocol===i.protocol&&e.port===i.port){t=!0;break}}return t}excludeNewrelicHeader(){var e=this.agentRef.init?.distributed_tracing;return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=this.agentRef.init?.distributed_tracing;return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=this.agentRef.init?.distributed_tracing;return!!e&&!!e.cors_use_tracecontext_headers}}var Ye=r(7295);function Ze(e){return"string"==typeof e?e:e instanceof(0,i.dV)().o.REQ?e.url:g.gm?.URL&&e instanceof URL?e.href:void 0}function $e(e,t){var r=(0,Ge.D)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}var Je=["load","error","abort","timeout"],Xe=Je.length,Qe=(0,i.dV)().o.REQ,et=(0,i.dV)().o.XHR;const tt="X-NewRelic-App-Data",rt="internal-error";class nt extends W{static featureName=c.TZ;constructor(e){super(e,c.TZ),this.dt=new qe(e),this.handler=(e,t,r,n)=>(0,S.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};g.gm?.performance?.getEntriesByType("resource").forEach(r=>{if(r.initiatorType in e&&0!==r.responseStatus){const n={status:r.responseStatus},i={rxSize:r.transferSize,duration:Math.floor(r.duration),cbTime:0};$e(n,r.name),this.handler("xhr",[n,i,r.startTime,r.responseEnd,e[r.initiatorType]],void 0,t.K7.ajax)}})}catch(e){}ze(this.ee,e),De(this.ee,e),function(e,r,n,i){const s=[c.mo.ALL,c.mo.FAILURES].includes(e.init.ajax?.capture_payloads);function a(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=A,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},t.latestLongtaskEnd=0,e.addEventListener("load",function(r){O(t,e)},(0,J.jT)(!1)),g.lR||e.addEventListener("progress",function(e){t.lastSize=e.loaded},(0,J.jT)(!1))}function o(e){this.params={method:e[0]},$e(this,e[1]),this.metrics={}}function d(t,r){e.loader_config.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",e.loader_config.xpid);var n=i.generateTracePayload(this.parsedOrigin);if(n){var s=!1;n.newrelicHeader&&(r.setRequestHeader("newrelic",n.newrelicHeader),s=!0),n.traceContextParentHeader&&(r.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&r.setRequestHeader("tracestate",n.traceContextStateHeader),s=!0),s&&(this.dt=n)}}function u(e,t){s&&e.length>=2&&(this.requestHeaders??={},this.requestHeaders[e[0].toLowerCase()]=e[1])}function l(e,t){var n=this.metrics,i=e[0],s=this;if(n&&i){var a=Le(i);a&&(n.txSize=a)}this.startTime=(0,_.t)(),this.requestBody=i,this.listener=function(e){try{"abort"!==e.type||s.loadCaptureCalled||(s.params.aborted=!0),("load"!==e.type||s.called===s.totalCbs&&(s.onloadCalled||"function"!=typeof t.onload)&&"function"==typeof s.end)&&s.end(t)}catch(e){try{r.emit(rt,[e])}catch(e){}}};for(var o=0;o<Xe;o++)t.addEventListener(Je[o],this.listener,(0,J.jT)(!1))}function f(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function h(e,t){var r=""+Ne(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function p(e,t){var r=""+Ne(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function m(){this.endTime=(0,_.t)()}function v(e,t){t instanceof et&&"load"===e[0]&&r.emit("xhr-load-added",[e[1],e[2]],t)}function y(e,t){t instanceof et&&"load"===e[0]&&r.emit("xhr-load-removed",[e[1],e[2]],t)}function b(e,t,r){t instanceof et&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,_.t)()))}function E(e,t){this.xhrCbStart&&r.emit("xhr-cb-time",[(0,_.t)()-this.xhrCbStart,this.onload,t],t)}function w(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&g.RI&&(t=""+g.gm.location.href):e[0]&&e[0].url?t=e[0].url:g.gm?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,Ge.D)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var n=i.generateTracePayload(this.parsedOrigin);if(n&&(n.newrelicHeader||n.traceContextParentHeader))if(e[0]&&e[0].headers)o(e[0].headers,n)&&(this.dt=n);else{var s={};for(var a in r)s[a]=r[a];s.headers=new Headers(r.headers||{}),o(s.headers,n)&&(this.dt=n),e.length>1?e[1]=s:e.push(s)}}function o(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function R(e,t){this.params={},this.metrics={},this.startTime=(0,_.t)(),this.dt=t;let[r,n={}]=e;$e(this,Ze(r));const i=(""+(r&&r instanceof Qe&&r.method||n.method||"GET")).toUpperCase();this.params.method=i,this.txSize=Le(n.body||r?.body)||0;try{var a=n.headers||r?.headers;if(s&&a)if(this.requestHeaders??={},a instanceof Headers)a.forEach(function(e,t){this.requestHeaders[t.toLowerCase()]=e}.bind(this));else if("object"==typeof a)for(var o in a)this.requestHeaders[o.toLowerCase()]=a[o]}catch(e){}this.requestBody=n.body||r?.body}function T(e,t){if(this.endTime=(0,_.t)(),this.params||(this.params={}),(0,Ye.iW)(this.params))return;this.params.status=t?t.status:0;const n=()=>{const e=+this.rxSize,t=null==this.rxSize||isNaN(e)?void 0:e,r={txSize:this.txSize,rxSize:t,duration:this.endTime-this.startTime},n=[this.params,r,this.startTime,this.endTime,"fetch"];this.targets.forEach(e=>x(n,this,e))};t&&s?t.clone().text().then(e=>{this.responseBody=e,this.rxSize&&"0"!==this.rxSize&&0!==this.rxSize||void 0===e||0===this.params.status||(this.rxSize=Le(e)),t?.headers&&(this.responseHeaders={},t.headers.forEach(function(e,t){this.responseHeaders[t.toLowerCase()]=e}.bind(this)))}).catch(e=>{r.emit(rt,[e])}).finally(()=>{n()}):n()}function A(e){const t=this.params,n=this.metrics;if(this.ended)return;this.ended=!0;for(let t=0;t<Xe;t++)e.removeEventListener(Je[t],this.listener,!1);if(t.aborted)return;if((0,Ye.iW)(t))return;if(n.duration=this.endTime-this.startTime,this.loadCaptureCalled||4!==e.readyState?null==t.status&&(t.status=0):O(this,e),n.cbTime=this.cbTime,s){try{this.responseBody=e.responseText}catch(t){this.responseBody=e.response}if((!n.rxSize||0===n.rxSize)&&void 0!==this.responseBody&&0!==t.status){const e=Le(this.responseBody);void 0!==e&&(n.rxSize=e)}try{this.responseHeaders=function(e){const t={};return e?(e.split("\r\n").forEach(function(e){const r=e.indexOf(": ");if(r>0){const n=e.substring(0,r),i=e.substring(r+2);t[n.toLowerCase()]=i}}),t):t}(e.getAllResponseHeaders())}catch(e){r.emit(rt,[e])}}const i=[t,n,this.startTime,this.endTime,"xhr"];this.targets.forEach(e=>x(i,this,e))}function x(e,r,i){n("xhr",[...e,i],r,t.K7.ajax)}function O(e,n){e.params.status=n.status;var i=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?Le(e.response):"text"===r||""===r||void 0===r?Le(e.responseText):void 0}(n,e.lastSize);if(void 0!==i&&0!==n.status&&(e.metrics.rxSize=i),e.sameOrigin&&n.getAllResponseHeaders().indexOf(tt)>=0){var s=n.getResponseHeader(tt);s&&((0,S.p)("sm",["Ajax/CrossApplicationTracing/Header/Seen"],void 0,t.K7.metrics,r),e.params.cat=s.split(", ").pop())}e.loadCaptureCalled=!0}r.on("new-xhr",a),r.on("open-xhr-start",o),r.on("open-xhr-end",d),r.on("send-xhr-start",l),r.on("setRequestHeader-xhr-start",u),r.on("xhr-cb-time",f),r.on("xhr-load-added",h),r.on("xhr-load-removed",p),r.on("xhr-resolved",m),r.on("addEventListener-end",v),r.on("removeEventListener-end",y),r.on("fn-end",E),r.on("fetch-before-start",w),r.on("fetch-start",R),r.on("fn-start",b),r.on("fetch-done",T)}(e,this.ee,this.handler,this.dt),this.importAggregator(e,()=>r.e(478).then(r.bind(r,3845)))}}const it={},st=["pushState","replaceState"];function at(e,t){const r=function(e){return(e||R.ee).get("history")}(e);return!g.RI||it[r.debugId]++||(it[r.debugId]=1,(0,Pe.YM)(r,void 0,t).inPlace(window.history,st,"-")),r}var ot=r(3738);function ct(e){(0,N.Y)(k.BL,function(r=Date.now()){const n=r-g.WN;n<0&&(0,l.R)(62,r),(0,S.p)(q.XG,[k.BL,{time:n}],void 0,t.K7.metrics,e.ee),e.addToTrace({name:k.BL,start:r,origin:"nr"}),(0,S.p)("api-"+k.hG,[n,k.BL],void 0,t.K7.genericEvents,e.ee)},e)}const{He:dt,bD:ut,d3:lt,Kp:ft,TZ:ht,Lc:pt,uP:gt,Rz:mt}=ot;class vt extends W{static featureName=ht;constructor(e){var n;super(e,ht),n=e,(0,N.Y)(k.U2,function(e){if(!(e&&"object"==typeof e&&e.name&&e.start))return;const r={n:e.name,s:e.start-g.WN,e:(e.end||e.start)-g.WN,o:e.origin||"",t:"api"};r.s<0||r.e<0||r.e<r.s?(0,l.R)(61,{start:r.s,end:r.e}):(0,S.p)("bstApi",[r],void 0,t.K7.sessionTrace,n.ee)},n),ct(e);if(!(0,j.V)(e.init))return void this.deregisterDrain();const i=this.ee;let s;at(i,e),this.eventsEE=(0,Me.u)(i,e),this.eventsEE.on(gt,function(e,t){this.bstStart=(0,_.t)()}),this.eventsEE.on(pt,function(e,r){(0,S.p)("bst",[e[0],r,this.bstStart,(0,_.t)()],void 0,t.K7.sessionTrace,i)}),i.on(mt+lt,function(e){this.time=(0,_.t)(),this.startPath=location.pathname+location.hash}),i.on(mt+ft,function(e){(0,S.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,t.K7.sessionTrace,i)});try{s=new PerformanceObserver(e=>{const r=e.getEntries();(0,S.p)(dt,[r],void 0,t.K7.sessionTrace,i)}),s.observe({type:ut,buffered:!0})}catch(e){}this.importAggregator(e,()=>r.e(478).then(r.bind(r,6974)),{resourceObserver:s})}}var yt=r(733),bt=r(6344);class Et extends W{static featureName=bt.TZ;#i;recorder;constructor(e){var n;let i;super(e,bt.TZ),n=e,(0,N.Y)(k.CH,function(){(0,S.p)(k.CH,[],void 0,t.K7.sessionReplay,n.ee)},n),function(e){(0,N.Y)(k.Tb,function(){(0,S.p)(k.Tb,[],void 0,t.K7.sessionReplay,e.ee)},e)}(e);const s="".concat(u.Wt).concat((0,yt.Y)(e.info.licenseKey,e.info.applicationID));try{i=JSON.parse(localStorage.getItem(s))}catch(e){}(0,I.SR)(e.init)&&this.ee.on(k.CH,()=>this.#s()),this.#a(i)&&this.importRecorder().then(e=>{e.startRecording(bt.Qb.PRELOAD,i?.sessionReplayMode)}),this.abortHandler=this.#n,this.importAggregator(this.agentRef,()=>r.e(478).then(r.bind(r,6167)),this),this.ee.on("err",e=>{this.blocked||this.agentRef.runtime.isRecording&&(this.errorNoticed=!0,(0,S.p)(bt.Vh,[e],void 0,this.featureName,this.ee))})}#a(e){return e&&(e.sessionReplayMode===u.g.FULL||e.sessionReplayMode===u.g.ERROR)||(0,I.Aw)(this.agentRef.init)}importRecorder(){return this.recorder?Promise.resolve(this.recorder):(this.#i??=Promise.all([r.e(478),r.e(249)]).then(r.bind(r,4866)).then(({Recorder:e})=>(this.recorder=new e(this),this.recorder)).catch(e=>{throw this.ee.emit("internal-error",[e]),this.blocked=!0,e}),this.#i)}#s(){this.blocked||(this.featAggregate?this.featAggregate.mode!==u.g.FULL&&this.featAggregate.initializeRecording(u.g.FULL,!0,bt.Qb.API):this.importRecorder().then(()=>{this.recorder.startRecording(bt.Qb.API,u.g.FULL)}))}#n(){this.recorder?.stopRecording()}}var wt=r(3962);class Rt extends W{static featureName=wt.TZ;constructor(e){if(super(e,wt.TZ),function(e){const r=e.ee.get("tracer");function n(){}(0,N.Y)(k.dT,function(e){return(new n).get("object"==typeof e?e:{})},e);const i=n.prototype={createTracer:function(n,i){var s={},a=this,o="function"==typeof i;return(0,S.p)(q.xV,["API/createTracer/called"],void 0,t.K7.metrics,e.ee),function(){if(r.emit((o?"":"no-")+"fn-start",[(0,_.t)(),a,o],s),o)try{return i.apply(this,arguments)}catch(e){const t="string"==typeof e?new Error(e):e;throw r.emit("fn-err",[arguments,this,t],s),t}finally{r.emit("fn-end",[(0,_.t)()],s)}}}};["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach(r=>{N.Y.apply(this,[r,function(){return(0,S.p)(k.hw+r,[performance.now(),...arguments],this,t.K7.softNav,e.ee),this},e,i])}),(0,N.Y)(k.PA,function(){(0,S.p)(k.hw+"routeName",[performance.now(),...arguments],void 0,t.K7.softNav,e.ee)},e)}(e),!g.RI||!(0,i.dV)().o.MO)return;const n=at(this.ee,e);try{this.removeOnAbort=new AbortController}catch(e){}wt.tC.forEach(e=>{(0,J.sp)(e,e=>{c(e)},!0,this.removeOnAbort?.signal)});const s=()=>(0,S.p)("newURL",[(0,_.t)(),""+window.location],void 0,this.featureName,this.ee);n.on("pushState-end",s),n.on("replaceState-end",s),(0,J.sp)(wt.OV,e=>{c(e),(0,S.p)("newURL",[e.timeStamp,""+window.location],void 0,this.featureName,this.ee)},!0,this.removeOnAbort?.signal);let a=!1;const o=new((0,i.dV)().o.MO)((e,t)=>{a||(a=!0,requestAnimationFrame(()=>{(0,S.p)("newDom",[(0,_.t)()],void 0,this.featureName,this.ee),a=!1}))}),c=(0,C.s)(e=>{"loading"!==document.readyState&&((0,S.p)("newUIEvent",[e],void 0,this.featureName,this.ee),o.observe(document.body,{attributes:!0,childList:!0,subtree:!0,characterData:!0}))},100,{leading:!0});this.abortHandler=function(){this.removeOnAbort?.abort(),o.disconnect(),this.abortHandler=void 0},this.importAggregator(e,()=>r.e(478).then(r.bind(r,4393)),{domObserver:o})}}var Tt=r(981);const At={},St=new Set;function xt(e){return"string"==typeof e?{type:"string",size:(new TextEncoder).encode(e).length}:e instanceof ArrayBuffer?{type:"ArrayBuffer",size:e.byteLength}:e instanceof Blob?{type:"Blob",size:e.size}:e instanceof DataView?{type:"DataView",size:e.byteLength}:ArrayBuffer.isView(e)?{type:"TypedArray",size:e.byteLength}:{type:"unknown",size:0}}class Ot{constructor(e,t){this.timestamp=(0,_.t)(),this.currentUrl=(0,Ee.L)(window.location.href),this.socketId=(0,ye.LA)(8),this.requestedUrl=(0,Ee.L)(e),this.requestedProtocols=Array.isArray(t)?t.join(","):t||"",this.openedAt=void 0,this.protocol=void 0,this.extensions=void 0,this.binaryType=void 0,this.messageOrigin=void 0,this.messageCount=0,this.messageBytes=0,this.messageBytesMin=0,this.messageBytesMax=0,this.messageTypes=void 0,this.sendCount=0,this.sendBytes=0,this.sendBytesMin=0,this.sendBytesMax=0,this.sendTypes=void 0,this.closedAt=void 0,this.closeCode=void 0,this.closeReason="unknown",this.closeWasClean=void 0,this.connectedDuration=0,this.hasErrors=void 0}}class _t extends W{static featureName=o.TZ;constructor(e){super(e,o.TZ);const n=e.init.feature_flags.includes("websockets")||e.init.web_sockets?.enabled,s=!e.init.feature_flags.includes("no_spv"),a=[e.init.page_action.enabled,e.init.performance.capture_marks,e.init.performance.capture_measures,e.init.performance.resources.enabled,e.init.user_actions.enabled,n,s];var c;let d;if(c=e,(0,N.Y)(k.hG,(e,t)=>ce(e,t,c),c),function(e){(0,N.Y)(k.fF,(t,r)=>ue(t,r,e),e)}(e),ct(e),Se(e),function(e){(0,N.Y)(k.V1,(t,r)=>de(t,r,e),e)}(e),this.removeOnAbort=new AbortController,this.abortHandler=()=>{this.removeOnAbort.abort(),this.abortHandler=void 0},n){const u=function(e,t){if(!(0,i.dV)().o.WS)return e;const r=e.get("websockets");if(At[r.debugId]++)return r;At[r.debugId]=1,(0,V.G)(()=>{const e=(0,_.t)();St.forEach(t=>{t.nrData.closedAt=e,t.nrData.closeCode=1001,t.nrData.closeReason="Page navigating away",t.nrData.closeWasClean=!1,t.nrData.openedAt&&(t.nrData.connectedDuration=e-t.nrData.openedAt),r.emit("ws",[t.nrData,t.targets],t)})});class n extends WebSocket{static name=Tt.R.WS;static toString(){return"function WebSocket() { [native code] }"}toString(){return"[object WebSocket]"}get[Symbol.toStringTag](){return n.name}#o(e){(e.__newrelic??={}).socketId=this.nrData.socketId,this.nrData.hasErrors??=!0}constructor(...e){super(...e),this.nrData=new Ot(e[0],e[1]),this.targets=(0,Ie.$5)(t),this.addEventListener("open",()=>{this.nrData.openedAt=(0,_.t)(),["protocol","extensions","binaryType"].forEach(e=>{this.nrData[e]=this[e]}),St.add(this)}),this.addEventListener("message",e=>{const{type:t,size:r}=xt(e.data);this.nrData.messageOrigin??=(0,Ee.L)(e.origin),this.nrData.messageCount++,this.nrData.messageBytes+=r,this.nrData.messageBytesMin=Math.min(this.nrData.messageBytesMin||1/0,r),this.nrData.messageBytesMax=Math.max(this.nrData.messageBytesMax,r),(this.nrData.messageTypes??"").includes(t)||(this.nrData.messageTypes=this.nrData.messageTypes?"".concat(this.nrData.messageTypes,",").concat(t):t)}),this.addEventListener("close",e=>{this.nrData.closedAt=(0,_.t)(),this.nrData.closeCode=e.code,e.reason&&(this.nrData.closeReason=e.reason),this.nrData.closeWasClean=e.wasClean,this.nrData.connectedDuration=this.nrData.closedAt-this.nrData.openedAt,St.delete(this),r.emit("ws",[this.nrData,this.targets],this)})}addEventListener(e,t,...r){const n=this,i="function"==typeof t?function(...e){try{return t.apply(this,e)}catch(e){throw n.#o(e),e}}:t?.handleEvent?{handleEvent:function(...e){try{return t.handleEvent.apply(t,e)}catch(e){throw n.#o(e),e}}}:t;return super.addEventListener(e,i,...r)}send(e){if(this.readyState===WebSocket.OPEN){const{type:t,size:r}=xt(e);this.nrData.sendCount++,this.nrData.sendBytes+=r,this.nrData.sendBytesMin=Math.min(this.nrData.sendBytesMin||1/0,r),this.nrData.sendBytesMax=Math.max(this.nrData.sendBytesMax,r),(this.nrData.sendTypes??"").includes(t)||(this.nrData.sendTypes=this.nrData.sendTypes?"".concat(this.nrData.sendTypes,",").concat(t):t)}try{return super.send(e)}catch(e){throw this.#o(e),e}}close(...e){try{super.close(...e)}catch(e){throw this.#o(e),e}}}return g.gm.WebSocket=n,r}(this.ee,e);u.on("ws",(e,t)=>{(0,S.p)("ws-complete",[e,t],void 0,this.featureName,this.ee)})}if(s){if("function"==typeof g.gm.ReportingObserver){const l=new g.gm.ReportingObserver(e=>{e.forEach(e=>{(0,S.p)("spv",[kt(e),(0,_.t)()],void 0,t.K7.genericEvents,this.ee)}),l.disconnect()},{types:["csp-violation"],buffered:!0});l.observe()}g.gm.addEventListener("securitypolicyviolation",e=>{(0,S.p)("spv",[kt(e),e.timeStamp],void 0,t.K7.genericEvents,this.ee)},(0,J.jT)(!1,this.removeOnAbort.signal))}if(g.RI){if(ze(this.ee,e),De(this.ee,e),d=at(this.ee,e),e.init.user_actions.enabled){function f(t){const r=(0,Ge.D)(t);return e.beacons.includes(r.hostname+":"+r.port)}function h(){d.emit("navChange")}o.Zp.forEach(e=>(0,J.sp)(e,e=>(0,S.p)("ua",[e],void 0,this.featureName,this.ee),!0)),o.qN.forEach(e=>{const t=(0,C.s)(e=>{(0,S.p)("ua",[e],void 0,this.featureName,this.ee)},500,{leading:!0});(0,J.sp)(e,t)}),g.gm.addEventListener("error",()=>{(0,S.p)("uaErr",[],void 0,t.K7.genericEvents,this.ee)},(0,J.jT)(!1,this.removeOnAbort.signal)),this.ee.on("open-xhr-start",(e,r)=>{f(e[1])||r.addEventListener("readystatechange",()=>{2===r.readyState&&(0,S.p)("uaXhr",[],void 0,t.K7.genericEvents,this.ee)},(0,J.jT)(void 0,this.removeOnAbort.signal))}),this.ee.on("fetch-start",e=>{e.length>=1&&!f(Ze(e[0]))&&(0,S.p)("uaXhr",[],void 0,t.K7.genericEvents,this.ee)}),d.on("pushState-end",h),d.on("replaceState-end",h),window.addEventListener("hashchange",h,(0,J.jT)(!0,this.removeOnAbort.signal)),window.addEventListener("popstate",h,(0,J.jT)(!0,this.removeOnAbort.signal))}if(e.init.performance.resources.enabled&&g.gm.PerformanceObserver?.supportedEntryTypes.includes("resource")){new PerformanceObserver(e=>{e.getEntries().forEach(e=>{(0,S.p)("browserPerformance.resource",[e],void 0,this.featureName,this.ee)})}).observe({type:"resource",buffered:!0})}}a.some(e=>e)?this.importAggregator(e,()=>r.e(478).then(r.bind(r,8019))):this.deregisterDrain()}}function kt(e){const t=e.body??e;return{blockedUrl:t.blockedURL??e.blockedURI,documentUrl:t.documentURL??e.documentURI,effectiveDirective:t.effectiveDirective,originalPolicy:t.originalPolicy,sourceFile:t.sourceFile,statusCode:t.statusCode,lineNumber:t.lineNumber,columnNumber:t.columnNumber,disposition:"reporting"===t.disposition?"report":t.disposition,sample:t.sample,referrer:t.referrer}}var Nt=r(2646);const Lt=new Map;function Mt(e,t,r,n,i=!0,s){if("object"!=typeof t||!t||"string"!=typeof r||!r||"function"!=typeof t[r])return(0,l.R)(29);const a=function(e){return(e||R.ee).get("logger")}(e),o=(0,Pe.YM)(a,void 0,s),c=new Nt.y(R.P);c.level=n.level,c.customAttributes=n.customAttributes,c.autoCaptured=i;const d=t[r]?.[Pe.Jt]||t[r];return Lt.set(d,c),o.inPlace(t,[r],"wrap-logger-",()=>Lt.get(d),void 0,!0),a}var Pt=r(1910);class It extends W{static featureName=se.TZ;constructor(e){var t;super(e,se.TZ),t=e,(0,N.Y)("log",(e,r)=>oe(e,r,t),t),function(e){(0,N.Y)(k.Wb,(t,r,{customAttributes:n={},level:i=se.p_.INFO}={})=>{Mt(e.ee,t,r,{customAttributes:n,level:i},!1,e)},e)}(e),Se(e);const n=this.ee;["log","error","warn","info","debug","trace"].forEach(t=>{(0,Pt.i)(g.gm.console[t]),Mt(n,g.gm.console,t,{level:"log"===t?"info":t},void 0,e)}),this.ee.on("wrap-logger-end",function([t],r,i,s=[e.runtime.v2Target]){const{level:a,customAttributes:o,autoCaptured:c}=this;s.forEach(e=>{(0,ae.R)(n,t,o,a,c,e)})}),this.importAggregator(e,()=>r.e(478).then(r.bind(r,5288)))}}new F({features:[nt,K,G,vt,Et,Y,Oe,_t,It,Rt],loaderType:"spa"})})()})();</script>
+<noscript><meta http-equiv="Refresh" content="0; URL=/big_pipe/no-js?destination=/insights" />
+</noscript><script>window.dataLayer = window.dataLayer || []; window.dataLayer.push({"traffic_t":"external","selectedCountry":"United States","userRole":"Public (Guest)","drupalContentType":"Digital panel","disclosureModal":true});</script>
+<meta name="description" content="Cutting-edge investment research, market analysis, and academic insights, developed in partnership with leading universities to advance the future of investing." />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://www.man.com/insights" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.man.com/insights" />
+<meta property="og:title" content="Insights at Man" />
+<meta property="og:description" content="Cutting-edge investment research, market analysis, and academic insights, developed in partnership with leading universities to advance the future of investing." />
+<meta property="og:image" content="https://www.man.com/sites/default/files/uploads/content/MG_Website_Share_1200x630.jpg" />
+<meta property="og:image:url" content="https://www.man.com/sites/default/files/uploads/content/MG_Website_Share_1200x630.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Cutting-edge investment research, market analysis, and academic insights, developed in partnership with leading universities to advance the future of investing." />
+<meta name="twitter:title" content="Insights at Man" />
+<meta name="twitter:image" content="https://www.man.com/sites/default/files/uploads/content/MG_Website_Share_1200x630.jpg" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/custom/digital/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en-gb" href="https://www.man.com/insights" />
+<link rel="alternate" hreflang="it-it" href="https://www.man.com/it/insights" />
+<link rel="alternate" hreflang="es-es" href="https://www.man.com/es/insights" />
+
+    <title>Man Insights | Man Group</title>
+    <link rel="stylesheet" media="all" href="/sites/default/assets/css/css_uKK0Ks8o0sElb4sQIZQ-zbHDKgtNnMa9kyOCT4UoLBs.css?delta=0&amp;language=en-us&amp;theme=digital&amp;include=eJxFzEEOgCAMBMAPoTzJLNAAplLSgpHfezJe5zBRlHzS2cE7Tjwu1VwH2GeWAN6imWMsmeNI1aLcpMtLoyjsOhRZ0Yt9wy_7bH0GrlYoOVs26PIBRi-afCvS" />
+<link rel="stylesheet" media="all" href="/sites/default/assets/css/css_0al_zKl-ADClQg5L_f34oZsAZHu-zuuarIbJdTae4mw.css?delta=1&amp;language=en-us&amp;theme=digital&amp;include=eJxFzEEOgCAMBMAPoTzJLNAAplLSgpHfezJe5zBRlHzS2cE7Tjwu1VwH2GeWAN6imWMsmeNI1aLcpMtLoyjsOhRZ0Yt9wy_7bH0GrlYoOVs26PIBRi-afCvS" />
+
+      <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/11993","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en-us"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJxdj0FuQyEMRC9E4UjIgEP8C9i1ocq_fVAVJWk21pu3mJET1SgkGNIDXP7GQpM1Qs6shXiEJ_mL8pg4itsCA23WAc0fPwv19BfW7gpVmtBCbZygfWWzT3WYq8y1YZxQQ93nM3s44PZfdtfg5DVjIcv8u-cCD8zcXIfxPvYWj79UlZeER1kHsQhCTkChKsjVQtEl-4mX8WvISo3sisXZaRN7SGB4B3iOdEY","theme":"digital","theme_token":"IkJjW7XMmLKrpvoFKgHGebFjMffJF0tSdUNg6D8fBFc"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true,"\/insights?ajax_form=1":true},"bigPipePlaceholderIds":{"callback=Drupal%5CCore%5CRender%5CElement%5CStatusMessages%3A%3ArenderMessages\u0026args%5B0%5D\u0026token=_HAdUpwWmet0TOTe2PSiJuMntExoshbm1kh2wQzzzAA":true,"callback=Drupal%5Cblock%5CBlockViewBuilder%3A%3AlazyBuilder\u0026args%5B0%5D=digital_digitalauxiliarynavigation\u0026args%5B1%5D=full\u0026args%5B2%5D\u0026token=P6t39r9zHtnDutCf64qKLD67zMwuYNXZTZDzqGMlfss":true},"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_environment":false},"tagIds":["GTM-5M3HQ7"]},"ckeditorAccordion":{"accordionStyle":{"collapseAll":1,"keepRowsOpen":0,"animateAccordionOpenAndClose":0,"openTabsWithHash":1,"allowHtmlInTitles":0}},"ajax":{"edit-investor-type":{"event":"change","effect":"fade","progress":{"type":"throbber"},"callback":[{},"updateDisclosureDescription"],"url":"\/insights?ajax_form=1","httpMethod":"POST","dialogType":"ajax","submit":{"_triggering_element_name":"investor_type"}},"edit-country-am":{"callback":[{},"changeCountry"],"disable-refocus":true,"event":"change","progress":{"type":"throbber","message":"Loading..."},"wrapper":"attestation-container","url":"\/insights?ajax_form=1","httpMethod":"POST","dialogType":"ajax","submit":{"_triggering_element_name":"country_AM"}},"edit-country-mobile-am":{"callback":[{},"changeCountry"],"disable-refocus":true,"event":"change","progress":{"type":"throbber","message":"Loading..."},"wrapper":"attestation-container","url":"\/insights?ajax_form=1","httpMethod":"POST","dialogType":"ajax","submit":{"_triggering_element_name":"country_mobile_AM"}}},"user":{"uid":0,"permissionsHash":"414286c9902343d54931f67149b364385270297391f7109ce978934acab3ca1d"}}</script>
+<script src="/sites/default/assets/js/js_6XzrlD6XhWcW669wewEa9EHbe59P2YDK4HRp52ec2Fk.js?scope=header&amp;delta=0&amp;language=en-us&amp;theme=digital&amp;include=eJxdiEEOhDAIAD9Uy5MaqkhoaEGsif5-9-Bl9zKZmSpcXJygvpJWCwIZk2Kg5nZcFE_eLXrahGWiAqtV1KWdic1YqUxk4C_-O2PD-3f21HFw2OXw_o5-FnT5AFudNRY"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?to1a50"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?to1a50"></script>
+
+</head>
+<body>
+  <noscript><iframe src="https://col.man.com/ns.html?id=GTM-5M3HQ7"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="page-container">
+  <div class='loader--initial z-1230'>
+    <div class="sk-cube-grid">
+    <div class="sk-cube sk-cube1"></div>
+    <div class="sk-cube sk-cube2"></div>
+    <div class="sk-cube sk-cube3"></div>
+    <div class="sk-cube sk-cube4"></div>
+    <div class="sk-cube sk-cube5"></div>
+    <div class="sk-cube sk-cube6"></div>
+    <div class="sk-cube sk-cube7"></div>
+    <div class="sk-cube sk-cube8"></div>
+</div>
+
+  </div>
+  <div class='loader--between-pages z-1230' style="display: none;">
+    <div class="sk-cube-grid">
+    <div class="sk-cube sk-cube1"></div>
+    <div class="sk-cube sk-cube2"></div>
+    <div class="sk-cube sk-cube3"></div>
+    <div class="sk-cube sk-cube4"></div>
+    <div class="sk-cube sk-cube5"></div>
+    <div class="sk-cube sk-cube6"></div>
+    <div class="sk-cube sk-cube7"></div>
+    <div class="sk-cube sk-cube8"></div>
+</div>
+
+  </div>
+  <div class='loader--product d-none z-1230'>
+    <div class="sk-cube-grid">
+    <div class="sk-cube sk-cube1"></div>
+    <div class="sk-cube sk-cube2"></div>
+    <div class="sk-cube sk-cube3"></div>
+    <div class="sk-cube sk-cube4"></div>
+    <div class="sk-cube sk-cube5"></div>
+    <div class="sk-cube sk-cube6"></div>
+    <div class="sk-cube sk-cube7"></div>
+    <div class="sk-cube sk-cube8"></div>
+</div>
+
+  </div>
+
+  <div class="sticky-top" data-navigation-id="digitalNavigation">
+  <header class="digital-navigation">
+  <div class="align-items-center">
+    <div class="dlgnone">
+      <ul class="nav justify-content-end align-items-center ps-4 mobile-navigation">
+        <li class="digital-navigation__logo me-auto">
+          <a href="/" aria-label="Home" class="d-flex">
+            <i class="logo-man--colored" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav__item mb-0 mx-0 nav__item--search">
+          <button class="btn p-0 nav__link--search" type="button" data-bs-toggle="collapse" data-bs-target="#mobileToggleSearchContent" aria-controls="mobileToggleSearchContent" aria-expanded="false" aria-label="Toggle search">
+            <i class="new-icon new-icon-search"></i>
+          </button>
+        </li>
+        <li class="nav__item m-0">
+          <button class="btn p-0 mobile-menu-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileToggleMenuContent" aria-controls="mobileToggleMenuContent" aria-expanded="false" aria-label="Toggle menu">
+            <i class="new-icon new-icon-menu bg-blue"></i>
+            <i class="new-icon new-icon-close bg-blue"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="col-12 dlgnone">
+      <div class="collapse" id="mobileToggleSearchContent" data-bs-parent=".digital-navigation">
+        <div class="mobile-search-section">
+          <div class="row row--small-x-gutter p-5">
+            <div class="col">
+              <div class="search">
+                <input name="name" type="text" class="search__input"
+                       placeholder="Search for products, insights, and more"
+                       autocomplete="off"
+                       data-simple-autocomplete="/mangroup/global-search/autocomplete_suggestions"
+                       aria-label="Search">
+                <button
+                    class="search__button small"
+                    type="button"
+                    aria-label="Search by name">
+                  <i class="new-icon new-icon-search"></i>
+                </button>
+              </div>
+            </div>
+            <div class="col-auto">
+              <button class="digital-close-button m-0"
+                      aria-label="Close"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#mobileToggleSearchContent">
+                <i class="new-icon new-icon-close"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="mobileToggleMenuContent" data-bs-parent=".digital-navigation" class="col collapse dlgflex flex-column justify-content-between align-content-stretch digital-navigation-content">
+      
+<div class="digital-navigation-mega row d-none dlgflex">
+
+  <div class="dlgflex justifycontentlgend fw-600 container-lg max-w-full container bg-white">
+    <div class="digital-navigation__logo me-auto">
+      <a href="/" aria-label="Home" class="d-flex">
+        <i class="logo-man--colored" aria-hidden="true"></i>
+      </a>
+    </div>
+                <ul  class="nav">
+                            <li class="nav__item nav__item--dropdown">
+                          <button class="nav__link nav__link--chevron" aria-expanded="false" aria-haspopup="true">ETFs &amp; Funds</button>
+                                            
+          <section  class="root-dropdown-menu root-dropdown-menu--border" aria-hidden="true">
+        <div class="container container--fadeintro">
+          <div class="row row--big-x-gutter">
+                        
+                                                                                                                                        
+            <div  class="col-3">
+                                                                              <h5 class="root-dropdown-menu__nav-item">
+                                                  <button class="root-dropdown-menu__nav-link root-dropdown-menu__nav-link--chevron" aria-expanded="false" aria-haspopup="true">ETFs &amp; Funds</button>
+                                              </h5>
+                                                    
+    
+          
+                                  
+      <div class="row big-x-gutter open-dropdown">
+        <div  class="col--top-line col-12">
+          <ul class="open-dropdown-menu" aria-hidden="true">
+                                        <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown" data-nav-target="menu_link_content:368d64aa-79c9-488f-b051-a2084330db75">
+                                  <a href="/etfs" class="open-dropdown-menu__nav-link" data-drupal-link-system-path="node/12886">ETFs</a>
+                              </li>
+                                        <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown" data-nav-target="menu_link_content:02119424-fd09-4a70-9306-86b21fa1e363">
+                                  <a href="/documents" class="open-dropdown-menu__nav-link" data-drupal-link-system-path="node/811">Document centre</a>
+                              </li>
+                      </ul>
+            
+        </div>
+
+              </div>
+      
+                                                                                                </div>
+            <div  class="col-8"></div>
+          </div>
+        </div>
+      </section>
+    
+      
+                      </li>
+                            <li class="nav__item nav__item--dropdown">
+                          <button class="nav__link nav__link--chevron" aria-expanded="false" aria-haspopup="true">Capabilities</button>
+                                            
+          <section  class="root-dropdown-menu root-dropdown-menu--border" aria-hidden="true">
+        <div class="container container--fadeintro">
+          <div class="row row--big-x-gutter">
+                        
+                                                                                                                                                                                                                                                                                                                              
+            <div  class="col-9">
+                                                                              <h5 class="root-dropdown-menu__nav-item">
+                                                  <button class="root-dropdown-menu__nav-link root-dropdown-menu__nav-link--chevron" aria-expanded="false" aria-haspopup="true">Investment capabilities</button>
+                                              </h5>
+                                                    
+    
+          
+                                                                                                                    
+      <div class="row big-x-gutter open-dropdown">
+        <div  class="col--top-line col-4">
+          <ul class="open-dropdown-menu" aria-hidden="true">
+                                        <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown" data-nav-target="menu_link_content:f8f28288-a6a6-4526-8cdb-349653e70996">
+                                  <button class="open-dropdown-menu__nav-link open-dropdown-menu__nav-link--chevron" aria-expanded="false" aria-haspopup="true">Asset classes</button>
+                              </li>
+                                        <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown" data-nav-target="menu_link_content:e683d833-199b-44a5-843c-c55d43ddaea6">
+                                  <button class="open-dropdown-menu__nav-link open-dropdown-menu__nav-link--chevron" aria-expanded="false" aria-haspopup="true">Client solutions</button>
+                              </li>
+                                        <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown" data-nav-target="menu_link_content:b07cd638-ac08-48e7-8f5a-b8e7ee09db44">
+                                  <button class="open-dropdown-menu__nav-link open-dropdown-menu__nav-link--chevron" aria-expanded="false" aria-haspopup="true">Investment themes</button>
+                              </li>
+                                        <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown" data-nav-target="menu_link_content:e94876f4-666c-43cc-b412-ffd0b8624f53">
+                                  <a href="/strategies" class="open-dropdown-menu__nav-link" data-drupal-link-system-path="node/12437">Strategies in focus</a>
+                              </li>
+                      </ul>
+            
+        </div>
+
+                  <div class="col-8 col--top-line-margin">
+                                          <ul class="open-dropdown-submenu d-none" data-nav-id="menu_link_content:f8f28288-a6a6-4526-8cdb-349653e70996" aria-hidden="true">
+                                                          <li class="open-dropdown-submenu__nav-item">
+                      <a href="/capabilities/alternatives" class="open-dropdown-submenu__nav-link" data-drupal-link-system-path="node/12835">Alternatives</a>
+                    </li>
+                                                          <li class="open-dropdown-submenu__nav-item">
+                      <a href="/capabilities/credit" class="open-dropdown-submenu__nav-link" data-drupal-link-system-path="node/11866">Credit</a>
+                    </li>
+                                                          <li class="open-dropdown-submenu__nav-item">
+                      <a href="/capabilities/equities" class="open-dropdown-submenu__nav-link" data-drupal-link-system-path="node/12478">Equities</a>
+                    </li>
+                                                          <li class="open-dropdown-submenu__nav-item">
+                      <a href="/capabilities/multi-asset" class="open-dropdown-submenu__nav-link" data-drupal-link-system-path="node/12834">Multi-asset</a>
+                    </li>
+                                  </ul>
+                                                        <ul class="open-dropdown-submenu d-none" data-nav-id="menu_link_content:e683d833-199b-44a5-843c-c55d43ddaea6" aria-hidden="true">
+                                                          <li class="open-dropdown-submenu__nav-item">
+                      <a href="/capabilities/insurance" class="open-dropdown-submenu__nav-link" data-drupal-link-system-path="node/12073">Insurance</a>
+                    </li>
+                                                          <li class="open-dropdown-submenu__nav-item">
+                      <a href="/capabilities/solutions" class="open-dropdown-submenu__nav-link" data-drupal-link-system-path="node/12078">Solutions</a>
+                    </li>
+                                  </ul>
+                                                        <ul class="open-dropdown-submenu d-none" data-nav-id="menu_link_content:b07cd638-ac08-48e7-8f5a-b8e7ee09db44" aria-hidden="true">
+                                                          <li class="open-dropdown-submenu__nav-item">
+                      <a href="/capabilities/responsible-investment" class="open-dropdown-submenu__nav-link" data-drupal-link-system-path="node/12442">Responsible investment</a>
+                    </li>
+                                                          <li class="open-dropdown-submenu__nav-item">
+                      <a href="/capabilities/trend-following" class="open-dropdown-submenu__nav-link" data-drupal-link-system-path="node/12419">Trend-following</a>
+                    </li>
+                                  </ul>
+                                                              </div>
+              </div>
+      
+                                                                                                </div>
+            <div  class="col-4"></div>
+          </div>
+        </div>
+      </section>
+    
+      
+                      </li>
+                            <li class="nav__item nav__item--dropdown">
+                          <button class="nav__link nav__link--chevron" aria-expanded="false" aria-haspopup="true">Insights</button>
+                                            
+          <section  class="root-dropdown-menu root-dropdown-menu--border" aria-hidden="true">
+        <div class="container container--fadeintro">
+          <div class="row row--big-x-gutter">
+                        
+                                                                                                                                        
+            <div  class="col-3">
+                                                                              <h5 class="root-dropdown-menu__nav-item">
+                                                  <button class="root-dropdown-menu__nav-link root-dropdown-menu__nav-link--chevron" aria-expanded="false" aria-haspopup="true">Insights</button>
+                                              </h5>
+                                                    
+    
+          
+                                  
+      <div class="row big-x-gutter open-dropdown">
+        <div  class="col--top-line col-12">
+          <ul class="open-dropdown-menu" aria-hidden="true">
+                                        <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown" data-nav-target="menu_link_content:e829331c-05d9-43df-87ec-75e4cfa96463">
+                                  <a href="/insights" class="open-dropdown-menu__nav-link is-active" data-drupal-link-system-path="node/11993" aria-current="page">Insights hub</a>
+                              </li>
+                                        <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown" data-nav-target="menu_link_content:e99d2b3c-fb78-4891-a2d0-53a1e5f0b9ed">
+                                  <a href="/global-outlook" class="open-dropdown-menu__nav-link" data-drupal-link-system-path="node/13624">Global outlook</a>
+                              </li>
+                      </ul>
+            
+        </div>
+
+              </div>
+      
+                                                                                                </div>
+            <div  class="col-8"></div>
+          </div>
+        </div>
+      </section>
+    
+      
+                      </li>
+                            <li class="nav__item">
+                          <a href="/technology" title="Technology at Man" class="nav__link" tabindex="0" data-drupal-link-system-path="node/13407">Technology</a>
+                                  </li>
+                            <li class="nav__item nav__item--dropdown">
+                          <button class="nav__link nav__link--chevron" aria-expanded="false" aria-haspopup="true">About us</button>
+                                            
+          <section  class="root-dropdown-menu root-dropdown-menu--border" aria-hidden="true">
+        <div class="container container--fadeintro">
+          <div class="row row--big-x-gutter">
+                        
+                                                                                                                                                                                                                                                                                                                                                                                                
+            <div  class="col-9">
+                            <div class="row">
+                <div class="col-12 column-count-2" style="column-gap: 2.5rem;">
+                  <div class="d-flex flex-column h-100 w-lg-100 max-w-lg-100">
+                                                                                      <div class="col" style="break-inside: avoid-column;">
+                                            <h5 class="root-dropdown-menu__nav-item">
+                                                  <button class="root-dropdown-menu__nav-link root-dropdown-menu__nav-link--chevron" aria-expanded="false" aria-haspopup="true">About us</button>
+                                              </h5>
+                                                    
+    
+          
+                                                              
+      <div class="row big-x-gutter open-dropdown">
+        <div  class="col--top-line col-12">
+          <ul class="open-dropdown-menu" aria-hidden="true">
+                                        <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown" data-nav-target="menu_link_content:b02bcc08-f708-4674-aaad-7b3d90f52308">
+                                  <a href="/about-us" class="open-dropdown-menu__nav-link" data-drupal-link-system-path="node/13265">About Man</a>
+                              </li>
+                                        <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown" data-nav-target="menu_link_content:6e0565d7-d999-44b7-a50d-533870e7bfe9">
+                                  <a href="/careers" class="open-dropdown-menu__nav-link" data-drupal-link-system-path="node/13456">Careers</a>
+                              </li>
+                                        <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown" data-nav-target="menu_link_content:ba308c29-d65f-4d97-8706-a9ffa6c1275a">
+                                  <a href="/diversity" class="open-dropdown-menu__nav-link" data-drupal-link-system-path="node/2841">Diversity, equity &amp; inclusion</a>
+                              </li>
+                                        <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown" data-nav-target="menu_link_content:307b8e79-f2cb-420d-951e-2802ba89cd8a">
+                                  <a href="/corporate-sustainability" class="open-dropdown-menu__nav-link" data-drupal-link-system-path="node/589">Corporate sustainability</a>
+                              </li>
+                      </ul>
+            
+        </div>
+
+              </div>
+      
+                                                                    </div>
+                                                                                        <div class="col" style="break-inside: avoid-column;">
+                                            <h5 class="root-dropdown-menu__nav-item">
+                                                  <button class="root-dropdown-menu__nav-link root-dropdown-menu__nav-link--chevron" aria-expanded="false" aria-haspopup="true">Media</button>
+                                              </h5>
+                                                    
+    
+          
+                    
+      <div class="row big-x-gutter open-dropdown">
+        <div  class="col--top-line col-12">
+          <ul class="open-dropdown-menu" aria-hidden="true">
+                                        <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown" data-nav-target="menu_link_content:3ea4db7b-a8a4-4c24-b1ac-49f67c20ed06">
+                                  <a href="/news-centre" class="open-dropdown-menu__nav-link" data-drupal-link-system-path="node/14619">News center</a>
+                              </li>
+                      </ul>
+            
+        </div>
+
+              </div>
+      
+                                                                    </div>
+                                                                                        <div class="col" style="break-inside: avoid-column;">
+                                            <h5 class="root-dropdown-menu__nav-item">
+                                                  <button class="root-dropdown-menu__nav-link root-dropdown-menu__nav-link--chevron" aria-expanded="false" aria-haspopup="true">Contact us</button>
+                                              </h5>
+                                                    
+    
+          
+                    
+      <div class="row big-x-gutter open-dropdown">
+        <div  class="col--top-line col-12">
+          <ul class="open-dropdown-menu" aria-hidden="true">
+                                        <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown" data-nav-target="menu_link_content:8f5fbf47-5ceb-40bd-aa3a-cd8788bc38c1">
+                                  <a href="/contact" class="open-dropdown-menu__nav-link" data-drupal-link-system-path="node/1880">Get in touch</a>
+                              </li>
+                      </ul>
+            
+        </div>
+
+              </div>
+      
+                                                                    </div>
+                                                                                </div>
+                </div>
+              </div>
+                          </div>
+            <div  class="col-4"></div>
+          </div>
+        </div>
+      </section>
+    
+      
+                      </li>
+                <li class="nav__item nav__item--dropdown nav__item--mega-search" >
+          <button class="nav__link nav__link--mega-search d-flex align-items-center justify-content-center fs-5" aria-expanded="false" aria-haspopup="true" aria-label="Open search">
+            <i class="new-icon new-icon-search medium"></i>
+          </button>
+          <section  class="root-dropdown-menu root-dropdown-menu--border" aria-hidden="true">
+            <div class="container container--fadeintro" style="will-change: height, opacity;">
+              <div class="row row--big-x-gutter">
+                <div class="col-12 d-flex align-items-center justify-content-end">
+                  <button class="digital-close-button"
+                          aria-label="Close">
+                    <i class="new-icon new-icon-close"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="row row--big-x-gutter">
+                <div class="col-6 d-flex align-items-center">
+                  <span class="root-dropdown-menu-search-name">Search Man Group</span>
+                </div>
+                <div class="col-6">
+                  <div class="search">
+                    <input name="name" type="text" class="search__input"
+                           placeholder="Search for products, insights, and more"
+                           autocomplete="off"
+                           data-simple-autocomplete="/mangroup/global-search/autocomplete_suggestions"
+                           aria-label="Search"
+                           tabindex="-1">
+                    <button
+                        class="search__button small"
+                        type="button"
+                        aria-label="Search by name">
+                      <i class="new-icon new-icon-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid max-w-full container-fluid--digital-blocks"></div>
+          </section>
+        </li>
+      </ul>
+    
+    
+      
+
+    <div class="digital-navigation-mega-after p-relative" style="height: 100%;"></div>
+  </div>
+</div>
+<div class="digital-navigation-mega-mobile dlgnone">
+  <div class="mobile-menu-viewport">
+    <div class="mobile-menu-panels">
+                  <div class="mobile-menu-panel mobile-menu--level-1">
+        <ul  class="nav">
+                                  <li class="nav__item nav__item--dropdown" data-nav-target="menu_link_content:9d482ef8-e1b7-46e8-88d4-2751b5d9c6fe">
+                              <span class="nav__link nav__link--chevron" tabindex="0">ETFs &amp; Funds</span>
+                          </li>
+                                  <li class="nav__item nav__item--dropdown" data-nav-target="menu_link_content:381afca9-2d0c-42ff-a1b4-830a9502953e">
+                              <span class="nav__link nav__link--chevron" tabindex="0">Capabilities</span>
+                          </li>
+                                  <li class="nav__item nav__item--dropdown" data-nav-target="menu_link_content:9c94ac00-82bb-4a92-aed9-38de218256ae">
+                              <span class="nav__link nav__link--chevron" tabindex="0">Insights</span>
+                          </li>
+                                  <li class="nav__item" >
+                              <a href="/technology" title="Technology at Man" class="nav__link" tabindex="0" data-drupal-link-system-path="node/13407">Technology</a>
+                          </li>
+                                  <li class="nav__item nav__item--dropdown" data-nav-target="menu_link_content:41d26c64-1647-489e-bd69-5ffb9e413fcf">
+                              <span class="nav__link nav__link--chevron" tabindex="0">About us</span>
+                          </li>
+                  </ul>
+      </div>
+      <div class="mobile-menu-panel mobile-menu--level-2">
+              
+                            <div class="d-none" data-nav-id="menu_link_content:9d482ef8-e1b7-46e8-88d4-2751b5d9c6fe">
+            <div class="mobile-menu-back px-5 py-4 mb-4 fw-600">
+              <span>ETFs &amp; Funds</span>
+            </div>
+            <ul class="nav">
+                                                      
+    
+                  <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown nav__item">
+          <a href="/etfs" data-drupal-link-system-path="node/12886">ETFs</a>
+                  </li>
+              <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown nav__item">
+          <a href="/documents" data-drupal-link-system-path="node/811">Document centre</a>
+                  </li>
+          
+    
+  
+                                          </ul>
+                            
+                      </div>
+                                <div class="d-none" data-nav-id="menu_link_content:381afca9-2d0c-42ff-a1b4-830a9502953e">
+            <div class="mobile-menu-back px-5 py-4 mb-4 fw-600">
+              <span>Capabilities</span>
+            </div>
+            <ul class="nav">
+                                                      
+    
+                  <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown nav__item">
+          <span>Asset classes</span>
+                      <ul class="nav">
+                    
+    
+    
+                  <li class="open-dropdown-submenu__nav-item nav__item">
+          <a href="/capabilities/alternatives" data-drupal-link-system-path="node/12835">Alternatives</a>
+        </li>
+              <li class="open-dropdown-submenu__nav-item nav__item">
+          <a href="/capabilities/credit" data-drupal-link-system-path="node/11866">Credit</a>
+        </li>
+              <li class="open-dropdown-submenu__nav-item nav__item">
+          <a href="/capabilities/equities" data-drupal-link-system-path="node/12478">Equities</a>
+        </li>
+              <li class="open-dropdown-submenu__nav-item nav__item">
+          <a href="/capabilities/multi-asset" data-drupal-link-system-path="node/12834">Multi-asset</a>
+        </li>
+          
+  
+            </ul>
+                  </li>
+              <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown nav__item">
+          <span>Client solutions</span>
+                      <ul class="nav">
+                    
+    
+    
+                  <li class="open-dropdown-submenu__nav-item nav__item">
+          <a href="/capabilities/insurance" data-drupal-link-system-path="node/12073">Insurance</a>
+        </li>
+              <li class="open-dropdown-submenu__nav-item nav__item">
+          <a href="/capabilities/solutions" data-drupal-link-system-path="node/12078">Solutions</a>
+        </li>
+          
+  
+            </ul>
+                  </li>
+              <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown nav__item">
+          <span>Investment themes</span>
+                      <ul class="nav">
+                    
+    
+    
+                  <li class="open-dropdown-submenu__nav-item nav__item">
+          <a href="/capabilities/responsible-investment" data-drupal-link-system-path="node/12442">Responsible investment</a>
+        </li>
+              <li class="open-dropdown-submenu__nav-item nav__item">
+          <a href="/capabilities/trend-following" data-drupal-link-system-path="node/12419">Trend-following</a>
+        </li>
+          
+  
+            </ul>
+                  </li>
+              <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown nav__item">
+          <a href="/strategies" data-drupal-link-system-path="node/12437">Strategies in focus</a>
+                  </li>
+          
+    
+  
+                                          </ul>
+                            
+                      </div>
+                                <div class="d-none" data-nav-id="menu_link_content:9c94ac00-82bb-4a92-aed9-38de218256ae">
+            <div class="mobile-menu-back px-5 py-4 mb-4 fw-600">
+              <span>Insights</span>
+            </div>
+            <ul class="nav">
+                                                      
+    
+                  <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown nav__item">
+          <a href="/insights" data-drupal-link-system-path="node/11993" class="is-active" aria-current="page">Insights hub</a>
+                  </li>
+              <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown nav__item">
+          <a href="/global-outlook" data-drupal-link-system-path="node/13624">Global outlook</a>
+                  </li>
+          
+    
+  
+                                          </ul>
+                            
+                      </div>
+                                              <div class="d-none" data-nav-id="menu_link_content:41d26c64-1647-489e-bd69-5ffb9e413fcf">
+            <div class="mobile-menu-back px-5 py-4 mb-4 fw-600">
+              <span>About us</span>
+            </div>
+            <ul class="nav">
+                                                      
+    
+                  <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown nav__item">
+          <a href="/about-us" data-drupal-link-system-path="node/13265">About Man</a>
+                  </li>
+              <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown nav__item">
+          <a href="/careers" data-drupal-link-system-path="node/13456">Careers</a>
+                  </li>
+              <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown nav__item">
+          <a href="/diversity" data-drupal-link-system-path="node/2841">Diversity, equity &amp; inclusion</a>
+                  </li>
+              <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown nav__item">
+          <a href="/corporate-sustainability" data-drupal-link-system-path="node/589">Corporate sustainability</a>
+                  </li>
+          
+    
+  
+                                                                      
+    
+                  <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown nav__item">
+          <a href="/news-centre" data-drupal-link-system-path="node/14619">News center</a>
+                  </li>
+          
+    
+  
+                                                                      
+    
+                  <li class="open-dropdown-menu__nav-item open-dropdown-menu__nav-item--dropdown nav__item">
+          <a href="/contact" data-drupal-link-system-path="node/1880">Get in touch</a>
+                  </li>
+          
+    
+  
+                                          </ul>
+                            
+                            
+                            
+                      </div>
+                  
+    
+    
+  
+      </div>
+    
+    
+    
+    
+  
+    </div>
+  </div>
+</div>
+
+
+
+<span data-big-pipe-placeholder-id="callback=Drupal%5Cblock%5CBlockViewBuilder%3A%3AlazyBuilder&amp;args%5B0%5D=digital_digitalauxiliarynavigation&amp;args%5B1%5D=full&amp;args%5B2%5D&amp;token=P6t39r9zHtnDutCf64qKLD67zMwuYNXZTZDzqGMlfss">
+</span>
+    </div>
+  </div>
+</header>
+
+</div>
+
+
+  <div class="modal fade digital-modal" id="bioModal" tabindex="-1" role="dialog" data-bs-keyboard="true" aria-modal="true" data-bs-backdrop="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-close-block">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="modal-body m-0 px-5 mx-4 mx-md-8 mx-xl-11">
+        <div class="placeholder-glow mt-4">
+          <div class="d-flex flex-column flex-lg-row gap-6 gap-lg-9 mb-6 align-items-center align-items-lg-start text-center text-lg-start">
+            <span class="placeholder w-17 h-17 h-lg-19 w-lg-19 bio-modal-photo rounded-circle flex-shrink-0">
+            </span>
+
+            <div class="w-100 flex-grow-1">
+              <span class="placeholder w-50 h-6 mb-2"></span>
+              <span class="placeholder w-100"></span>
+              <span class="placeholder w-100"></span>
+            </div>
+          </div>
+          <span class="placeholder w-25 mt-3"></span>
+          <span class="placeholder w-100"></span>
+
+          <span class="placeholder w-25 mt-3"></span>
+          <span class="placeholder w-100"></span>
+          <span class="placeholder w-100"></span>
+          <span class="placeholder w-100"></span>
+
+          <span class="placeholder w-25 mt-3"></span>
+          <span class="placeholder w-100"></span>
+          <span class="placeholder w-100"></span>
+          <span class="placeholder w-100"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <section class="modal fade" tabindex="-1" role="dialog" id="subscription_success_modal" aria-labelledby="subscription_success_modal-label" aria-hidden="true" >
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header flex-column align-items-start pb-0 pt-5 px-5">
+        <button type="button" class="btn border-0 btn-secondary hover-bg-light-blue w-7 h-7 p-0 ms-auto" aria-label="Close" data-bs-dismiss="modal">
+          <i aria-hidden="true" class="new-icon medium new-icon-close bg-primary"></i>
+        </button>
+                  <h3 id="subscription_success_modal-label" class="modal-title me-auto text-blue lh-120 mb-5 mx-md-8 mx-xl-11">Thank you for subscribing to Man Insights!</h3>
+              </div>
+      <div class="modal-body m-0 px-5 py-0 mx-4 mx-md-8 mx-xl-11">
+        <p>Please check your email to confirm your subscription.</p>
+      </div>
+      <div class="modal-footer p-0 mt-2 me-auto ms-5 mb-5 ms-md-11 mb-md-6 ms-xl-12">
+                              <button aria-label="Back" type="button" class="btn ms-0 me-4 border-0  btn-primary hover-bg-dark-primary active-bg-dark-primary" data-bs-dismiss="modal">
+              Back
+            </button>
+                        </div>
+    </div>
+  </div>
+</section>
+
+
+      
+      
+    
+<div class="show attestation-modal modal fade block block--mangroup block--disclosure-modal-block-resolver" id="attestation" data-bs-backdrop="static" data-bs-keyboard="false" data-provider="disclosure" aria-labelledby="attestationModalLabel" aria-hidden="false" role="dialog">
+  
+
+  
+  
+
+      <div class="modal-dialog"
+     tabindex="-1"
+>
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="modal-close-block">
+                  <button type="button" class="btn-close"
+                  data-withdrawal-url="/home"
+                  aria-label="Close"></button>
+              </div>
+    </div>
+    <div class="modal-body">
+      <form class="mangroup-digital-attestation-form" data-drupal-selector="mangroup-digital-attestation-form" action="/insights" method="post" id="mangroup-digital-attestation-form" accept-charset="UTF-8">
+  <div id="attestation-container" class="digital-attestation-form js-form-wrapper form-wrapper" data-drupal-selector="edit-attestation-container"><h4 class="modal-title"
+    id="attestationModalLabel">View investments and research available in your location</h4>
+
+<div class="row">
+  <div class="col-12 region-select-mobile">
+  <div class="js-form-item form-item js-form-type-select form-item-regions js-form-item-regions">
+      
+<label for="edit-regions" class="form-check-label">Confirm your region</label>
+        <select class="slimSelect region-select" data-placeholder="Please select" data-drupal-selector="edit-regions" id="edit-regions" name="regions"><option value=""></option><option value="AM" selected="selected">Americas</option></select>
+        </div>
+
+</div>
+
+<div class="col-12 col-lg-4 region-tabs-desktop">
+  <label>Confirm your region</label>
+  <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="region-country-tab-AM" data-bs-toggle="tab"
+                data-bs-target="#region-country-select-AM" type="button" role="tab"
+                aria-controls="region-country-select-AM" aria-selected="true"
+                aria-label="Tab Americas ">
+          Americas <i class="new-icon medium new-icon-chevron-right"></i>
+        </button>
+      </li>
+      </ul>
+</div>
+<div class="col-12 col-md-6 country-select-tablet" id="region-country-select">
+      <div class="js-form-item form-item js-form-type-select form-item-country-mobile-am js-form-item-country-mobile-am">
+      
+<label for="edit-country-mobile-am" class="form-check-label">Confirm your country</label>
+        <select class="slimSelect slim-select-country region-country-select-AM" data-placeholder="Please select" data-search="Search country" data-country-selector="country-select-AM" onchange="updateSelectedCountryFromStates(this.value)" data-drupal-selector="edit-country-mobile-am" data-disable-refocus="true" id="edit-country-mobile-am" name="country_mobile_AM"><option value=""></option><option value="237" selected="selected">United States</option></select>
+        </div>
+
+  </div>
+
+<div class="col-12 col-lg-4 country-select-desktop">
+  <div class="tab-content">
+          <div class="tab-pane show active"
+        id="region-country-select-AM"
+        role="tabpanel"
+        aria-labelledby="region-country-select-AM"
+        aria-hidden="false">
+        <div class="js-form-item form-item js-form-type-select form-item-country-am js-form-item-country-am">
+      
+<label for="edit-country-am" class="form-check-label">Confirm your country</label>
+        <select class="slimSelect slim-select-country" data-placeholder="Please select" data-search="Search country" data-country-selector="country-select-AM" onchange="updateSelectedCountryFromStates(this.value)" data-drupal-selector="edit-country-am" data-disable-refocus="true" id="edit-country-am" name="country_AM"><option value=""></option><option value="237" selected="selected">United States</option></select>
+        </div>
+
+      </div>
+      </div>
+</div>
+
+  <div id="investor-description-wrapper" class="col-12 col-md-6 col-lg-12"><div class="investor-type-container js-form-wrapper form-wrapper" data-drupal-selector="edit-investor-type-container" id="edit-investor-type-container"><div class="js-form-item form-item js-form-type-select form-item-investor-type js-form-item-investor-type">
+      
+<label for="edit-investor-type" class="form-check-label">Select your role</label>
+        <select class="slimSelect investor-type-select" data-placeholder="Please select" data-drupal-selector="edit-investor-type" id="edit-investor-type" name="investor_type"><option value="" selected="selected"></option><option value="2">Institutional Investor</option><option value="28">Financial Professional</option></select>
+        </div>
+  <div class="col-12 investor-cards-desktop">
+    <span class="">Select your role</span>
+    <div class="">
+      <div class="row gx-0" style="margin-top: 2rem;">
+                  <div class="col" style="max-width:344px;">
+            <div class="card attestation-card"
+                 data-role-id="2"
+                 tabindex="0"
+                 role="button"
+                 aria-label="Select role: Institutional Investor"
+                 aria-pressed="false">
+                              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0IiBmaWxsPSJub25lIj48cGF0aCBkPSJNNTcuMjE4MiAyNS41NjQyTDMyLjU3NTcgMTYuMTQ2VjEzLjY0MjNINDEuNzk5NEM0Mi4wMDE2IDEzLjY0MjMgNDIuMTg4NSAxMy41MzQ4IDQyLjI5MzQgMTMuMzYzMkM0Mi4zOTg0IDEzLjE4OTIgNDIuNDAzNSAxMi45NzQxIDQyLjMwNjIgMTIuNzk0OUw0MC44MjY2IDEwLjAyNzZMNDIuMzA2MiA3LjI1NzY0QzQyLjQwMSA3LjA3ODQ0IDQyLjM5NTggNi44NjM0IDQyLjI5MzQgNi42ODkzMkM0Mi4xODg1IDYuNTE1MjQgNDIuMDAxNiA2LjQxMDI4IDQxLjc5OTQgNi40MTAyOEgzMS45OTk3QzMxLjY4MjIgNi40MTAyOCAzMS40MjM3IDYuNjY4ODQgMzEuNDIzNyA2Ljk4NjI4VjE2LjE0Nkw2Ljc4MTExIDI1LjU2NDJDNi41NTgzOSAyNS42NDg3IDYuNDA5OTEgMjUuODYzNyA2LjQwOTkxIDI2LjEwMThWMjcuOTY1NUM2LjQwOTkxIDI4LjI4MjkgNi42Njg0NyAyOC41NDE1IDYuOTg1OTEgMjguNTQxNUgzMS45NTYyQzMxLjk3MTUgMjguNTQxNSAzMS45ODQzIDI4LjU0MTUgMzEuOTk5NyAyOC41NDE1QzMyLjAxNSAyOC41NDE1IDMyLjAyNzggMjguNTQxNSAzMi4wNDMyIDI4LjU0MTVINTcuMDEzNEM1Ny4zMzA5IDI4LjU0MTUgNTcuNTg5NCAyOC4yODI5IDU3LjU4OTQgMjcuOTY1NVYyNi4xMDE4QzU3LjU4OTQgMjUuODYzNyA1Ny40NDEgMjUuNjQ4NyA1Ny4yMTgyIDI1LjU2NDJaTTM5LjY2NDMgOS43NTYyQzM5LjU3NDcgOS45MjUxNiAzOS41NzQ3IDEwLjEzIDM5LjY2NDMgMTAuMjk4OUw0MC44MzY4IDEyLjQ5MDNIMzIuNTc1N1Y3LjU2MjI4SDQwLjgzOTRMMzkuNjY2OSA5Ljc1NjJIMzkuNjY0M1pNNTYuNDM0OSAyNy4zODk1SDMyLjA0MDZDMzIuMDI1MyAyNy4zODk1IDMyLjAxMjUgMjcuMzg5NSAzMS45OTcxIDI3LjM4OTVDMzEuOTgxOCAyNy4zODk1IDMxLjk2OSAyNy4zODk1IDMxLjk1MzYgMjcuMzg5NUg3LjU2MTkxVjI2LjQ5ODZMMzEuOTk5NyAxNy4xNTk3TDU2LjQzNzQgMjYuNDk4NlYyNy4zODk1SDU2LjQzNDlaIiBmaWxsPSIjMDAzRTZCIj48L3BhdGg+PHBhdGggZD0iTTI1Ljc0MDEgNDkuOTg0MUMyNS40MjI2IDQ5Ljk4NDEgMjUuMTY0MSA1MC4yNDI2IDI1LjE2NDEgNTAuNTYwMUMyNS4xNjQxIDUwLjg3NzUgMjUuNDIyNiA1MS4xMzYxIDI1Ljc0MDEgNTEuMTM2MUgzOC4xMzA1QzM4LjQ0NzkgNTEuMTM2MSAzOC43MDY1IDUwLjg3NzUgMzguNzA2NSA1MC41NjAxQzM4LjcwNjUgNTAuMjQyNiAzOC40NDc5IDQ5Ljk4NDEgMzguMTMwNSA0OS45ODQxSDM2LjQ4NDRWMzIuNTc2MUgzOC4xMzA1QzM4LjQ0NzkgMzIuNTc2MSAzOC43MDY1IDMyLjMxNzUgMzguNzA2NSAzMi4wMDAxQzM4LjcwNjUgMzEuNjgyNiAzOC40NDc5IDMxLjQyNDEgMzguMTMwNSAzMS40MjQxSDI1Ljc0MDFDMjUuNDIyNiAzMS40MjQxIDI1LjE2NDEgMzEuNjgyNiAyNS4xNjQxIDMyLjAwMDFDMjUuMTY0MSAzMi4zMTc1IDI1LjQyMjYgMzIuNTc2MSAyNS43NDAxIDMyLjU3NjFIMjcuNTE0MVY0OS45ODQxSDI1Ljc0MDFaTTI4LjY2NjEgMzIuNTc2MUgzNS4zMzI0VjQ5Ljk4NDFIMjguNjY2MVYzMi41NzYxWiIgZmlsbD0iIzAwM0U2QiI+PC9wYXRoPjxwYXRoIGQ9Ik05LjU4MzgxIDQ5Ljk4NDFDOS4yNjYzNyA0OS45ODQxIDkuMDA3ODEgNTAuMjQyNiA5LjAwNzgxIDUwLjU2MDFDOS4wMDc4MSA1MC44Nzc1IDkuMjY2MzcgNTEuMTM2MSA5LjU4MzgxIDUxLjEzNjFIMjEuOTc2OEMyMi4yOTQyIDUxLjEzNjEgMjIuNTUyOCA1MC44Nzc1IDIyLjU1MjggNTAuNTYwMUMyMi41NTI4IDUwLjI0MjYgMjIuMjk0MiA0OS45ODQxIDIxLjk3NjggNDkuOTg0MUgyMC4zMjgxVjMyLjU3NjFIMjEuOTc2OEMyMi4yOTQyIDMyLjU3NjEgMjIuNTUyOCAzMi4zMTc1IDIyLjU1MjggMzIuMDAwMUMyMi41NTI4IDMxLjY4MjYgMjIuMjk0MiAzMS40MjQxIDIxLjk3NjggMzEuNDI0MUg5LjU4MzgxQzkuMjY2MzcgMzEuNDI0MSA5LjAwNzgxIDMxLjY4MjYgOS4wMDc4MSAzMi4wMDAxQzkuMDA3ODEgMzIuMzE3NSA5LjI2NjM3IDMyLjU3NjEgOS41ODM4MSAzMi41NzYxSDExLjM2MDVWNDkuOTg0MUg5LjU4MzgxWk0xMi41MTI1IDMyLjU3NjFIMTkuMTc2MVY0OS45ODQxSDEyLjUxMjVWMzIuNTc2MVoiIGZpbGw9IiMwMDNFNkIiPjwvcGF0aD48cGF0aCBkPSJNNDIuMDIxMyA0OS45ODRDNDEuNzAzOSA0OS45ODQgNDEuNDQ1MyA1MC4yNDI1IDQxLjQ0NTMgNTAuNTZDNDEuNDQ1MyA1MC44Nzc0IDQxLjcwMzkgNTEuMTM2IDQyLjAyMTMgNTEuMTM2SDU0LjQxMTdDNTQuNzI5MiA1MS4xMzYgNTQuOTg3NyA1MC44Nzc0IDU0Ljk4NzcgNTAuNTZDNTQuOTg3NyA1MC4yNDI1IDU0LjcyOTIgNDkuOTg0IDU0LjQxMTcgNDkuOTg0SDUyLjYzNzZWMzIuNTc2SDU0LjQxMTdDNTQuNzI5MiAzMi41NzYgNTQuOTg3NyAzMi4zMTc0IDU0Ljk4NzcgMzJDNTQuOTg3NyAzMS42ODI1IDU0LjcyOTIgMzEuNDI0IDU0LjQxMTcgMzEuNDI0SDQyLjAyMTNDNDEuNzAzOSAzMS40MjQgNDEuNDQ1MyAzMS42ODI1IDQxLjQ0NTMgMzJDNDEuNDQ1MyAzMi4zMTc0IDQxLjcwMzkgMzIuNTc2IDQyLjAyMTMgMzIuNTc2SDQzLjY3VjQ5Ljk4NEg0Mi4wMjEzWk00NC44MjIgMzIuNTc2SDUxLjQ4NTZWNDkuOTg0SDQ0LjgyMlYzMi41NzZaIiBmaWxsPSIjMDAzRTZCIj48L3BhdGg+PHBhdGggZD0iTTU3LjAxMzQgNTMuMzQ3OUgxNy40MDc3QzE3LjA5MDIgNTMuMzQ3OSAxNi44MzE3IDUzLjYwNjUgMTYuODMxNyA1My45MjM5QzE2LjgzMTcgNTQuMjQxMyAxNy4wOTAyIDU0LjQ5OTkgMTcuNDA3NyA1NC40OTk5SDU2LjQzNzRWNTYuNDM3OEg3LjU2MTkxVjU0LjQ5OTlIOS41ODQzMUM5LjkwMTc1IDU0LjQ5OTkgMTAuMTYwMyA1NC4yNDEzIDEwLjE2MDMgNTMuOTIzOUMxMC4xNjAzIDUzLjYwNjUgOS45MDE3NSA1My4zNDc5IDkuNTg0MzEgNTMuMzQ3OUg2Ljk4NTkxQzYuNjY4NDcgNTMuMzQ3OSA2LjQwOTkxIDUzLjYwNjUgNi40MDk5MSA1My45MjM5VjU3LjAxMzhDNi40MDk5MSA1Ny4zMzEzIDYuNjY4NDcgNTcuNTg5OCA2Ljk4NTkxIDU3LjU4OThINTcuMDEzNEM1Ny4zMzA5IDU3LjU4OTggNTcuNTg5NCA1Ny4zMzEzIDU3LjU4OTQgNTcuMDEzOFY1My45MjM5QzU3LjU4OTQgNTMuNjA2NSA1Ny4zMzA5IDUzLjM0NzkgNTcuMDEzNCA1My4zNDc5WiIgZmlsbD0iIzAwM0U2QiI+PC9wYXRoPjxwYXRoIGQ9Ik0xMy41Njg4IDU0Ljc4NEMxMy45OTI5IDU0Ljc4NCAxNC4zMzY4IDU0LjQ0MDIgMTQuMzM2OCA1NC4wMTZDMTQuMzM2OCA1My41OTE5IDEzLjk5MjkgNTMuMjQ4IDEzLjU2ODggNTMuMjQ4QzEzLjE0NDYgNTMuMjQ4IDEyLjgwMDggNTMuNTkxOSAxMi44MDA4IDU0LjAxNkMxMi44MDA4IDU0LjQ0MDIgMTMuMTQ0NiA1NC43ODQgMTMuNTY4OCA1NC43ODRaIiBmaWxsPSIjMDAzRTZCIj48L3BhdGg+PC9zdmc+" alt="Institutional Investor" class="digital-icon"/>
+                            <h5>Institutional Investor</h5>
+              <p>I consult or invest on behalf of a financial institution.</p>
+            </div>
+          </div>
+                  <div class="col" style="max-width:344px;">
+            <div class="card attestation-card"
+                 data-role-id="28"
+                 tabindex="0"
+                 role="button"
+                 aria-label="Select role: Financial Professional"
+                 aria-pressed="false">
+                              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0IiBmaWxsPSJub25lIj48cGF0aCBkPSJNNTcuNTczIDMwLjc2MzVDNTcuMjU1NiAzMC43NjM1IDU2Ljk5NyAzMS4wMjIgNTYuOTk3IDMxLjMzOTVWMzcuMDQ4M0g1MS40MjlWMzUuODE2OUM1MS40MjkgMzUuNzgzNiA1MS40MzE2IDM1Ljc1MDMgNTEuNDI5IDM1LjcxNzFWMTYuMzA0Nkg1Ni45OTdWMjMuNjU2OUM1Ni45OTcgMjMuOTc0MyA1Ny4yNTU2IDI0LjIzMjkgNTcuNTczIDI0LjIzMjlDNTcuODkwNSAyNC4yMzI5IDU4LjE0OSAyMy45NzQzIDU4LjE0OSAyMy42NTY5VjE1LjcyODZDNTguMTQ5IDE1LjQxMTEgNTcuODkwNSAxNS4xNTI2IDU3LjU3MyAxNS4xNTI2SDUwLjg1M0M1MC41MzU2IDE1LjE1MjYgNTAuMjc3IDE1LjQxMTEgNTAuMjc3IDE1LjcyODZWMTYuNTE3MUw0NC41Mzc1IDE4LjIxOTVDNDQuMzg2NSAxOC4yNjMgNDQuMjYxIDE4LjM2NzkgNDQuMTg5NCAxOC41MDYyQzQ0LjExNzcgMTguNjQ0NCA0NC4xMDQ5IDE4LjgwODMgNDQuMTU2MSAxOC45NTY3TDQ0LjY1MjcgMjAuNDE4NUM0Mi45NTggMjAuNTE4MyAzOC42OTMgMjAuODk5OCAzMy42MzQ1IDIyLjMyODNDMzMuNjI0MiAyMi4zMjgzIDMzLjYxNCAyMi4zMjMxIDMzLjYwMzggMjIuMzIwNkMzMy40OTg4IDIyLjMwNTIgMjMuNjE0NiAyMC44MjMgMTkuMjY1MiAyMC4zMTM1TDE5LjcyNiAxOC45NTY3QzE5Ljc3NzIgMTguODA4MyAxOS43NjQ0IDE4LjY0NyAxOS42OTI3IDE4LjUwNjJDMTkuNjIxIDE4LjM2NzkgMTkuNDk1NiAxOC4yNjMgMTkuMzQ0NSAxOC4yMTk1TDEzLjYwMjUgMTYuNTE3MVYxNS43Mjg2QzEzLjYwMjUgMTUuNDExMSAxMy4zNDM5IDE1LjE1MjYgMTMuMDI2NSAxNS4xNTI2SDYuMzA2NDdDNS45ODkwMyAxNS4xNTI2IDUuNzMwNDcgMTUuNDExMSA1LjczMDQ3IDE1LjcyODZWMzcuNjIxN0M1LjczMDQ3IDM3LjkzOTEgNS45ODkwMyAzOC4xOTc3IDYuMzA2NDcgMzguMTk3N0gxMy4wMjY1QzEzLjI3MjIgMzguMTk3NyAxMy40Nzk2IDM4LjA0MTUgMTMuNTY0MSAzNy44MjY1TDE3LjQxOTQgMzkuNzY5NUwxNy4yNDUzIDM5Ljk5MjNDMTcuMTE0OCA0MC4xNTg3IDE3LjA4OTIgNDAuMzgxNCAxNy4xNzM3IDQwLjU3MzRDMTcuNjcwMyA0Mi4yMDkyIDE4LjM0MSA0Mi44Nzc0IDE5Ljg4NDcgNDMuMTAwMUMxOS44ODQ3IDQzLjE2NDEgMTkuODk0OSA0My4yMjU1IDE5LjkxNTQgNDMuMjg3QzIwLjUwNDIgNDUuMjQ1NCAyMS4zMjg2IDQ1LjgzOTMgMjMuNTYzNCA0NS45Mjg5QzIzLjU3MTEgNDUuOTI4OSAyMy41Nzg4IDQ1LjkyODkgMjMuNTg2NSA0NS45Mjg5QzIzLjYwNDQgNDUuOTI4OSAyMy42MjIzIDQ1LjkyMzggMjMuNjQwMiA0NS45MjM4QzI0LjIyMTMgNDcuMjU3NSAyNS4wOTk0IDQ3LjcwMDQgMjYuOTk5IDQ3Ljc3OThDMjcuMDA2NiA0Ny43Nzk4IDI3LjAxNDMgNDcuNzc5OCAyNy4wMjIgNDcuNzc5OEMyNy4xOTg2IDQ3Ljc3OTggMjcuMzY1IDQ3LjY5NzkgMjcuNDc1MSA0Ny41NTk2TDI3Ljc4MjMgNDcuMTY3OUMyOC4zNjYgNDguMzYzNSAyOS4yNDkyIDQ4Ljc3MDUgMzEuMDYxNyA0OC44NDQ3QzMxLjA2OTMgNDguODQ0NyAzMS4wNzcgNDguODQ0NyAzMS4wODQ3IDQ4Ljg0NDdDMzEuMjYxNCA0OC44NDQ3IDMxLjQyNzcgNDguNzYyOCAzMS41Mzc4IDQ4LjYyNDZMMzIuNTM2MiA0Ny4zNTIzTDM1LjE2NTMgNDguNjcwN0MzNS4xNjUzIDQ4LjY3MDcgMzUuMTc4MiA0OC42NzU4IDM1LjE4MzMgNDguNjc4M0MzNS4yMTE0IDQ4LjY5MTEgMzUuMjM5NiA0OC43MDE0IDM1LjI2NzggNDguNzA5MUMzNS4yODA2IDQ4LjcxMTYgMzUuMjkwOCA0OC43MTY3IDM1LjMwMzYgNDguNzE5M0MzNS4zMzk0IDQ4LjcyNyAzNS4zNzUzIDQ4LjczMjEgMzUuNDEzNyA0OC43MzIxQzM1LjQxNjIgNDguNzMyMSAzNS40MTg4IDQ4LjczMjEgMzUuNDIzOSA0OC43MzIxQzM1LjQyMzkgNDguNzMyMSAzNS40MjM5IDQ4LjczMjEgMzUuNDI2NSA0OC43MzIxQzM1LjQ0OTUgNDguNzMyMSAzNS40NzUxIDQ4LjczMjEgMzUuNDk4MSA0OC43MjdDMzcuMjU5NCA0OC40OTY2IDM4LjAwNyA0OC4wMTAyIDM4LjQ2MDEgNDYuNTgxN0MzOC40NjI2IDQ2LjU4NDMgMzguNDY3OCA0Ni41ODY4IDM4LjQ3MDMgNDYuNTg5NEMzOC40ODMxIDQ2LjU5OTYgMzguNDkzNCA0Ni42MDczIDM4LjUwNjEgNDYuNjE1QzM4LjUyNDEgNDYuNjI1MiAzOC41NDQ2IDQ2LjYzNTUgMzguNTYyNSA0Ni42NDU3QzM4LjU3NTMgNDYuNjUwOCAzOC41ODgxIDQ2LjY1ODUgMzguNjAwOSA0Ni42NjM2QzM4LjYyMzkgNDYuNjczOSAzOC42NDk1IDQ2LjY3OSAzOC42NzUxIDQ2LjY4NDFDMzguNjg1NCA0Ni42ODQxIDM4LjY5MyA0Ni42ODkyIDM4LjcwMzMgNDYuNjkxOEMzOC43MzkxIDQ2LjY5OTUgMzguNzc1IDQ2LjcwMiAzOC44MTA4IDQ2LjcwMkMzOC44MzM4IDQ2LjcwMiAzOC44NTk0IDQ2LjcwMiAzOC44ODI1IDQ2LjY5NjlDNDAuNjQ4OSA0Ni40NjkxIDQxLjQxNjkgNDUuOTU3MSA0MS44NzUxIDQ0LjUxMzJDNDEuOTM2NiA0NC41MzYzIDQyLjAwMDUgNDQuNTQ2NSA0Mi4wNjcxIDQ0LjU0NjVDNDIuMDkyNyA0NC41NDY1IDQyLjExODMgNDQuNTQxNCA0Mi4xNDM5IDQ0LjUzODhDNDIuMTU5MyA0NC41Mzg4IDQyLjE3NDYgNDQuNTM2MyA0Mi4xOSA0NC41MzExQzQ0LjA3OTMgNDQuMjc1MSA0NC44MjY4IDQzLjYyNzUgNDUuMjc3NCA0MS43NDU5QzQ2Ljk2NDQgNDEuNDQzOCA0Ny42MzI2IDQwLjcyMTkgNDguMDUyNCAzOC44MjIzTDUwLjI3MTkgMzYuOTkxOVYzNy42MTE1QzUwLjI3MTkgMzcuOTI4OSA1MC41MzA1IDM4LjE4NzUgNTAuODQ3OSAzOC4xODc1SDU3LjU2NzlDNTcuODg1NCAzOC4xODc1IDU4LjE0MzkgMzcuOTI4OSA1OC4xNDM5IDM3LjYxMTVWMzEuMzI2N0M1OC4xNDM5IDMxLjAwOTIgNTcuODg1NCAzMC43NTA3IDU3LjU2NzkgMzAuNzUwN0w1Ny41NzMgMzAuNzYzNVpNNDcuNTkxNiAzNy43MjQxTDM3LjQ5NzUgMjYuNzM0QzM3LjM4NzQgMjYuNjEzNyAzNy4yMzEzIDI2LjU0NzEgMzcuMDcyNiAyNi41NDcxQzM3LjAyNjUgMjYuNTQ3MSAzNi45Nzc4IDI2LjU1MjMgMzYuOTI5MiAyNi41NjUxTDMxLjE2NDEgMjguMDM0NUMyOC4wNTM3IDI4Ljg2MTQgMjYuODYzMyAyNy4xMjgzIDI2LjQ3MTYgMjYuMjUyN0MzNC43Mjc2IDIyLjI1OTEgNDMuMTI5NSAyMS42NDczIDQ1LjA0NyAyMS41NTc3TDUwLjE3MjEgMzUuNTk5M0w0Ny41ODkgMzcuNzI2N0w0Ny41OTE2IDM3LjcyNDFaTTUwLjI3NyAxNy43MjI4VjMyLjQ5OTFMNDUuOTk0MiAyMC43NjkyQzQ1Ljk4OSAyMC43NTY0IDQ1Ljk3ODggMjAuNzQ2MiA0NS45NzM3IDIwLjczMzRMNDUuNDM4NiAxOS4xNTlMNTAuMjc3IDE3LjcyMjhaTTE4LjQ0MzQgMTkuMTU5TDE3Ljk0NDIgMjAuNjI4NEMxNy45NDQyIDIwLjYyODQgMTcuOTM5MSAyMC42Mzg3IDE3LjkzOTEgMjAuNjQzOEwxMy42MDI1IDMzLjQyMzNWMTcuNzIyOEwxOC40NDM0IDE5LjE1OVpNMTIuNDUwNSAzNy4wNTA4SDYuODgyNDdWMTYuMzA0NkgxMi40NTA1VjM3LjA0NTdWMzcuMDUwOFpNMTguMzQzNiA0MC40NjA3TDIwLjYzNDggMzcuNTM3MkMyMS44NzY0IDM3LjYyOTQgMjIuMjYyOSAzNy45NTk2IDIyLjY4NzkgMzkuMjgzMUwyMC41NTggNDIuMDE5OEMxOS4xMzQ2IDQxLjkzMjcgMTguNzM1MyA0MS42NTYzIDE4LjM0NjEgNDAuNDYwN0gxOC4zNDM2Wk0yMS4wOTU2IDQzLjIwMjVMMjEuMjY3MSA0Mi45ODIzQzIxLjI2NzEgNDIuOTgyMyAyMS4yNzczIDQyLjk3MjEgMjEuMjgyNSA0Mi45NjdMMjMuNzgzNiAzOS43NzcyQzIzLjgxNDMgMzkuNzM4OCAyMy44MzczIDM5LjY5NzkgMjMuODU3OCAzOS42NTQzTDI1LjQzOTkgMzcuNjE5MUMyNi42ODY2IDM3LjcwODcgMjcuMDcwNiAzOC4wNDQxIDI3LjQ5ODEgMzkuMzg1NUwyNS40MTY5IDQyLjA2MzNMMjMuNDM4IDQ0LjU5MjZDMjMuNDIwMSA0NC42MTU2IDIzLjQwOTggNDQuNjM4NyAyMy4zOTcgNDQuNjY0M0wyMy4zMTc3IDQ0Ljc2OTJDMjEuOTA0NSA0NC42ODIyIDIxLjQ4OTggNDQuMzkyOSAyMS4wOTgxIDQzLjIwMjVIMjEuMDk1NlpNMjYuNzUzMiA0Ni42MjAxQzI1LjMyOTggNDYuNTMzMSAyNC45MzA1IDQ2LjI1NjYgMjQuNTQxNCA0NS4wNzEzTDI2LjMyODIgNDIuNzY5OUwyNy44NTE0IDQwLjgyNDNDMjkuMDk4MiA0MC45MTY0IDI5LjQ4MjEgNDEuMjQ5MiAyOS45MDk3IDQyLjU4ODFMMjcuNTAwNyA0NS42NjAxQzI3LjUwMDcgNDUuNjYwMSAyNy40OTA1IDQ1LjY4MDYgMjcuNDgyOCA0NS42OTA4TDI2Ljc1NTcgNDYuNjIwMUgyNi43NTMyWk0zMC44MTU5IDQ3LjY4NTFDMjkuNDA1MyA0Ny41OTggMjguOTg4MSA0Ny4zMDg3IDI4LjU5ODkgNDYuMTMxMUwzMC44MTU5IDQzLjI5OThDMzIuMDYyNiA0My4zODk0IDMyLjQ0NjYgNDMuNzIyMiAzMi44NzQxIDQ1LjA2MzZMMzEuOTM0NiA0Ni4yNjE3QzMxLjkzNDYgNDYuMjYxNyAzMS45MTkzIDQ2LjI4MjIgMzEuOTExNiA0Ni4yOTI0TDMwLjgxODUgNDcuNjg1MUgzMC44MTU5Wk00NS4wMDYgNDAuNjM5OUwzNy44MjI2IDMzLjYzNThDMzcuNTk0OCAzMy40MTMxIDM3LjIzMTMgMzMuNDE4MiAzNy4wMDg2IDMzLjY0NkMzNi43ODU4IDMzLjg3MzkgMzYuNzkxIDM0LjIzNzQgMzcuMDE4OCAzNC40NjAxTDQ0LjE3NjYgNDEuNDM4N0M0My44NjY4IDQyLjgxMDggNDMuNTA4NCA0My4xNjkyIDQyLjI2OTMgNDMuMzY2M0wzNS4wODg2IDM2LjM1NDVDMzQuODYwNyAzNi4xMzE4IDM0LjQ5NzIgMzYuMTM2OSAzNC4yNzQ1IDM2LjM2NDdDMzQuMDUxOCAzNi41OTI2IDM0LjA1NjkgMzYuOTU2MSAzNC4yODQ3IDM3LjE3ODhMNDAuOTIyOCA0My42NjA3QzQwLjYyMzMgNDUuMDA3MyA0MC4zMDA3IDQ1LjMyNDcgMzkuMDE1NiA0NS41MTkzTDMzLjA1ODUgMzkuNTk1NUMzMi44MzMyIDM5LjM3MDIgMzIuNDY5NyAzOS4zNzI3IDMyLjI0NDQgMzkuNTk1NUMzMi4wMTkxIDM5LjgyMDcgMzIuMDIxNyA0MC4xODY4IDMyLjI0NDQgNDAuNDA5NUwzNy41MTU0IDQ1LjY0OTlDMzcuMjA4MiA0Ny4wNzMyIDM2Ljg5NTkgNDcuMzU5OSAzNS41MTg2IDQ3LjU1NzFMMzMuMjYwNyA0Ni40MjNMMzMuOTY0NyA0NS41MjdDMzQuMDc5OSA0NS4zODExIDM0LjExNTggNDUuMTg2NSAzNC4wNjQ2IDQ1LjAwNzNDMzMuNDczMiA0My4wMDI4IDMyLjc1MTMgNDIuMzAzOSAzMC45Nzk3IDQyLjE0NTJDMzAuNDg1NyA0MC42NzA3IDI5Ljg2ODcgNDAuMDA3NiAyOC42NDI1IDM5Ljc1OTNDMjguNzExNiAzOS42Mjg3IDI4LjczMjEgMzkuNDc1MSAyOC42ODg1IDM5LjMyOTJDMjguMDUzNyAzNy4xNzYzIDI3LjI3MDMgMzYuNTI4NiAyNS4xOTY3IDM2LjQ0MTVDMjUuMDEyNCAzNi40MzM5IDI0LjgzMzIgMzYuNTE1OCAyNC43MTggMzYuNjY0M0wyMy41MTIyIDM4LjIxMzFDMjIuOTE4MyAzNi44ODE5IDIyLjA4NjMgMzYuNDM2NCAyMC4zOTE2IDM2LjM1OTZDMjAuMjA3MyAzNi4zNTQ1IDIwLjAyODEgMzYuNDMzOSAxOS45MTI5IDM2LjU3OThMMTguMTQzOSAzOC44Mzc3TDEzLjczMyAzNi42MTU2TDE4Ljg4NjMgMjEuNDI0NkMyMS44MzU0IDIxLjc1OTkgMjcuODA1NCAyMi42MjI3IDMxLjEwNTIgMjMuMTA5MUMyOS4yNzIyIDIzLjczMTEgMjcuMzc3OCAyNC40OTY2IDI1LjQ5ODggMjUuNDM2MUMyNS4yNTU2IDI1LjU1OSAyNS4xMzAxIDI1LjgzMjkgMjUuMTk5MyAyNi4wOTY2QzI1LjIxNzIgMjYuMTY4MyAyNS42NzI5IDI3Ljg0NzYgMjcuMjc4IDI4Ljc4NDZDMjguNDE5OCAyOS40NTAyIDI5LjgyNzcgMjkuNTY3OSAzMS40NTU5IDI5LjEzNzlMMzYuODgzMSAyNy43NTU1TDQ2LjkxMzIgMzguNjczOUM0Ni42MDM0IDQwLjA2MTQgNDYuMjQ3NiA0MC40Mjc1IDQ1LjAwNiA0MC42MjQ2VjQwLjYzOTlaIiBmaWxsPSIjMDAzRTZCIj48L3BhdGg+PHBhdGggZD0iTTU3LjQ5ODUgMjguMjY3N0M1Ny45MjI2IDI4LjI2NzcgNTguMjY2NSAyNy45MjM4IDU4LjI2NjUgMjcuNDk5N0M1OC4yNjY1IDI3LjA3NTUgNTcuOTIyNiAyNi43MzE3IDU3LjQ5ODUgMjYuNzMxN0M1Ny4wNzQzIDI2LjczMTcgNTYuNzMwNSAyNy4wNzU1IDU2LjczMDUgMjcuNDk5N0M1Ni43MzA1IDI3LjkyMzggNTcuMDc0MyAyOC4yNjc3IDU3LjQ5ODUgMjguMjY3N1oiIGZpbGw9IiMwMDNFNkIiPjwvcGF0aD48L3N2Zz4=" alt="Financial Professional" class="digital-icon"/>
+                            <h5>Financial Professional</h5>
+              <p>I manage investments on behalf of my clients.</p>
+            </div>
+          </div>
+              </div>
+    </div>
+  </div>
+</div>
+</div>
+  <div id="attestation-investor-description-wrapper" data-drupal-selector="edit-disclosure-description-wrapper" class="js-form-wrapper form-wrapper"><div id="disclosure-description-wrapper"></div></div>
+
+
+      <div  class="remember-choice-wrapper hidden" id="digital-attestation-remember-checkbox-wrapper">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="digital-attestation-remember-checkbox"
+               data-gtm-form-interact-field-id="0" name="remember">
+        <label class="form-check-label" for="digital-attestation-remember-checkbox">
+          Remember my choice
+        </label>
+      </div>
+    </div>
+  
+  <div id="attestation-modal-footer" class="hidden js-form-wrapper form-wrapper" style="margin-top: 1rem;" data-drupal-selector="edit-modal-footer"><input id="attestation-accept-button" class="btn btn-primary js-form-submit form-submit" data-drupal-selector="edit-accept" type="submit" name="op" value="Accept" />
+<a href="/home" id="digital-attestation-decline-button" class="btn btn-secondary text-decoration-none" data-drupal-selector="edit-decline">Decline</a></div>
+
+
+  <input data-drupal-selector="edit-selected-country" type="hidden" name="selected_country" value="237" />
+
+
+  <span class="modal__link">
+      If your country is not listed, visit our <a href="/" class="text-decoration-none">global website</a> to learn more about Man Group  </span>
+</div>
+</div>
+<input autocomplete="off" data-drupal-selector="form-wim4-lxpm4zxiohnebfkcwi2ao2mpsbj7vf0jjrsdac" type="hidden" name="form_build_id" value="form-WIM4_lXpm4zxIOhNEBFkCWI2aO2MpSbj7vf0jjrSDAc" />
+<input data-drupal-selector="edit-mangroup-digital-attestation-form" type="hidden" name="form_id" value="mangroup_digital_attestation_form" />
+
+</form>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+
+
+        
+<section class="modal fade" tabindex="-1" role="dialog" id="external-modal" aria-labelledby="external-modal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header flex-column pb-0 pt-5 px-5">
+                <button type="button" class="btn border-0 btn-secondary hover-bg-light-blue w-7 h-7 p-0 ms-auto" aria-label="Close" data-bs-dismiss="modal">
+                    <i aria-hidden="true" class="new-icon medium new-icon-close bg-primary"></i>
+                </button>
+                <h2 class="modal-title me-auto text-blue lh-120 mb-5 mx-md-8 mx-xl-11">You are now leaving Man Group’s website</h2>
+            </div>
+            <div class="modal-body m-0 px-5 py-0 mx-4 mx-md-8 mx-xl-11">
+                    <p>You are leaving Man Group’s website and entering a third-party website that is not controlled, maintained, or monitored by Man Group. Man Group is not responsible for the content or availability of the third-party website. By leaving Man Group’s website, you will be subject to the third-party website’s terms, policies and/or notices, including those related to privacy and security, as applicable.</p>
+
+
+            </div>
+            <div class="modal-footer p-0 mt-2 me-auto ms-5 mb-5 ms-md-11 mb-md-6 ms-xl-12">
+                <a id="splash-button" target="_blank" aria-label="Proceed (opens in new tab)" class="btn ms-0 me-4 border-0 btn-primary hover-bg-dark-primary active-bg-dark-primary">
+                    Continue to third-party site
+                </a>
+                <button aria-label=Cancel type="button" class="btn border-0 btn-secondary hover-bg-light-blue me-4 ms-0 text-primary" data-bs-dismiss="modal">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+      
+<section class="modal fade" tabindex="-1" role="dialog" id="man-external-modal" aria-labelledby="man-external-modal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header flex-column pb-0 pt-5 px-5">
+                <button type="button" class="btn border-0 btn-secondary hover-bg-light-blue w-7 h-7 p-0 ms-auto" aria-label="Close" data-bs-dismiss="modal">
+                    <i aria-hidden="true" class="new-icon medium new-icon-close bg-primary"></i>
+                </button>
+                <h2 class="modal-title me-auto text-blue lh-120 mb-5 mx-md-8 mx-xl-11">You are now leaving Man Group’s website</h2>
+            </div>
+            <div class="modal-body m-0 px-5 py-0 mx-4 mx-md-8 mx-xl-11">
+                    <p>You are leaving Man Group’s website and entering a third-party website that is not controlled, maintained, or monitored by Man Group. Man Group is not responsible for the content or availability of the third-party website. By leaving Man Group’s website, you will be subject to the third-party website’s terms, policies and/or notices, including those related to privacy and security, as applicable.</p>
+
+
+            </div>
+            <div class="modal-footer p-0 mt-2 me-auto ms-5 mb-5 ms-md-11 mb-md-6 ms-xl-12">
+                <a id="splash-button" target="_blank" aria-label="Proceed (opens in new tab)" class="btn ms-0 me-4 border-0 btn-primary hover-bg-dark-primary active-bg-dark-primary">
+                    Continue to third-party site
+                </a>
+                <button aria-label=Cancel type="button" class="btn border-0 btn-secondary hover-bg-light-blue me-4 ms-0 text-primary" data-bs-dismiss="modal">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+      
+<section class="modal fade" tabindex="-1" role="dialog" id="social-modal" aria-labelledby="social-modal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header flex-column pb-0 pt-5 px-5">
+                <button type="button" class="btn border-0 btn-secondary hover-bg-light-blue w-7 h-7 p-0 ms-auto" aria-label="Close" data-bs-dismiss="modal">
+                    <i aria-hidden="true" class="new-icon medium new-icon-close bg-primary"></i>
+                </button>
+                <h2 class="modal-title me-auto text-blue lh-120 mb-5 mx-md-8 mx-xl-11">You are now leaving Man Group’s website</h2>
+            </div>
+            <div class="modal-body m-0 px-5 py-0 mx-4 mx-md-8 mx-xl-11">
+                    <p>You are leaving Man Group’s website and entering a third-party website that is not controlled, maintained, or monitored by Man Group. Man Group is not responsible for the content or availability of the third-party website. By leaving Man Group’s website, you will be subject to the third-party website’s terms, policies and/or notices, including those related to privacy and security, as applicable.</p>
+
+
+            </div>
+            <div class="modal-footer p-0 mt-2 me-auto ms-5 mb-5 ms-md-11 mb-md-6 ms-xl-12">
+                <a id="splash-button" target="_blank" aria-label="Proceed (opens in new tab)" class="btn ms-0 me-4 border-0 btn-primary hover-bg-dark-primary active-bg-dark-primary">
+                    Continue to third-party site
+                </a>
+                <button aria-label=Cancel type="button" class="btn border-0 btn-secondary hover-bg-light-blue me-4 ms-0 text-primary" data-bs-dismiss="modal">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+      
+<section class="modal fade" tabindex="-1" role="dialog" id="splash-language-switch" aria-labelledby="splash-language-switch" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header flex-column pb-0 pt-5 px-5">
+                <button type="button" class="btn border-0 btn-secondary hover-bg-light-blue w-7 h-7 p-0 ms-auto" aria-label="Close" data-bs-dismiss="modal">
+                    <i aria-hidden="true" class="new-icon medium new-icon-close bg-primary"></i>
+                </button>
+                <h2 class="modal-title me-auto text-blue lh-120 mb-5 mx-md-8 mx-xl-11">You are now leaving Man Group’s website</h2>
+            </div>
+            <div class="modal-body m-0 px-5 py-0 mx-4 mx-md-8 mx-xl-11">
+                    <p>Stai per uscire dal sito web di Man Group in lingua italiana. Proseguendo, accederai ai contenuti disponibili sul sito web di Man Group in lingua inglese per gli utenti in Italia.</p>
+
+
+            </div>
+            <div class="modal-footer p-0 mt-2 me-auto ms-5 mb-5 ms-md-11 mb-md-6 ms-xl-12">
+                <a id="splash-button" target="_blank" aria-label="Proceed (opens in new tab)" class="btn ms-0 me-4 border-0 btn-primary hover-bg-dark-primary active-bg-dark-primary">
+                    Continue to third-party site
+                </a>
+                <button aria-label=Cancel type="button" class="btn border-0 btn-secondary hover-bg-light-blue me-4 ms-0 text-primary" data-bs-dismiss="modal">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <main class="app-main" role="main">
+        <div data-drupal-messages-fallback class="hidden"></div><span data-big-pipe-placeholder-id="callback=Drupal%5CCore%5CRender%5CElement%5CStatusMessages%3A%3ArenderMessages&amp;args%5B0%5D&amp;token=_HAdUpwWmet0TOTe2PSiJuMntExoshbm1kh2wQzzzAA">
+</span>  <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block-region-content">
+
+
+
+
+
+
+
+
+
+      <div class="section"
+            >
+    
+  
+      
+
+
+  <div class="render-component" id="important-information" styles="">
+    
+    
+
+          
+
+<div class="pixel-pattern-container" data-action="subscribe-content-to-breakpoint" data-pixel-id="112266">
+      <div class="pixel-pattern pixel-pattern--desktop " data-pixel-id="112266">
+      
+
+<section class="section"
+         style="
+             position: relative;
+             z-index: 1;
+                      background-position: center center;
+             background-size: cover;
+             ">
+  <div class="section-pixel-wrapper">
+          <div
+          data-pixel-id="112266"
+          class="section-pixel-wrapper-content"
+          style="  position: relative;
+      left: calc(0%);
+      padding-top: calc(0%);
+    
+    width: min(calc(100%), calc(100% - 0%));
+    height: calc(100%);
+    z-index: 10;
+    margin:auto;padding:96px 0px 96px 0px;">
+                  <div class="section-content"
+               data-pixel-id="112266"
+               style="background-color: ;">
+                              
+
+
+        <div  class="render-component section-component" id="insights-important-information-section" styles="">
+      
+      
+    <div class="accordion" data-action="subscribe-section-accordions" data-default-collapse="false" id="accordion-component-977738">
+      <div class="accordion-item border-0 border-bottom-1 bg-md-transparent">
+        <div class="accordion-header" id="heading-component-977738">
+          <button class="accordion-button rounded-0 p-4 px-md-6 py-md-0 px-lg-0 shadow-none bg-secondary bg-md-transparent blue-after hide-after border-bottom border-light-gray border-md-0"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-component-977738"
+                  aria-controls="collapse-component-977738"
+                  aria-label ="Important information collapsible section">
+            
+
+
+
+
+
+  <h2 id="insights-important-information-section-title" class="section-header container px-0 px-lg-auto d-inline d-lg-block text-start "   class="render-fieldset">
+    <span class="d-none d-md-inline-block">Important information</span>
+    <span class="d-md-none fs-5-mobile lh-150 d-block pe-4">Important information</span>
+  </h2>
+
+          </button>
+        </div>
+        <div id="collapse-component-977738" class="accordion-collapse collapse" aria-labelledby="heading-component-977738">
+          <div class="accordion-body px-0">
+
+
+<div class="container inner-container">
+  <div class="row g-4 g-md-6 g-lg-7">
+                                  <div class="col-12 col-lg-12 ">
+        <div class="d-flex flex-column h-100 w-lg-100 max-w-lg-100 container-lg ">
+            <div class="render-paragraph h-100">
+          <div  class="render-fieldset h-100">
+      <div  class="render-field h-100">
+      
+  
+                                                                                                              
+          <div  class="render-component" id="insights-important-info-north-america-all-para-text" styles="">
+      
+      
+
+      <div  class="render-fieldset">
+      <div >
+      
+<div  class="render-paragraph">
+
+
+
+
+
+
+      
+        
+  
+      
+    
+                                      
+      <div  class="column-count-1 column-count-md-2 column-gap-4 column-gap-md-6 column-gap-lg-7 paragraph-body"><div  class="render-fieldset">
+      <p>This information is communicated and/or distributed by the relevant Man entity identified below (collectively the "Company") subject to the following conditions and restriction in their respective jurisdictions.</p>
+<p><p>Opinions expressed are those of the author and may not be shared by all personnel of Man Group plc (‘Man’). These opinions are subject to change without notice, are for information purposes only and do not constitute an offer or invitation to make an investment in any financial instrument or in any product to which the Company and/or its affiliates provides investment advisory or any other financial services. Any organisations, financial instrument or products described in this material are mentioned for reference purposes only which should not be considered a recommendation for their purchase or sale. Neither the Company nor the authors shall be liable to any person for any action taken on the basis of the information provided. Some statements contained in this material concerning goals, strategies, outlook or other non-historical matters may be forward-looking statements and are based on current indicators and expectations. These forward-looking statements speak only as of the date on which they are made, and the Company undertakes no obligation to update or revise any forward-looking statements. These forward-looking statements are subject to risks and uncertainties that may cause actual results to differ materially from those contained in the statements. The Company and/or its affiliates may or may not have a position in any financial instrument mentioned and may or may not be actively trading in any such securities. Unless stated otherwise all information is provided by the Company. Past performance is not indicative of future results.&nbsp;The value of an investment and any income derived from it can go down as well as up and investors may not get back their original amount invested. Alternative investments can involve significant additional risks.</p>
+</p>
+<p>Unless stated otherwise this information is communicated by the relevant entity listed below.</p>
+<p><p><strong>United States:</strong> To the extent this material is distributed in the United States, it is communicated and distributed by Man Investments, Inc. (‘Man Investments’). Man Investments is registered as a broker-dealer with the SEC and is a member of the Financial Industry Regulatory Authority (‘FINRA’). Man Investments is also a member of the Securities Investor Protection Corporation (‘SIPC’). Man Investments is a wholly owned subsidiary of Man Group plc. The registration and memberships described above in no way imply a certain level of skill or expertise or that the SEC, FINRA or the SIPC have endorsed Man Investments. Man Investments Inc,&nbsp;1345 Avenue of the Americas,&nbsp;21st Floor,&nbsp;New York, NY 10105.</p>
+</p>
+<p><p>This material is proprietary information and may not be reproduced or otherwise disseminated in whole or in part without prior written consent. Any data services and information available from public sources used in the creation of this material are believed to be reliable. However accuracy is not warranted or guaranteed. © Man 2026</p>
+</p>
+<p>&nbsp;</p>
+
+  </div>
+</div>
+        
+  
+</div>
+
+    </div>
+  </div>
+
+    </div>
+  
+    </div>
+  </div>
+
+      </div>
+
+        </div>
+      </div>
+      </div>
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+                      </div>
+              </div>
+      </div>
+
+      <div class="section-overlay"
+         style="background-color:rgba(248, 248, 249, 1)"></div>
+  </section>
+
+
+
+    </div>
+  
+      <div class="pixel-pattern pixel-pattern--laptop " data-pixel-id="112266">
+      
+
+<section class="section"
+         style="
+             position: relative;
+             z-index: 1;
+                      background-position: center center;
+             background-size: cover;
+             ">
+  <div class="section-pixel-wrapper">
+          <div
+          data-pixel-id="112266"
+          class="section-pixel-wrapper-content"
+          style="  position: relative;
+      left: calc(0%);
+      padding-top: calc(0%);
+    
+    width: min(calc(100%), calc(100% - 0%));
+    height: calc(100%);
+    z-index: 10;
+    margin:auto;padding:96px 0px 96px 0px;">
+                  <div class="section-content"
+               data-pixel-id="112266"
+               style="background-color: ;">
+                      </div>
+              </div>
+      </div>
+
+      <div class="section-overlay"
+         style="background-color:rgba(248, 248, 249, 1)"></div>
+  </section>
+
+
+
+    </div>
+  
+      <div class="pixel-pattern pixel-pattern--tablet " data-pixel-id="112266">
+      
+
+<section class="section"
+         style="
+             position: relative;
+             z-index: 1;
+                      background-position: center center;
+             background-size: cover;
+             ">
+  <div class="section-pixel-wrapper">
+          <div
+          data-pixel-id="112266"
+          class="section-pixel-wrapper-content"
+          style="  position: relative;
+      left: calc(0%);
+      padding-top: calc(0%);
+    
+    width: min(calc(100%), calc(100% - 0%));
+    height: calc(100%);
+    z-index: 10;
+    margin:auto;padding:72px 0px 72px 0px;">
+                  <div class="section-content"
+               data-pixel-id="112266"
+               style="background-color: rgba(248, 248, 249, 1);">
+                      </div>
+              </div>
+      </div>
+
+      <div class="section-overlay"
+         style="background-color:rgba(248, 248, 249, 1)"></div>
+  </section>
+
+
+
+    </div>
+  
+      <div class="pixel-pattern pixel-pattern--mobile " data-pixel-id="112266">
+      
+
+<section class="section"
+         style="
+             position: relative;
+             z-index: 1;
+                      background-position: center center;
+             background-size: cover;
+             ">
+  <div class="section-pixel-wrapper">
+          <div
+          data-pixel-id="112266"
+          class="section-pixel-wrapper-content"
+          style="  position: relative;
+      left: calc(0%);
+      padding-top: calc(0%);
+    
+    width: min(calc(100%), calc(100% - 0%));
+    height: calc(100%);
+    z-index: 10;">
+                  <div class="section-content"
+               data-pixel-id="112266"
+               style="background-color: ;">
+                      </div>
+              </div>
+      </div>
+
+      <div class="section-overlay"
+         style="background-color:rgba(248, 248, 249, 1)"></div>
+  </section>
+
+
+
+    </div>
+  </div>
+
+      </div>
+
+        </div>
+  </div>
+    </div>
+  </div>
+
+
+
+        <div class="p-sticky bottom-0 left-0 right-0 h-0 max-h-0 z-1210">
+      <div class="p-relative d-flex justify-content-end">
+        <button type="button"
+                class="p-absolute bottom-0 m-4 btn btn-icon w-8 h-8 rounded-pill p-0 btn-primary border-0 text-white"
+                data-action="subscribe-scroll-to-top" aria-label="Back to top">
+          <i aria-hidden="true" class="new-icon new-icon-arrow-up bg-white h-4 w-4 mb-1"></i>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="digital-app-footer" data-navigation-id="digitalNavigation">
+    <div class="container-lg max-w-full container">
+      <div class="digital-footer-background-image">
+  <div class="digital-footer-background">
+    <div class="container">
+      <div class="row digital-footer__wrapper">
+        <div class="col">
+          <div class="digital-footer__logo">
+            <a href="/" aria-label="Home">
+              <i class="logo-man--colored" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-end">
+            <a href="https://www.linkedin.com/company/man-group-plc" aria-label="LinkedIn">
+              <i class="new-icon new-icon-circle-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/thisismangroup" aria-label="Instagram">
+              <i class="new-icon new-icon-circle-instagram ms-3" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.youtube.com/@mangroup1783" aria-label="YouTube">
+              <i class="new-icon new-icon-circle-youtube ms-3" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        
+
+
+
+
+      <div id="block-digital-component-2" class="section container-lg"
+            >
+    
+  
+      
+
+
+  <div  class="d-none-unnecessary d-only-xs d-only-sm render-component section-component" id="contact-us-cta-footer-mobilesection" styles="">
+    
+    
+    
+
+
+<div class="container inner-container">
+  <div class="row g-4 g-md-6 g-lg-7">
+                                  <div class="col-12 col-lg-12 ">
+        <div class="d-flex flex-column h-100 w-lg-100 max-w-lg-100 container-lg ">
+            <div class="render-paragraph h-100">
+          <div  class="render-fieldset h-100">
+      <div  class="render-field h-100">
+      
+  
+                                                                                                              
+          <div  class="render-component children-margins" id="contact-us-cta-footer-para-text" styles="">
+      
+      
+
+      <div  class="render-fieldset">
+      <div >
+      
+<div  class="render-paragraph">
+
+
+
+
+
+
+      
+        
+  
+      
+    
+                
+      <div  class="children-margins paragraph-body"><div  class="render-fieldset">
+      <p>
+&nbsp;</p>
+
+  </div>
+</div>
+        
+  
+</div>
+
+    </div>
+  </div>
+
+<div class="render-fieldset mt-5 mt-lg-6">
+
+
+   
+  <a href="/contact#get-in-touch"
+       id="contact-us-cta-footer-button"
+     class="btn border-0 btn-primary hover-bg-dark-primary active-bg-dark-primary mb-0 "
+     aria-label="Contact">
+          <span class="">Contact</span>
+          
+  </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+    </div>
+  
+    </div>
+  </div>
+
+      </div>
+
+        </div>
+      </div>
+      </div>
+</div>
+</div>
+
+
+        </div>
+  <div class="digital-footer-links align-items-stretch">
+    <div class="row">
+                          <div class="col-12 col-md-6 col-lg-2 nav__column">
+          <span class="nav__header">Quick links</span>
+                  
+          <ul class="nav__links">
+                  <li class="nav__item"><a href="/insights" class="nav__link is-active" data-drupal-link-system-path="node/11993" aria-current="page">Insights</a></li>
+                  <li class="nav__item"><a href="/technology" class="nav__link" data-drupal-link-system-path="node/13407">Technology</a></li>
+                  <li class="nav__item"><a href="/careers" class="nav__link" data-drupal-link-system-path="node/13456">Careers</a></li>
+                  <li class="nav__item"><a href="/news-centre" class="nav__link" data-drupal-link-system-path="node/14619">News center</a></li>
+                  <li class="nav__item"><a href="/shareholder-relations" class="nav__link" data-drupal-link-system-path="node/815">Shareholders</a></li>
+              </ul>
+      
+        </div>
+              <div class="col-12 col-md-6 col-lg-2 nav__column">
+          <span class="nav__header">About us</span>
+                  
+          <ul class="nav__links">
+                  <li class="nav__item"><a href="/about-us" class="nav__link" data-drupal-link-system-path="node/13265">About Man</a></li>
+                  <li class="nav__item"><a href="/diversity" class="nav__link" data-drupal-link-system-path="node/2841">Diversity, equity &amp; inclusion</a></li>
+                  <li class="nav__item"><a href="/corporate-sustainability" class="nav__link" data-drupal-link-system-path="node/589">Corporate responsibility</a></li>
+                  <li class="nav__item"><a href="/managing-our-environmental-impact" class="nav__link" data-drupal-link-system-path="node/5399">Environmental commitment</a></li>
+                  <li class="nav__item"><a href="https://oxford-man.ox.ac.uk/" class="nav__link">Oxford–Man Institute</a></li>
+              </ul>
+      
+        </div>
+              <div class="col-12 col-md-6 col-lg-2 nav__column">
+          <span class="nav__header">Capabilities</span>
+                  
+          <ul class="nav__links">
+                  <li class="nav__item"><a href="/capabilities/alternatives" class="nav__link" data-drupal-link-system-path="node/12835">Alternatives</a></li>
+                  <li class="nav__item"><a href="/capabilities/credit" class="nav__link" data-drupal-link-system-path="node/11866">Credit</a></li>
+                  <li class="nav__item"><a href="/capabilities/equities" class="nav__link" data-drupal-link-system-path="node/12478">Equities</a></li>
+                  <li class="nav__item"><a href="/capabilities/multi-asset" class="nav__link" data-drupal-link-system-path="node/12834">Multi-asset</a></li>
+              </ul>
+      
+        </div>
+              <div class="col-12 col-md-6 col-lg-2 nav__column">
+          <span class="nav__header">Client solutions</span>
+                  
+          <ul class="nav__links">
+                  <li class="nav__item"><a href="/capabilities/insurance" class="nav__link" data-drupal-link-system-path="node/12073">Insurance</a></li>
+                  <li class="nav__item"><a href="/capabilities/solutions" class="nav__link" data-drupal-link-system-path="node/12078">Solutions</a></li>
+              </ul>
+      
+        </div>
+              <div class="col-12 col-md-6 col-lg-2 nav__column">
+          <span class="nav__header">Investment themes</span>
+                  
+          <ul class="nav__links">
+                  <li class="nav__item"><a href="/capabilities/responsible-investment" class="nav__link" data-drupal-link-system-path="node/12442">Responsible investment</a></li>
+                  <li class="nav__item"><a href="/capabilities/trend-following" class="nav__link" data-drupal-link-system-path="node/12419">Trend-following</a></li>
+              </ul>
+      
+        </div>
+          
+      
+  </div>
+</div>
+
+
+
+
+
+
+      <div id="block-digital-component" class="section container-lg"
+            >
+    
+  
+      
+
+
+  <div  class="d-none-unnecessary d-only-xl d-only-xxl d-only-lg d-only-md render-component section-component" id="contact-us-cta-footer-desktop-section" styles="">
+    
+    
+    
+
+
+<div class="container inner-container">
+  <div class="row g-4 g-md-6 g-lg-7">
+                                  <div class="col-12 col-lg-12 ">
+        <div class="d-flex flex-column h-100 w-lg-100 max-w-lg-100 container-lg ">
+            <div class="render-paragraph h-100">
+          <div  class="render-fieldset h-100">
+      <div  class="render-field h-100">
+      
+  
+                                                                                                              
+          <div  class="render-component children-margins" id="contact-us-cta-footer-para-text" styles="">
+      
+      
+
+      <div  class="render-fieldset">
+      <div >
+      
+<div  class="render-paragraph">
+
+
+
+
+
+
+      
+        
+  
+      
+    
+                
+      <div  class="children-margins paragraph-body"><div  class="render-fieldset">
+      <p>
+&nbsp;</p>
+
+  </div>
+</div>
+        
+  
+</div>
+
+    </div>
+  </div>
+
+<div class="render-fieldset mt-5 mt-lg-6">
+
+
+   
+  <a href="/contact#get-in-touch"
+       id="contact-us-cta-footer-button"
+     class="btn border-0 btn-primary hover-bg-dark-primary active-bg-dark-primary mb-0 "
+     aria-label="Contact">
+          <span class="">Contact</span>
+          
+  </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+    </div>
+  
+    </div>
+  </div>
+
+      </div>
+
+        </div>
+      </div>
+      </div>
+</div>
+</div>
+
+
+        </div>
+  
+<section  id="block-digital-footerregulationtext-2">
+    
+            <div class="render-fieldset"><p class="menu" style="color: rgb(0, 62, 107)">Investment management services are offered through Man Group plc’s regulated subsidiaries as identified in the Terms and Conditions.</p>
+</div>
+      
+</section><div class="digital-footer-corporate row">
+                    <ul class="nav__links">
+                  <li class="nav__item"><a href="/terms-and-conditions" class="nav__link" data-drupal-link-system-path="node/12833">Terms &amp; conditions</a></li>
+                      <li class="nav__item nav__item--divider"></li>
+                            <li class="nav__item"><a href="/cookies" class="nav__link" data-drupal-link-system-path="node/5749">Cookies</a></li>
+                      <li class="nav__item nav__item--divider"></li>
+                            <li class="nav__item"><a href="/privacy-policy" class="nav__link" data-drupal-link-system-path="node/12881">Privacy</a></li>
+                      <li class="nav__item nav__item--divider"></li>
+                            <li class="nav__item"><a href="/security" class="nav__link" data-drupal-link-system-path="node/12852">Security</a></li>
+                      <li class="nav__item nav__item--divider"></li>
+                            <li class="nav__item"><a href="/regulatory-disclosures" class="nav__link" data-drupal-link-system-path="node/12853">Regulatory disclosures</a></li>
+                      <li class="nav__item nav__item--divider"></li>
+                            <li class="nav__item"><a href="/regulatory-disclosures#modernslavery" class="nav__link" data-drupal-link-system-path="node/12853">Modern slavery</a></li>
+                      <li class="nav__item nav__item--divider"></li>
+                            <li class="nav__item"><a href="/glossary" class="nav__link" data-drupal-link-system-path="node/12883">Glossary</a></li>
+                        </ul>
+      
+  <span class="digital-footer-cl-rights">© 2026 Man. All rights reserved.</span>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </footer>
+
+  
+
+  </div>
+
+  </div>
+
+  
+  <div class="debug d-none robots-nocontent" id="debug-info-section" data-nosnippet>
+  <div><b>User Country:</b> United States (237)</div>
+  <div><b>User Language:</b> </div>
+  <div><b>User Role:</b> Public (Guest) (1)</div>
+  <div>
+    <b>User Access Groups:</b>
+    <ul class="styled-list">
+              <li>Global All (1)</li>
+              <li>North America All (3)</li>
+              <li>Global Non Employees (64)</li>
+              <li>All Unauthenticated Users (68)</li>
+              <li>North America Unauthenticated (87)</li>
+              <li>Global (ex AU) (121)</li>
+              <li>Global (ex Individuals) (123)</li>
+              <li>Global ex EEA, CH &amp; UK (165)</li>
+              <li>Global All (ex UK) (232)</li>
+              <li>Global All (ex HK) (239)</li>
+              <li>Rest of the World All (ex CH) (241)</li>
+              <li>United States All (248)</li>
+              <li>United States Public (250)</li>
+              <li>North America (Unauth.) - Man.com only (254)</li>
+              <li>Global (ex. Individuals, Retail) (272)</li>
+              <li>North America Public (275)</li>
+              <li>Wealth Insights (Public &amp; Fin. prof) (300)</li>
+              <li>Insights (Employees &amp; Public &amp; Insti &amp; Fin. prof) (301)</li>
+              <li>Global (ex. Individuals, Retail) Man only (303)</li>
+          </ul>
+  </div>
+  <div><b>Node Access Groups:</b> 272</div>
+  </div>
+  
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyDGOmRd5VRqoTHCudrul06usj4CuTRxY2k"></script>
+<script src="/sites/default/assets/js/js_rt6wURM01SCxOR4xBzM7Is03vcXA-SXOKcauYXBLOy8.js?scope=footer&amp;delta=1&amp;language=en-us&amp;theme=digital&amp;include=eJxdiEEOhDAIAD9Uy5MaqkhoaEGsif5-9-Bl9zKZmSpcXJygvpJWCwIZk2Kg5nZcFE_eLXrahGWiAqtV1KWdic1YqUxk4C_-O2PD-3f21HFw2OXw_o5-FnT5AFudNRY"></script>
+
+<script type="application/vnd.drupal-ajax" data-big-pipe-event="start"></script>
+<script type="application/vnd.drupal-ajax" data-big-pipe-replacement-for-placeholder-with-id="callback=Drupal%5Cblock%5CBlockViewBuilder%3A%3AlazyBuilder&amp;args%5B0%5D=digital_digitalauxiliarynavigation&amp;args%5B1%5D=full&amp;args%5B2%5D&amp;token=P6t39r9zHtnDutCf64qKLD67zMwuYNXZTZDzqGMlfss">
+[{"command":"insert","method":"replaceWith","selector":"[data-big-pipe-placeholder-id=\u0022callback=Drupal%5Cblock%5CBlockViewBuilder%3A%3AlazyBuilder\u0026args%5B0%5D=digital_digitalauxiliarynavigation\u0026args%5B1%5D=full\u0026args%5B2%5D\u0026token=P6t39r9zHtnDutCf64qKLD67zMwuYNXZTZDzqGMlfss\u0022]","data":"\u003Cdiv class=\u0022digital-nav-auxiliary \u0022\u003E\n  \u003Cdiv class=\u0022container-lg max-w-full container row p-0\u0022\u003E\n    \u003Cdiv class=\u0022digital-nav-auxiliary__left col d-flex justify-content-start\u0022 style=\u0022font-size: 0.875rem;\u0022\u003E\n      \u003Cul class=\u0022nav\u0022\u003E\n        \u003Cli class=\u0022nav__item\u0022\u003E\n          \u003Cbutton type=\u0022button\u0022\n              class=\u0027nav__link nav__link--location nav__link-inactive\u0027\u003E\n                          United States\n                      \u003C\/button\u003E\n        \u003C\/li\u003E\n        \u003Cli class=\u0022nav__item nav__item--divider\u0022\u003E\n        \u003C\/li\u003E\n                  \u003Cli class=\u0022nav__item\u0022\u003E\n            \u003Cbutton type=\u0022button\u0022 class=\u0027nav__link nav__link--role nav__link--chevron-no-animation\u0027 data-bs-toggle=\u0022modal\u0022 data-bs-target=\u0022#attestation\u0022\u003E\n              Public\n            \u003C\/button\u003E\n          \u003C\/li\u003E\n                \n\n        \n      \u003C\/ul\u003E\n    \u003C\/div\u003E\n    \u003Cdiv class=\u0022mobile-divider\u0022\u003E\u003C\/div\u003E\n    \u003Cdiv class=\u0022col d-flex justify-content-end\u0022 style=\u0022font-size: 0.875rem;\u0022\u003E\n                    \u003Cul  class=\u0022nav\u0022\u003E\n                       \u003Cli class=\u0022nav__item\u0022\u003E\n                                    \u003Ca href=\u0022\/contact\u0022 class=\u0022nav__link\u0022 tabindex=\u00220\u0022 data-drupal-link-system-path=\u0022node\/1880\u0022\u003EContact\u003C\/a\u003E\n                                        \u003C\/li\u003E\n                       \u003Cli class=\u0022nav__item\u0022\u003E\n                                    \u003Ca href=\u0022\/careers\u0022 class=\u0022nav__link\u0022 tabindex=\u00220\u0022 data-drupal-link-system-path=\u0022node\/13456\u0022\u003ECareers\u003C\/a\u003E\n                                        \u003C\/li\u003E\n                       \u003Cli class=\u0022nav__item\u0022\u003E\n                                    \u003Ca href=\u0022\/news-centre\u0022 class=\u0022nav__link\u0022 tabindex=\u00220\u0022 data-drupal-link-system-path=\u0022node\/14619\u0022\u003ENews center\u003C\/a\u003E\n                                        \u003C\/li\u003E\n                       \u003Cli class=\u0022nav__item nav__item--dropdown\u0022\u003E\n                                    \u003Cbutton type=\u0022button\u0022 class=\u0022nav__link nav__link--chevron\u0022 tabindex=\u00220\u0022\u003EShareholders\u003C\/button\u003E\n                                                    \u003Cul  class=\u0022nav__dropdown-menu\u0022\u003E\n                       \u003Cli class=\u0022nav__item\u0022\u003E\n                                    \u003Ca href=\u0022\/shareholder-relations\u0022 target=\u0022_blank\u0022 class=\u0022nav__link\u0022 tabindex=\u00220\u0022 data-drupal-link-system-path=\u0022node\/815\u0022\u003EShareholder relations\u003C\/a\u003E\n                                        \u003C\/li\u003E\n                       \u003Cli class=\u0022nav__item\u0022\u003E\n                                    \u003Ca href=\u0022\/shareholder-relations#_results-centre\u0022 target=\u0022_blank\u0022 class=\u0022nav__link\u0022 tabindex=\u00220\u0022 data-drupal-link-system-path=\u0022node\/815\u0022\u003EResults centre\u003C\/a\u003E\n                                        \u003C\/li\u003E\n                       \u003Cli class=\u0022nav__item\u0022\u003E\n                                    \u003Ca href=\u0022\/shareholder-relations#_shareholder-meetings\u0022 target=\u0022_blank\u0022 class=\u0022nav__link\u0022 tabindex=\u00220\u0022 data-drupal-link-system-path=\u0022node\/815\u0022\u003EAGM\u003C\/a\u003E\n                                        \u003C\/li\u003E\n                       \u003Cli class=\u0022nav__item\u0022\u003E\n                                    \u003Ca href=\u0022\/shareholder-relations#_dividend-information\u0022 target=\u0022_blank\u0022 class=\u0022nav__link\u0022 tabindex=\u00220\u0022 data-drupal-link-system-path=\u0022node\/815\u0022\u003EDividends\u003C\/a\u003E\n                                        \u003C\/li\u003E\n                       \u003Cli class=\u0022nav__item\u0022\u003E\n                                    \u003Ca href=\u0022\/corporate-governance\u0022 target=\u0022_blank\u0022 class=\u0022nav__link\u0022 tabindex=\u00220\u0022 data-drupal-link-system-path=\u0022node\/1753\u0022\u003ECorporate Governance\u003C\/a\u003E\n                                        \u003C\/li\u003E\n          \u003C\/ul\u003E\n  \n                  \u003C\/li\u003E\n                       \u003Cli class=\u0022nav__item\u0022\u003E\n                                    \u003Ca href=\u0022\/login\u0022 class=\u0022auxiliary-last login-link nav__link\u0022 tabindex=\u00220\u0022 data-drupal-link-system-path=\u0022node\/1834\u0022\u003ELogin\u003C\/a\u003E\n                                        \u003C\/li\u003E\n          \u003C\/ul\u003E\n  \n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n\n","settings":null}]
+</script><script type="application/vnd.drupal-ajax" data-big-pipe-replacement-for-placeholder-with-id="callback=Drupal%5CCore%5CRender%5CElement%5CStatusMessages%3A%3ArenderMessages&amp;args%5B0%5D&amp;token=_HAdUpwWmet0TOTe2PSiJuMntExoshbm1kh2wQzzzAA">
+[{"command":"insert","method":"replaceWith","selector":"[data-big-pipe-placeholder-id=\u0022callback=Drupal%5CCore%5CRender%5CElement%5CStatusMessages%3A%3ArenderMessages\u0026args%5B0%5D\u0026token=_HAdUpwWmet0TOTe2PSiJuMntExoshbm1kh2wQzzzAA\u0022]","data":"","settings":null}]
+</script>
+<script type="application/vnd.drupal-ajax" data-big-pipe-event="stop"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.eu01.nr-data.net","licenseKey":"NRJS-016726197bedb887093","applicationID":"416095120","transactionName":"MhBSZQoZWxcAAhBYWAtacVIMEVoKTiUWREcEGWxfFxxQOCIOCkVFChlcVAokewsFBDJYUhI2X18MCloIDQQWHAkTHFVG","queueTime":0,"applicationTime":449,"atts":"HldRE0IDSBk=","errorBeacon":"bam.eu01.nr-data.net","agent":""}</script></body>
+</html>
