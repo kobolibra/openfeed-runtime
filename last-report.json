@@ -3,26 +3,36 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "00c8b28e8d6c8e70207d6c928f57",
-    "3e6e71ced7e2d7b4adc6e87d068c"
+    "f451dd0c3d136d6d947486868007",
+    "c47ebed13a44559fc68b780e1bd4",
+    "0f26170745cc27fae679d587b933"
   ],
   "results": [
     {
-      "id": "00c8b28e8d6c8e70207d6c928f57",
+      "id": "f451dd0c3d136d6d947486868007",
       "result": {
         "status": "success",
-        "found": 30,
+        "found": 100,
         "inserted": 0,
-        "message": "1 page(s), 30 unique item(s); unknown_dates=30"
+        "message": "1 page(s), 100 unique item(s); extraction limit reached"
       }
     },
     {
-      "id": "3e6e71ced7e2d7b4adc6e87d068c",
+      "id": "c47ebed13a44559fc68b780e1bd4",
       "result": {
         "status": "success",
-        "found": 0,
+        "found": 3,
         "inserted": 0,
-        "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
+        "message": "1 page(s), 3 unique item(s); unknown_dates=3"
+      }
+    },
+    {
+      "id": "0f26170745cc27fae679d587b933",
+      "result": {
+        "status": "success",
+        "found": 4,
+        "inserted": 0,
+        "message": "1 page(s), 4 unique item(s); unknown_dates=4"
       }
     }
   ],
@@ -510,7 +520,7 @@
     },
     {
       "id": "c47ebed13a44559fc68b780e1bd4",
-      "next_run": "2026-11-06T13:49:28+00:00",
+      "next_run": "2026-11-07T01:49:28+00:00",
       "schedule_phase_seconds": 6568
     },
     {
@@ -780,7 +790,7 @@
     },
     {
       "id": "f451dd0c3d136d6d947486868007",
-      "next_run": "2026-11-06T13:45:15+00:00",
+      "next_run": "2026-11-07T01:45:15+00:00",
       "schedule_phase_seconds": 6315
     },
     {
@@ -845,7 +855,7 @@
     },
     {
       "id": "0f26170745cc27fae679d587b933",
-      "next_run": "2026-11-06T13:53:41+00:00",
+      "next_run": "2026-11-07T01:53:41+00:00",
       "schedule_phase_seconds": 6821
     },
     {
@@ -871,8 +881,8 @@
   ],
   "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 61.321,
+  "elapsed_seconds": 120.647,
   "input_db_unchanged": true,
-  "input_sha256": "4a3cd7a342859b9feb561a629fb298354dcb44412ae0814f20c1fb3a3a38327e",
-  "shadow_sha256": "8dcb7cfc3d2dc0c15677fc62656d74f0af02009a059d5dd7b33fc76d3c4b382a"
+  "input_sha256": "ceec0782089da8e6eefa57f02ab3dab43acda6ff178bb4f0336f7076bcd38bcb",
+  "shadow_sha256": "f8123d7d766c29e659d9f20738999851863f28554148f1bcc299249dba135bdc"
 }
