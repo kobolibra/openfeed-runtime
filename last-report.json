@@ -3,36 +3,26 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "c556cd117ca5011e45b89fdf179e",
-    "343af68382688b03fd58668ef927",
-    "481313cd60acb1458d4ae5393671"
+    "41d44ad61ae9532e31a558482fb3",
+    "a5108315a70ff1a860a0d4658bbf"
   ],
   "results": [
     {
-      "id": "c556cd117ca5011e45b89fdf179e",
+      "id": "41d44ad61ae9532e31a558482fb3",
       "result": {
         "status": "success",
-        "found": 9,
+        "found": 41,
         "inserted": 0,
-        "message": "1 page(s), 9 unique item(s)"
+        "message": "1 page(s), 41 unique item(s)"
       }
     },
     {
-      "id": "343af68382688b03fd58668ef927",
+      "id": "a5108315a70ff1a860a0d4658bbf",
       "result": {
         "status": "success",
-        "found": 2,
-        "inserted": 0,
-        "message": "1 page(s), 2 unique item(s); unknown_dates=2"
-      }
-    },
-    {
-      "id": "481313cd60acb1458d4ae5393671",
-      "result": {
-        "status": "success",
-        "found": 45,
-        "inserted": 0,
-        "message": "1 page(s), 45 unique item(s)"
+        "found": 10,
+        "inserted": 1,
+        "message": "1 page(s), 10 unique item(s)"
       }
     }
   ],
@@ -295,7 +285,7 @@
     },
     {
       "id": "a5108315a70ff1a860a0d4658bbf",
-      "next_run": "2026-11-06T12:50:31+00:00",
+      "next_run": "2026-11-07T00:50:31+00:00",
       "schedule_phase_seconds": 3031
     },
     {
@@ -405,7 +395,7 @@
     },
     {
       "id": "41d44ad61ae9532e31a558482fb3",
-      "next_run": "2026-11-06T12:46:18+00:00",
+      "next_run": "2026-11-07T00:46:18+00:00",
       "schedule_phase_seconds": 2778
     },
     {
@@ -881,8 +871,8 @@
   ],
   "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 120.784,
+  "elapsed_seconds": 61.199,
   "input_db_unchanged": true,
-  "input_sha256": "e72b025d6b45b505f006d11d36af48b533dfc9db0cced51ba863f6b3b9444968",
-  "shadow_sha256": "72bc91288a65829b363a21c14c1019ca1cac04280261088bf60b5a35f6de015f"
+  "input_sha256": "d35f8534c216014f6c53dee0531057be3ff2a46c01020cb567313f764701c4f0",
+  "shadow_sha256": "9d3b380dd4e39fa91cf6c9b8bbcbf8aa89999c2006d54a103f36b6cb25d3f34f"
 }
