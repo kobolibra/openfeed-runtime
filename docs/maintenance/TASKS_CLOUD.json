@@ -1,10 +1,13 @@
 {
-  "updated": "2026-11-05",
-  "current_focus": "签名自动接续已实跑验收；剩余143源/两个周期/Pages发布与生产切换未完成",
-  "production_authority": "Mac Docker SQLite；未迁移",
+  "updated": "2026-11-06T08:54:43.857375+00:00",
+  "current_focus": "云端生产已上线；管理留本机；168源166最近成功/2个403待独立处理",
+  "production_authority": "Private shadow-state branch is canonical production; Mac UI is a management mirror",
   "automatic_cloud_crawl_enabled": true,
   "private_repository_created": true,
   "paid_resources_enabled": false,
+  "new_operations_review_block": null,
+  "latest_readonly_observation": "2026-11-06T08:49:58.218264+00:00",
+  "handoff_gate_after_new_publication_changes": "Current snapshot refreshed; gate result recorded in handoffs/latest.md",
   "tasks": [
     {
       "id": "M0",
@@ -18,13 +21,13 @@
     },
     {
       "id": "M1",
-      "status": "in_progress",
+      "status": "done",
       "depends_on": [],
       "summary": "无副作用单轮runner与scratch状态测试",
-      "deliverable": "影子单轮入口、精确fixture、持久启动间隔、RSS校验清单/下一计划；未部署",
+      "deliverable": "无生产副作用runner、精确fixture、持久间隔、deadline/SIGTERM、6源预算与原RSS/历史保护；已部署影子",
       "owner": "接手agent 2026-11-05 M1补验收",
-      "evidence": "ops/run_cycle.py；tests/test_shadow_cycle.py 8 passed；work/m1-continuation完整469 passed/6 browser启动权限失败；Brookings旧捕获4条/3新增/input unchanged；Linux477全绿；SIGTERM重启/DB导出后本地相关14通过",
-      "next_action": "真实云HTTP/POST三页/隔离browser已通过；SIGTERM恢复已测，继续统一deadline/同域边界审查，最终随云批处理验收收尾"
+      "evidence": "ops/run_cycle.py；tests/test_shadow_cycle.py 8 passed；work/m1-continuation完整469 passed/6 browser启动权限失败；Brookings旧捕获4条/3新增/input unchanged；Linux477全绿；SIGTERM重启/DB导出后本地相关14通过；2026-11-06相关23通过、实际6源bot42153367307全success回写；原source id/phase门禁保留；private app9cc98c0d完整Linux498 passed，相关24 passed，保守间隔下6源/同域第二槽验证，首次6源全success；最新e105 Linux505 passed",
+      "next_action": "M1完成，质量/两周期/生产发布分别继续M3/M5，不把它们混同。"
     },
     {
       "id": "M2",
@@ -44,11 +47,11 @@
       "depends_on": [
         "M2"
       ],
-      "summary": "云端小批影子运行，再逐源验收171源",
+      "summary": "逐源验收当前168活动来源",
       "deliverable": "完整分页/浏览器/空列表/质量矩阵；不推断未测来源通过",
       "owner": "current agent 2026-11-05",
-      "evidence": "runs 42000256852 Brookings4条/3新增；42000626310 Woodmac完整原3页9条/0新增；42001095279隔离browser Value Partners100条触及上限/0新增；三次非发布云端checkpoint成功；run42008521595实际4源均成功/2新增；Linux run42007778140完整477通过及171RSS有效；branch coverage24/171；历史矩阵28曾观察（23非空、3空、2 HTTP403失败），143未观察；原4189身份/171 scope和phase保留",
-      "next_action": "继续自动影子逐源与两个周期；CEPR/VoxEU和Cantor 403必须保留失败并诊断，不清历史或改范围。"
+      "evidence": "/Users/time/Documents/Codex/2026-11-05/users-time-documents-codex-2026-10-3/work/cloud-evidence/removed-20261106/status.json、verification.json；166success/2error、零未观察；删除三个来源经用户授权，其他GUID/first_seen/scope/phase保留",
+      "next_action": "仅Julius/CEPR原范围403与正常12h周期质量观察；不再阻塞已经验收的主运行迁移。"
     },
     {
       "id": "M4",
@@ -59,12 +62,12 @@
       "summary": "调度容量、实际分钟与存储成本验证",
       "deliverable": "测量报告、积压/同域并发数据、免费/额度方案；不开付费预算",
       "owner": "current agent 2026-11-05",
-      "evidence": "ops/cloud_tick.py有限4源/330秒；跨批次60/300秒节流；ops/public-wrapper.yml待明确授权部署公开调度；不启用收费；免费公库run42025905503成功；完整自停定时文件已准备但工具transport故障未提交；CUA直接提交3f71d14定时+自停；REST逐字校验；两轮免费8源success、job257/266秒；API重启登记和owner cron重提交后仍未见schedule事件；三轮免费dispatch成功；用户明确授权HMAC Secret和自动接续；8项专项通过；公开commit1bccaf2逐字核对；root42056964516已claim generation0；自动bot child42058671579的签名/claim/抓取/checkpoint真实通过，parent完整success，10分钟接续；无本机第二次dispatch",
-      "next_action": "自动relay已验收，继续观察积压/周期吞吐/截止自停；原生event=schedule尚未观察。M4总任务仍含容量与长期成本验收，不能以单次自动完成标done。"
+      "evidence": "ops/cloud_tick.py有限4源/330秒；跨批次60/300秒节流；ops/public-wrapper.yml待明确授权部署公开调度；不启用收费；免费公库run42025905503成功；完整自停定时文件已准备但工具transport故障未提交；CUA直接提交3f71d14定时+自停；REST逐字校验；两轮免费8源success、job257/266秒；API重启登记和owner cron重提交后仍未见schedule事件；三轮免费dispatch成功；用户明确授权HMAC Secret和自动接续；8项专项通过；公开commit1bccaf2逐字核对；root42056964516已claim generation0；自动bot child42058671579的签名/claim/抓取/checkpoint真实通过，parent完整success，10分钟接续；无本机第二次dispatch；原生schedule已2条success；三类实际失败已排查；有限API重试与push歧义确认12测试；6源330秒虚拟边界及实跑6success；新private app9cc98c0d经498完整Linux通过后部署c22524a1；同域候选延后到满300秒，330预算可放第二个同域源，真实双槽待观察",
+      "next_action": "记录新队列真实吞吐和跨批次间隔/截止；保持public免费compute、private源码状态。"
     },
     {
       "id": "M5",
-      "status": "in_progress",
+      "status": "done",
       "depends_on": [
         "M3",
         "M4"
@@ -72,27 +75,32 @@
       "summary": "原Pages地址发布完整闭环",
       "deliverable": "原ID/GUID/RSS语义对照、两个正常周期及发布故障验证",
       "owner": "current agent 2026-11-05",
-      "evidence": "ops/export_db.py / tests/test_export_db.py：失败旧RSS/OPML/文件白名单、语义hash专项2通过；尚未公开发布",
-      "next_action": "生产发布接线尚须显式Pages build（GITHUB_TOKEN推送不自动构建），再原地址HTTP/语义/历史/两个周期及故障验收；Mac仍唯一生产。"
+      "evidence": "/Users/time/Documents/Codex/2026-11-05/users-time-documents-codex-2026-10-3/work/cloud-evidence/production-cutover-20261106/first-cloud-publication.json/public-rss-validation.json；真实云15bb6f58+Pages built；168原RSS/OPML与4028窗口GUID有效，DB4102保留",
+      "next_action": "持续观察下一小时语义更新与Pages新鲜度；不重复发布同一槽。"
     },
     {
       "id": "M6",
-      "status": "planned",
+      "status": "done",
       "depends_on": [
         "M5"
       ],
       "summary": "单写入者切换、Mac离线验证与回滚演练",
       "deliverable": "最终状态hash、启动项清单、云首轮状态、回滚验证",
-      "owner": null,
-      "evidence": null,
-      "next_action": "详见CLOUD_HANDOFF相应阶段；开工先登记负责人/时间"
+      "owner": "当前agent（仅预演准备，尚未切换）",
+      "evidence": "/Users/time/Documents/Codex/2026-11-05/users-time-documents-codex-2026-10-3/work/cloud-evidence/production-cutover-20261106/final-status.json；Mac停写后4102union，首云真实发布与自动子轮成功；本机管理镜像同步最新状态",
+      "next_action": "运行观察与两源403独立修复；回滚必须取最新云历史，严禁旧Mac库回盖。"
     }
   ],
   "private_repository": "https://github.com/kobolibra/openfeed-runtime",
   "repository_visibility": "private (restored and verified)",
   "automatic_cloud_schedule_configured": true,
-  "scheduled_event_observed": false,
+  "scheduled_event_observed": true,
   "automatic_relay_configured": true,
   "automatic_relay_observed": true,
-  "automatic_relay_run": "42058671579"
+  "automatic_relay_run": "42058671579",
+  "cloud_source_commit": "9cc98c0d6e90f7349a6da92abad9075b998697a0",
+  "cloud_observed_sources": 171,
+  "cloud_latest_success_sources": 165,
+  "cloud_latest_failed_sources": 6,
+  "long_term_free_operation_user_authorized": true
 }

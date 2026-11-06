@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-06T08:54:43.857375+00:00",
   "note": "这是问题台账，不是实时错误列表；需结合最新快照。",
   "issues": [
     {
@@ -95,10 +95,38 @@
     },
     {
       "id": "CLOUD-001",
-      "status": "automatic_relay_verified_production_not_cutover",
-      "summary": "用户授权继续GitHub主运行迁移，本轮优先完整规划/真实资料交接",
-      "evidence": "CUA已提交3f71d14完整有限定时，REST逐字校验；两轮免费8源success/状态无损；首条schedule尚待观察；2026-11-05用户明确授权HMAC，签名relay部署1bccaf2，8项专项通过，root42056964516已运行；自动child待验；北京时间23:53自动child42058671579（github-actions[bot]）签名、generation1、实际抓取与private checkpoint通过；child DB4194/旧4189零丢失；Cantor403未掩盖；23:59首bot整项success并自发第二bot42060360129/generation2；Mac快照Cantor error、CEPR healthy为不同时刻观察，403根因未定",
-      "next_action": "完成143未观察源、两正常周期、两处403诊断、Pages明确构建及生产单写者切换；原生cron仍未观察，relay不冒称schedule。"
+      "status": "production_cutover_verified",
+      "summary": "GitHub正式生产已切换，本机保留管理界面",
+      "evidence": "/Users/time/Documents/Codex/2026-11-05/users-time-documents-codex-2026-10-3/work/cloud-evidence/production-cutover-20261106/first-cloud-publication.json/final-status.json；真实15bb6f58发布/Pages built/自动子轮成功",
+      "next_action": "持续运行观察；不要重复影子部署或擅自恢复Mac scheduler/publisher。"
+    },
+    {
+      "id": "CLOUD-002",
+      "title": "当前Julius与CEPR两源云端403",
+      "status": "open",
+      "evidence": "Amundi15条/1新增恢复；Man/Eurasia/Cantor用户明确删除，非修复；当前168/166success/2error",
+      "next_action": "仅调查Julius原/en/insights/与CEPR原China查询，保留历史及访问限制；不得重试已删除三源"
+    },
+    {
+      "id": "CLOUD-003",
+      "title": "最终切换必须保留两边独有历史与时间 provenance",
+      "status": "resolved_final_stopped_writer_union_deployed",
+      "evidence": "/Users/time/Documents/Codex/2026-11-05/users-time-documents-codex-2026-10-3/work/cloud-evidence/production-cutover-20261106/final-union-validation.json；4102 GUID、Mac首见时间与两边独有文章保留；7391runs/4934events",
+      "next_action": "回滚/后续维护使用最新云状态，不用归档171源预演替代。"
+    },
+    {
+      "id": "CLOUD-004",
+      "title": "内部审批错误重试后已恢复",
+      "status": "resolved_retry_succeeded",
+      "evidence": "用户要求再试后，私有源码e105同步、Linux505回归、Amundi复验及删除均已实际执行。此前workspace out of credits不足以识别GPT或GitHub账单。",
+      "next_action": "无需用户充值；后续遇到实际权限或服务错误按实际返回诊断。"
+    },
+    {
+      "id": "CLOUD-005",
+      "status": "deployed_isolation_tested_live_edit_not_tested",
+      "summary": "本机管理桥读取云状态已验收，真实编辑链路尚未生产实测",
+      "evidence": "ops/local_cloud_sync.py/local_cloud_ui.py；6+2隔离测试；实际/api/cloud-status=synced；自动审批拒绝未授权的真实测试编辑，未执行",
+      "next_action": "用户正常使用真实编辑时核查云ack；如需主动改真实来源做端到端验收，先取得该测试改动的明确授权；异常拒绝覆盖并保留本机修改。"
     }
   ]
 }

@@ -1,0 +1,8 @@
+{
+  "mode": "cloud",
+  "phase": "active",
+  "started_at": "2026-11-06T08:16:02.146641+00:00",
+  "local_publisher_enabled": false,
+  "local_scheduler_enabled": false,
+  "local_cloud_management_enabled": true
+}

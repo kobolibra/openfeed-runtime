@@ -158,3 +158,85 @@
 下一步：保持单云写入者，完成剩余143源历史矩阵与两个12小时正常周期；针对403做跨环境原配方复核，不降质量；补Pages完整发布与故障恢复，最后才能单写者切换和Mac离线验收。
 
 23:59北京时间补验：首个bot child42058671579整项workflow已success，并自行发起第二个bot child42060360129，generation2 claim已推进。已连续观察两次自动接续；第二自动轮抓取仍进行，未冒称其checkpoint完成。原生schedule仍未观察。Mac快照UTC15:56：Cantor当前error（last_success UTC11月4日17:58），CEPR/VoxEU当前healthy（last_success UTC11月5日05:41），与云403观察不同时间，不能据此断言403根因或云端已恢复。
+
+## 2026-11-06 11:12北京时间｜实际加固与复验（覆盖昨日未观察cron状态）
+- 原生event=schedule已观察两条success；自动relay仍运行。调度历史不是连续无故障：run42060360129抓取步骤失败（私密输出未持久，具体原因未知）；42061613847 claim的git push rc1；42128035866接续API两次500后失败。之后由新root恢复，不掩盖断链。
+- 已部署API最多5次有限退避；403等永久错误不重试；截止前检查；claim push失败时核对remote HEAD，已被服务端接受则确认成功，其他提交变动拒绝覆盖，否则最多3次重试。12项签名/重放/截止/500恢复/403拒绝/歧义push与并发拒绝测试通过。公开首次加固3783f78，当前runtime workflow内容来自b18f0ed7，固定private app5c7a42e807083cf4993252ca9f9c5365d0989602。
+- 找到迁移配置遗漏：Mac原有OPENFEED_MAX_FETCH_BYTES=8000000，云端未设置导致默认2500000。已恢复同一8MB原硬上限，未改来源URL/范围或放宽既有安全上限。owner定向复验run42152294936：Atlantic成功100条、6新增，原4个失败仍失败，私有checkpoint成功。
+- 正常批量4→6，仍330秒总预算、全局60秒/同域300秒持久间隔，原phase保持。23项相关测试通过（含6源虚拟时钟/保留历史/输入不变、原SIGTERM等）。实际bot run42153367307在app5c7a42e上完成6源全部success、1新增并回写checkpoint。当前branch coverage110/171（106success、4error、61未观察），不是长期验收；还需两个正常周期。
+- 剩余4源：Julius/Cantor/CEPR-VoxEU原隔离browser返回403；Man原配方云端0条。Man只读HTTP probe42153637418保存到private probe-42153637418，DB hash不变；云响应182462字节、地区/投资者提示页无文章；Mac实际HTTP321848字节、原selector提取18条。不是selector已坏，不通过cookie/身份伪装跨越提示。3源普通HTTP对照probe42154768081已发起，结果待收，不擅自改原配方。诊断ref独立，不写shadow-state或生产DB。
+- 公库private-source-probe.yml是owner-only、无定时、同48h截止的只读诊断薄入口。源码/配方/DB/响应/日志都在私库，标准public runner，不产生private compute；无public artifacts。脚本最多5源、源ID参数化、固定fetch安全策略，保留真实非零退出码并先上传私密证据。
+- Pages生产代码已补ops/pages_build.py并接入cloud_publish：明确请求构建、等待期望commit、拒绝错误source/旧commit/失败/超时，内容未变也能补偿上次构建失败。5项新测试包含上述路径；已用真实API只读确认当前legacy main根站点已built commitd4fa0e20。生产所需临时Pages API token及public checkout写权限尚未接入当前shadow workflow，因此不能称云RSS发布已验收。
+- Mac继续生产，未停/未改；runtime保持private；截止仍北京时间11月7日20:09:45，未延长。
+
+## 2026-11-06最终接续记录
+# OpenFeed 当前实际状态｜2026-11-06
+
+生产仍为Mac Docker卷；未停Mac、未启用云生产发布。runtime仓库private；只有公开feeds标准runner执行计算，没有启用收费。
+
+## 已实际完成
+- 自动接续已反复运行；原生schedule也已两次success：42110509165、42144750189。历史曾有3次失败，未宣称连续无故障。
+- 当前runtime workflow c22524a1，固定private app9cc98c0d。Linux完整498 passed/1 warning（公开runner run42156230430，详细日志private probe分支）；另12项接续测试、24项相关源码测试通过。
+- 普通批次4→6；run42153367307真实6源全success、1新增/checkpoint成功。仍330秒预算、全局60秒/同域300秒持久间隔。新队列先处理不同host，再在预算允许时等待满300秒处理同host第二项；虚拟边界已验，全量Linux通过，已部署，真实同域二次启动仍待记录。
+- API500等暂态最多5次有限退避；403不重试。claim推送遇响应丢失先核对remote HEAD，拒绝覆盖别人的提交。
+- Atlantic迁移配置遗漏已修复：恢复Mac原8MB上限。run42152294936真实100条、6新增。
+
+## 当前质量与阻断
+- 截至2026-11-06T03:41:43.455926+00:00，128/171源曾在branch观察：最近123成功、5失败、43未观察。这不是两周期验收。
+- Julius/Cantor/CEPR原隔离browser403，普通HTTP对照42154768081也403；无可用响应，不改范围凑成功。
+- Man云响应是地区/投资者提示页、无文章，Mac原selector18条；证据private probe-42153637418。
+- Eurasia原China查询返回Solr搜索服务不可访问的错误页（private probe-42155403671）；不能视为官方空列表。
+- 云库独立下载已验4226条、旧4189身份无损、171原scope/recipe/phase保留。实时云库仍会增加，不把旧下载叫实时。
+
+## 发布与切换准备
+- Pages显式构建/等指定commit/错源和失败超时已实现与测试；当前原地址171 RSS+OPML已HTTP校验（仍由Mac发布）。云端首次实际发布尚未验收。
+- 生产接线候选文件本chat outputs/OpenFeed-cloud/runtime-cloud-production-candidate.yml已准备，包含临时public内容/Pages token接线和Mac停写/最终快照护栏，仍保留既定截止；未部署。
+- 新在线Mac备份4219条，对比云下载4226：Mac独有16、云独有23、14项first_seen不同。ops/prepare_cutover.py及4项测试完成；本地合并预演4242 GUID全保留、Mac first_seen保持、冲突云时间留存私密ledger，输入库不改。171原地址RSS/OPML导出离线通过；不是最终停写快照，不可直接覆盖生产。
+
+## 接下来
+继续自动覆盖43源和两个正常周期；复核5个外部阻断；满足M3/M5后才停Mac写入、重新在线备份并合并最新两边数据，做原地址首次云发布/HTTP语义/失败恢复与Mac离线验收。截止仍北京时间2026-11-07 20:09:45，不擅自延长。
+
+权威任务见TASKS_CLOUD.json；详证在本chat work/cloud-evidence及docs/maintenance/cloud-relay/evidence。以前CURRENT完整保存于handoffs/20261106-before-current-consolidation.md。私钥禁止打印、打包、公开。
+
+## 2026-11-06 15:06北京时间｜全源观察与审批阻断
+只读GitHub实测171源均已有观察，最近165成功/6失败；checkpoint42177907077/source9cc98c0d、身份保护通过，该轮抓取success后等待接续。仍shadow/publish=false/Mac writer未停，未完成生产切换。GitHub标准macOS对照也未恢复Man/Julius。新增发布冻结候选、推送应答丢失与Pages失败恢复及合并等本地相关31项通过，但这些新改动尚未完成本轮私库同步/新Linux完整回归，不冒用先前498项完整结果。
+自动审批报workspace out of credits，新的Amundi复验调度与后续代码同步未执行；没有换工具绕过同一审批。现有云端任务仍运行，GitHub计算额度不是这次阻断。当前代码变化后的Mac快照/handoff gate尚未刷新执行，明确不宣称完整交接已通过；额度恢复后继续。
+
+## 2026-11-06T08:08:28.159217+00:00 用户明确删除三个来源
+生产权威仍为Mac，GitHub云端仍是shadow，生产切换未完成。用户明确要求删除Man、Eurasia，并在Cantor无法恢复时删除；三者在Mac API、云端shadow-state、公开OPML和RSS均已删除。当前168来源，云端覆盖166最近success、2error（Julius、CEPR），0未观察。删除不计作故障修复。
+
+- 私有状态删除提交8960f17e3afe3cc2c9723fe833beb06ee337dcb1；公开删除提交236b0d2a3fff0f74dea43995a989fa32a432c9c2。其他来源配置/phase/GUID/first_seen集合逐项保持。完整删除前历史仅私密备份保留，禁止重建三个已删来源。
+- 云端写入临时停用后已enable并owner restart；Pages预检已重新发起，结果须看实际run，不能将dispatch当完成。
+- 公共Pages预检171改168，诊断默认来源Man改Julius，避免旧入口重试已删来源。
+- 当前部署源码e1054f460fa20002d204704aa8554efa59fddd70，Linux完整505通过。发布失败恢复相关31项通过。此前自动审批workspace out of credits错误经用户要求重试后已恢复执行；不能推断是GPT/GitHub账单或要求充值。
+- Amundi冷却后复验已恢复15条/1新增。原地址Pages/token仅现有提交预检通过，不代表云端新内容发布已验收。
+- 截止仍为2026-11-07T12:09:45.802208+00:00，未延长，未启用收费。源码/数据库/配方/诊断保持private。
+
+证据：/Users/time/Documents/Codex/2026-11-05/users-time-documents-codex-2026-10-3/work/cloud-evidence/removed-20261106/status.json、verification.json；私密mac-before.sqlite3/cloud-before.sqlite3保留完整删除前状态；cloud-after.sqlite3为删除后状态。
+下一步：验收删除后实际云checkpoint/Pages；集中Julius精确/en/insights/和CEPR原China查询。开源RSSHub/RSS-Bridge代码搜索未发现对应专用实现；changedetection.io的最终主文档响应追踪可供诊断参考，但未据此证明403可修复，不引入验证码/TLS/访问控制绕过。生产切换前必须重新取168源双边快照合并；旧171源预演仅归档，不可直接部署。
+
+
+## 2026-11-06T08:54:43.857375+00:00 正式切换完成、管理留本机
+生产抓取/持久状态/原RSS发布已切换到GitHub。管理界面保留本机 http://127.0.0.1:8765 ，本机不自动抓取或发布。用户明确授权长期免费运行，原48小时停止时间已移除；只使用公共openfeed-feeds的标准ubuntu-latest计算，源码/SQLite/配方/日志仍在私有openfeed-runtime。未启用付费资源。
+
+## 已实际验收
+- 最终停写Mac快照ad300098edcc78a6eb3bc2eacf64bf886469ee544f1d98503a4d1c097801c62a。cloud-final dd2820ec；合并保留Mac独有2/云独有30，4102 GUID，Mac first_seen完整保留，49处cloud时间provenance私密归档。合并7391条run/4934条event；所有168源配置与phase相同。
+- 私有生产状态提升5ec9f816，公开生产workflow ceebd79d，运行源码固定e1054f460fa20002d204704aa8554efa59fddd70（完整Linux505通过）。生产首轮42187231139成功，真实云发布15bb6f58316e47965bbc71c6cd6e4d894666c597，Pages built于2026-11-06T08:29:39Z；非预检空提交。
+- 自动签名下一轮42188445685成功，第三轮42189658246已回写生产checkpoint。常规600秒接续+原生cron兜底；北京时间08–22每小时最多一个发布槽，无语义变化不提交。
+- 公开168份RSS/OPML有效，原地址不变；原100条/源窗口4028公开GUID与最终导出一致。私库保留完整4102条，不能把RSS窗口上限之外74条误报为DB丢失。Julius/CEPR失败仍保留原RSS内容。
+- 用户明确删除Man 4eb10889d95da4ae84cfe4ab1d46、Eurasia 95d1c47e63b41f814f17d344646a、Cantor 132114da2be6a7af5f9cb6f59af3：Mac/云/OPML/RSS均删除，原URL实际HTTP404；不得从旧171源预演复活。168活动源，166最近云success/2error。
+- 本机仅管理：派生镜像openfeed-local-cloud-ui，ops/local_cloud_ui.py阻止本机run/batch/spread，停用原lifespan调度，保留来源编辑。同步桥ops/local_cloud_sync.py用既有health启动项保持；已拉取最新云DB，实际UI 168/4102/166healthy/2error、/api/cloud-status=synced。
+- 管理修改会先等当前云批次结束，再校验配置基线、保留最新云历史并用Git快进CAS提交。桥**从不disable云workflow**，Mac关闭不会因配置等待而停云；发生版本竞争拒绝覆盖并保留本机修改。镜像恢复前停本机UI并复核配置，避免吞掉刚保存的编辑。
+- 本轮28项隔离测试通过（含relay20、管理桥6、UI2）；源目录两项管理适配器共8测试通过。生产主代码仍为已验证e105，不能把新本机适配器误报为同一Linux505范围。
+
+## 限制与剩余事项
+- Julius精确/en/insights/、CEPR原China查询云端仍403；不扩大范围、不清历史、不绕验证码/TLS/访问条件。RSSHub/RSS-Bridge未检索到专用实现，changedetection.io最终主文档响应追踪仅为待验证诊断参考。
+- 自动审批拒绝临时改真实来源再恢复的管理端到端测试，未执行任何测试性真实来源改动。以隔离数据验证创建/编辑/删除ID、冲突拒绝、GUID保留、重放幂等及不disable云；真实编辑->云提交链路尚未用生产编辑实测，不能宣称已验收。
+- 短期生产闭环与自动接续已验收，长期可用性/所有来源两个正常周期质量不是本次即时验收可证明的。Reader账号导入由用户自行验收。
+- 本机服务重载CLI受系统权限限制，已通过活动监视器正常退出旧桥进程16451；新桥PID17207在更新源码后启动，最新UI同步成功。未停止其他Python或个人VPN。
+
+证据目录：/Users/time/Documents/Codex/2026-11-05/users-time-documents-codex-2026-10-3/work/cloud-evidence/production-cutover-20261106（final-status.json、first-cloud-publication.json、public-rss-validation.json、final-union-validation.json、production-state-receipt.json、完整私密快照与provenance）。已删除来源备份在同级removed-20261106。
+
+回滚：先停云runtime workflow并等当前工作完成，取得**最新**云DB/配置/历史；写入本机后再恢复scheduler/publisher。不能恢复旧Mac快照覆盖新云历史。原compose/publisher脚本保存在证据目录*.before；先移除cloud-production.json门闩才能恢复本机发布，严禁双发布者。
+下一步：独立处理两源403；观察12h正常周期质量、发布新鲜度及管理编辑实际使用反馈。不要再把主迁移当未部署重新做。
+

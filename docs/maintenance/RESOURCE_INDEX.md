@@ -1,3 +1,6 @@
+## 2026-11-06正式云端生产新增
+本机适配器：ops/local_cloud_sync.py、ops/local_cloud_ui.py及tests/test_local_cloud_*.py。实际本机启动配置的无凭据快照在ops/mac_runtime/（不是云端runner入口，不自动执行；源码/令牌路径需按LOCAL_RUNTIME定位）。生产云代码仍固定e105；维护main新增本机代码不代表生产runner已换源码。最终切换证据见CURRENT所列production-cutover-20261106目录。
+
 # 文件与证据索引
 
 同机工作区根见LOCAL_RUNTIME；交接包路径单列，不要把两个根混用。
@@ -32,3 +35,9 @@ GitHub远端证据原run：41965774214（Brookings），41966397327（20源）�
 若同机文件已经被后续agent更新，先看维护流水与hash差异，不使用旧包覆盖新内容。错误计数持续变化，始终重新采样。
 
 原用户粘贴的两版需求与两版源列表已实际找到并复制到私密包research/original-user-materials；历史188项矩阵在evidence/intake/historical-188-acceptance.json。用于核对171当前来源与合并/删除/未完成项，不作为当前通过证据，不复活已删除来源。
+
+## 当前免费云运行证据
+- 免费入口公库workflow `.github/workflows/runtime-cloud.yml`，commit3f71d14；私库source ref固定b9516dab，state branch shadow-state。
+- 实际运行与job时间：本chat work/cloud-evidence/public-{runs,jobs-*}.json；单源和批次报告report-*.json；独立state-verification.json；171行cloud-validation-matrix.json。source/work/cloud-switch有检查点副本，时间以文件为准。
+- 本chat outputs/OpenFeed-cloud/runtime-cloud-48h.yml为实际已通过Chrome提交并逐字复核的67行配置，不再是让用户手工提交的阻断文件。
+- GitHub连接工具transport故障可用CUA原生Chrome网页操作；不要把旧CUA超时当永久不可用。首次Browser inventory无Chrome扩展surface，但getApp(com.google.Chrome)原生AX可用。只使用cua_repl UI API，不运行AppleScript绕过。

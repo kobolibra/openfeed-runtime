@@ -30,3 +30,6 @@ Pages：https://kobolibra.github.io/openfeed-feeds ，RSS `/rss/<id>.xml`，OPML
 实际API镜像d5ab37b52896、出口406db2946f21、浏览器5a23457c6d86（完整ID在私密包runtime/image-identities.json）。最新单次导出在work/handoff-20261105/openfeed-online.sqlite3；该文件是交接备份，不是新的生产数据库。
 最新关键测试work/stage19/tests-final.log（466通过）。真实源与证据对应见RESOURCE_INDEX，迁移计划CLOUD_HANDOFF。
 本轮私密包生成脚本work/handoff-20261105/build_bundle.py可在授权环境重新打包；包含私密DB/配方，禁止上传公共仓库；不含管理员令牌/GitHub凭据。
+
+## 2026-11-06T08:54:43.857375+00:00 当前本机角色：云管理镜像
+当前容器openfeed-live-openfeed-1采用openfeed-local-cloud-ui派生镜像，服务仍仅绑定127.0.0.1:8765。compose scheduler=0，实际启动local_cloud_ui:app，无本机batch/scheduler。原publisher入口读取work/stage6/cloud-production.json后在常规调用立即退出；health-only维持管理UI及源目录ops/local_cloud_sync.py。桥缓存/配置基线/日志位于源目录.openfeed-local/cloud-sync，均私密，不能上传公共仓库。Dockerfile派生构建脚本见本轮work/fix_local_ui_image.py；不能依赖VM未共享的宿主文件bind mount。当前云端生产，不得用旧171源sqlite或旧Mac镜像说明覆盖这些事实。

@@ -1,12 +1,9 @@
-# 签名自动接续已实跑，生产切换未完成
-维护者：当前agent，2026-11-05
-部署状态：public feeds workflow commit1bccaf28d8121a520401f0cad6ef8d86679c2259逐字核对，固定private app b9516dab；OPENFEED_RELAY_HMAC已按用户明确授权加密配置。runtime private；旧private写workflow disabled。Mac仍生产、云shadow/publish_enabled=false，没有收费资源。
-验证：8项签名/篡改/越权/重复generation/并行root/截止专项通过；全部inline Python编译。parent42056964516完整success，十分钟后由github-actions[bot]自动发起child42058671579。child HMAC guard、generation1 claim、实际抓取、private checkpoint真实通过，非本机重复dispatch。child4源3成功、Cantor HTTP403，历史保留。child DB commit54cc0c2d6006083e98b000cecfffb08dcfd28fc9独立下载4194条，旧4189身份无损/171 source_url、recipe、interval、phase完整保留/SQLite ok。
-未完成：原生event=schedule仍未观察，不把bot workflow_dispatch冒称cron。生产切换未完成。branch coverage24/171；合并单源历史矩阵28观察（23非空、3空、2 HTTP403），143未观察；不是长期通过。两12小时周期、Pages云发布/HTTP和故障恢复、最终Mac停写与在线备份、离线验收均未完成。Mac当前快照只是运行观察，不等于逐源验收。
-下一步：让已验证自动relay继续有限影子覆盖143源与两个周期；复核CEPR/VoxEU和Cantor403，不降质量或清历史。补生产发布显式Pages build/deploy（GITHUB_TOKEN推送不自动触发Pages），校验原地址。满足门禁后才最终Mac在线备份、单写者切换与回滚演练。
-期限：北京时间2026-11-07 20:09:45固定，到期自停，不擅自延长；间隔600秒、queue:max、同一并发组+私有cursor防旧链重放。当前child抓取完成后等待下一slot是正常现象。
-授权：用户明确“允许，直接部署并验收”，专指新增HMAC Secret与签名自动接续，保持既定48h、单写入者、不收费。不要重复询问相同授权，也不要把它解释成允许提前停Mac。
-证据：本chat work/cloud-evidence/relay-acceptance.json、relay-deployment.json、state-verification.json、cloud-validation-matrix.json；source docs/maintenance/cloud-relay内代码/测试/已脱敏证据，ops/public-wrapper.yml是实际部署文件。所有本地密钥在本chat work/cloud-auth，禁止公开、打印、打包。源private main文档更新不会改变公开workflow固定的b9516dab。
-回滚：停用feeds runtime-cloud.yml即可停止relay；保留Mac生产。不用影子库覆盖Mac。
-
-23:59北京时间补验：首个bot child42058671579整项workflow已success，并自行发起第二个bot child42060360129，generation2 claim已推进。已连续观察两次自动接续；第二自动轮抓取仍进行，未冒称其checkpoint完成。原生schedule仍未观察。Mac快照UTC15:56：Cantor当前error（last_success UTC11月4日17:58），CEPR/VoxEU当前healthy（last_success UTC11月5日05:41），与云403观察不同时间，不能据此断言403根因或云端已恢复。
+# 生产切换交接 2026-11-06T08:56:23.841069+00:00
+维护者：当前主agent /root。
+部署状态：已切换GitHub生产；runtime-cloud.yml为长期免费公共标准ubuntu入口，private runtime状态/源码/日志，固定抓取源码e1054f460fa20002d204704aa8554efa59fddd70。正式workflow ceebd79d；原地址真实RSS15bb6f58已发布/Pages built。Mac scheduler=0，原publisher门闩关闭，本机UI为openfeed-local-cloud-ui；源目录ops/local_cloud_sync.py同步私有云状态，既有health保活。原48h到期已依用户明确授权移除。
+验证：完整生产代码Linux505通过；本轮签名接续/本机适配器28项隔离测试通过，其中源目录local_cloud_sync/local_cloud_ui共8项；最终停写Mac+cloud union4102 GUID、Mac首见时间保留、7391run/4934events；168RSS/OPML有效，原100条/源窗口4028GUID保留，三个已删RSS实际404。生产首轮42187231139与自动子轮42188445685成功；42189658246也已回写生产checkpoint。本机最新快照168/166healthy/2error。本次check_handoff.py已PASS；它仅验证记录/快照/指纹，实际部署证据另见上述收据。
+未完成：Julius原/en/insights/与CEPR原China查询403；长期正常12h周期质量、Reader账号由用户验证。管理桥实际云读取已验收；主动临时修改真实来源的测试被自动审批拒绝，未执行。管理编辑->云提交仅通过隔离创建/更新/删除/冲突/幂等/GUID保留测试，不能宣称生产编辑闭环实测。不要为验收写真实来源测试数据而绕审批。
+下一步：独立处理两源403，观察云端调度/每小时发布及管理编辑正常使用。不要重做影子部署，不恢复Man/Eurasia/Cantor，不重启本机scheduler/publisher；不得把旧171源预演覆盖当前云DB。
+证据：/Users/time/Documents/Codex/2026-11-05/users-time-documents-codex-2026-10-3/work/cloud-evidence/production-cutover-20261106/；重点first-cloud-publication.json、public-rss-validation.json、final-union-validation.json、final-status.json、mac-final-identity.json。完整私密数据库与49条时间provenance均在此；禁止上传公共仓库。
+回滚：先停云入口，等在途工作结束，取最新云状态并验证，再单独恢复Mac自动抓取/发布。*.before只恢复启动配置，不得恢复旧库丢弃云端新历史。原订阅URL/GUID继续保持。
+本机维护：旧桥PID16451通过活动监视器正常退出，新桥由原health启动项恢复；修正版桥不会disable云workflow，Mac离线不阻断云端。仅改OpenFeed组件，个人VPN未动。

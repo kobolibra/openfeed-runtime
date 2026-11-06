@@ -26,3 +26,13 @@
 - 用户再次确认关注private Actions额度。保持源码/SQLite私密、compute在公库标准runner；此前private测试计入额度，当前private无活动任务，不再把runtime公开。不要擅自启用收费、更大runner或私库高频定时。
 
 - 2026-11-05用户明确答复“允许，直接部署并验收”：允许新增feeds加密Secret OPENFEED_RELAY_HMAC以及通过签名校验的Actions自动接续同一私有状态；仍十分钟间隔、既定48小时截止、单写入者、不收费。该授权不等于允许提前停Mac或将影子库作为最终生产库。
+
+## 2026-11-06T08:08:28.159217+00:00 明确删除、不得重建
+用户要求Man和Eurasia不要做并删除，Cantor无法解决就删除。Cantor正常HTTP/原隔离浏览器反复403且无验证修复，因此执行删除：
+- Man Group · Insights：4eb10889d95da4ae84cfe4ab1d46
+- Eurasia Group · China Search：95d1c47e63b41f814f17d344646a
+- Cantor · Insights：132114da2be6a7af5f9cb6f59af3
+Mac、云端权威state、公开OPML/RSS已删除；私密完整备份保留。此用户指令优先于旧171源身份约束；剩余168源继续完整保护。云端deleted-sources.json为明确墓碑清单，禁止从旧预演/备份重新引入。
+
+## 2026-11-06T08:54:43.857375+00:00 云端生产、本机管理与长期免费运行
+用户要求尽快部署切换、管理界面保留本机，并明确选择“长期免费自动运行”。据此移除临时48小时截止；标准公共Linux运行，私有源码/状态/日志，既有Secret，未启用收费。Mac自动抓取/发布停止，云端首次真实RSS发布和Pages已成功。管理桥不得disable云workflow；必须以配置基线与Git CAS保护最新云历史，Mac离线不能阻断云端。

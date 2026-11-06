@@ -1,7 +1,7 @@
 # OpenFeed：所有维护 agent 的入口
 
 ## 当前主任务入口
-GitHub主运行迁移的完整接手资料：先读 `docs/maintenance/CLOUD_HANDOFF.md` 和 `TASKS_CLOUD.json`。GitHub私库与真实影子运行已落地，生产仍在Mac；以TASKS_CLOUD与CURRENT最新段落为准，不得把影子运行当生产已切换。后续agent每轮都更新任务、证据、部署状态与交接门禁。
+GitHub主运行迁移的完整接手资料：先读 `docs/maintenance/CLOUD_HANDOFF.md` 和 `TASKS_CLOUD.json`。GitHub私库与真实影子运行已落地，2026-11-06已切换GitHub正式生产，本机仅管理镜像；以TASKS_CLOUD与CURRENT最新段落及实际checkpoint为准。后续agent每轮都更新任务、证据、部署状态与交接门禁。
 
 ## 开始工作
 1. 读 `docs/maintenance/README.md`，再读 `CURRENT.md`、`DECISIONS.md`、`CHANGELOG.md` 和 `ISSUES.json`（均在同目录）。只按需查旧报告，不重读整段聊天。
@@ -15,7 +15,7 @@ GitHub主运行迁移的完整接手资料：先读 `docs/maintenance/CLOUD_HAND
 - 不读取或修改个人VPN，不依赖某款VPN端口。物理出口仍可能受底层网络影响，不能承诺任何网络下均可达。
 - 不绕过登录、验证码或访问控制；保持TLS验证、公共IP校验及浏览器隔离。
 - 用户已删除/合并/暂缓的来源见 DECISIONS.md，不自行重建。猎聘“仅有别家公司推荐职位”不得混进本公司RSS，也不得仅凭结构相同推断取到本公司岗位。
-- 公共 `kobolibra/openfeed-feeds` 仅存静态RSS/OPML等发布内容，不上传源码、数据库、管理令牌或抓取凭据。不要将交接文件上传到该公共仓库。
+- 公共 `kobolibra/openfeed-feeds` 允许用户明确批准的无私密内容薄Actions入口及静态RSS/OPML等发布内容，不上传源码、数据库、管理令牌或抓取凭据。不要将交接文件上传到该公共仓库。
 - 未被用户要求时不要为维护任务创建新聊天、派生agent或改变任务范围。
 
 ## 工作结束或交接

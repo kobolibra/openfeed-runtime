@@ -1,0 +1,116 @@
+services:
+  openfeed:
+    build:
+      context: /Users/time/Documents/Codex/2026-10-22/referenced-chatgpt-conversation-this-is-an-3/work/local-trial/source
+    restart: unless-stopped
+    ports:
+    - 127.0.0.1:8765:8765
+    volumes:
+    - openfeed-data:/data
+    - browser-jobs:/browser-jobs
+    command: ['uvicorn', 'local_cloud_ui:app', '--host', '0.0.0.0', '--port', '8765']
+    environment:
+      OPENFEED_EXPERIMENTAL_BROWSER: '0'
+      OPENFEED_BROWSER_NETWORK_ISOLATED: '0'
+      OPENFEED_BROWSER_SANDBOXED_WORKER: '1'
+      OPENFEED_BROWSER_JOB_DIR: /browser-jobs
+      OPENFEED_ADMIN_TOKEN: ${OPENFEED_ADMIN_TOKEN}
+      OPENFEED_DB: /data/openfeed.sqlite3
+      OPENFEED_PUBLIC_URL: https://kobolibra.github.io/openfeed-feeds
+      OPENFEED_ENABLE_SCHEDULER: '0'
+      OPENFEED_EGRESS_PROXY: http://host.lima.internal:8900
+      OPENFEED_MIN_DOMAIN_INTERVAL: '5'
+      OPENFEED_DNS_MODE: auto
+      OPENFEED_MAX_FETCH_BYTES: '8000000'
+    read_only: true
+    tmpfs:
+    - /tmp:size=64m,noexec,nosuid
+    healthcheck:
+      test:
+      - CMD
+      - python
+      - -c
+      - import urllib.request;urllib.request.urlopen('http://127.0.0.1:8765/api/health',timeout=3).read()
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    security_opt:
+    - no-new-privileges:true
+    cap_drop:
+    - ALL
+    pids_limit: 160
+    mem_limit: 512m
+    depends_on:
+      browser-volume-init:
+        condition: service_completed_successfully
+    image: openfeed-local-cloud-ui
+  browser-volume-init:
+    image: busybox:1.36
+    command:
+    - sh
+    - -c
+    - mkdir -p /jobs/pending /jobs/done && chown -R 10001:10001 /jobs && chmod -R
+      700 /jobs
+    volumes:
+    - browser-jobs:/jobs
+    restart: 'no'
+  browser-worker:
+    init: true
+    build:
+      context: /Users/time/Documents/Codex/2026-10-22/referenced-chatgpt-conversation-this-is-an-3/work/local-trial/source
+      dockerfile: Dockerfile.browser-worker
+    networks:
+    - browser-private
+    volumes:
+    - browser-jobs:/browser-jobs
+    depends_on:
+      browser-volume-init:
+        condition: service_completed_successfully
+      egress-proxy:
+        condition: service_started
+    environment:
+      OPENFEED_BROWSER_JOB_DIR: /browser-jobs
+      OPENFEED_BROWSER_EGRESS_PROXY: http://egress-proxy:8899
+      OPENFEED_BROWSER_EXECUTABLE: /usr/bin/chromium
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+    - /tmp:size=256m,nosuid
+    - /home/openfeed:size=32m,nosuid,uid=10001,gid=10001,mode=0700
+    shm_size: 256m
+    security_opt:
+    - no-new-privileges:true
+    cap_drop:
+    - ALL
+    pids_limit: 256
+    mem_limit: 800m
+    image: openfeed-live-browser-worker
+  egress-proxy:
+    environment:
+      OPENFEED_DNS_MODE: auto
+      OPENFEED_PROXY_UPSTREAM: http://host.lima.internal:8900
+    build:
+      context: /Users/time/Documents/Codex/2026-10-22/referenced-chatgpt-conversation-this-is-an-3/work/local-trial/source
+      dockerfile: Dockerfile.egress-proxy
+    networks:
+    - browser-private
+    - outbound
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+    - /tmp:size=32m,nosuid,noexec
+    security_opt:
+    - no-new-privileges:true
+    cap_drop:
+    - ALL
+    pids_limit: 64
+    mem_limit: 128m
+    image: openfeed-live-egress-proxy
+volumes:
+  openfeed-data: null
+  browser-jobs: null
+networks:
+  browser-private:
+    internal: true
+  outbound: {}
