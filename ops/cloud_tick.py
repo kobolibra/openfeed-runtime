@@ -57,7 +57,7 @@ def tick(run_id,public_checkout=None):
     run('sudo','chown','-R','10001:10001',str(io))
     compose=['docker','compose','-f',str(ROOT/'compose.cloud.yaml')]
     try:
-        run(*compose,'run','--build','--rm','cycle','--input-db','/cloud-io/input.sqlite3','--output','/cloud-io/cycle','--mode','shadow-live','--max-feeds',str(max(4,len(targets))),'--budget-seconds','330','--wait-for-start',*[arg for ident in targets for arg in ['--feed-id',ident]])
+        run(*compose,'run','--build','--rm','cycle','--input-db','/cloud-io/input.sqlite3','--output','/cloud-io/cycle','--mode','shadow-live','--max-feeds',str(max(6,len(targets))),'--budget-seconds','330','--wait-for-start',*[arg for ident in targets for arg in ['--feed-id',ident]])
     finally:
         run(*compose,'down','--volumes')
         run('sudo','chown','-R',str(os.getuid())+':'+str(os.getgid()),str(io))

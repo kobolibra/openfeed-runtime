@@ -155,3 +155,27 @@ def test_sigterm_mid_pagination_and_restart_keep_history(tmp_path):
  r=invoke(out/'shadow.sqlite3',f,restarted,m);assert r.returncode==0,r.stderr
  d=json.loads((restarted/'report.json').read_text());assert d['results'][0]['result']['status']=='success'
  c=sqlite3.connect(restarted/'shadow.sqlite3');assert c.execute('select count(*) from items').fetchone()[0]==3;c.close()
+
+def test_six_source_capacity_keeps_spacing_budget_and_input_history(tmp_path):
+ db,f,m=setup(tmp_path);s=Store(str(db));feeds=[f]
+ for i in range(5):feeds.append(s.create({'title':str(i),'source_url':'https://host'+str(i)+'.example.com/list','recipe':f['recipe']}))
+ s.close();before=db.read_bytes();mapping={json.dumps({'url':feed['source_url'],'options':{}},sort_keys=True):{'path':'body.html'} for feed in feeds};m.write_text(json.dumps(mapping));out=tmp_path/'six'
+ code='''import sys,time,asyncio
+sys.path.insert(0,sys.argv[1])
+from ops import run_cycle
+clock=[1000.0];sleep=asyncio.sleep
+time.time=lambda:clock[0]
+time.monotonic=lambda:clock[0]
+async def virtual_sleep(seconds):
+ clock[0]+=seconds
+ await sleep(0)
+asyncio.sleep=virtual_sleep
+sys.argv=sys.argv[2:]
+run_cycle.main()
+'''
+ args=[arg for feed in feeds for arg in ['--feed-id',feed['id']]]
+ r=subprocess.run([sys.executable,'-c',code,str(ROOT),str(ROOT/'ops/run_cycle.py'),'--input-db',str(db),'--output',str(out),'--mode','fixtures','--fixtures',str(m),'--max-feeds','6','--budget-seconds','330','--wait-for-start',*args],capture_output=True,text=True,timeout=15)
+ assert r.returncode==0,r.stderr
+ report=json.loads((out/'report.json').read_text());assert len(report['results'])==6 and all(x['result']['status']=='success' for x in report['results'])
+ assert report['elapsed_seconds']<=330 and db.read_bytes()==before
+ c=sqlite3.connect(out/'shadow.sqlite3');starts=sorted(x[0] for x in c.execute('select started from shadow_cycle_starts'));assert len(starts)==6 and all(b-a>=60 for a,b in zip(starts,starts[1:]));assert c.execute("select count(*) from items where url='https://example.com/old'").fetchone()[0]==1;c.close()
