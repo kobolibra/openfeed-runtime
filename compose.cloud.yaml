@@ -10,6 +10,7 @@ services:
     - browser-jobs:/jobs
     restart: 'no'
   browser-worker:
+    profiles: [browser]
     build:
       context: .
       dockerfile: Dockerfile.browser-worker
@@ -21,6 +22,7 @@ services:
       browser-volume-init:
         condition: service_completed_successfully
       egress-proxy:
+    profiles: [browser]
         condition: service_started
     environment:
       OPENFEED_BROWSER_JOB_DIR: /browser-jobs
@@ -82,8 +84,6 @@ services:
     depends_on:
       browser-volume-init:
         condition: service_completed_successfully
-      browser-worker:
-        condition: service_started
 networks:
   browser-private:
     internal: true

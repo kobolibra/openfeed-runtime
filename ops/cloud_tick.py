@@ -1,12 +1,12 @@
-"""One private shadow tick, invoked by an owner-controlled public thin workflow.
+"""One finite private-state cycle and optional original-URL RSS publication.
 
-All application output stays in the ephemeral runner's private log. No public
-RSS publishing or production cutover occurs in this command.
+Idle ticks do not install/build/run containers or commit a checkpoint.
 """
-import argparse,hashlib,json,os,re,shutil,sqlite3,subprocess,sys
+import argparse,hashlib,json,os,re,shutil,sqlite3,subprocess,sys,time
 from pathlib import Path
 from datetime import datetime,timezone
 from shadow_checkpoint import promote
+from cloud_plan import plan
 from cloud_publish import publication_intent,publish_committed_state,freeze_publication,complete_publication
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -14,7 +14,7 @@ def run(*args,cwd=ROOT):
     return subprocess.run(args,cwd=cwd,check=True,text=True,capture_output=True).stdout.strip()
 
 def identities(path):
-    c=sqlite3.connect(path.as_uri()+'?mode=ro',uri=True)
+    c=sqlite3.connect(path.as_uri()+'?mode=ro&immutable=1',uri=True)
     try:
         if c.execute('pragma integrity_check').fetchone()[0]!='ok':raise ValueError('Invalid state integrity')
         return (set(c.execute('SELECT id,schedule_phase_seconds FROM feeds')),
@@ -51,42 +51,50 @@ def tick(run_id,public_checkout=None):
         if datetime.now(timezone.utc)>=deadline:
             return {'shadow_only':True,'published':False,'processed':0,'reason':'validation_deadline_reached'}
     targets=shadow_targets(control,os.environ)
-    previous=run('git','rev-parse','HEAD',cwd=state)
-    before=identities(db)
-    io=ROOT/'cloud-io';io.mkdir(mode=0o700);shutil.copyfile(db,io/'input.sqlite3')
-    run('sudo','chown','-R','10001:10001',str(io))
-    compose=['docker','compose','-f',str(ROOT/'compose.cloud.yaml')]
-    try:
-        run(*compose,'run','--build','--rm','cycle','--input-db','/cloud-io/input.sqlite3','--output','/cloud-io/cycle','--mode','shadow-live','--max-feeds',str(max(6,len(targets))),'--budget-seconds','330','--wait-for-start',*[arg for ident in targets for arg in ['--feed-id',ident]])
-    finally:
-        run(*compose,'down','--volumes')
-        run('sudo','chown','-R',str(os.getuid())+':'+str(os.getgid()),str(io))
-    cycle=io/'cycle';after=identities(cycle/'shadow.sqlite3')
-    if before[0]!=after[0] or not before[1].issubset(after[1]):raise ValueError('Source/phase/history identity changed')
-    report=json.loads((cycle/'report.json').read_text())
-    manifest=json.loads((cycle/'manifest.json').read_text())
-    if set(manifest)!={ident for ident,phase in before[0]}:raise ValueError('Incomplete RSS export')
-    meta=promote(db,cycle,run_id)
-    meta.update(source_sha=run('git','rev-parse','HEAD'),previous_state_commit=previous,
-                rss_manifest_sha256=hashlib.sha256((cycle/'manifest.json').read_bytes()).hexdigest(),
-                source_identity_preserved=True,scope='production cloud state' if production else 'private scheduled shadow only; Mac remains production')
-    (state/'checkpoint.json').write_text(json.dumps(meta,indent=2))
-    shutil.copyfile(cycle/'report.json',state/'last-report.json')
-    shutil.copyfile(cycle/'manifest.json',state/'rss-manifest.json')
-    matrix_path=state/'coverage.json'
-    matrix=json.loads(matrix_path.read_text()) if matrix_path.exists() else {'sources':{}}
-    at=datetime.now(timezone.utc).isoformat()
-    for ident,phase in before[0]:matrix['sources'].setdefault(ident,{'status':'not_tested'})
-    for row in report['results']:
-        matrix['sources'][row['id']]={'checked_at':at,'run_id':str(run_id),'result':row['result'],'identity_preserved':True,'scope':'single cloud observation, not long-term acceptance'}
-    matrix_path.write_text(json.dumps(matrix,indent=2))
+    started=time.monotonic();work=plan(state,targets=targets)
+    if not work['work_needed']:return {'shadow_only':not production,'published':False,'processed':0,'reason':work['reason'],'state_written':False}
+    processed=0
+    if work['due_count']:
+        previous=run('git','rev-parse','HEAD',cwd=state)
+        before=identities(db)
+        io=ROOT/'cloud-io';io.mkdir(mode=0o700);shutil.copyfile(db,io/'input.sqlite3')
+        run('sudo','chown','-R','10001:10001',str(io))
+        compose=['docker','compose','-f',str(ROOT/'compose.cloud.yaml'),'--profile','browser']
+        try:
+            if work['browser_needed']:run(*compose,'up','--build','-d','browser-worker')
+            run(*compose,'run','--build','--rm','cycle','--input-db','/cloud-io/input.sqlite3','--output','/cloud-io/cycle','--mode','shadow-live','--max-feeds',str(max(6,len(targets))),'--budget-seconds','330','--wait-for-start',*[arg for ident in targets for arg in ['--feed-id',ident]])
+        finally:
+            run(*compose,'down','--volumes')
+            run('sudo','chown','-R',str(os.getuid())+':'+str(os.getgid()),str(io))
+        cycle=io/'cycle';after=identities(cycle/'shadow.sqlite3')
+        if before[0]!=after[0] or not before[1].issubset(after[1]):raise ValueError('Source/phase/history identity changed')
+        report=json.loads((cycle/'report.json').read_text())
+        manifest=json.loads((cycle/'manifest.json').read_text())
+        if set(manifest)!={ident for ident,phase in before[0]}:raise ValueError('Incomplete RSS export')
+        meta=promote(db,cycle,run_id)
+        meta.update(source_sha=run('git','rev-parse','HEAD'),previous_state_commit=previous,
+                    rss_manifest_sha256=hashlib.sha256((cycle/'manifest.json').read_bytes()).hexdigest(),
+                    source_identity_preserved=True,scope='production cloud state' if production else 'private scheduled shadow only; Mac remains production')
+        (state/'checkpoint.json').write_text(json.dumps(meta,indent=2))
+        shutil.copyfile(cycle/'report.json',state/'last-report.json')
+        shutil.copyfile(cycle/'manifest.json',state/'rss-manifest.json')
+        matrix_path=state/'coverage.json'
+        matrix=json.loads(matrix_path.read_text()) if matrix_path.exists() else {'sources':{}}
+        at=datetime.now(timezone.utc).isoformat()
+        for ident,phase in before[0]:matrix['sources'].setdefault(ident,{'status':'not_tested'})
+        for row in report['results']:
+            matrix['sources'][row['id']]={'checked_at':at,'run_id':str(run_id),'result':row['result'],'identity_preserved':True,'scope':'single cloud observation, not long-term acceptance'}
+        matrix_path.write_text(json.dumps(matrix,indent=2))
+        processed=len(report['results'])
     intent=publication_intent(state)
     if intent:
         if public_checkout is None:raise ValueError('Public checkout required for production mode')
         intent=freeze_publication(state,intent)
     run('git','config','user.name','OpenFeed Cloud Shadow',cwd=state)
     run('git','config','user.email','openfeed-shadow@users.noreply.github.com',cwd=state)
-    run('git','add','--','openfeed.sqlite3','checkpoint.json','last-report.json','rss-manifest.json','coverage.json',cwd=state)
+    if work['due_count']:run('git','add','--','openfeed.sqlite3','checkpoint.json','last-report.json','rss-manifest.json','coverage.json',cwd=state)
+    metrics={'run_id':str(run_id),'due_count':work['due_count'],'processed':processed,'browser_started':bool(work['due_count'] and work['browser_needed']),'prepublication_seconds':round(time.monotonic()-started,3),'publication_only':not bool(work['due_count'])}
+    (state/'runtime-metrics.json').write_text(json.dumps(metrics,indent=2));run('git','add','--','runtime-metrics.json',cwd=state)
     if intent:run('git','add','--','publication-state.json','publication-candidate.sqlite3',cwd=state)
     run('git','commit','-m','Private shadow tick '+str(run_id),cwd=state)
     run('git','push','origin','HEAD:shadow-state',cwd=state)
@@ -96,7 +104,7 @@ def tick(run_id,public_checkout=None):
         run('git','add','--','publication-state.json',cwd=state)
         run('git','commit','-m','Confirm built publication '+str(run_id),cwd=state)
         run('git','push','origin','HEAD:shadow-state',cwd=state)
-    return {'shadow_only':not production,'published':bool(publication and publication['result']=='pushed'),'processed':len(report['results']),'publication':publication}
+    return {'shadow_only':not production,'published':bool(publication and publication['result']=='pushed'),'processed':processed,'publication':publication,'browser_started':metrics['browser_started']}
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--run-id',required=True);p.add_argument('--public-checkout',type=Path);a=p.parse_args()
