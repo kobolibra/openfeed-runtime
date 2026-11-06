@@ -1,10 +1,10 @@
 {
-  "run_id": "42179021725",
-  "previous_sha256": "f6fe23bb60e8cad7993551175e4005b1db8e821f39d83b67977c53df08c80cb9",
-  "database_sha256": "3a4f14deb2e15468fbda28b1b4b337cb0a91785b2bb599bab58e8bb57dcc8e05",
+  "run_id": "42180115220",
+  "previous_sha256": "3a4f14deb2e15468fbda28b1b4b337cb0a91785b2bb599bab58e8bb57dcc8e05",
+  "database_sha256": "d2c12544dc56c69ea16a3b01126ab466e3ede1b4bd3173b425b3112bef240b97",
   "scope": "private scheduled shadow only; Mac remains production",
   "source_sha": "9cc98c0d6e90f7349a6da92abad9075b998697a0",
-  "previous_state_commit": "0d4b439ae563d7b4f67aff1a3f2c922685c571ac",
-  "rss_manifest_sha256": "db72615d845eae15835b2325fab0ef208c9765d1085769b07d940b913fc0ff22",
+  "previous_state_commit": "7289f545bf4e21b4326c76e90a70b48019b3ed90",
+  "rss_manifest_sha256": "ba75dbb37f998b5301b7e283e7021dd84c92107cace005661b701153da844dcd",
   "source_identity_preserved": true
 }

@@ -217,14 +217,13 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "9de058f25996c675723754e58c24": {
-      "checked_at": "2026-11-06T03:52:56.635135+00:00",
-      "run_id": "42158539350",
+      "checked_at": "2026-11-06T07:21:14.682459+00:00",
+      "run_id": "42180115220",
       "result": {
-        "status": "error",
-        "found": 0,
-        "inserted": 0,
-        "message": "Upstream HTTP 429",
-        "retry_after": 900
+        "status": "success",
+        "found": 15,
+        "inserted": 1,
+        "message": "1 page(s), 15 unique item(s)"
       },
       "identity_preserved": true,
       "scope": "single cloud observation, not long-term acceptance"
