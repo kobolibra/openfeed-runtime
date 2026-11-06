@@ -1,3 +1,8 @@
+
+## 2026-11-06T16:46:30.154354+00:00 用户要求20分钟试运行（当前有效）
+现有openfeed-publication-interval环境wait_timer已从10改20，并独立GET验证20。没有修改workflow、应用pin、数据库、每轮6源上限、来源12小时相位或RSS地址；等待仍不分配运行机。原生cron每小时兜底保持。已有等待轮可能仍使用进入时的旧计时，后续新等待按20分钟；完整20分钟自动接续效果尚待正常运行观察，不能仅凭配置读回声称完整新周期已验收。原脚本/工作流内10分钟为最低防风暴门槛，实际等待由环境20控制；以后维护不得用旧prepare_environment脚本或旧10分钟记录恢复环境。理论每日约72轮，实际受队列与启动开销影响；关注积压、429重试及源新鲜度，不能承诺432理论容量就是实际吞吐。回滚仅将同一环境wait_timer恢复10，不回滚任何DB。
+证据：/Users/time/Documents/Codex/2026-11-05/users-time-documents-codex-2026-10-3/work/interval-20m-20261107/environment-before.json、environment-after.json。
+
 # 当前状态：云端生产与Actions效率优化已验收（2026-11-06T15:36:38.594329+00:00）
 
 云端生产持续运行，本机 http://localhost:8765/ 保留管理界面；本机不自动抓取或发布。原RSS/OPML地址、来源范围、GUID/首次发现时间与12小时刷新相位均不变。用户授权长期免费运行；源码/SQLite/配方/日志私有，计算仍用公共标准ubuntu-latest，未启用收费，私库三个Actions入口全停用。

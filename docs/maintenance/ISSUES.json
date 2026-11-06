@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T15:36:38.594329+00:00",
+  "updated": "2026-11-06T16:46:30.154354+00:00",
   "note": "这是问题台账，不是实时错误列表；需结合最新快照。",
   "issues": [
     {
@@ -134,6 +134,13 @@
       "summary": "移除运行机空等；保留平台计时可靠接续、按需容器与私密边界",
       "evidence": "/Users/time/Documents/Codex/2026-11-05/users-time-documents-codex-2026-10-3/work/optimization-20261106/final-receipt.json",
       "next_action": "观察正常周期和平台限制；不得退回未验证的纯原生cron方案。"
+    },
+    {
+      "id": "CLOUD-007",
+      "status": "configured_verified_observation_pending",
+      "summary": "20分钟调度试运行，实际积压与新鲜度待观察",
+      "evidence": "work/interval-20m-20261107/environment-after.json；wait_timer独立GET=20",
+      "next_action": "观察后续实际接续、到期队列和源新鲜度；每轮仍6，必要时依据证据再调预算，不静默改刷新周期。"
     }
   ]
 }
