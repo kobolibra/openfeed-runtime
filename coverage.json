@@ -37,8 +37,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "c3d7cf91ab2b9b298d1fc57a39e7": {
-      "checked_at": "2026-11-06T14:18:38.943543+00:00",
-      "run_id": "42232174246",
+      "checked_at": "2026-11-07T02:23:22.115511+00:00",
+      "run_id": "42328506625",
       "result": {
         "status": "success",
         "found": 16,
@@ -613,8 +613,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "e019ac73f6bea11d306bd299dfbe": {
-      "checked_at": "2026-11-06T14:28:00.319891+00:00",
-      "run_id": "42233791318",
+      "checked_at": "2026-11-07T02:23:22.115511+00:00",
+      "run_id": "42328506625",
       "result": {
         "status": "success",
         "found": 12,
@@ -685,8 +685,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "936e9a2aea1b91691a2c48e5bc19": {
-      "checked_at": "2026-11-06T14:18:38.943543+00:00",
-      "run_id": "42232174246",
+      "checked_at": "2026-11-07T02:23:22.115511+00:00",
+      "run_id": "42328506625",
       "result": {
         "status": "success",
         "found": 0,
@@ -1033,12 +1033,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "e7cb7af265d1d7d9339caac421c2": {
-      "checked_at": "2026-11-06T14:18:38.943543+00:00",
-      "run_id": "42232174246",
+      "checked_at": "2026-11-07T02:23:22.115511+00:00",
+      "run_id": "42328506625",
       "result": {
         "status": "success",
         "found": 4,
-        "inserted": 0,
+        "inserted": 1,
         "message": "1 page(s), 4 unique item(s); unknown_dates=4"
       },
       "identity_preserved": true,
@@ -1153,8 +1153,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "16dc1431f0ff881305c8538482fc": {
-      "checked_at": "2026-11-06T14:07:06.865073+00:00",
-      "run_id": "42230672092",
+      "checked_at": "2026-11-07T02:23:22.115511+00:00",
+      "run_id": "42328506625",
       "result": {
         "status": "success",
         "found": 14,
