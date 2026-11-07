@@ -97,8 +97,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "aaaa6fe16f2220d3446b7e2401a0": {
-      "checked_at": "2026-11-06T14:59:14.487179+00:00",
-      "run_id": "42238396780",
+      "checked_at": "2026-11-07T03:02:49.524911+00:00",
+      "run_id": "42331710581",
       "result": {
         "status": "success",
         "found": 14,
@@ -565,8 +565,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "a02e0005b6600b90fbab864df853": {
-      "checked_at": "2026-11-06T14:47:59.538814+00:00",
-      "run_id": "42236864670",
+      "checked_at": "2026-11-07T03:02:49.524911+00:00",
+      "run_id": "42331710581",
       "result": {
         "status": "success",
         "found": 11,
@@ -589,8 +589,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "e71c7532d09dc7f365198c126981": {
-      "checked_at": "2026-11-06T14:47:59.538814+00:00",
-      "run_id": "42236864670",
+      "checked_at": "2026-11-07T03:02:49.524911+00:00",
+      "run_id": "42331710581",
       "result": {
         "status": "success",
         "found": 8,
@@ -1093,12 +1093,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "1ff79b2b49af40183397003d1e6a": {
-      "checked_at": "2026-11-06T14:59:14.487179+00:00",
-      "run_id": "42238396780",
+      "checked_at": "2026-11-07T03:02:49.524911+00:00",
+      "run_id": "42331710581",
       "result": {
         "status": "success",
         "found": 30,
-        "inserted": 1,
+        "inserted": 0,
         "message": "1 page(s), 30 unique item(s); unknown_dates=30"
       },
       "identity_preserved": true,
@@ -1345,8 +1345,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "dc84124b59341b4a2ee85458bae1": {
-      "checked_at": "2026-11-06T14:59:14.487179+00:00",
-      "run_id": "42238396780",
+      "checked_at": "2026-11-07T03:02:49.524911+00:00",
+      "run_id": "42331710581",
       "result": {
         "status": "success",
         "found": 12,
