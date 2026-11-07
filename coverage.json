@@ -145,8 +145,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "3187fad822221523e6f592197f84": {
-      "checked_at": "2026-11-06T19:16:24.223416+00:00",
-      "run_id": "42277464440",
+      "checked_at": "2026-11-07T07:08:05.932303+00:00",
+      "run_id": "42349504868",
       "result": {
         "status": "success",
         "found": 6,
@@ -325,8 +325,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "75ed9b961c603c710d884a710e4c": {
-      "checked_at": "2026-11-06T18:57:57.058475+00:00",
-      "run_id": "42274460981",
+      "checked_at": "2026-11-07T07:08:05.932303+00:00",
+      "run_id": "42349504868",
       "result": {
         "status": "success",
         "found": 12,
@@ -553,8 +553,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "050884e1881fdd777f12cc9cb14e": {
-      "checked_at": "2026-11-06T19:16:24.223416+00:00",
-      "run_id": "42277464440",
+      "checked_at": "2026-11-07T07:08:05.932303+00:00",
+      "run_id": "42349504868",
       "result": {
         "status": "success",
         "found": 4,
@@ -625,8 +625,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "b33479b74b661b29d5788aef2ebc": {
-      "checked_at": "2026-11-06T18:57:57.058475+00:00",
-      "run_id": "42274460981",
+      "checked_at": "2026-11-07T07:08:05.932303+00:00",
+      "run_id": "42349504868",
       "result": {
         "status": "success",
         "found": 0,
@@ -1453,12 +1453,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "9ac0bd99916b794c2381b0dc4583": {
-      "checked_at": "2026-11-06T18:57:57.058475+00:00",
-      "run_id": "42274460981",
+      "checked_at": "2026-11-07T07:08:05.932303+00:00",
+      "run_id": "42349504868",
       "result": {
         "status": "success",
         "found": 23,
-        "inserted": 1,
+        "inserted": 0,
         "message": "1 page(s), 23 unique item(s)"
       },
       "identity_preserved": true,
