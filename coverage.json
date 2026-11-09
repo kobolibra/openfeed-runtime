@@ -1849,16 +1849,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "b97f9d5949fbf6bfca0598bb6d24": {
-      "checked_at": "2026-11-09T09:08:56.854403+00:00",
-      "run_id": "42590410302",
-      "result": {
-        "status": "error",
-        "found": 0,
-        "inserted": 0,
-        "message": "Upstream connection failed: timeout (TimeoutError)"
-      },
-      "identity_preserved": true,
-      "scope": "single cloud observation, not long-term acceptance"
+      "status": "not_tested",
+      "reason": "User updated source configuration from local UI"
     },
     "1fb675c7150057b0f6a08733bf33": {
       "checked_at": "2026-11-09T07:26:23.929558+00:00",
