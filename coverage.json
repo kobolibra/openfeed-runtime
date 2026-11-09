@@ -277,8 +277,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "2de645ce3f85b2c6bae4c65ee4ed": {
-      "checked_at": "2026-11-09T08:26:51.719236+00:00",
-      "run_id": "42583857002",
+      "checked_at": "2026-11-09T21:04:35.281467+00:00",
+      "run_id": "42698068837",
       "result": {
         "status": "success",
         "found": 11,
@@ -373,8 +373,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "8e0482e5b14d62a7eb44e554e981": {
-      "checked_at": "2026-11-09T08:07:32.892490+00:00",
-      "run_id": "42583091644",
+      "checked_at": "2026-11-09T21:04:35.281467+00:00",
+      "run_id": "42698068837",
       "result": {
         "status": "success",
         "found": 2,
@@ -493,8 +493,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "6331d34fefc82a4878f20374e167": {
-      "checked_at": "2026-11-09T08:48:36.007929+00:00",
-      "run_id": "42587937290",
+      "checked_at": "2026-11-09T21:04:35.281467+00:00",
+      "run_id": "42698068837",
       "result": {
         "status": "success",
         "found": 6,
@@ -541,8 +541,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "139a43ef9fbf25faac5eb96b0dea": {
-      "checked_at": "2026-11-09T09:08:56.854403+00:00",
-      "run_id": "42590410302",
+      "checked_at": "2026-11-09T21:04:35.281467+00:00",
+      "run_id": "42698068837",
       "result": {
         "status": "success",
         "found": 9,
@@ -637,8 +637,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "9ba09558fb3b7fdf34768dfeecbb": {
-      "checked_at": "2026-11-09T09:08:56.854403+00:00",
-      "run_id": "42590410302",
+      "checked_at": "2026-11-09T21:04:35.281467+00:00",
+      "run_id": "42698068837",
       "result": {
         "status": "success",
         "found": 12,
@@ -1513,12 +1513,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "f6bab3047fb0d17ce44759aebc23": {
-      "checked_at": "2026-11-09T09:08:56.854403+00:00",
-      "run_id": "42590410302",
+      "checked_at": "2026-11-09T21:04:35.281467+00:00",
+      "run_id": "42698068837",
       "result": {
         "status": "success",
         "found": 15,
-        "inserted": 0,
+        "inserted": 1,
         "message": "1 page(s), 15 unique item(s); unknown_dates=15"
       },
       "identity_preserved": true,
