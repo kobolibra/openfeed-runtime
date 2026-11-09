@@ -3,33 +3,42 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "3187fad822221523e6f592197f84",
-    "f2ece936cef432e42b8a44a63cf1",
-    "a755db0f369cbd08ab4b12e52fdf",
-    "fd4ad1f12d4c068a071c414b7cbf",
-    "082596eb0f11e08cd01ec0f6664c"
+    "5da3521a22a8894df72b67f330c4",
+    "ce1637cba6137211a97fcfad09a3",
+    "0165c6d38fff556f2d380c733ca7",
+    "61c77731a1719d9870623118e92f",
+    "95e725b193769096c522d509c8d2"
   ],
   "results": [
     {
-      "id": "3187fad822221523e6f592197f84",
+      "id": "5da3521a22a8894df72b67f330c4",
       "result": {
         "status": "success",
-        "found": 7,
+        "found": 8,
         "inserted": 0,
-        "message": "1 page(s), 7 unique item(s); unknown_dates=7"
+        "message": "1 page(s), 8 unique item(s); unknown_dates=8"
       }
     },
     {
-      "id": "f2ece936cef432e42b8a44a63cf1",
+      "id": "ce1637cba6137211a97fcfad09a3",
       "result": {
         "status": "success",
-        "found": 14,
+        "found": 62,
         "inserted": 0,
-        "message": "1 page(s), 14 unique item(s); unknown_dates=14"
+        "message": "1 page(s), 62 unique item(s); unknown_dates=62"
       }
     },
     {
-      "id": "a755db0f369cbd08ab4b12e52fdf",
+      "id": "0165c6d38fff556f2d380c733ca7",
+      "result": {
+        "status": "success",
+        "found": 1,
+        "inserted": 0,
+        "message": "1 page(s), 1 unique item(s)"
+      }
+    },
+    {
+      "id": "61c77731a1719d9870623118e92f",
       "result": {
         "status": "success",
         "found": 8,
@@ -38,33 +47,16 @@
       }
     },
     {
-      "id": "fd4ad1f12d4c068a071c414b7cbf",
+      "id": "95e725b193769096c522d509c8d2",
       "result": {
         "status": "success",
-        "found": 10,
+        "found": 27,
         "inserted": 0,
-        "message": "1 page(s), 10 unique item(s)"
-      }
-    },
-    {
-      "id": "082596eb0f11e08cd01ec0f6664c",
-      "result": {
-        "status": "success",
-        "found": 1,
-        "inserted": 1,
-        "message": "1 page(s), 1 unique item(s); unknown_dates=1"
+        "message": "1 page(s), 27 unique item(s); unknown_dates=27"
       }
     }
   ],
   "deferred": [
-    {
-      "id": "5da3521a22a8894df72b67f330c4",
-      "reason": "domain_start_gap"
-    },
-    {
-      "id": "95e725b193769096c522d509c8d2",
-      "reason": "domain_start_gap"
-    },
     {
       "id": "8e0482e5b14d62a7eb44e554e981",
       "reason": "domain_start_gap"
@@ -75,6 +67,14 @@
     },
     {
       "id": "8e2712e008f356d7e3910ce3657b",
+      "reason": "domain_start_gap"
+    },
+    {
+      "id": "32e834db8257908a0c3a65af6380",
+      "reason": "domain_start_gap"
+    },
+    {
+      "id": "b97f9d5949fbf6bfca0598bb6d24",
       "reason": "domain_start_gap"
     }
   ],
@@ -286,7 +286,7 @@
     },
     {
       "id": "0165c6d38fff556f2d380c733ca7",
-      "next_run": "2026-11-09T20:25:15+00:00",
+      "next_run": "2026-11-10T08:25:15+00:00",
       "schedule_phase_seconds": 30315
     },
     {
@@ -331,7 +331,7 @@
     },
     {
       "id": "ce1637cba6137211a97fcfad09a3",
-      "next_run": "2026-11-09T20:21:03+00:00",
+      "next_run": "2026-11-10T08:21:03+00:00",
       "schedule_phase_seconds": 30063
     },
     {
@@ -646,7 +646,7 @@
     },
     {
       "id": "95e725b193769096c522d509c8d2",
-      "next_run": "2026-11-09T19:34:44+00:00",
+      "next_run": "2026-11-10T07:34:44+00:00",
       "schedule_phase_seconds": 27284
     },
     {
@@ -696,7 +696,7 @@
     },
     {
       "id": "61c77731a1719d9870623118e92f",
-      "next_run": "2026-11-09T20:29:28+00:00",
+      "next_run": "2026-11-10T08:29:28+00:00",
       "schedule_phase_seconds": 30568
     },
     {
@@ -886,7 +886,7 @@
     },
     {
       "id": "5da3521a22a8894df72b67f330c4",
-      "next_run": "2026-11-09T19:22:06+00:00",
+      "next_run": "2026-11-10T07:22:06+00:00",
       "schedule_phase_seconds": 26526
     },
     {
@@ -922,8 +922,8 @@
   ],
   "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 301.817,
+  "elapsed_seconds": 301.861,
   "input_db_unchanged": true,
-  "input_sha256": "fe520d35bd5caaa38354a5cab5262d2fbaaeb6fa10f51721eb3a0755c59d19df",
-  "shadow_sha256": "3859795fb3e012aec96b785516e357fc8613646fd4975cb309e021155295e8bb"
+  "input_sha256": "0503ccdf61b8e5b64a53a0135c95293f8d8f4332a169801ddd6bba910814e729",
+  "shadow_sha256": "4cdf02853aa346e0d32c04302ae9b5c31eadf5a1219d69c1ee8ec4cc0041d865"
 }
