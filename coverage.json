@@ -1225,8 +1225,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "694dbeab087f3ed0ca6f243a435b": {
-      "checked_at": "2026-11-09T05:03:22.571746+00:00",
-      "run_id": "42564746463",
+      "checked_at": "2026-11-09T16:54:48.742640+00:00",
+      "run_id": "42658678332",
       "result": {
         "status": "success",
         "found": 8,
@@ -1297,12 +1297,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "b5b0e3074525c1f2745d3cfb76ee": {
-      "checked_at": "2026-11-09T05:03:22.571746+00:00",
-      "run_id": "42564746463",
+      "checked_at": "2026-11-09T16:54:48.742640+00:00",
+      "run_id": "42658678332",
       "result": {
         "status": "success",
         "found": 10,
-        "inserted": 0,
+        "inserted": 1,
         "message": "1 page(s), 10 unique item(s)"
       },
       "identity_preserved": true,
@@ -1477,8 +1477,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "d9babe8486d2816ff18022162de9": {
-      "checked_at": "2026-11-09T04:44:17.116994+00:00",
-      "run_id": "42563021148",
+      "checked_at": "2026-11-09T16:54:48.742640+00:00",
+      "run_id": "42658678332",
       "result": {
         "status": "success",
         "found": 20,
@@ -1681,8 +1681,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "e421960cd65285a070c5056b6d52": {
-      "checked_at": "2026-11-09T04:44:17.116994+00:00",
-      "run_id": "42563021148",
+      "checked_at": "2026-11-09T16:54:48.742640+00:00",
+      "run_id": "42658678332",
       "result": {
         "status": "success",
         "found": 8,
@@ -1913,8 +1913,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "d30386f6fe165ba7b2acc2d1985d": {
-      "checked_at": "2026-11-09T05:03:22.571746+00:00",
-      "run_id": "42564746463",
+      "checked_at": "2026-11-09T16:54:48.742640+00:00",
+      "run_id": "42658678332",
       "result": {
         "status": "success",
         "found": 0,
