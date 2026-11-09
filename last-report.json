@@ -3,70 +3,70 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "8e2712e008f356d7e3910ce3657b",
-    "e182f39fee8d45ac923dcddfd7a1",
-    "156b020c6e4752ed8004b4b8e39d",
-    "c17d6f96fa7ba97986add02f8a98",
-    "32e834db8257908a0c3a65af6380"
+    "b97f9d5949fbf6bfca0598bb6d24",
+    "a77c24dc79b43142711bac328f95",
+    "b908808ce01b5af7d359ee520cab",
+    "3bcda00f9ea95e035f30edbca2ce",
+    "24ba3f8f2edd5be1043e25cdd271"
   ],
   "results": [
     {
-      "id": "8e2712e008f356d7e3910ce3657b",
+      "id": "b97f9d5949fbf6bfca0598bb6d24",
       "result": {
         "status": "success",
-        "found": 0,
+        "found": 1,
         "inserted": 0,
-        "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
+        "message": "1 page(s), 1 unique item(s); unknown_dates=1"
       }
     },
     {
-      "id": "e182f39fee8d45ac923dcddfd7a1",
+      "id": "a77c24dc79b43142711bac328f95",
       "result": {
         "status": "success",
-        "found": 3,
+        "found": 10,
         "inserted": 0,
-        "message": "1 page(s), 3 unique item(s); unknown_dates=3"
+        "message": "1 page(s), 10 unique item(s)"
       }
     },
     {
-      "id": "156b020c6e4752ed8004b4b8e39d",
+      "id": "b908808ce01b5af7d359ee520cab",
       "result": {
         "status": "success",
-        "found": 16,
-        "inserted": 1,
-        "message": "1 page(s), 16 unique item(s)"
+        "found": 6,
+        "inserted": 0,
+        "message": "1 page(s), 6 unique item(s)"
       }
     },
     {
-      "id": "c17d6f96fa7ba97986add02f8a98",
+      "id": "3bcda00f9ea95e035f30edbca2ce",
       "result": {
         "status": "success",
-        "found": 56,
+        "found": 20,
         "inserted": 0,
-        "message": "1 page(s), 56 unique item(s)"
+        "message": "1 page(s), 20 unique item(s)"
       }
     },
     {
-      "id": "32e834db8257908a0c3a65af6380",
+      "id": "24ba3f8f2edd5be1043e25cdd271",
       "result": {
         "status": "success",
-        "found": 30,
+        "found": 2,
         "inserted": 0,
-        "message": "1 page(s), 30 unique item(s); unknown_dates=30"
+        "message": "1 page(s), 2 unique item(s); unknown_dates=2"
       }
     }
   ],
   "deferred": [
     {
-      "id": "b97f9d5949fbf6bfca0598bb6d24",
-      "reason": "domain_start_gap"
-    },
-    {
-      "id": "24ba3f8f2edd5be1043e25cdd271",
-      "reason": "domain_start_gap"
-    },
-    {
       "id": "aebe2d30c8cde1240d5c7ea2a67e",
+      "reason": "domain_start_gap"
+    },
+    {
+      "id": "2d84d29f731eadf159c4b079fbf5",
+      "reason": "domain_start_gap"
+    },
+    {
+      "id": "7a32e84bd6409e490bca062db0f7",
       "reason": "domain_start_gap"
     }
   ],
@@ -208,7 +208,7 @@
     },
     {
       "id": "3bcda00f9ea95e035f30edbca2ce",
-      "next_run": "2026-11-09T21:36:50+00:00",
+      "next_run": "2026-11-10T09:36:50+00:00",
       "schedule_phase_seconds": 34610
     },
     {
@@ -313,7 +313,7 @@
     },
     {
       "id": "b908808ce01b5af7d359ee520cab",
-      "next_run": "2026-11-09T21:28:25+00:00",
+      "next_run": "2026-11-10T09:28:25+00:00",
       "schedule_phase_seconds": 34105
     },
     {
@@ -408,7 +408,7 @@
     },
     {
       "id": "24ba3f8f2edd5be1043e25cdd271",
-      "next_run": "2026-11-09T20:58:56+00:00",
+      "next_run": "2026-11-10T08:58:56+00:00",
       "schedule_phase_seconds": 32336
     },
     {
@@ -443,7 +443,7 @@
     },
     {
       "id": "b97f9d5949fbf6bfca0598bb6d24",
-      "next_run": "2026-11-09T20:37:53+00:00",
+      "next_run": "2026-11-10T08:37:53+00:00",
       "schedule_phase_seconds": 31073
     },
     {
@@ -518,7 +518,7 @@
     },
     {
       "id": "a77c24dc79b43142711bac328f95",
-      "next_run": "2026-11-09T21:20:00+00:00",
+      "next_run": "2026-11-10T09:20:00+00:00",
       "schedule_phase_seconds": 33600
     },
     {
@@ -914,8 +914,8 @@
   ],
   "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 301.774,
+  "elapsed_seconds": 301.698,
   "input_db_unchanged": true,
-  "input_sha256": "435bfcb78577d9fd451f83cd66468b204934a080644087af764078e4b81a140e",
-  "shadow_sha256": "f2be9e9c620efb1fd89830aaf2f5396dbe782dc00ebff8c729073279a911079b"
+  "input_sha256": "f98d211b126429ad0fe7b9ffe049b1dfae5ff9b7eb6bafa9936493afe3f11aef",
+  "shadow_sha256": "aa2c05f4ed9d1defe520a4ffed2202d581c01ea0be216c0ecc004443b368e6ff"
 }
