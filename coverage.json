@@ -217,14 +217,13 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "9de058f25996c675723754e58c24": {
-      "checked_at": "2026-11-08T15:34:15.196481+00:00",
-      "run_id": "42494596970",
+      "checked_at": "2026-11-09T03:24:18.451440+00:00",
+      "run_id": "42555657976",
       "result": {
-        "status": "error",
-        "found": 0,
+        "status": "success",
+        "found": 15,
         "inserted": 0,
-        "message": "Upstream HTTP 429",
-        "retry_after": 900
+        "message": "1 page(s), 15 unique item(s)"
       },
       "identity_preserved": true,
       "scope": "single cloud observation, not long-term acceptance"
@@ -290,8 +289,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "36a875f2330c7b86f1bab851a010": {
-      "checked_at": "2026-11-08T15:13:58.628845+00:00",
-      "run_id": "42493247723",
+      "checked_at": "2026-11-09T03:24:18.451440+00:00",
+      "run_id": "42555657976",
       "result": {
         "status": "success",
         "found": 16,
@@ -962,8 +961,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "b8a01362be20ae4a0e1bd9e8faa2": {
-      "checked_at": "2026-11-08T15:34:15.196481+00:00",
-      "run_id": "42494596970",
+      "checked_at": "2026-11-09T03:24:18.451440+00:00",
+      "run_id": "42555657976",
       "result": {
         "status": "success",
         "found": 18,
@@ -1082,8 +1081,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "d4195c70b086e1a849e1266295e5": {
-      "checked_at": "2026-11-08T15:13:58.628845+00:00",
-      "run_id": "42493247723",
+      "checked_at": "2026-11-09T03:24:18.451440+00:00",
+      "run_id": "42555657976",
       "result": {
         "status": "success",
         "found": 24,
@@ -1370,8 +1369,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "1db6c9658190dce186c816897141": {
-      "checked_at": "2026-11-08T15:34:15.196481+00:00",
-      "run_id": "42494596970",
+      "checked_at": "2026-11-09T03:24:18.451440+00:00",
+      "run_id": "42555657976",
       "result": {
         "status": "success",
         "found": 6,
