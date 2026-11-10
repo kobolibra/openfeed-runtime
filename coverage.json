@@ -157,8 +157,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "863ca92d5a2e922b14611890e3a0": {
-      "checked_at": "2026-11-09T16:35:21.690401+00:00",
-      "run_id": "42655299275",
+      "checked_at": "2026-11-10T04:31:33.714749+00:00",
+      "run_id": "42755740800",
       "result": {
         "status": "success",
         "found": 19,
@@ -697,8 +697,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "b107d4252ea0aa97e2da71ff1ed0": {
-      "checked_at": "2026-11-09T16:35:21.690401+00:00",
-      "run_id": "42655299275",
+      "checked_at": "2026-11-10T04:31:33.714749+00:00",
+      "run_id": "42755740800",
       "result": {
         "status": "success",
         "found": 39,
@@ -757,12 +757,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "63f21928026673f1b555b625b882": {
-      "checked_at": "2026-11-09T16:35:21.690401+00:00",
-      "run_id": "42655299275",
+      "checked_at": "2026-11-10T04:31:33.714749+00:00",
+      "run_id": "42755740800",
       "result": {
         "status": "success",
         "found": 50,
-        "inserted": 0,
+        "inserted": 1,
         "message": "1 page(s), 50 unique item(s)"
       },
       "identity_preserved": true,
@@ -1573,8 +1573,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "2271a98fe28dbe6eff10e907bb82": {
-      "checked_at": "2026-11-09T16:35:21.690401+00:00",
-      "run_id": "42655299275",
+      "checked_at": "2026-11-10T04:31:33.714749+00:00",
+      "run_id": "42755740800",
       "result": {
         "status": "success",
         "found": 9,
@@ -1633,12 +1633,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "f0ce0ac0c2d5fff18126e0c0562d": {
-      "checked_at": "2026-11-09T16:15:49.012348+00:00",
-      "run_id": "42651851252",
+      "checked_at": "2026-11-10T04:31:33.714749+00:00",
+      "run_id": "42755740800",
       "result": {
         "status": "success",
         "found": 100,
-        "inserted": 0,
+        "inserted": 1,
         "message": "1 page(s), 100 unique item(s); extraction limit reached"
       },
       "identity_preserved": true,
@@ -1969,8 +1969,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "65277d38b25ee2e9e8dcd2205bdb": {
-      "checked_at": "2026-11-09T16:15:49.012348+00:00",
-      "run_id": "42651851252",
+      "checked_at": "2026-11-10T04:31:33.714749+00:00",
+      "run_id": "42755740800",
       "result": {
         "status": "success",
         "found": 4,
