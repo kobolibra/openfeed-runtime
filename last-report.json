@@ -3,65 +3,50 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "aae695eb5428e0c959f34d512150",
-    "1c7ede2f7e826f14252ad4414976",
-    "dc2ef05fcbd3301f4f94d0dbc05e",
-    "204cdad44993bdd9cf8061a12fe6",
-    "15850910b733a66ff968f8b1a99a"
+    "e18bbd2fe36bf9049a8f96bc2351",
+    "12f6f4648ec2ccd5ee6ebb11efcc",
+    "76364cbad3201ae85a5d2e48175f",
+    "54d4e7fd510dd894e7370a162676"
   ],
   "results": [
     {
-      "id": "aae695eb5428e0c959f34d512150",
-      "result": {
-        "status": "success",
-        "found": 0,
-        "inserted": 0,
-        "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
-      }
-    },
-    {
-      "id": "1c7ede2f7e826f14252ad4414976",
-      "result": {
-        "status": "error",
-        "found": 0,
-        "inserted": 0,
-        "message": "Upstream HTTP 403"
-      }
-    },
-    {
-      "id": "dc2ef05fcbd3301f4f94d0dbc05e",
-      "result": {
-        "status": "success",
-        "found": 40,
-        "inserted": 0,
-        "message": "1 page(s), 40 unique item(s); unknown_dates=40"
-      }
-    },
-    {
-      "id": "204cdad44993bdd9cf8061a12fe6",
-      "result": {
-        "status": "success",
-        "found": 1,
-        "inserted": 0,
-        "message": "1 page(s), 1 unique item(s); unknown_dates=1"
-      }
-    },
-    {
-      "id": "15850910b733a66ff968f8b1a99a",
-      "result": {
-        "status": "success",
-        "found": 0,
-        "inserted": 0,
-        "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
-      }
-    }
-  ],
-  "deferred": [
-    {
       "id": "e18bbd2fe36bf9049a8f96bc2351",
-      "reason": "domain_start_gap"
+      "result": {
+        "status": "success",
+        "found": 16,
+        "inserted": 1,
+        "message": "1 page(s), 16 unique item(s); unknown_dates=16"
+      }
+    },
+    {
+      "id": "12f6f4648ec2ccd5ee6ebb11efcc",
+      "result": {
+        "status": "success",
+        "found": 5,
+        "inserted": 0,
+        "message": "1 page(s), 5 unique item(s); unknown_dates=5"
+      }
+    },
+    {
+      "id": "76364cbad3201ae85a5d2e48175f",
+      "result": {
+        "status": "success",
+        "found": 15,
+        "inserted": 0,
+        "message": "1 page(s), 15 unique item(s); unknown_dates=15"
+      }
+    },
+    {
+      "id": "54d4e7fd510dd894e7370a162676",
+      "result": {
+        "status": "success",
+        "found": 3,
+        "inserted": 0,
+        "message": "1 page(s), 3 unique item(s); unknown_dates=3"
+      }
     }
   ],
+  "deferred": [],
   "next_schedule": [
     {
       "id": "f1d1dcc47c44790edd8d92ce14c5",
@@ -280,7 +265,7 @@
     },
     {
       "id": "76364cbad3201ae85a5d2e48175f",
-      "next_run": "2026-11-10T10:48:25+00:00",
+      "next_run": "2026-11-10T22:48:25+00:00",
       "schedule_phase_seconds": 38905
     },
     {
@@ -390,7 +375,7 @@
     },
     {
       "id": "e18bbd2fe36bf9049a8f96bc2351",
-      "next_run": "2026-11-10T10:27:22+00:00",
+      "next_run": "2026-11-10T22:27:22+00:00",
       "schedule_phase_seconds": 37642
     },
     {
@@ -650,7 +635,7 @@
     },
     {
       "id": "54d4e7fd510dd894e7370a162676",
-      "next_run": "2026-11-10T10:44:12+00:00",
+      "next_run": "2026-11-10T22:44:12+00:00",
       "schedule_phase_seconds": 38652
     },
     {
@@ -760,7 +745,7 @@
     },
     {
       "id": "12f6f4648ec2ccd5ee6ebb11efcc",
-      "next_run": "2026-11-10T10:40:00+00:00",
+      "next_run": "2026-11-10T22:40:00+00:00",
       "schedule_phase_seconds": 38400
     },
     {
@@ -906,8 +891,8 @@
   ],
   "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 304.475,
+  "elapsed_seconds": 302.081,
   "input_db_unchanged": true,
-  "input_sha256": "5b454fa434451886c801e0a85e68d19303d668f8545e517a8ea12e0429bb97dd",
-  "shadow_sha256": "1cde07c53e46fd56a4a144c01a144dcc5ab2a07a59183a6738733824780dc918"
+  "input_sha256": "ff46080d98e95ff6e0f46b18008bab07a07ae0fee1a60debc677dba9d8d0fcdc",
+  "shadow_sha256": "ad28ffe29925b9ce6a6037db0a99caac1608799f035674f115dc4a649717e861"
 }
