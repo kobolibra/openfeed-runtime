@@ -73,8 +73,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "4f7af7fcd8ab3e0cfcb2922580f0": {
-      "checked_at": "2026-11-11T06:54:26.851358+00:00",
-      "run_id": "42974946545",
+      "checked_at": "2026-11-11T18:44:25.386327+00:00",
+      "run_id": "43079738755",
       "result": {
         "status": "success",
         "found": 3,
@@ -229,8 +229,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "e5609c170149df3d5d17a41655cd": {
-      "checked_at": "2026-11-11T06:54:26.851358+00:00",
-      "run_id": "42974946545",
+      "checked_at": "2026-11-11T18:44:25.386327+00:00",
+      "run_id": "43079738755",
       "result": {
         "status": "success",
         "found": 100,
@@ -481,8 +481,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "c32e683ece138c00a16b94e0ad54": {
-      "checked_at": "2026-11-11T06:54:26.851358+00:00",
-      "run_id": "42974946545",
+      "checked_at": "2026-11-11T18:44:25.386327+00:00",
+      "run_id": "43079738755",
       "result": {
         "status": "success",
         "found": 11,
@@ -805,8 +805,16 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "c6d6e9d90e5212f64b9cd81785c8": {
-      "status": "not_tested",
-      "reason": "User updated source configuration from local UI"
+      "checked_at": "2026-11-11T18:44:25.386327+00:00",
+      "run_id": "43079738755",
+      "result": {
+        "status": "success",
+        "found": 2,
+        "inserted": 2,
+        "message": "1 page(s), 2 unique item(s); unknown_dates=2"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "32e834db8257908a0c3a65af6380": {
       "checked_at": "2026-11-11T08:55:27.737395+00:00",
@@ -1181,8 +1189,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "a0bd76a4450ea8c9a93141ca0a56": {
-      "checked_at": "2026-11-11T06:54:26.851358+00:00",
-      "run_id": "42974946545",
+      "checked_at": "2026-11-11T18:44:25.386327+00:00",
+      "run_id": "43079738755",
       "result": {
         "status": "success",
         "found": 1,
