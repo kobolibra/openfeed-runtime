@@ -1,8 +1,8 @@
 {
-  "run_id": "43027192530",
-  "due_count": 5,
-  "processed": 3,
-  "browser_started": true,
-  "prepublication_seconds": 179.994,
+  "run_id": "43030261419",
+  "due_count": 6,
+  "processed": 5,
+  "browser_started": false,
+  "prepublication_seconds": 317.741,
   "publication_only": false
 }
