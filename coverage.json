@@ -805,16 +805,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "c6d6e9d90e5212f64b9cd81785c8": {
-      "checked_at": "2026-11-11T06:33:22.801472+00:00",
-      "run_id": "42972577997",
-      "result": {
-        "status": "error",
-        "found": 0,
-        "inserted": 0,
-        "message": "No valid items extracted; existing RSS was preserved"
-      },
-      "identity_preserved": true,
-      "scope": "single cloud observation, not long-term acceptance"
+      "status": "not_tested",
+      "reason": "User updated source configuration from local UI"
     },
     "32e834db8257908a0c3a65af6380": {
       "checked_at": "2026-11-11T08:55:27.737395+00:00",
