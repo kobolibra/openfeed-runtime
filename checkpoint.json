@@ -1,14 +1,10 @@
 {
-  "run_id": "42998564561",
-  "previous_sha256": "6110272a0cbdb39e74f9968d5c2c2c0772526cafc878b457eb5ef777f9c9e0fd",
-  "database_sha256": "117e15618ea947b4a8af9880ac69e34df54e1a2b085d1b90dad8c60ecd98a310",
+  "run_id": "43001428251",
+  "previous_sha256": "117e15618ea947b4a8af9880ac69e34df54e1a2b085d1b90dad8c60ecd98a310",
+  "database_sha256": "511e1addfc0d0bcb02ebb7d04f6c4c4aedcf91e527161236d351eeab1b818dbb",
   "scope": "production cloud state",
   "source_sha": "14d068b0cf3fa3239c3862bec10bd048d13664be",
-  "previous_state_commit": "f3d7603f6ffb288c85807dea5c34d9c7f27b8f0e",
-  "rss_manifest_sha256": "37c167717e26cb03d113e61cd023724294453e4849ab53a289abb7c1fa5fe824",
-  "source_identity_preserved": true,
-  "management_edit_at": "2026-11-11T10:05:07.068810+00:00",
-  "management_source_ids": [
-    "c6d6e9d90e5212f64b9cd81785c8"
-  ]
+  "previous_state_commit": "8428bd3de6fa6216e40e518d488358c2f3549692",
+  "rss_manifest_sha256": "2542189f86296f9ac6868dce116599f407317a8522a5f6a98c94f893c3b74a6a",
+  "source_identity_preserved": true
 }
