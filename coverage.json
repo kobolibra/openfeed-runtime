@@ -97,12 +97,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "aaaa6fe16f2220d3446b7e2401a0": {
-      "checked_at": "2026-11-11T03:09:00.820880+00:00",
-      "run_id": "42950349802",
+      "checked_at": "2026-11-11T15:21:07.923229+00:00",
+      "run_id": "43046544624",
       "result": {
         "status": "success",
         "found": 14,
-        "inserted": 1,
+        "inserted": 0,
         "message": "1 page(s), 14 unique item(s); unknown_dates=14"
       },
       "identity_preserved": true,
@@ -217,8 +217,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "9de058f25996c675723754e58c24": {
-      "checked_at": "2026-11-11T03:31:54.301848+00:00",
-      "run_id": "42952653766",
+      "checked_at": "2026-11-11T15:21:07.923229+00:00",
+      "run_id": "43046544624",
       "result": {
         "status": "success",
         "found": 15,
@@ -289,8 +289,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "36a875f2330c7b86f1bab851a010": {
-      "checked_at": "2026-11-11T03:31:54.301848+00:00",
-      "run_id": "42952653766",
+      "checked_at": "2026-11-11T15:21:07.923229+00:00",
+      "run_id": "43046544624",
       "result": {
         "status": "success",
         "found": 17,
@@ -953,8 +953,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "b8a01362be20ae4a0e1bd9e8faa2": {
-      "checked_at": "2026-11-11T03:31:54.301848+00:00",
-      "run_id": "42952653766",
+      "checked_at": "2026-11-11T15:21:07.923229+00:00",
+      "run_id": "43046544624",
       "result": {
         "status": "success",
         "found": 18,
@@ -1073,8 +1073,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "d4195c70b086e1a849e1266295e5": {
-      "checked_at": "2026-11-11T03:09:00.820880+00:00",
-      "run_id": "42950349802",
+      "checked_at": "2026-11-11T15:21:07.923229+00:00",
+      "run_id": "43046544624",
       "result": {
         "status": "success",
         "found": 24,
