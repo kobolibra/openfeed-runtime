@@ -37,8 +37,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "c3d7cf91ab2b9b298d1fc57a39e7": {
-      "checked_at": "2026-11-12T02:41:05.307048+00:00",
-      "run_id": "43142383933",
+      "checked_at": "2026-11-12T14:31:47.448525+00:00",
+      "run_id": "43236958664",
       "result": {
         "status": "success",
         "found": 16,
@@ -109,8 +109,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "c47ebed13a44559fc68b780e1bd4": {
-      "checked_at": "2026-11-12T05:23:33.779974+00:00",
-      "run_id": "43160353536",
+      "checked_at": "2026-11-12T14:31:47.448525+00:00",
+      "run_id": "43236958664",
       "result": {
         "status": "success",
         "found": 3,
@@ -614,8 +614,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "e019ac73f6bea11d306bd299dfbe": {
-      "checked_at": "2026-11-12T03:01:38.245067+00:00",
-      "run_id": "43144633287",
+      "checked_at": "2026-11-12T14:31:47.448525+00:00",
+      "run_id": "43236958664",
       "result": {
         "status": "success",
         "found": 12,
@@ -902,12 +902,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "00c8b28e8d6c8e70207d6c928f57": {
-      "checked_at": "2026-11-12T05:23:33.779974+00:00",
-      "run_id": "43160353536",
+      "checked_at": "2026-11-12T14:31:47.448525+00:00",
+      "run_id": "43236958664",
       "result": {
         "status": "success",
         "found": 30,
-        "inserted": 3,
+        "inserted": 0,
         "message": "1 page(s), 30 unique item(s); unknown_dates=30"
       },
       "identity_preserved": true,
@@ -1034,8 +1034,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "e7cb7af265d1d7d9339caac421c2": {
-      "checked_at": "2026-11-12T02:41:05.307048+00:00",
-      "run_id": "43142383933",
+      "checked_at": "2026-11-12T14:31:47.448525+00:00",
+      "run_id": "43236958664",
       "result": {
         "status": "success",
         "found": 4,
