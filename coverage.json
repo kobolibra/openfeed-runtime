@@ -13,8 +13,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "2defba9c8f8075e5d91daa062359": {
-      "checked_at": "2026-11-11T17:23:17.723649+00:00",
-      "run_id": "43066723930",
+      "checked_at": "2026-11-12T05:23:33.779974+00:00",
+      "run_id": "43160353536",
       "result": {
         "status": "success",
         "found": 20,
@@ -109,8 +109,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "c47ebed13a44559fc68b780e1bd4": {
-      "checked_at": "2026-11-11T14:21:07.321996+00:00",
-      "run_id": "43036586037",
+      "checked_at": "2026-11-12T05:23:33.779974+00:00",
+      "run_id": "43160353536",
       "result": {
         "status": "success",
         "found": 3,
@@ -782,8 +782,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "eab7c97f85c7acad581b4df1a474": {
-      "checked_at": "2026-11-11T17:23:17.723649+00:00",
-      "run_id": "43066723930",
+      "checked_at": "2026-11-12T05:23:33.779974+00:00",
+      "run_id": "43160353536",
       "result": {
         "status": "success",
         "found": 100,
@@ -902,12 +902,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "00c8b28e8d6c8e70207d6c928f57": {
-      "checked_at": "2026-11-11T13:59:57.722673+00:00",
-      "run_id": "43033359559",
+      "checked_at": "2026-11-12T05:23:33.779974+00:00",
+      "run_id": "43160353536",
       "result": {
         "status": "success",
         "found": 30,
-        "inserted": 6,
+        "inserted": 3,
         "message": "1 page(s), 30 unique item(s); unknown_dates=30"
       },
       "identity_preserved": true,
@@ -1286,8 +1286,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "150a9ada29a718a8350e24b5db48": {
-      "checked_at": "2026-11-11T17:23:17.723649+00:00",
-      "run_id": "43066723930",
+      "checked_at": "2026-11-12T05:23:33.779974+00:00",
+      "run_id": "43160353536",
       "result": {
         "status": "success",
         "found": 12,
@@ -1814,13 +1814,13 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "aa79d80f04758b239618ca451c3d": {
-      "checked_at": "2026-11-11T17:23:17.723649+00:00",
-      "run_id": "43066723930",
+      "checked_at": "2026-11-12T05:23:33.779974+00:00",
+      "run_id": "43160353536",
       "result": {
-        "status": "success",
-        "found": 14,
+        "status": "error",
+        "found": 5,
         "inserted": 0,
-        "message": "1 page(s), 14 unique item(s); unknown_dates=14"
+        "message": "Quality gate: extracted 5 items, minimum is 6; existing RSS preserved"
       },
       "identity_preserved": true,
       "scope": "single cloud observation, not long-term acceptance"
