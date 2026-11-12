@@ -73,8 +73,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "4f7af7fcd8ab3e0cfcb2922580f0": {
-      "checked_at": "2026-11-11T18:44:25.386327+00:00",
-      "run_id": "43079738755",
+      "checked_at": "2026-11-12T06:44:28.671132+00:00",
+      "run_id": "43169511096",
       "result": {
         "status": "success",
         "found": 3,
@@ -230,8 +230,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "e5609c170149df3d5d17a41655cd": {
-      "checked_at": "2026-11-11T18:44:25.386327+00:00",
-      "run_id": "43079738755",
+      "checked_at": "2026-11-12T06:44:28.671132+00:00",
+      "run_id": "43169511096",
       "result": {
         "status": "success",
         "found": 100,
@@ -398,8 +398,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "359aa798df9f6a2148c28e65cba3": {
-      "checked_at": "2026-11-11T16:03:03.335925+00:00",
-      "run_id": "43053280160",
+      "checked_at": "2026-11-12T06:44:28.671132+00:00",
+      "run_id": "43169511096",
       "result": {
         "status": "success",
         "found": 0,
@@ -470,12 +470,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "3ec1fb4da7d5967e5b136eb3db03": {
-      "checked_at": "2026-11-11T16:03:03.335925+00:00",
-      "run_id": "43053280160",
+      "checked_at": "2026-11-12T06:44:28.671132+00:00",
+      "run_id": "43169511096",
       "result": {
         "status": "success",
         "found": 30,
-        "inserted": 0,
+        "inserted": 1,
         "message": "1 page(s), 30 unique item(s); unknown_dates=30"
       },
       "identity_preserved": true,
@@ -806,12 +806,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "c6d6e9d90e5212f64b9cd81785c8": {
-      "checked_at": "2026-11-11T18:44:25.386327+00:00",
-      "run_id": "43079738755",
+      "checked_at": "2026-11-12T06:44:28.671132+00:00",
+      "run_id": "43169511096",
       "result": {
         "status": "success",
         "found": 2,
-        "inserted": 2,
+        "inserted": 0,
         "message": "1 page(s), 2 unique item(s); unknown_dates=2"
       },
       "identity_preserved": true,
