@@ -1310,8 +1310,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "ced67fb8de120a2c2dcce160c07d": {
-      "checked_at": "2026-11-11T16:23:18.223288+00:00",
-      "run_id": "43056711811",
+      "checked_at": "2026-11-12T04:23:05.635063+00:00",
+      "run_id": "43151475676",
       "result": {
         "status": "success",
         "found": 18,
@@ -1574,8 +1574,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "2271a98fe28dbe6eff10e907bb82": {
-      "checked_at": "2026-11-11T16:23:18.223288+00:00",
-      "run_id": "43056711811",
+      "checked_at": "2026-11-12T04:23:05.635063+00:00",
+      "run_id": "43151475676",
       "result": {
         "status": "success",
         "found": 9,
@@ -1634,20 +1634,20 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "f0ce0ac0c2d5fff18126e0c0562d": {
-      "checked_at": "2026-11-11T16:23:18.223288+00:00",
-      "run_id": "43056711811",
+      "checked_at": "2026-11-12T04:23:05.635063+00:00",
+      "run_id": "43151475676",
       "result": {
         "status": "success",
         "found": 100,
-        "inserted": 0,
+        "inserted": 1,
         "message": "1 page(s), 100 unique item(s); extraction limit reached"
       },
       "identity_preserved": true,
       "scope": "single cloud observation, not long-term acceptance"
     },
     "343af68382688b03fd58668ef927": {
-      "checked_at": "2026-11-11T12:57:48.311399+00:00",
-      "run_id": "43024216090",
+      "checked_at": "2026-11-12T04:23:05.635063+00:00",
+      "run_id": "43151475676",
       "result": {
         "status": "success",
         "found": 2,
@@ -1802,12 +1802,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "263e0efaca3a799363c747ea1e13": {
-      "checked_at": "2026-11-11T12:37:47.293729+00:00",
-      "run_id": "43021288068",
+      "checked_at": "2026-11-12T04:23:05.635063+00:00",
+      "run_id": "43151475676",
       "result": {
         "status": "success",
         "found": 30,
-        "inserted": 1,
+        "inserted": 0,
         "message": "1 page(s), 30 unique item(s); unknown_dates=30"
       },
       "identity_preserved": true,
