@@ -3,66 +3,57 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "811d717a73c0b4bbe48616d78842",
-    "e71c7532d09dc7f365198c126981",
-    "a02e0005b6600b90fbab864df853",
-    "dc84124b59341b4a2ee85458bae1",
-    "aaaa6fe16f2220d3446b7e2401a0",
-    "1ff79b2b49af40183397003d1e6a"
+    "d4195c70b086e1a849e1266295e5",
+    "36a875f2330c7b86f1bab851a010",
+    "9de058f25996c675723754e58c24",
+    "b8a01362be20ae4a0e1bd9e8faa2",
+    "1db6c9658190dce186c816897141"
   ],
   "results": [
     {
-      "id": "811d717a73c0b4bbe48616d78842",
+      "id": "d4195c70b086e1a849e1266295e5",
       "result": {
         "status": "success",
-        "found": 30,
+        "found": 24,
         "inserted": 0,
-        "message": "1 page(s), 30 unique item(s); unknown_dates=30"
+        "message": "1 page(s), 24 unique item(s); unknown_dates=24"
       }
     },
     {
-      "id": "e71c7532d09dc7f365198c126981",
+      "id": "36a875f2330c7b86f1bab851a010",
       "result": {
         "status": "success",
-        "found": 8,
+        "found": 18,
         "inserted": 0,
-        "message": "1 page(s), 8 unique item(s)"
+        "message": "1 page(s), 18 unique item(s); unknown_dates=18"
       }
     },
     {
-      "id": "a02e0005b6600b90fbab864df853",
+      "id": "9de058f25996c675723754e58c24",
       "result": {
-        "status": "success",
-        "found": 11,
+        "status": "error",
+        "found": 0,
         "inserted": 0,
-        "message": "1 page(s), 11 unique item(s); unknown_dates=11"
+        "message": "Upstream HTTP 429",
+        "retry_after": 900
       }
     },
     {
-      "id": "dc84124b59341b4a2ee85458bae1",
+      "id": "b8a01362be20ae4a0e1bd9e8faa2",
       "result": {
         "status": "success",
-        "found": 12,
+        "found": 18,
         "inserted": 0,
-        "message": "1 page(s), 12 unique item(s); unknown_dates=12"
+        "message": "1 page(s), 18 unique item(s)"
       }
     },
     {
-      "id": "aaaa6fe16f2220d3446b7e2401a0",
+      "id": "1db6c9658190dce186c816897141",
       "result": {
         "status": "success",
-        "found": 14,
+        "found": 6,
         "inserted": 0,
-        "message": "1 page(s), 14 unique item(s); unknown_dates=14"
-      }
-    },
-    {
-      "id": "1ff79b2b49af40183397003d1e6a",
-      "result": {
-        "status": "success",
-        "found": 30,
-        "inserted": 3,
-        "message": "1 page(s), 30 unique item(s); unknown_dates=30"
+        "message": "1 page(s), 6 unique item(s); unknown_dates=6"
       }
     }
   ],
@@ -250,7 +241,7 @@
     },
     {
       "id": "9de058f25996c675723754e58c24",
-      "next_run": "2026-11-13T03:09:28+00:00",
+      "next_run": "2026-11-13T15:09:28+00:00",
       "schedule_phase_seconds": 11368
     },
     {
@@ -485,7 +476,7 @@
     },
     {
       "id": "1db6c9658190dce186c816897141",
-      "next_run": "2026-11-13T03:17:53+00:00",
+      "next_run": "2026-11-13T15:17:53+00:00",
       "schedule_phase_seconds": 11873
     },
     {
@@ -620,7 +611,7 @@
     },
     {
       "id": "36a875f2330c7b86f1bab851a010",
-      "next_run": "2026-11-13T03:05:15+00:00",
+      "next_run": "2026-11-13T15:05:15+00:00",
       "schedule_phase_seconds": 11115
     },
     {
@@ -770,7 +761,7 @@
     },
     {
       "id": "b8a01362be20ae4a0e1bd9e8faa2",
-      "next_run": "2026-11-13T03:13:41+00:00",
+      "next_run": "2026-11-13T15:13:41+00:00",
       "schedule_phase_seconds": 11621
     },
     {
@@ -900,7 +891,7 @@
     },
     {
       "id": "d4195c70b086e1a849e1266295e5",
-      "next_run": "2026-11-13T03:01:03+00:00",
+      "next_run": "2026-11-13T15:01:03+00:00",
       "schedule_phase_seconds": 10863
     },
     {
@@ -910,9 +901,14 @@
     }
   ],
   "recoveries": [],
-  "cooldowns": [],
-  "elapsed_seconds": 302.017,
+  "cooldowns": [
+    {
+      "host": "research-center.amundi.com",
+      "until_at": "2026-11-13T03:35:19.328240+00:00"
+    }
+  ],
+  "elapsed_seconds": 242.087,
   "input_db_unchanged": true,
-  "input_sha256": "d085a62348b94bbb9fd7f5f7accfadd4d8eca243e5dd1bb2f7dbd64fc2622ea1",
-  "shadow_sha256": "6d6cd488b69e75669cb3aeac5dd150b94f54deb5a03c949f4417fe9313564bf7"
+  "input_sha256": "e92f1ea2e1c67cbc5de586d36fafdbfac9ac3992370c210036191a92d324ba8b",
+  "shadow_sha256": "d16c9cf2133a1fd95d3f51d2d5ed3bf9e3b193fd5451fdd7f5e3763ac139fd35"
 }
