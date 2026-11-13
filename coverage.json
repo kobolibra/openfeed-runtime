@@ -1,8 +1,8 @@
 {
   "sources": {
     "e367743c892e462a0843d6125e91": {
-      "checked_at": "2026-11-13T07:46:21.775773+00:00",
-      "run_id": "43387443893",
+      "checked_at": "2026-11-13T19:38:18.625585+00:00",
+      "run_id": "43493115650",
       "result": {
         "status": "success",
         "found": 10,
@@ -61,12 +61,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "a7627d5c8cc7e356db3cf8d3d11f": {
-      "checked_at": "2026-11-13T07:46:21.775773+00:00",
-      "run_id": "43387443893",
+      "checked_at": "2026-11-13T19:38:18.625585+00:00",
+      "run_id": "43493115650",
       "result": {
         "status": "success",
         "found": 100,
-        "inserted": 2,
+        "inserted": 1,
         "message": ""
       },
       "identity_preserved": true,
@@ -1045,13 +1045,13 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "082596eb0f11e08cd01ec0f6664c": {
-      "checked_at": "2026-11-13T07:24:56.214054+00:00",
-      "run_id": "43385025714",
+      "checked_at": "2026-11-13T19:38:18.625585+00:00",
+      "run_id": "43493115650",
       "result": {
         "status": "success",
-        "found": 2,
-        "inserted": 0,
-        "message": "1 page(s), 2 unique item(s); unknown_dates=2"
+        "found": 3,
+        "inserted": 1,
+        "message": "1 page(s), 3 unique item(s); unknown_dates=3"
       },
       "identity_preserved": true,
       "scope": "single cloud observation, not long-term acceptance"
@@ -1117,8 +1117,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "5da3521a22a8894df72b67f330c4": {
-      "checked_at": "2026-11-13T07:46:21.775773+00:00",
-      "run_id": "43387443893",
+      "checked_at": "2026-11-13T19:38:18.625585+00:00",
+      "run_id": "43493115650",
       "result": {
         "status": "success",
         "found": 6,
@@ -1873,8 +1873,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "5667928b6c41735f365c5d6d946b": {
-      "checked_at": "2026-11-13T07:24:56.214054+00:00",
-      "run_id": "43385025714",
+      "checked_at": "2026-11-13T19:38:18.625585+00:00",
+      "run_id": "43493115650",
       "result": {
         "status": "success",
         "found": 5,
