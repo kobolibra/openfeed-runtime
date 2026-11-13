@@ -3,55 +3,60 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "b5b0e3074525c1f2745d3cfb76ee",
-    "694dbeab087f3ed0ca6f243a435b",
-    "d30386f6fe165ba7b2acc2d1985d",
-    "543d52f0b4288c9dc8dec0cdf4fc"
+    "daeca82106f08a77d568b70c11cb",
+    "2defba9c8f8075e5d91daa062359",
+    "150a9ada29a718a8350e24b5db48",
+    "eab7c97f85c7acad581b4df1a474",
+    "aa79d80f04758b239618ca451c3d"
   ],
   "results": [
     {
-      "id": "b5b0e3074525c1f2745d3cfb76ee",
-      "result": {
-        "status": "success",
-        "found": 10,
-        "inserted": 0,
-        "message": "1 page(s), 10 unique item(s)"
-      }
-    },
-    {
-      "id": "694dbeab087f3ed0ca6f243a435b",
-      "result": {
-        "status": "success",
-        "found": 8,
-        "inserted": 0,
-        "message": "1 page(s), 8 unique item(s); unknown_dates=8"
-      }
-    },
-    {
-      "id": "d30386f6fe165ba7b2acc2d1985d",
-      "result": {
-        "status": "success",
-        "found": 0,
-        "inserted": 0,
-        "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
-      }
-    },
-    {
-      "id": "543d52f0b4288c9dc8dec0cdf4fc",
-      "result": {
-        "status": "success",
-        "found": 37,
-        "inserted": 0,
-        "message": "1 page(s), 37 unique item(s)"
-      }
-    }
-  ],
-  "deferred": [
-    {
       "id": "daeca82106f08a77d568b70c11cb",
-      "reason": "domain_start_gap"
+      "result": {
+        "status": "success",
+        "found": 9,
+        "inserted": 0,
+        "message": "1 page(s), 9 unique item(s); unknown_dates=9"
+      }
+    },
+    {
+      "id": "2defba9c8f8075e5d91daa062359",
+      "result": {
+        "status": "success",
+        "found": 20,
+        "inserted": 0,
+        "message": ""
+      }
+    },
+    {
+      "id": "150a9ada29a718a8350e24b5db48",
+      "result": {
+        "status": "success",
+        "found": 12,
+        "inserted": 0,
+        "message": "1 page(s), 12 unique item(s)"
+      }
+    },
+    {
+      "id": "eab7c97f85c7acad581b4df1a474",
+      "result": {
+        "status": "success",
+        "found": 100,
+        "inserted": 0,
+        "message": "1 page(s), 100 unique item(s); extraction limit reached"
+      }
+    },
+    {
+      "id": "aa79d80f04758b239618ca451c3d",
+      "result": {
+        "status": "error",
+        "found": 5,
+        "inserted": 0,
+        "message": "Quality gate: extracted 5 items, minimum is 6; existing RSS preserved"
+      }
     }
   ],
+  "deferred": [],
   "next_schedule": [
     {
       "id": "f1d1dcc47c44790edd8d92ce14c5",
@@ -170,7 +175,7 @@
     },
     {
       "id": "aa79d80f04758b239618ca451c3d",
-      "next_run": "2026-11-13T05:15:47+00:00",
+      "next_run": "2026-11-13T17:15:47+00:00",
       "schedule_phase_seconds": 18947
     },
     {
@@ -185,7 +190,7 @@
     },
     {
       "id": "eab7c97f85c7acad581b4df1a474",
-      "next_run": "2026-11-13T05:11:34+00:00",
+      "next_run": "2026-11-13T17:11:34+00:00",
       "schedule_phase_seconds": 18694
     },
     {
@@ -375,7 +380,7 @@
     },
     {
       "id": "daeca82106f08a77d568b70c11cb",
-      "next_run": "2026-11-13T04:58:56+00:00",
+      "next_run": "2026-11-13T16:58:56+00:00",
       "schedule_phase_seconds": 17936
     },
     {
@@ -745,7 +750,7 @@
     },
     {
       "id": "150a9ada29a718a8350e24b5db48",
-      "next_run": "2026-11-13T05:07:22+00:00",
+      "next_run": "2026-11-13T17:07:22+00:00",
       "schedule_phase_seconds": 18442
     },
     {
@@ -820,7 +825,7 @@
     },
     {
       "id": "2defba9c8f8075e5d91daa062359",
-      "next_run": "2026-11-13T05:03:09+00:00",
+      "next_run": "2026-11-13T17:03:09+00:00",
       "schedule_phase_seconds": 18189
     },
     {
@@ -896,8 +901,8 @@
   ],
   "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 181.161,
+  "elapsed_seconds": 241.094,
   "input_db_unchanged": true,
-  "input_sha256": "061a1cbd075af0b9930dc3bf0b262637b1b0cf83705471a9cc952718bbc2e2d3",
-  "shadow_sha256": "b9338b4a058025e7aed088794cef8fc0969c1f1b0bd1acc9449808666acea7b9"
+  "input_sha256": "fddfde6c3005fd2c84621b3c09f5293f60c0e220d642eded214b9e652c7f50fb",
+  "shadow_sha256": "86119d9c09bc182d4a70b3ddd87da73cd0a5451208e28cd2b02e244e0b951a7a"
 }
