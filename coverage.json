@@ -422,8 +422,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "416de8491686141bd23c3bd9cba8": {
-      "checked_at": "2026-11-12T18:32:49.247451+00:00",
-      "run_id": "43280279708",
+      "checked_at": "2026-11-13T06:25:13.641714+00:00",
+      "run_id": "43377902068",
       "result": {
         "status": "success",
         "found": 6,
@@ -710,8 +710,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "76cef2b248308d8c8948ac4dce42": {
-      "checked_at": "2026-11-12T18:14:41.288979+00:00",
-      "run_id": "43276723091",
+      "checked_at": "2026-11-13T06:25:13.641714+00:00",
+      "run_id": "43377902068",
       "result": {
         "status": "success",
         "found": 13,
@@ -1166,8 +1166,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "30647058c00cec39334b2abd6de2": {
-      "checked_at": "2026-11-12T18:32:49.247451+00:00",
-      "run_id": "43280279708",
+      "checked_at": "2026-11-13T06:25:13.641714+00:00",
+      "run_id": "43377902068",
       "result": {
         "status": "success",
         "found": 30,
@@ -1358,8 +1358,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "a25bcacb9970573fe3b6e1f4a17f": {
-      "checked_at": "2026-11-12T18:14:41.288979+00:00",
-      "run_id": "43276723091",
+      "checked_at": "2026-11-13T06:25:13.641714+00:00",
+      "run_id": "43377902068",
       "result": {
         "status": "success",
         "found": 5,
@@ -2006,12 +2006,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "04c2f975d0d8a7a8cacd1110cedf": {
-      "checked_at": "2026-11-12T18:32:49.247451+00:00",
-      "run_id": "43280279708",
+      "checked_at": "2026-11-13T06:25:13.641714+00:00",
+      "run_id": "43377902068",
       "result": {
         "status": "success",
         "found": 4,
-        "inserted": 1,
+        "inserted": 0,
         "message": "1 page(s), 4 unique item(s); unknown_dates=4"
       },
       "identity_preserved": true,
