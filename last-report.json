@@ -3,66 +3,56 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "3ec1fb4da7d5967e5b136eb3db03",
-    "4f0c0cbd0ddda6cc579749f7813d",
-    "404cdac92f0b8a48f80e086e86f1",
-    "2dd3aabfba0109b26be93ac2cb0d",
-    "ced67fb8de120a2c2dcce160c07d",
-    "6c90db0503be0fd60e5eec3bd965"
+    "65277d38b25ee2e9e8dcd2205bdb",
+    "f0ce0ac0c2d5fff18126e0c0562d",
+    "2271a98fe28dbe6eff10e907bb82",
+    "b107d4252ea0aa97e2da71ff1ed0",
+    "863ca92d5a2e922b14611890e3a0"
   ],
   "results": [
     {
-      "id": "3ec1fb4da7d5967e5b136eb3db03",
+      "id": "65277d38b25ee2e9e8dcd2205bdb",
       "result": {
         "status": "success",
-        "found": 30,
+        "found": 3,
         "inserted": 0,
-        "message": "1 page(s), 30 unique item(s); unknown_dates=30"
+        "message": "1 page(s), 3 unique item(s); unknown_dates=3"
       }
     },
     {
-      "id": "4f0c0cbd0ddda6cc579749f7813d",
+      "id": "f0ce0ac0c2d5fff18126e0c0562d",
       "result": {
         "status": "success",
-        "found": 30,
+        "found": 100,
         "inserted": 0,
-        "message": "1 page(s), 30 unique item(s)"
+        "message": "1 page(s), 100 unique item(s); extraction limit reached"
       }
     },
     {
-      "id": "404cdac92f0b8a48f80e086e86f1",
+      "id": "2271a98fe28dbe6eff10e907bb82",
       "result": {
         "status": "success",
-        "found": 25,
+        "found": 9,
         "inserted": 0,
-        "message": "1 page(s), 25 unique item(s)"
+        "message": "1 page(s), 9 unique item(s)"
       }
     },
     {
-      "id": "2dd3aabfba0109b26be93ac2cb0d",
+      "id": "b107d4252ea0aa97e2da71ff1ed0",
       "result": {
         "status": "success",
-        "found": 4,
+        "found": 39,
         "inserted": 0,
-        "message": "1 page(s), 4 unique item(s)"
+        "message": "1 page(s), 39 unique item(s); unknown_dates=39"
       }
     },
     {
-      "id": "ced67fb8de120a2c2dcce160c07d",
+      "id": "863ca92d5a2e922b14611890e3a0",
       "result": {
         "status": "success",
-        "found": 18,
+        "found": 19,
         "inserted": 0,
-        "message": "1 page(s), 18 unique item(s)"
-      }
-    },
-    {
-      "id": "6c90db0503be0fd60e5eec3bd965",
-      "result": {
-        "status": "success",
-        "found": 30,
-        "inserted": 0,
-        "message": "1 page(s), 30 unique item(s); unknown_dates=30"
+        "message": "1 page(s), 19 unique item(s); unknown_dates=19"
       }
     }
   ],
@@ -165,7 +155,7 @@
     },
     {
       "id": "f0ce0ac0c2d5fff18126e0c0562d",
-      "next_run": "2026-11-14T04:08:25+00:00",
+      "next_run": "2026-11-14T16:08:25+00:00",
       "schedule_phase_seconds": 14905
     },
     {
@@ -280,7 +270,7 @@
     },
     {
       "id": "b107d4252ea0aa97e2da71ff1ed0",
-      "next_run": "2026-11-14T04:21:03+00:00",
+      "next_run": "2026-11-14T16:21:03+00:00",
       "schedule_phase_seconds": 15663
     },
     {
@@ -430,7 +420,7 @@
     },
     {
       "id": "863ca92d5a2e922b14611890e3a0",
-      "next_run": "2026-11-14T04:12:37+00:00",
+      "next_run": "2026-11-14T16:12:37+00:00",
       "schedule_phase_seconds": 15157
     },
     {
@@ -470,7 +460,7 @@
     },
     {
       "id": "65277d38b25ee2e9e8dcd2205bdb",
-      "next_run": "2026-11-14T04:04:12+00:00",
+      "next_run": "2026-11-14T16:04:12+00:00",
       "schedule_phase_seconds": 14652
     },
     {
@@ -800,7 +790,7 @@
     },
     {
       "id": "2271a98fe28dbe6eff10e907bb82",
-      "next_run": "2026-11-14T04:16:50+00:00",
+      "next_run": "2026-11-14T16:16:50+00:00",
       "schedule_phase_seconds": 15410
     },
     {
@@ -911,8 +901,8 @@
   ],
   "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 301.78,
+  "elapsed_seconds": 301.948,
   "input_db_unchanged": true,
-  "input_sha256": "7264f839ec63c448d80f9ba92c91b7a9839543f7240b579f5466749108b4fc7b",
-  "shadow_sha256": "34d1746575481446d6879a0df325c60849e74bbe02faf0c3981ad2cc81171d2f"
+  "input_sha256": "ca5781a6335ee8878700d69abeaab4dccc60df9a3a20f027d064a08e1ac24d8e",
+  "shadow_sha256": "c1cd403d082302526748fa14caad0e6a9640bb42434089325bf1daa536744c92"
 }
