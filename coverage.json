@@ -997,8 +997,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "54d4e7fd510dd894e7370a162676": {
-      "checked_at": "2026-11-13T22:59:48.176049+00:00",
-      "run_id": "43523126346",
+      "checked_at": "2026-11-14T10:52:23.836490+00:00",
+      "run_id": "43586847923",
       "result": {
         "status": "success",
         "found": 4,
@@ -1105,8 +1105,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "e18bbd2fe36bf9049a8f96bc2351": {
-      "checked_at": "2026-11-13T22:41:35.784855+00:00",
-      "run_id": "43520430177",
+      "checked_at": "2026-11-14T10:52:23.836490+00:00",
+      "run_id": "43586847923",
       "result": {
         "status": "success",
         "found": 14,
@@ -1585,8 +1585,16 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "204cdad44993bdd9cf8061a12fe6": {
-      "status": "not_tested",
-      "reason": "User updated source configuration from local UI"
+      "checked_at": "2026-11-14T10:52:23.836490+00:00",
+      "run_id": "43586847923",
+      "result": {
+        "status": "error",
+        "found": 0,
+        "inserted": 0,
+        "message": "Invalid character '(' position 15\n  line 1:\nnormalize-space(.//span[contains(@class,'js-cta-label')])\n               ^"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     },
     "1cdb06f59e215f1506a980c3b207": {
       "checked_at": "2026-11-14T10:10:08.908867+00:00",
@@ -1949,8 +1957,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "12f6f4648ec2ccd5ee6ebb11efcc": {
-      "checked_at": "2026-11-13T22:59:48.176049+00:00",
-      "run_id": "43523126346",
+      "checked_at": "2026-11-14T10:52:23.836490+00:00",
+      "run_id": "43586847923",
       "result": {
         "status": "success",
         "found": 5,
