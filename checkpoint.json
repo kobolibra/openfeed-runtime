@@ -1,10 +1,14 @@
 {
   "run_id": "43577249694",
   "previous_sha256": "4a4dcecf2fb9a37e7dd22f70aadb106bf49d032c82dc7c2d37aa1c6fd94901b5",
-  "database_sha256": "b61494eb5133387b2d91ed625d6d27c8d9c763b3535fdfe941f0a041bb4ef091",
+  "database_sha256": "703a89d95b3ed813d3dcdc51f0442bf397a3ce78e1348d4e5d358fc05e80c0f2",
   "scope": "production cloud state",
   "source_sha": "14d068b0cf3fa3239c3862bec10bd048d13664be",
-  "previous_state_commit": "d666441fca2780174f5674c109f8af6ded48ef28",
-  "rss_manifest_sha256": "bc98e9f14d4fd2a8818cf8da5322c97a18c67963daaa12f161645d5c798cfcc5",
-  "source_identity_preserved": true
+  "previous_state_commit": "0f56f196d6eb6c68f1e36f12fc0a55fcc30222fd",
+  "rss_manifest_sha256": "41e4e2d72f0d756aca0a708de9ddcd3b8f5b5b04b7c3c3607e2286962b8396d8",
+  "source_identity_preserved": true,
+  "management_edit_at": "2026-11-14T08:52:50.113139+00:00",
+  "management_source_ids": [
+    "204cdad44993bdd9cf8061a12fe6"
+  ]
 }

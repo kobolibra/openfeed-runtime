@@ -1585,16 +1585,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "204cdad44993bdd9cf8061a12fe6": {
-      "checked_at": "2026-11-13T22:41:35.784855+00:00",
-      "run_id": "43520430177",
-      "result": {
-        "status": "success",
-        "found": 1,
-        "inserted": 0,
-        "message": "1 page(s), 1 unique item(s); unknown_dates=1"
-      },
-      "identity_preserved": true,
-      "scope": "single cloud observation, not long-term acceptance"
+      "status": "not_tested",
+      "reason": "User updated source configuration from local UI"
     },
     "1cdb06f59e215f1506a980c3b207": {
       "checked_at": "2026-11-13T22:21:16.095112+00:00",
