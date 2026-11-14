@@ -937,8 +937,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "2eb8b49b0b9c5e0169935df73497": {
-      "checked_at": "2026-11-14T01:43:25.382271+00:00",
-      "run_id": "43541697574",
+      "checked_at": "2026-11-14T13:34:30.135626+00:00",
+      "run_id": "43599942309",
       "result": {
         "status": "success",
         "found": 3,
@@ -1429,8 +1429,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "81b5366df03ba7abccbddefaa2c7": {
-      "checked_at": "2026-11-14T01:23:56.249939+00:00",
-      "run_id": "43539657096",
+      "checked_at": "2026-11-14T13:34:30.135626+00:00",
+      "run_id": "43599942309",
       "result": {
         "status": "success",
         "found": 24,
@@ -1621,8 +1621,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "db44423d9c9c11a529bf77cca6fb": {
-      "checked_at": "2026-11-14T01:43:25.382271+00:00",
-      "run_id": "43541697574",
+      "checked_at": "2026-11-14T13:34:30.135626+00:00",
+      "run_id": "43599942309",
       "result": {
         "status": "success",
         "found": 10,
@@ -1909,13 +1909,13 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "8ec4c9da20a6ac465cf510ca03ee": {
-      "checked_at": "2026-11-14T01:23:56.249939+00:00",
-      "run_id": "43539657096",
+      "checked_at": "2026-11-14T13:34:30.135626+00:00",
+      "run_id": "43599942309",
       "result": {
-        "status": "success",
-        "found": 24,
+        "status": "error",
+        "found": 0,
         "inserted": 0,
-        "message": "1 page(s), 24 unique item(s); unknown_dates=24"
+        "message": "Upstream HTTP 502"
       },
       "identity_preserved": true,
       "scope": "single cloud observation, not long-term acceptance"
