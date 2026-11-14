@@ -241,13 +241,13 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "1c7ede2f7e826f14252ad4414976": {
-      "checked_at": "2026-11-14T10:32:56.287973+00:00",
-      "run_id": "43585259897",
+      "checked_at": "2026-11-14T22:43:19.710878+00:00",
+      "run_id": "43648996687",
       "result": {
-        "status": "success",
-        "found": 14,
+        "status": "error",
+        "found": 0,
         "inserted": 0,
-        "message": "1 page(s), 14 unique item(s)"
+        "message": "Upstream HTTP 403"
       },
       "identity_preserved": true,
       "scope": "single cloud observation, not long-term acceptance"
@@ -517,8 +517,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "15850910b733a66ff968f8b1a99a": {
-      "checked_at": "2026-11-14T10:32:56.287973+00:00",
-      "run_id": "43585259897",
+      "checked_at": "2026-11-14T22:43:19.710878+00:00",
+      "run_id": "43648996687",
       "result": {
         "status": "success",
         "found": 0,
@@ -1105,8 +1105,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "e18bbd2fe36bf9049a8f96bc2351": {
-      "checked_at": "2026-11-14T10:52:23.836490+00:00",
-      "run_id": "43586847923",
+      "checked_at": "2026-11-14T22:43:19.710878+00:00",
+      "run_id": "43648996687",
       "result": {
         "status": "success",
         "found": 14,
@@ -1213,12 +1213,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "dc2ef05fcbd3301f4f94d0dbc05e": {
-      "checked_at": "2026-11-14T10:32:56.287973+00:00",
-      "run_id": "43585259897",
+      "checked_at": "2026-11-14T22:43:19.710878+00:00",
+      "run_id": "43648996687",
       "result": {
         "status": "success",
         "found": 39,
-        "inserted": 39,
+        "inserted": 0,
         "message": "1 page(s), 39 unique item(s); unknown_dates=39"
       },
       "identity_preserved": true,
@@ -1585,8 +1585,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "204cdad44993bdd9cf8061a12fe6": {
-      "checked_at": "2026-11-14T10:52:23.836490+00:00",
-      "run_id": "43586847923",
+      "checked_at": "2026-11-14T22:43:19.710878+00:00",
+      "run_id": "43648996687",
       "result": {
         "status": "error",
         "found": 0,
