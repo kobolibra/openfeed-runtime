@@ -133,8 +133,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "481313cd60acb1458d4ae5393671": {
-      "checked_at": "2026-11-15T01:05:48.323255+00:00",
-      "run_id": "43660862001",
+      "checked_at": "2026-11-15T12:55:20.708689+00:00",
+      "run_id": "43715833987",
       "result": {
         "status": "success",
         "found": 45,
@@ -973,20 +973,20 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "a5108315a70ff1a860a0d4658bbf": {
-      "checked_at": "2026-11-15T01:05:48.323255+00:00",
-      "run_id": "43660862001",
+      "checked_at": "2026-11-15T12:55:20.708689+00:00",
+      "run_id": "43715833987",
       "result": {
         "status": "success",
         "found": 10,
-        "inserted": 0,
+        "inserted": 1,
         "message": "1 page(s), 10 unique item(s)"
       },
       "identity_preserved": true,
       "scope": "single cloud observation, not long-term acceptance"
     },
     "c556cd117ca5011e45b89fdf179e": {
-      "checked_at": "2026-11-15T00:42:38.903201+00:00",
-      "run_id": "43659193109",
+      "checked_at": "2026-11-15T12:55:20.708689+00:00",
+      "run_id": "43715833987",
       "result": {
         "status": "success",
         "found": 9,
@@ -1525,8 +1525,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "41d44ad61ae9532e31a558482fb3": {
-      "checked_at": "2026-11-15T01:05:48.323255+00:00",
-      "run_id": "43660862001",
+      "checked_at": "2026-11-15T12:55:20.708689+00:00",
+      "run_id": "43715833987",
       "result": {
         "status": "success",
         "found": 41,
@@ -1645,8 +1645,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "343af68382688b03fd58668ef927": {
-      "checked_at": "2026-11-15T01:05:48.323255+00:00",
-      "run_id": "43660862001",
+      "checked_at": "2026-11-15T12:55:20.708689+00:00",
+      "run_id": "43715833987",
       "result": {
         "status": "success",
         "found": 2,
