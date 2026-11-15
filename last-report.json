@@ -3,42 +3,23 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "e18bbd2fe36bf9049a8f96bc2351",
-    "204cdad44993bdd9cf8061a12fe6",
-    "12f6f4648ec2ccd5ee6ebb11efcc",
-    "76364cbad3201ae85a5d2e48175f",
-    "54d4e7fd510dd894e7370a162676"
+    "dfcaa5891e52a9e629cf80c71289",
+    "08fe279c6ae8bead34f181910bc2",
+    "936118451e7c30bce94e2b27eefe",
+    "c54068f31b1adb0688bb6a286a12"
   ],
   "results": [
     {
-      "id": "e18bbd2fe36bf9049a8f96bc2351",
+      "id": "dfcaa5891e52a9e629cf80c71289",
       "result": {
         "status": "success",
-        "found": 14,
+        "found": 18,
         "inserted": 0,
-        "message": "1 page(s), 14 unique item(s); unknown_dates=14"
+        "message": "1 page(s), 18 unique item(s)"
       }
     },
     {
-      "id": "204cdad44993bdd9cf8061a12fe6",
-      "result": {
-        "status": "error",
-        "found": 0,
-        "inserted": 0,
-        "message": "Invalid character '(' position 15\n  line 1:\nnormalize-space(.//span[contains(@class,'js-cta-label')])\n               ^"
-      }
-    },
-    {
-      "id": "12f6f4648ec2ccd5ee6ebb11efcc",
-      "result": {
-        "status": "success",
-        "found": 3,
-        "inserted": 0,
-        "message": "1 page(s), 3 unique item(s); unknown_dates=3"
-      }
-    },
-    {
-      "id": "76364cbad3201ae85a5d2e48175f",
+      "id": "08fe279c6ae8bead34f181910bc2",
       "result": {
         "status": "success",
         "found": 15,
@@ -47,16 +28,30 @@
       }
     },
     {
-      "id": "54d4e7fd510dd894e7370a162676",
+      "id": "936118451e7c30bce94e2b27eefe",
       "result": {
         "status": "success",
-        "found": 4,
+        "found": 10,
         "inserted": 0,
-        "message": "1 page(s), 4 unique item(s); unknown_dates=4"
+        "message": "1 page(s), 10 unique item(s)"
+      }
+    },
+    {
+      "id": "c54068f31b1adb0688bb6a286a12",
+      "result": {
+        "status": "success",
+        "found": 2,
+        "inserted": 0,
+        "message": "1 page(s), 2 unique item(s)"
       }
     }
   ],
-  "deferred": [],
+  "deferred": [
+    {
+      "id": "699220e8404ce3dbb1ed996edbcc",
+      "reason": "domain_start_gap"
+    }
+  ],
   "next_schedule": [
     {
       "id": "f1d1dcc47c44790edd8d92ce14c5",
@@ -135,7 +130,7 @@
     },
     {
       "id": "c54068f31b1adb0688bb6a286a12",
-      "next_run": "2026-11-15T11:05:15+00:00",
+      "next_run": "2026-11-15T23:05:15+00:00",
       "schedule_phase_seconds": 39915
     },
     {
@@ -745,7 +740,7 @@
     },
     {
       "id": "936118451e7c30bce94e2b27eefe",
-      "next_run": "2026-11-15T11:01:03+00:00",
+      "next_run": "2026-11-15T23:01:03+00:00",
       "schedule_phase_seconds": 39663
     },
     {
@@ -765,7 +760,7 @@
     },
     {
       "id": "dfcaa5891e52a9e629cf80c71289",
-      "next_run": "2026-11-15T10:52:37+00:00",
+      "next_run": "2026-11-15T22:52:37+00:00",
       "schedule_phase_seconds": 39157
     },
     {
@@ -870,7 +865,7 @@
     },
     {
       "id": "08fe279c6ae8bead34f181910bc2",
-      "next_run": "2026-11-15T10:56:50+00:00",
+      "next_run": "2026-11-15T22:56:50+00:00",
       "schedule_phase_seconds": 39410
     },
     {
@@ -901,8 +896,8 @@
   ],
   "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 302.118,
+  "elapsed_seconds": 187.935,
   "input_db_unchanged": true,
-  "input_sha256": "567f29c80b2cff1bccde85bf36b5d25828bc05f9451018e717ad7922e1d5427f",
-  "shadow_sha256": "2012eb23b52bc88e90ebd532b85174ea6eec19a60440e3d29e595f456fa431ff"
+  "input_sha256": "5ebfdf7cde43a4db51f12f33f736adc7199492e3dfcd0563be3edb18c15fcff5",
+  "shadow_sha256": "2110d3a62acface40a57a0b5ae2ff44e7698bf06f27429cb0c3fb033b964bbd4"
 }
