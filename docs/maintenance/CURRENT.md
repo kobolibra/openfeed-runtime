@@ -1,3 +1,14 @@
+## 2026-11-15T11:40:10+00:00 第10轮·访问受阻阻断页识别扩充（代码已合并进 main，未部署）
+本轮为代码级优化，非生产部署事件。改动仅限 openfeed/access_barriers.py 与 tests/test_access_barriers.py（+13 项实测签名/负例回归）；未改 workflow、Actions pin、数据库、来源配置、调度相位、RSS/OPML 地址。生产仍固定运行用户私有流程 pin 的源码（CLOUD 系列记录中的 pin），新签名要等用户按既有发布流程 pin 新 SHA 后才对云端生效。
+- 动机：对已交付 rssweball 清单的全量剩余复核（2026-11-15 19:18 北京时间，60 条问题行全部重测）实证：Cloudflare“Attention Required”家族、Akamai Edgesuite“Access Denied / you don't have permission to access”、CloudFront“The request could not be satisfied”、Vercel Security Checkpoint、Aliyun WAF（meta aliyun_waf_aa）、Akamai“The requested URL was rejected”等 200 状态阻断页，此前全部落入通用“提取 0 条”失败，无法与内容空结果区分。
+- 实现与护栏：扩展 reject_access_page，增加 access_denied 与 waf 两类 kind（challenge/captcha/login_wall 行为不变）；所有签名继续受既有强护栏约束——页面 ≤ 300,000 B、去脚本样式后可见文本 ≤ 2000 字、无 ≥ 250 字真实 article；Akamai/CloudFront/URL-rejected 均要求显式标题 + 特征句双证据；Aliyun 无稳定标题，只认 WAF 指纹（aliyun_waf_aa / --aliyun-zoom-ratio / aliyun_waf）且 aliyun 字样 ≥ 5 次；URL-rejected 还要求整页 < 5000 B。这些组合在真实文章页中不会出现。
+- 真实抓取验证：将 2026-11-15 平台实际抓取的 40+ 份页面逐一过新签名函数——阻断页全部正确分类（challenge 16 份、access_denied 6 份、waf 5 份）；内容页零误判（Schroders SSR 230,798 B 列表、Hudson 107,302 B 职位卡、Workday 1,568,419 B、Broadridge 408,156 B 空结果页、BridgeWater 13,623 B、Bestblogs 229,945 B 登录骨架、Franklin 156,299 B React 壳）。Scholar 验证页（origin-trial 证据不足）与 nginx 5xx 壳页有意不收录，维持原分类，避免误伤讨论这些错误的真实文章。
+- 验证：python3 -m pytest tests/ → 525 passed；2 failed 仅为 tests/test_live_picker_end_to_end.py 与 tests/test_picker_to_rss_full.py（Chromium 未安装，与改动无关）；4 skipped；access_barriers 专项 25/25。Linux 生产基线为 524，本轮等价（改动只增不改既有行为）。
+- 门禁缺口（如实记录，未伪造）：本会话 sandbox 无法访问本机管理镜像 127.0.0.1:8765 与 .openfeed-local 管理令牌，docs/maintenance/latest-snapshot.json 无法刷新（仍为 2026-11-06T16:46:31Z，> 24h 且 source_sha256 与当前工作树不符）。tools/check_handoff.py 预计 FAIL 两项（快照过期、源码指纹不符），交接不得宣称完成；需用户本机服务在线时运行 python tools/maintenance_snapshot.py && python tools/check_handoff.py 复核，并确认生产 pin 的 SHA 是否切换。
+- 观察项：docs/maintenance/optimization-20261106/test_environment_clock.py 存在前置损坏导入（from production_relay_logic import claim；该模块不在仓库中），任何环境下都会导入失败，与本次改动无关；建议用户在有权限的机器上单独核对该交付物，超出本轮范围，未擅改。
+
+证据：/home/user/rssweball_audit/probe_r10_*.bin（平台 2026-11-15 实战抓取，40+ 份）；openfeed/access_barriers.py；tests/test_access_barriers.py。
+
 
 ## 2026-11-06T16:46:30.154354+00:00 用户要求20分钟试运行（当前有效）
 现有openfeed-publication-interval环境wait_timer已从10改20，并独立GET验证20。没有修改workflow、应用pin、数据库、每轮6源上限、来源12小时相位或RSS地址；等待仍不分配运行机。原生cron每小时兜底保持。已有等待轮可能仍使用进入时的旧计时，后续新等待按20分钟；完整20分钟自动接续效果尚待正常运行观察，不能仅凭配置读回声称完整新周期已验收。原脚本/工作流内10分钟为最低防风暴门槛，实际等待由环境20控制；以后维护不得用旧prepare_environment脚本或旧10分钟记录恢复环境。理论每日约72轮，实际受队列与启动开销影响；关注积压、429重试及源新鲜度，不能承诺432理论容量就是实际吞吐。回滚仅将同一环境wait_timer恢复10，不回滚任何DB。

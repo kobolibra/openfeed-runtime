@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T16:46:30.154354+00:00",
+  "updated": "2026-11-15T11:40:10+00:00",
   "note": "这是问题台账，不是实时错误列表；需结合最新快照。",
   "issues": [
     {
@@ -141,6 +141,13 @@
       "summary": "20分钟调度试运行，实际积压与新鲜度待观察",
       "evidence": "work/interval-20m-20261107/environment-after.json；wait_timer独立GET=20",
       "next_action": "观察后续实际接续、到期队列和源新鲜度；每轮仍6，必要时依据证据再调预算，不静默改刷新周期。"
+    },
+    {
+      "id": "REL-008",
+      "status": "code_merged_undeployed_gate_incomplete",
+      "summary": "访问受阻页识别扩充：Cloudflare Attention Required、Akamai/CloudFront Access Denied、Vercel Security Checkpoint、Aliyun WAF、Akamai “URL rejected”",
+      "evidence": "2026-11-15 平台真实抓取 40+ 份逐一过签名函数——阻断页全部分类正确（challenge16/access_denied6/waf5），内容页零误判；pytest tests/ 525 passed（2 个 Chromium 浏览器用例因沙箱未安装 Chromium 失败，与改动无关）；专项 access_barriers 25/25；Linux 基线 524 等价",
+      "next_action": "①用户本机在线时运行 python tools/maintenance_snapshot.py && python tools/check_handoff.py 完成交接门禁（sandbox 无 127.0.0.1:8765 管理服务与令牌，快照未刷新，未伪造）；②生产 Actions pin 未变、未部署——若需新签名上云，按既有发布流程 pin 新 SHA 并等一个正常抓取周期观察 Julius/CEPR 仍 403 单列；③Scholar/nginx 验证页刻意未收录，不要为覆盖率放宽护栏"
     }
   ]
 }

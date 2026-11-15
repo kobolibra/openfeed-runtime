@@ -61,3 +61,10 @@ Mac、云端权威state、公开OPML/RSS已删除；私密完整备份保留。�
 ## 2026-11-06T16:46:30.154354+00:00 用户要求20分钟试运行（当前有效）
 现有openfeed-publication-interval环境wait_timer已从10改20，并独立GET验证20。没有修改workflow、应用pin、数据库、每轮6源上限、来源12小时相位或RSS地址；等待仍不分配运行机。原生cron每小时兜底保持。已有等待轮可能仍使用进入时的旧计时，后续新等待按20分钟；完整20分钟自动接续效果尚待正常运行观察，不能仅凭配置读回声称完整新周期已验收。原脚本/工作流内10分钟为最低防风暴门槛，实际等待由环境20控制；以后维护不得用旧prepare_environment脚本或旧10分钟记录恢复环境。理论每日约72轮，实际受队列与启动开销影响；关注积压、429重试及源新鲜度，不能承诺432理论容量就是实际吞吐。回滚仅将同一环境wait_timer恢复10，不回滚任何DB。
 证据：/Users/time/Documents/Codex/2026-11-05/users-time-documents-codex-2026-10-3/work/interval-20m-20261107/environment-before.json、environment-after.json。
+
+
+## 2026-11-15｜用户指令：直接合并（代码进入 main，不触发生产发布）
+- 用户对 openfeed-runtime 的修改要求为“github 提供 PAT、认真分析思考、直接合并、顶级交付”。
+- 本轮按指令将访问受阻页识别代码合并进 main；明确不改 Actions pin、不做任何生产部署宣称，云端仍运行 pin 源码；本机管理镜像与快照属本机，需用户本机完成 check_handoff 门禁（sandbox 无权限）。
+- 未经本轮指令不得扩大改动到 workflow、数据库、来源配置、调度相位、GUID/历史；既有来源删除决定不受影响。
+

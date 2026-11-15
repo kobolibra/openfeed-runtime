@@ -267,3 +267,13 @@
 ## 2026-11-06T16:46:30.154354+00:00 用户要求20分钟试运行（当前有效）
 现有openfeed-publication-interval环境wait_timer已从10改20，并独立GET验证20。没有修改workflow、应用pin、数据库、每轮6源上限、来源12小时相位或RSS地址；等待仍不分配运行机。原生cron每小时兜底保持。已有等待轮可能仍使用进入时的旧计时，后续新等待按20分钟；完整20分钟自动接续效果尚待正常运行观察，不能仅凭配置读回声称完整新周期已验收。原脚本/工作流内10分钟为最低防风暴门槛，实际等待由环境20控制；以后维护不得用旧prepare_environment脚本或旧10分钟记录恢复环境。理论每日约72轮，实际受队列与启动开销影响；关注积压、429重试及源新鲜度，不能承诺432理论容量就是实际吞吐。回滚仅将同一环境wait_timer恢复10，不回滚任何DB。
 证据：/Users/time/Documents/Codex/2026-11-05/users-time-documents-codex-2026-10-3/work/interval-20m-20261107/environment-before.json、environment-after.json。
+
+
+## 2026-11-15T11:40:10+00:00 第10轮·访问受阻页识别扩充（源码合并，未部署）
+- 背景：rssweball 剩余问题订阅全量复核（60 条重测）实证多类 200 状态阻断页无法与空结果区分，交给本仓库做一项精准改动。
+- 修改：openfeed/access_barriers.py 新增 access_denied（Akamai Edgesuite“you don't have permission to access”/ CloudFront“The request could not be satisfied”，均需显式标题 + 特征句双证据）与 waf（Aliyun WAF 指纹 + aliyun≥5；Akamai/OpenEdge“The requested URL was rejected” 且整页 < 5000 B）；Vercel Security Checkpoint 与 Cloudflare“Attention Required”纳入 challenge；challenge/captcha/login_wall 行为不变。护栏不变：页面 ≤ 300,000 B、去脚本后可见文本 ≤ 2000、无 ≥ 250 字真实 article。
+- 测试：tests/test_access_barriers.py 增加 13 项（生产形状正例 + 长文/内容页/空结果页负例）；full suite 525 passed，仅 2 个浏览器（Chromium 未装）失败，与Linux 524基线等价；专项 25/25。
+- 真实验证：40+ 份平台抓取逐一过签名函数——阻断页全分类正确，内容页零误判；详见 CURRENT 2026-11-15T11:40:10+00:00 段落。
+- 门禁：sandbox 无法刷新 latest-snapshot.json（无 127.0.0.1:8765 管理服务与令牌），check_handoff 预计 FAIL（快照过期 + 指纹不符），未伪造快照；请用户本机复核。合并 main ≠ 生产部署：生产 Actions pin 不变，新签名随下次发布生效。
+- 未做：未动 workflow/pin/DB/调度/来源/GUID/发布地址/RSS；未部署；Scholar/nginx 页维持原分类；docs 目录前置损坏测试未擅动。
+
