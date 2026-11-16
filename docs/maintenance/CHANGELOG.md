@@ -284,3 +284,9 @@
 - patch：/home/user/openfeed-pin-22b0142.patch（git am 应用）；或用户手动改两行、或换带该仓写权限的 token。
 - 未改动 workflow 逻辑/cron/EXPIRY/Secrets/DB/shadow-state；handoffs 已更新；门禁等本机补做。
 
+
+## 2026-11-16T01:31:00+00:00 生产 pin 切换完成（公共仓 f4e97fb→ec2b4aa，已上线）
+- 用户授予 kobolibra/openfeed-feeds 写权限；push 成功（fast-forward，两行 ref 14d068b→22b0142aef）；git object 层逐行核验 22b0142 已生效（限制创建于其后的 run）。
+- 私有 main=d899cf2；模板=6b3eca7c；与生产 pin 一致；未改 workflow 逻辑/EXPIRY/Secrets/DB/GUID。
+- 观察：一个 12h 周期后核验 healthy 数与 error 源单列情况；REL-008 以用户本机 maintenance_snapshot.py + check_handoff.py 补关闭。
+

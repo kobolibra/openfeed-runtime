@@ -74,3 +74,8 @@ Mac、云端权威state、公开OPML/RSS已删除；私密完整备份保留。�
 - 本轮实际执行：源码 main=22b0142；私有模板 pin 切换并 push（6b3eca7ce）；公共仓两行 pin 本地完成、push 403 被拒（token 无该公共仓 Contents 写权限）；未强推、未改公共仓任何远端内容。
 - 后果：生产未切换，无需回滚；抓取/发布/RSS 语义不受影响；切换责任转交用户（手动两行，或换带该仓写权限的 PAT）。
 
+
+## 2026-11-16｜生产 pin 切换执行（公共仓 f4e97fb→ec2b4aa）
+- 用户随即授予 kobolibra/openfeed-feeds 写权限（token permissions push:true/admin:true）；两行 ref 14d068b→22b0142aef 已 push 并核验；未动公共仓任何其他内容。
+- 生效口径：01:27Z 后创建的 run 即用新源码；此前 waiting run 无需干预。
+

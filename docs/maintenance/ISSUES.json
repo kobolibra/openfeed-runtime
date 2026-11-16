@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T01:30:00+00:00",
+  "updated": "2026-11-16T01:31:00+00:00",
   "note": "这是问题台账，不是实时错误列表；需结合最新快照。",
   "issues": [
     {
@@ -144,10 +144,10 @@
     },
     {
       "id": "REL-008",
-      "status": "code_merged; private template bumped (6b3eca7); production switch BLOCKED by public repo 403",
+      "status": "production_pin_switched_observing",
       "summary": "访问受阻页识别扩充：Cloudflare Attention Required、Akamai/CloudFront Access Denied、Vercel Security Checkpoint、Aliyun WAF、Akamai “URL rejected”",
-      "evidence": "2026-11-15 平台真实抓取 40+ 份逐一过签名函数——阻断页全部分类正确（challenge16/access_denied6/waf5），内容页零误判；pytest tests/ 525 passed（2 个 Chromium 浏览器用例因沙箱未安装 Chromium 失败，与改动无关）；专项 access_barriers 25/25；Linux 基线 524 等价",
-      "next_action": "用户手动把公共仓 runtime-cloud.yml:193 与 private-source-probe.yml:43 的 ref 改为 22b0142aefcd278f23886774a6215e2423075494 并 push（或 git am /home/user/openfeed-pin-22b0142.patch；或提供该仓 Contents 写权限的 token）。切换未生效前生产仍运行 14d068b，无需处置；切换后观察一个 12h 周期，确认 healthy 数无下降；随后本机 python tools/maintenance_snapshot.py && python tools/check_handoff.py 完成门禁"
+      "evidence": "公共仓 runtime-cloud.yml:193/private-source-probe.yml:43 → 22b0142aef；push f4e97fb→ec2b4aa（2026-11-16T01:27Z），git object 层核验；私有 main=d899cf2；模板 6b3eca7c；525 tests passed",
+      "next_action": "观察 12h 周期（healthy 数、CEPR/Julius 403 单列、无 access barrier 误报）；本机补跑 python tools/maintenance_snapshot.py && python tools/check_handoff.py 关闭REL-008；回滚=公共仓两行改回 14d068b / 模板改回 b9516dab"
     }
   ]
 }

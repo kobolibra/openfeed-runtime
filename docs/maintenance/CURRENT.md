@@ -1,3 +1,14 @@
+## 2026-11-16T01:31:00+00:00 生产 pin 切换完成（已上线）
+用户随后授予对 kobolibra/openfeed-feeds 的写权限（token 复测 permissions push:true/admin:true）。本轮完成：
+- ✅ 公共仓 push：f4e97fb → ec2b4aa（.github/workflows/runtime-cloud.yml:193 与 private-source-probe.yml:43 两处 ref 14d068b0cf → 22b0142aef（本轮合入的测试 SHA，525 passed））；已用 git object（git show origin/main:<path>）逐行核验远端内容；raw.githubusercontent CDN 缓存稍滞后，勿以之为准。
+- ✅ 生效口径：2026-11-16T01:27Z 之后创建的 run 即检出 22b0142；此前 waiting 的 run（按触发时快照）可能仍用旧 pin，无功能性影响。
+- ✅ 私有侧：源码 main=d899cf2（代码 22b0142 + 模板 6b3eca7c + 阻断留档）；模板 pin 与生产一致。
+- 未动：workflow 逻辑/cron/EXPIRY/Secrets/keepalive/数据库/shadow-state/GUID/相位/发布地址；未强推；与公共仓历史仅 fast-forward 一发提交。
+- 待观察：切换后一个正常 12h 周期（北京时间夜间 20/22 槽 + 次日早槽）——healthy 数不降、CEPR/Julius 仍单列 403、无新增 access barrier 误报；raw CDN 缓存可忽略，以 API/ls-remote 为准。
+- 门禁：latest-snapshot.json 仍未刷新（本 sandbox 无本机管理镜像/令牌）；check_handoff 仅 FAIL 快照两项；请用户本机补跑 tools/maintenance_snapshot.py && tools/check_handoff.py 完成 REL-008。
+
+证据：公共仓提交 ec2b4aa98c69f6033e772dafa2eea10d492ab5ac；私有仓 main=d899cf2；25/25 access_barriers 测试；525 passed。
+
 ## 2026-11-16T01:30:00+00:00 生产 pin 切换（模板已落地；公共仓 403 被拒，未生效）
 用户指令“马上给我全面改好”。结论先行：源码已合并且测试通过；生产切换只做一件事——把公共仓两处 workflow 的 openfeed-runtime ref 从 14d068b 改为 22b0142（本轮合并、25/25 测试、525 passed 的同一 SHA）。
 - ✅ 已完成：① 私有源码 main=22b0142；② 私有部署模板 ops/public-wrapper.yml pin 由 b9516dab → 22b0142（提交 6b3eca7ce — push 到 openfeed-runtime main OK）；③ 本地/openfeed-feeds 两个文件各一行已改：.github/workflows/runtime-cloud.yml:193、private-source-probe.yml:43 → 22b0142aefcd278f23886774a6215e2423075494，本地提交 ec2b4aa98c69f6033e772dafa2eea10d492ab5ac。
