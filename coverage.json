@@ -746,8 +746,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "1281f3238ff3691e5ab36d49b5af": {
-      "checked_at": "2026-11-15T12:14:11.550504+00:00",
-      "run_id": "43712382393",
+      "checked_at": "2026-11-16T00:05:23.008332+00:00",
+      "run_id": "43777828517",
       "result": {
         "status": "success",
         "found": 30,
@@ -1178,8 +1178,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "cfc9ad34ec3112b741ae80f567a6": {
-      "checked_at": "2026-11-15T12:14:11.550504+00:00",
-      "run_id": "43712382393",
+      "checked_at": "2026-11-16T00:05:23.008332+00:00",
+      "run_id": "43777828517",
       "result": {
         "status": "success",
         "found": 0,
@@ -1334,8 +1334,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "3ab48d8d725c91abcc3f423217b6": {
-      "checked_at": "2026-11-15T12:14:11.550504+00:00",
-      "run_id": "43712382393",
+      "checked_at": "2026-11-16T00:05:23.008332+00:00",
+      "run_id": "43777828517",
       "result": {
         "status": "success",
         "found": 100,
@@ -1706,13 +1706,13 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "3e0edd5750433218436481c33691": {
-      "checked_at": "2026-11-15T11:53:50.083463+00:00",
-      "run_id": "43710721939",
+      "checked_at": "2026-11-16T00:05:23.008332+00:00",
+      "run_id": "43777828517",
       "result": {
-        "status": "success",
-        "found": 25,
+        "status": "error",
+        "found": 0,
         "inserted": 0,
-        "message": "1 page(s), 25 unique item(s); unknown_dates=25"
+        "message": "Upstream HTTP 500"
       },
       "identity_preserved": true,
       "scope": "single cloud observation, not long-term acceptance"
@@ -1826,8 +1826,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "e6ded12656af1d9314e2ff76a8a1": {
-      "checked_at": "2026-11-15T11:53:50.083463+00:00",
-      "run_id": "43710721939",
+      "checked_at": "2026-11-16T00:05:23.008332+00:00",
+      "run_id": "43777828517",
       "result": {
         "status": "success",
         "found": 39,
