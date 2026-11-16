@@ -1586,16 +1586,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "204cdad44993bdd9cf8061a12fe6": {
-      "checked_at": "2026-11-15T22:41:40.690247+00:00",
-      "run_id": "43770458363",
-      "result": {
-        "status": "error",
-        "found": 0,
-        "inserted": 0,
-        "message": "Invalid character '(' position 15\n  line 1:\nnormalize-space(.//span[contains(@class,'js-cta-label')])\n               ^"
-      },
-      "identity_preserved": true,
-      "scope": "single cloud observation, not long-term acceptance"
+      "status": "not_tested",
+      "reason": "User updated source configuration from local UI"
     },
     "1cdb06f59e215f1506a980c3b207": {
       "checked_at": "2026-11-15T22:04:07.111945+00:00",
@@ -1814,16 +1806,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "aa79d80f04758b239618ca451c3d": {
-      "checked_at": "2026-11-15T17:39:05.196369+00:00",
-      "run_id": "43741847588",
-      "result": {
-        "status": "error",
-        "found": 5,
-        "inserted": 0,
-        "message": "Quality gate: extracted 5 items, minimum is 6; existing RSS preserved"
-      },
-      "identity_preserved": true,
-      "scope": "single cloud observation, not long-term acceptance"
+      "status": "not_tested",
+      "reason": "User updated source configuration from local UI"
     },
     "e6ded12656af1d9314e2ff76a8a1": {
       "checked_at": "2026-11-16T00:05:23.008332+00:00",
