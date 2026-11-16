@@ -145,8 +145,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "3187fad822221523e6f592197f84": {
-      "checked_at": "2026-11-15T19:22:37.378489+00:00",
-      "run_id": "43751431902",
+      "checked_at": "2026-11-16T07:14:03.779274+00:00",
+      "run_id": "43821623610",
       "result": {
         "status": "success",
         "found": 7,
@@ -433,13 +433,13 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "772e3af9bb4db92095756ce4d940": {
-      "checked_at": "2026-11-15T19:22:37.378489+00:00",
-      "run_id": "43751431902",
+      "checked_at": "2026-11-16T07:14:03.779274+00:00",
+      "run_id": "43821623610",
       "result": {
-        "status": "success",
-        "found": 100,
+        "status": "error",
+        "found": 0,
         "inserted": 0,
-        "message": "1 page(s), 100 unique item(s); extraction limit reached"
+        "message": "Browser worker: Page.goto: net::ERR_EMPTY_RESPONSE at https://www.valuepartners-group.com/en/investment-insights/insights/\nCall log:\n  - navigating to \"https://www.valuepartners-group.com/en/investment-insights/insights/\", waiting until"
       },
       "identity_preserved": true,
       "scope": "single cloud observation, not long-term acceptance"
@@ -553,8 +553,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "050884e1881fdd777f12cc9cb14e": {
-      "checked_at": "2026-11-15T19:01:10.106824+00:00",
-      "run_id": "43749477496",
+      "checked_at": "2026-11-16T07:14:03.779274+00:00",
+      "run_id": "43821623610",
       "result": {
         "status": "success",
         "found": 4,
@@ -1445,12 +1445,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "9ac0bd99916b794c2381b0dc4583": {
-      "checked_at": "2026-11-15T19:01:10.106824+00:00",
-      "run_id": "43749477496",
+      "checked_at": "2026-11-16T07:14:03.779274+00:00",
+      "run_id": "43821623610",
       "result": {
         "status": "success",
         "found": 24,
-        "inserted": 0,
+        "inserted": 1,
         "message": "1 page(s), 24 unique item(s)"
       },
       "identity_preserved": true,
@@ -1845,8 +1845,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "1fb675c7150057b0f6a08733bf33": {
-      "checked_at": "2026-11-15T19:22:37.378489+00:00",
-      "run_id": "43751431902",
+      "checked_at": "2026-11-16T07:14:03.779274+00:00",
+      "run_id": "43821623610",
       "result": {
         "status": "success",
         "found": 16,
