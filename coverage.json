@@ -469,8 +469,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "3ec1fb4da7d5967e5b136eb3db03": {
-      "checked_at": "2026-11-15T15:58:56.356062+00:00",
-      "run_id": "43732297136",
+      "checked_at": "2026-11-16T04:11:57.769459+00:00",
+      "run_id": "43801918475",
       "result": {
         "status": "success",
         "found": 30,
@@ -857,12 +857,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "404cdac92f0b8a48f80e086e86f1": {
-      "checked_at": "2026-11-15T15:58:56.356062+00:00",
-      "run_id": "43732297136",
+      "checked_at": "2026-11-16T04:11:57.769459+00:00",
+      "run_id": "43801918475",
       "result": {
         "status": "success",
         "found": 25,
-        "inserted": 0,
+        "inserted": 1,
         "message": "1 page(s), 25 unique item(s)"
       },
       "identity_preserved": true,
@@ -1013,8 +1013,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "6c90db0503be0fd60e5eec3bd965": {
-      "checked_at": "2026-11-15T16:19:24.394703+00:00",
-      "run_id": "43734189200",
+      "checked_at": "2026-11-16T04:11:57.769459+00:00",
+      "run_id": "43801918475",
       "result": {
         "status": "success",
         "found": 30,
@@ -1061,8 +1061,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "2dd3aabfba0109b26be93ac2cb0d": {
-      "checked_at": "2026-11-15T16:19:24.394703+00:00",
-      "run_id": "43734189200",
+      "checked_at": "2026-11-16T04:11:57.769459+00:00",
+      "run_id": "43801918475",
       "result": {
         "status": "success",
         "found": 4,
@@ -1301,8 +1301,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "ced67fb8de120a2c2dcce160c07d": {
-      "checked_at": "2026-11-15T16:19:24.394703+00:00",
-      "run_id": "43734189200",
+      "checked_at": "2026-11-16T04:11:57.769459+00:00",
+      "run_id": "43801918475",
       "result": {
         "status": "success",
         "found": 18,
