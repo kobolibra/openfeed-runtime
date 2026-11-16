@@ -3,25 +3,42 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "00c8b28e8d6c8e70207d6c928f57",
-    "3e6e71ced7e2d7b4adc6e87d068c",
-    "f451dd0c3d136d6d947486868007",
-    "0f26170745cc27fae679d587b933",
-    "8ec4c9da20a6ac465cf510ca03ee",
-    "c47ebed13a44559fc68b780e1bd4"
+    "df1b1d03d8267129ae36122ad4ae",
+    "16dc1431f0ff881305c8538482fc",
+    "c3d7cf91ab2b9b298d1fc57a39e7",
+    "936e9a2aea1b91691a2c48e5bc19",
+    "e7cb7af265d1d7d9339caac421c2"
   ],
   "results": [
     {
-      "id": "00c8b28e8d6c8e70207d6c928f57",
+      "id": "df1b1d03d8267129ae36122ad4ae",
       "result": {
         "status": "success",
-        "found": 30,
+        "found": 9,
         "inserted": 0,
-        "message": "1 page(s), 30 unique item(s); unknown_dates=30"
+        "message": "1 page(s), 9 unique item(s)"
       }
     },
     {
-      "id": "3e6e71ced7e2d7b4adc6e87d068c",
+      "id": "16dc1431f0ff881305c8538482fc",
+      "result": {
+        "status": "success",
+        "found": 14,
+        "inserted": 0,
+        "message": "1 page(s), 14 unique item(s); unknown_dates=14"
+      }
+    },
+    {
+      "id": "c3d7cf91ab2b9b298d1fc57a39e7",
+      "result": {
+        "status": "success",
+        "found": 16,
+        "inserted": 0,
+        "message": "1 page(s), 16 unique item(s)"
+      }
+    },
+    {
+      "id": "936e9a2aea1b91691a2c48e5bc19",
       "result": {
         "status": "success",
         "found": 0,
@@ -30,39 +47,12 @@
       }
     },
     {
-      "id": "f451dd0c3d136d6d947486868007",
-      "result": {
-        "status": "success",
-        "found": 100,
-        "inserted": 1,
-        "message": "1 page(s), 100 unique item(s); extraction limit reached"
-      }
-    },
-    {
-      "id": "0f26170745cc27fae679d587b933",
+      "id": "e7cb7af265d1d7d9339caac421c2",
       "result": {
         "status": "success",
         "found": 4,
         "inserted": 0,
         "message": "1 page(s), 4 unique item(s); unknown_dates=4"
-      }
-    },
-    {
-      "id": "8ec4c9da20a6ac465cf510ca03ee",
-      "result": {
-        "status": "error",
-        "found": 0,
-        "inserted": 0,
-        "message": "Upstream connection failed: timeout (TimeoutError)"
-      }
-    },
-    {
-      "id": "c47ebed13a44559fc68b780e1bd4",
-      "result": {
-        "status": "success",
-        "found": 3,
-        "inserted": 0,
-        "message": "1 page(s), 3 unique item(s); unknown_dates=3"
       }
     }
   ],
@@ -90,7 +80,7 @@
     },
     {
       "id": "936e9a2aea1b91691a2c48e5bc19",
-      "next_run": "2026-11-16T14:10:31+00:00",
+      "next_run": "2026-11-17T02:10:31+00:00",
       "schedule_phase_seconds": 7831
     },
     {
@@ -495,7 +485,7 @@
     },
     {
       "id": "df1b1d03d8267129ae36122ad4ae",
-      "next_run": "2026-11-16T13:57:53+00:00",
+      "next_run": "2026-11-17T01:57:53+00:00",
       "schedule_phase_seconds": 7073
     },
     {
@@ -665,7 +655,7 @@
     },
     {
       "id": "c3d7cf91ab2b9b298d1fc57a39e7",
-      "next_run": "2026-11-16T14:06:18+00:00",
+      "next_run": "2026-11-17T02:06:18+00:00",
       "schedule_phase_seconds": 7578
     },
     {
@@ -865,7 +855,7 @@
     },
     {
       "id": "16dc1431f0ff881305c8538482fc",
-      "next_run": "2026-11-16T14:02:06+00:00",
+      "next_run": "2026-11-17T02:02:06+00:00",
       "schedule_phase_seconds": 7326
     },
     {
@@ -895,7 +885,7 @@
     },
     {
       "id": "e7cb7af265d1d7d9339caac421c2",
-      "next_run": "2026-11-16T14:14:44+00:00",
+      "next_run": "2026-11-17T02:14:44+00:00",
       "schedule_phase_seconds": 8084
     },
     {
@@ -924,8 +914,8 @@
     }
   ],
   "cooldowns": [],
-  "elapsed_seconds": 302.001,
+  "elapsed_seconds": 240.809,
   "input_db_unchanged": true,
-  "input_sha256": "8cd7a99fca44fe6cd0c7dc56e9a5b5b4da5b9e7f03d58a6a33a6babb602d786d",
-  "shadow_sha256": "758ab47a553f0fdf6e62c307d369301e9fb49c21b162932b7ae53ba78e9b7d38"
+  "input_sha256": "758ab47a553f0fdf6e62c307d369301e9fb49c21b162932b7ae53ba78e9b7d38",
+  "shadow_sha256": "669078db2185438c3cbe0a1a6559d57d88b1aea2ff2e731ba92325b294413bca"
 }
