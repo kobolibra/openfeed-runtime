@@ -8,3 +8,10 @@
 
 下一步：用户本机服务在线时运行 cd OpenFeed项目根 && python tools/maintenance_snapshot.py && python tools/check_handoff.py 完成 REL-008 门禁；若 healthy 数无下降即验收通过；如需回滚，公共仓两行改回 14d068b / 模板改回 b9516dab（零数据迁移）。
 
+
+## 2026-11-16T01:39Z 本机交接门禁实况复核（用户机器执行）
+用户在本机执行 maintenance_snapshot.py（168/160/8/paused 0；证据 20261116T013934692522Z.json），追加观察块后 `tools/check_handoff.py` 输出 **PASS**。注意：本机 `work/local-trial/source` 不是 git 仓库，未与 GitHub 自动同步；门禁 PASS 仅证明本机记账自洽与快照新鲜，**不等于任何网站可用性**（8 个异常源仍异常）。
+异常源（用户本机列举）：CEPR·VoxEU China 查询（6 连败，已知 403）、Julius Baer·Insights（3 连败，已知 403）、世界银行·中国数据看板（1 连败，2026-11-16T01:25Z）、Oaktree·Feeder 公开更新目录（9 连败）、Capital Group·Institutional Insights（8 连败）、Amundi Research·Latest Articles（1 连败）、Invesco·Global Sovereign Study PDFs（4 连败）、ANU Press·China Update（3 连败）。
+未做：未恢复 Man/Eurasia/Cantor；未代签/绕过；未改 8 个源任何配置；Hunter 尸体不动。
+下一步：观察 12h 周期；若要逐源侦查需用户明确授权，先只读探测后逐源出报告。
+

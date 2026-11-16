@@ -1,3 +1,6 @@
+## 2026-11-16T01:40:00+00:00 用户本机交接门禁 PASS（REL-008 收尾观察期）
+用户本机运行 maintenance_snapshot.py（168/160/8/0 paused；证据 20261116T013934692522Z.json）并追加观察块后，tools/check_handoff.py PASS。注意本机 work/local-trial/source 非 git 仓库，PASS 不等于生产/网站可用性声明；8 个 error 源已登记（2 个已知 403 + 6 个待侦查），均未代改。观察一个 12h 周期；逐源侦查须另行授权。
+
 ## 2026-11-16T01:31:00+00:00 生产 pin 切换完成（已上线）
 用户随后授予对 kobolibra/openfeed-feeds 的写权限（token 复测 permissions push:true/admin:true）。本轮完成：
 - ✅ 公共仓 push：f4e97fb → ec2b4aa（.github/workflows/runtime-cloud.yml:193 与 private-source-probe.yml:43 两处 ref 14d068b0cf → 22b0142aef（本轮合入的测试 SHA，525 passed））；已用 git object（git show origin/main:<path>）逐行核验远端内容；raw.githubusercontent CDN 缓存稍滞后，勿以之为准。

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T01:31:00+00:00",
+  "updated": "2026-11-16T01:40:00+00:00",
   "note": "这是问题台账，不是实时错误列表；需结合最新快照。",
   "issues": [
     {
@@ -144,10 +144,10 @@
     },
     {
       "id": "REL-008",
-      "status": "production_pin_switched_observing",
+      "status": "gate_pass_observing_8_error_feeds",
       "summary": "访问受阻页识别扩充：Cloudflare Attention Required、Akamai/CloudFront Access Denied、Vercel Security Checkpoint、Aliyun WAF、Akamai “URL rejected”",
       "evidence": "公共仓 runtime-cloud.yml:193/private-source-probe.yml:43 → 22b0142aef；push f4e97fb→ec2b4aa（2026-11-16T01:27Z），git object 层核验；私有 main=d899cf2；模板 6b3eca7c；525 tests passed",
-      "next_action": "观察 12h 周期（healthy 数、CEPR/Julius 403 单列、无 access barrier 误报）；本机补跑 python tools/maintenance_snapshot.py && python tools/check_handoff.py 关闭REL-008；回滚=公共仓两行改回 14d068b / 模板改回 b9516dab"
+      "next_action": "观察 12h 周期（158→healthy）；8 个 error 源：2 个已知 403（CEPR/Julius，ACCESS-001/CLOUD-002 单列）+6 个新（世界银行中国看板/Oaktree Feeder/Capital Group Institutional/Amundi Research/Invesco PDFs/ANU China Update）——未授权不动；如需侦查先只读探测再报告，签名前必须逐源授权；勿恢复已删源"
     }
   ]
 }
