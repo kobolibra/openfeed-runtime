@@ -145,8 +145,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "3187fad822221523e6f592197f84": {
-      "checked_at": "2026-11-16T07:14:03.779274+00:00",
-      "run_id": "43821623610",
+      "checked_at": "2026-11-16T19:25:53.351960+00:00",
+      "run_id": "43937995417",
       "result": {
         "status": "success",
         "found": 7,
@@ -433,13 +433,13 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "772e3af9bb4db92095756ce4d940": {
-      "checked_at": "2026-11-16T07:14:03.779274+00:00",
-      "run_id": "43821623610",
+      "checked_at": "2026-11-16T19:25:53.351960+00:00",
+      "run_id": "43937995417",
       "result": {
-        "status": "error",
-        "found": 0,
+        "status": "success",
+        "found": 100,
         "inserted": 0,
-        "message": "Browser worker: Page.goto: net::ERR_EMPTY_RESPONSE at https://www.valuepartners-group.com/en/investment-insights/insights/\nCall log:\n  - navigating to \"https://www.valuepartners-group.com/en/investment-insights/insights/\", waiting until"
+        "message": "1 page(s), 100 unique item(s); extraction limit reached"
       },
       "identity_preserved": true,
       "scope": "single cloud observation, not long-term acceptance"
@@ -1045,8 +1045,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "082596eb0f11e08cd01ec0f6664c": {
-      "checked_at": "2026-11-16T07:34:08.587162+00:00",
-      "run_id": "43824077328",
+      "checked_at": "2026-11-16T19:25:53.351960+00:00",
+      "run_id": "43937995417",
       "result": {
         "status": "success",
         "found": 3,
@@ -1861,8 +1861,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "1fb675c7150057b0f6a08733bf33": {
-      "checked_at": "2026-11-16T07:14:03.779274+00:00",
-      "run_id": "43821623610",
+      "checked_at": "2026-11-16T19:25:53.351960+00:00",
+      "run_id": "43937995417",
       "result": {
         "status": "success",
         "found": 16,
@@ -1873,8 +1873,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "5667928b6c41735f365c5d6d946b": {
-      "checked_at": "2026-11-16T07:34:08.587162+00:00",
-      "run_id": "43824077328",
+      "checked_at": "2026-11-16T19:25:53.351960+00:00",
+      "run_id": "43937995417",
       "result": {
         "status": "success",
         "found": 5,
