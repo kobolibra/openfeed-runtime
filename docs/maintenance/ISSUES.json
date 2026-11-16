@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T11:40:10+00:00",
+  "updated": "2026-11-16T01:30:00+00:00",
   "note": "这是问题台账，不是实时错误列表；需结合最新快照。",
   "issues": [
     {
@@ -144,10 +144,10 @@
     },
     {
       "id": "REL-008",
-      "status": "code_merged_undeployed_gate_incomplete",
+      "status": "code_merged; private template bumped (6b3eca7); production switch BLOCKED by public repo 403",
       "summary": "访问受阻页识别扩充：Cloudflare Attention Required、Akamai/CloudFront Access Denied、Vercel Security Checkpoint、Aliyun WAF、Akamai “URL rejected”",
       "evidence": "2026-11-15 平台真实抓取 40+ 份逐一过签名函数——阻断页全部分类正确（challenge16/access_denied6/waf5），内容页零误判；pytest tests/ 525 passed（2 个 Chromium 浏览器用例因沙箱未安装 Chromium 失败，与改动无关）；专项 access_barriers 25/25；Linux 基线 524 等价",
-      "next_action": "①用户本机在线时运行 python tools/maintenance_snapshot.py && python tools/check_handoff.py 完成交接门禁（sandbox 无 127.0.0.1:8765 管理服务与令牌，快照未刷新，未伪造）；②生产 Actions pin 未变、未部署——若需新签名上云，按既有发布流程 pin 新 SHA 并等一个正常抓取周期观察 Julius/CEPR 仍 403 单列；③Scholar/nginx 验证页刻意未收录，不要为覆盖率放宽护栏"
+      "next_action": "用户手动把公共仓 runtime-cloud.yml:193 与 private-source-probe.yml:43 的 ref 改为 22b0142aefcd278f23886774a6215e2423075494 并 push（或 git am /home/user/openfeed-pin-22b0142.patch；或提供该仓 Contents 写权限的 token）。切换未生效前生产仍运行 14d068b，无需处置；切换后观察一个 12h 周期，确认 healthy 数无下降；随后本机 python tools/maintenance_snapshot.py && python tools/check_handoff.py 完成门禁"
     }
   ]
 }

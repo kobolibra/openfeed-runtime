@@ -277,3 +277,10 @@
 - 门禁：sandbox 无法刷新 latest-snapshot.json（无 127.0.0.1:8765 管理服务与令牌），check_handoff 预计 FAIL（快照过期 + 指纹不符），未伪造快照；请用户本机复核。合并 main ≠ 生产部署：生产 Actions pin 不变，新签名随下次发布生效。
 - 未做：未动 workflow/pin/DB/调度/来源/GUID/发布地址/RSS；未部署；Scholar/nginx 页维持原分类；docs 目录前置损坏测试未擅动。
 
+
+## 2026-11-16T01:30:00+00:00 生产 pin 切换尝试（公共仓 403，未生效，已留一键 patch）
+- 私有模板 ops/public-wrapper.yml pin b9516dab→22b0142（提交 6b3eca7ce，已 push openfeed-runtime main）。
+- 公共仓两行（runtime-cloud.yml:193、private-source-probe.yml:43 → 22b0142aefcd278f23886774a6215e2423075494）本地已提交 ec2b4aa，push 403 被拒（token 无此仓 Contents 写权限）；生产仍运行 14d068b，未影响在线；公共仓远端零变更。
+- patch：/home/user/openfeed-pin-22b0142.patch（git am 应用）；或用户手动改两行、或换带该仓写权限的 token。
+- 未改动 workflow 逻辑/cron/EXPIRY/Secrets/DB/shadow-state；handoffs 已更新；门禁等本机补做。
+

@@ -1,3 +1,13 @@
+## 2026-11-16T01:30:00+00:00 生产 pin 切换（模板已落地；公共仓 403 被拒，未生效）
+用户指令“马上给我全面改好”。结论先行：源码已合并且测试通过；生产切换只做一件事——把公共仓两处 workflow 的 openfeed-runtime ref 从 14d068b 改为 22b0142（本轮合并、25/25 测试、525 passed 的同一 SHA）。
+- ✅ 已完成：① 私有源码 main=22b0142；② 私有部署模板 ops/public-wrapper.yml pin 由 b9516dab → 22b0142（提交 6b3eca7ce — push 到 openfeed-runtime main OK）；③ 本地/openfeed-feeds 两个文件各一行已改：.github/workflows/runtime-cloud.yml:193、private-source-probe.yml:43 → 22b0142aefcd278f23886774a6215e2423075494，本地提交 ec2b4aa98c69f6033e772dafa2eea10d492ab5ac。
+- ❌ 阻断：git push 公共仓 kobolibra/openfeed-feeds → GitHub 403 “Permission to kobolibra/openfeed-feeds.git denied to kobolibra”。本 token 对该公共仓**无 Contents 写权限**（对私有仓有写权限已验证：6b3eca7 push 成功）。未改公共仓任何远端状态；生产仍 checkout 14d068b0cf3fa3239c3862bec10bd048d13664be。
+- 用户需任选：A）手动把上述两行 ref 改为 22b0142aefcd278f23886774a6215e2423075494 并 push（约 2 分钟；或 git am /home/user/openfeed-pin-22b0142.patch）；B）提供对 kobolibra/openfeed-feeds 具备 Contents:write 的令牌，由 agent 代推；C）不切换——本轮改动仅“提取0条”升级为“Source access barrier”分类，不触及抓取语义/RSS。
+- 未改动任何：workflow 逻辑、cron/接续门禁、Secrets、EXPIRY、数据库、shadow-state、GUID/相位/发布地址；公共仓远端内容与推送历史零变更。
+- 门禁（量名更新见 handoffs/latest.md）：snapshot 仍过期/指纹不符（本 sandbox 无 127.0.0.1:8765 与 .openfeed-local 令牌）；check_handoff 仍仅 FAIL 该两项，未伪造快照。沙箱重建时 .git remote 配置曾丢失，已重建 origin（无仓库内容变更）。
+
+证据：/home/user/openfeed-pin-22b0142.patch；public 端 403 原文见交接；模板提交 6b3eca7ce；源码合并 22b0142。
+
 ## 2026-11-15T11:40:10+00:00 第10轮·访问受阻阻断页识别扩充（代码已合并进 main，未部署）
 本轮为代码级优化，非生产部署事件。改动仅限 openfeed/access_barriers.py 与 tests/test_access_barriers.py（+13 项实测签名/负例回归）；未改 workflow、Actions pin、数据库、来源配置、调度相位、RSS/OPML 地址。生产仍固定运行用户私有流程 pin 的源码（CLOUD 系列记录中的 pin），新签名要等用户按既有发布流程 pin 新 SHA 后才对云端生效。
 - 动机：对已交付 rssweball 清单的全量剩余复核（2026-11-15 19:18 北京时间，60 条问题行全部重测）实证：Cloudflare“Attention Required”家族、Akamai Edgesuite“Access Denied / you don't have permission to access”、CloudFront“The request could not be satisfied”、Vercel Security Checkpoint、Aliyun WAF（meta aliyun_waf_aa）、Akamai“The requested URL was rejected”等 200 状态阻断页，此前全部落入通用“提取 0 条”失败，无法与内容空结果区分。
