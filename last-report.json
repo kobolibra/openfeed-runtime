@@ -3,56 +3,46 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "9ac0bd99916b794c2381b0dc4583",
-    "050884e1881fdd777f12cc9cb14e",
-    "3187fad822221523e6f592197f84",
-    "1fb675c7150057b0f6a08733bf33",
-    "772e3af9bb4db92095756ce4d940"
+    "082596eb0f11e08cd01ec0f6664c",
+    "5667928b6c41735f365c5d6d946b",
+    "e367743c892e462a0843d6125e91",
+    "5da3521a22a8894df72b67f330c4"
   ],
   "results": [
     {
-      "id": "9ac0bd99916b794c2381b0dc4583",
+      "id": "082596eb0f11e08cd01ec0f6664c",
       "result": {
         "status": "success",
-        "found": 24,
-        "inserted": 1,
-        "message": "1 page(s), 24 unique item(s)"
+        "found": 3,
+        "inserted": 0,
+        "message": "1 page(s), 3 unique item(s); unknown_dates=3"
       }
     },
     {
-      "id": "050884e1881fdd777f12cc9cb14e",
+      "id": "5667928b6c41735f365c5d6d946b",
       "result": {
         "status": "success",
-        "found": 4,
+        "found": 5,
         "inserted": 0,
-        "message": "1 page(s), 4 unique item(s); unknown_dates=1"
+        "message": "1 page(s), 5 unique item(s); unknown_dates=5"
       }
     },
     {
-      "id": "3187fad822221523e6f592197f84",
+      "id": "e367743c892e462a0843d6125e91",
       "result": {
         "status": "success",
-        "found": 7,
+        "found": 10,
         "inserted": 0,
-        "message": "1 page(s), 7 unique item(s); unknown_dates=7"
+        "message": ""
       }
     },
     {
-      "id": "1fb675c7150057b0f6a08733bf33",
+      "id": "5da3521a22a8894df72b67f330c4",
       "result": {
         "status": "success",
-        "found": 16,
+        "found": 6,
         "inserted": 0,
-        "message": "1 page(s), 16 unique item(s)"
-      }
-    },
-    {
-      "id": "772e3af9bb4db92095756ce4d940",
-      "result": {
-        "status": "error",
-        "found": 0,
-        "inserted": 0,
-        "message": "Browser worker: Page.goto: net::ERR_EMPTY_RESPONSE at https://www.valuepartners-group.com/en/investment-insights/insights/\nCall log:\n  - navigating to \"https://www.valuepartners-group.com/en/investment-insights/insights/\", waiting until"
+        "message": "1 page(s), 6 unique item(s); unknown_dates=6"
       }
     }
   ],
@@ -220,7 +210,7 @@
     },
     {
       "id": "e367743c892e462a0843d6125e91",
-      "next_run": "2026-11-16T07:26:18+00:00",
+      "next_run": "2026-11-16T19:26:18+00:00",
       "schedule_phase_seconds": 26778
     },
     {
@@ -515,7 +505,7 @@
     },
     {
       "id": "5667928b6c41735f365c5d6d946b",
-      "next_run": "2026-11-16T07:17:53+00:00",
+      "next_run": "2026-11-16T19:17:53+00:00",
       "schedule_phase_seconds": 26273
     },
     {
@@ -725,7 +715,7 @@
     },
     {
       "id": "082596eb0f11e08cd01ec0f6664c",
-      "next_run": "2026-11-16T07:13:41+00:00",
+      "next_run": "2026-11-16T19:13:41+00:00",
       "schedule_phase_seconds": 26021
     },
     {
@@ -870,7 +860,7 @@
     },
     {
       "id": "5da3521a22a8894df72b67f330c4",
-      "next_run": "2026-11-16T07:22:06+00:00",
+      "next_run": "2026-11-16T19:22:06+00:00",
       "schedule_phase_seconds": 26526
     },
     {
@@ -906,8 +896,8 @@
   ],
   "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 253.766,
+  "elapsed_seconds": 302.129,
   "input_db_unchanged": true,
-  "input_sha256": "74d38795bcaad368b7939b01ef4101df8e7de76887c023f2134d46dd43918efd",
-  "shadow_sha256": "5ddc6ff2fb351a335f480da0eed60179e6c3739455de9cfe74dda614b8b4c68a"
+  "input_sha256": "5ddc6ff2fb351a335f480da0eed60179e6c3739455de9cfe74dda614b8b4c68a",
+  "shadow_sha256": "d2ad357999dc0fabb7154257d3e6430ad59a47c09eee80c46d2da535ef2f4a50"
 }
