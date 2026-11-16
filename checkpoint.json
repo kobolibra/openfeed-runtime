@@ -1,10 +1,17 @@
 {
   "run_id": "43793889007",
-  "previous_sha256": "eb79e28854f45aff21e22f2bf2d6b604fb3a17ad62990330fc1af2e5b05fecc2",
-  "database_sha256": "f0172ebbe779eeabb687964e3c25a32f6d8b7f329101c400b2478de6b997b239",
+  "previous_sha256": "f0172ebbe779eeabb687964e3c25a32f6d8b7f329101c400b2478de6b997b239",
+  "database_sha256": "1d36ccba1f95ab0751b6cb725dcdf5af2ab0f91f60e3a583e58c6be43ee5ca5a",
   "scope": "production cloud state",
   "source_sha": "22b0142aefcd278f23886774a6215e2423075494",
   "previous_state_commit": "218681266e6bd62856bb18d21ab58fa5bd3e1afc",
   "rss_manifest_sha256": "8ef57779969c308f9461c7b863ffda1cb64169909abbd3967162f6ef2d92ad62",
-  "source_identity_preserved": true
+  "source_identity_preserved": true,
+  "manual_import": {
+    "action": "create source via admin import (same Store.create path as the local bridge)",
+    "feed_id": "c5f0a109f31600ccb7177b58236b",
+    "imported_at": "2026-11-16T02:53:55.944211+00:00",
+    "definition": "/home/user/schroders-openfeed/schroders-feed.json (recipe verified live 20/20 items, 20/20 dated, newest 2026-11-12)",
+    "note": "schedule_phase_seconds retained; next_run pulled forward once so the first cloud crawl runs on the next tick; no other rows touched"
+  }
 }
