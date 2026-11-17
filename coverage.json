@@ -1226,8 +1226,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "694dbeab087f3ed0ca6f243a435b": {
-      "checked_at": "2026-11-17T04:51:47.920917+00:00",
-      "run_id": "44018878331",
+      "checked_at": "2026-11-17T17:01:42.741106+00:00",
+      "run_id": "44131719812",
       "result": {
         "status": "success",
         "found": 8,
@@ -1298,12 +1298,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "b5b0e3074525c1f2745d3cfb76ee": {
-      "checked_at": "2026-11-17T04:51:47.920917+00:00",
-      "run_id": "44018878331",
+      "checked_at": "2026-11-17T17:01:42.741106+00:00",
+      "run_id": "44131719812",
       "result": {
         "status": "success",
         "found": 10,
-        "inserted": 0,
+        "inserted": 1,
         "message": "1 page(s), 10 unique item(s)"
       },
       "identity_preserved": true,
@@ -1466,8 +1466,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "543d52f0b4288c9dc8dec0cdf4fc": {
-      "checked_at": "2026-11-17T05:13:09.836650+00:00",
-      "run_id": "44021812678",
+      "checked_at": "2026-11-17T17:01:42.741106+00:00",
+      "run_id": "44131719812",
       "result": {
         "status": "success",
         "found": 37,
@@ -1922,8 +1922,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "d30386f6fe165ba7b2acc2d1985d": {
-      "checked_at": "2026-11-17T05:13:09.836650+00:00",
-      "run_id": "44021812678",
+      "checked_at": "2026-11-17T17:01:42.741106+00:00",
+      "run_id": "44131719812",
       "result": {
         "status": "success",
         "found": 0,
