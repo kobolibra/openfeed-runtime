@@ -2028,6 +2028,10 @@
       },
       "identity_preserved": true,
       "scope": "single cloud observation, not long-term acceptance"
+    },
+    "1535321512999d4aafe5eaaadf4c": {
+      "status": "not_tested",
+      "reason": "User updated source configuration from local UI"
     }
   }
 }
