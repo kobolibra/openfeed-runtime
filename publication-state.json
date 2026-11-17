@@ -4,5 +4,6 @@
   "result": "attempt_reserved",
   "at": "2026-11-17T08:16:48.450328+00:00",
   "candidate_sha256": "e38676da7ab17f9b25d80eb30878ee7e56a6a4658d710ab6281adb8d27b4acb3",
-  "origin_slot": "2026-11-17T16"
+  "origin_slot": "2026-11-17T16",
+  "reuse_candidate": true
 }
