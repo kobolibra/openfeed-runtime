@@ -3,55 +3,70 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "81b5366df03ba7abccbddefaa2c7",
-    "c6923ad9fd08764821bab65199f4",
+    "b38bc1a473f6f10e07bb88a7def2",
+    "db44423d9c9c11a529bf77cca6fb",
+    "1192bfe3fc600887efa0ba6e8f10",
+    "3e6e71ced7e2d7b4adc6e87d068c",
     "8ec4c9da20a6ac465cf510ca03ee",
-    "2eb8b49b0b9c5e0169935df73497"
+    "00c8b28e8d6c8e70207d6c928f57"
   ],
   "results": [
     {
-      "id": "81b5366df03ba7abccbddefaa2c7",
+      "id": "b38bc1a473f6f10e07bb88a7def2",
       "result": {
         "status": "success",
-        "found": 26,
-        "inserted": 0,
-        "message": "1 page(s), 26 unique item(s); unknown_dates=26"
-      }
-    },
-    {
-      "id": "c6923ad9fd08764821bab65199f4",
-      "result": {
-        "status": "success",
-        "found": 12,
-        "inserted": 1,
-        "message": "1 page(s), 12 unique item(s)"
-      }
-    },
-    {
-      "id": "8ec4c9da20a6ac465cf510ca03ee",
-      "result": {
-        "status": "error",
         "found": 0,
         "inserted": 0,
-        "message": "Upstream connection failed: timeout (TimeoutError)"
+        "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
       }
     },
     {
-      "id": "2eb8b49b0b9c5e0169935df73497",
+      "id": "db44423d9c9c11a529bf77cca6fb",
+      "result": {
+        "status": "success",
+        "found": 10,
+        "inserted": 0,
+        "message": ""
+      }
+    },
+    {
+      "id": "1192bfe3fc600887efa0ba6e8f10",
       "result": {
         "status": "success",
         "found": 3,
         "inserted": 0,
         "message": "1 page(s), 3 unique item(s); unknown_dates=3"
       }
-    }
-  ],
-  "deferred": [
+    },
     {
-      "id": "b38bc1a473f6f10e07bb88a7def2",
-      "reason": "domain_start_gap"
+      "id": "3e6e71ced7e2d7b4adc6e87d068c",
+      "result": {
+        "status": "success",
+        "found": 0,
+        "inserted": 0,
+        "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
+      }
+    },
+    {
+      "id": "8ec4c9da20a6ac465cf510ca03ee",
+      "result": {
+        "status": "success",
+        "found": 24,
+        "inserted": 0,
+        "message": "1 page(s), 24 unique item(s); unknown_dates=24"
+      }
+    },
+    {
+      "id": "00c8b28e8d6c8e70207d6c928f57",
+      "result": {
+        "status": "success",
+        "found": 30,
+        "inserted": 0,
+        "message": "1 page(s), 30 unique item(s); unknown_dates=30"
+      }
     }
   ],
+  "deferred": [],
   "next_schedule": [
     {
       "id": "c5f0a109f31600ccb7177b58236b",
@@ -110,7 +125,7 @@
     },
     {
       "id": "b38bc1a473f6f10e07bb88a7def2",
-      "next_run": "2026-11-17T01:24:12+00:00",
+      "next_run": "2026-11-17T13:24:12+00:00",
       "schedule_phase_seconds": 5052
     },
     {
@@ -205,7 +220,7 @@
     },
     {
       "id": "3e6e71ced7e2d7b4adc6e87d068c",
-      "next_run": "2026-11-17T01:41:03+00:00",
+      "next_run": "2026-11-17T13:41:03+00:00",
       "schedule_phase_seconds": 6063
     },
     {
@@ -220,7 +235,7 @@
     },
     {
       "id": "db44423d9c9c11a529bf77cca6fb",
-      "next_run": "2026-11-17T01:28:25+00:00",
+      "next_run": "2026-11-17T13:28:25+00:00",
       "schedule_phase_seconds": 5305
     },
     {
@@ -555,7 +570,7 @@
     },
     {
       "id": "1192bfe3fc600887efa0ba6e8f10",
-      "next_run": "2026-11-17T01:32:37+00:00",
+      "next_run": "2026-11-17T13:32:37+00:00",
       "schedule_phase_seconds": 5557
     },
     {
@@ -715,7 +730,7 @@
     },
     {
       "id": "00c8b28e8d6c8e70207d6c928f57",
-      "next_run": "2026-11-17T01:36:50+00:00",
+      "next_run": "2026-11-17T13:36:50+00:00",
       "schedule_phase_seconds": 5810
     },
     {
@@ -899,18 +914,10 @@
       "schedule_phase_seconds": 17684
     }
   ],
-  "recoveries": [
-    {
-      "feed_id": "8ec4c9da20a6ac465cf510ca03ee",
-      "cycle": 41548,
-      "failures": 1,
-      "not_before": "2026-11-17T01:36:19.142619+00:00",
-      "expires_at": "2026-11-17T13:15:47+00:00"
-    }
-  ],
+  "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 301.913,
+  "elapsed_seconds": 302.17,
   "input_db_unchanged": true,
-  "input_sha256": "67c45fdfb0705bea538d0797ea62b67206a3ff0e9dd437233fb12ced37fc7a6b",
-  "shadow_sha256": "875fbf2e3460b7a394e4d274a5a1023cc6c3fe5095eae989d46c08c66174e506"
+  "input_sha256": "86cc3c1d0c5196f6a08a0c34c46a36f0a69e1900b70fdc3c66baecddf033a358",
+  "shadow_sha256": "7935a13668a7277452fae6931de2b5ef1c09b13f6829a2f158eb40c2c966b653"
 }
