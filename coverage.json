@@ -133,8 +133,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "481313cd60acb1458d4ae5393671": {
-      "checked_at": "2026-11-17T00:50:45.599825+00:00",
-      "run_id": "43989939460",
+      "checked_at": "2026-11-17T13:00:02.816076+00:00",
+      "run_id": "44087446778",
       "result": {
         "status": "success",
         "found": 45,
@@ -974,12 +974,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "a5108315a70ff1a860a0d4658bbf": {
-      "checked_at": "2026-11-17T01:09:05.343108+00:00",
-      "run_id": "43992634039",
+      "checked_at": "2026-11-17T13:00:02.816076+00:00",
+      "run_id": "44087446778",
       "result": {
         "status": "success",
         "found": 10,
-        "inserted": 0,
+        "inserted": 1,
         "message": "1 page(s), 10 unique item(s)"
       },
       "identity_preserved": true,
@@ -1526,8 +1526,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "41d44ad61ae9532e31a558482fb3": {
-      "checked_at": "2026-11-17T01:09:05.343108+00:00",
-      "run_id": "43992634039",
+      "checked_at": "2026-11-17T13:00:02.816076+00:00",
+      "run_id": "44087446778",
       "result": {
         "status": "success",
         "found": 41,
@@ -1550,8 +1550,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "cae3ecc842cffe49c3a31b612f18": {
-      "checked_at": "2026-11-17T01:09:05.343108+00:00",
-      "run_id": "43992634039",
+      "checked_at": "2026-11-17T13:00:02.816076+00:00",
+      "run_id": "44087446778",
       "result": {
         "status": "success",
         "found": 9,
@@ -1646,8 +1646,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "343af68382688b03fd58668ef927": {
-      "checked_at": "2026-11-17T00:50:45.599825+00:00",
-      "run_id": "43989939460",
+      "checked_at": "2026-11-17T13:00:02.816076+00:00",
+      "run_id": "44087446778",
       "result": {
         "status": "success",
         "found": 2,
