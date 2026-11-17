@@ -314,8 +314,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "b38bc1a473f6f10e07bb88a7def2": {
-      "checked_at": "2026-11-17T01:50:12.224937+00:00",
-      "run_id": "43997847140",
+      "checked_at": "2026-11-17T13:40:24.782290+00:00",
+      "run_id": "44094096096",
       "result": {
         "status": "success",
         "found": 0,
@@ -938,8 +938,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "2eb8b49b0b9c5e0169935df73497": {
-      "checked_at": "2026-11-17T01:30:07.983438+00:00",
-      "run_id": "43995300355",
+      "checked_at": "2026-11-17T13:40:24.782290+00:00",
+      "run_id": "44094096096",
       "result": {
         "status": "success",
         "found": 3,
@@ -1622,8 +1622,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "db44423d9c9c11a529bf77cca6fb": {
-      "checked_at": "2026-11-17T01:50:12.224937+00:00",
-      "run_id": "43997847140",
+      "checked_at": "2026-11-17T13:40:24.782290+00:00",
+      "run_id": "44094096096",
       "result": {
         "status": "success",
         "found": 10,
@@ -2030,8 +2030,16 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "1535321512999d4aafe5eaaadf4c": {
-      "status": "not_tested",
-      "reason": "User updated source configuration from local UI"
+      "checked_at": "2026-11-17T13:40:24.782290+00:00",
+      "run_id": "44094096096",
+      "result": {
+        "status": "success",
+        "found": 100,
+        "inserted": 100,
+        "message": "1 page(s), 100 unique item(s); extraction limit reached"
+      },
+      "identity_preserved": true,
+      "scope": "single cloud observation, not long-term acceptance"
     }
   }
 }
