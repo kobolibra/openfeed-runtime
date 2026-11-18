@@ -145,12 +145,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "3187fad822221523e6f592197f84": {
-      "checked_at": "2026-11-18T07:16:46.753565+00:00",
-      "run_id": "44256848201",
+      "checked_at": "2026-11-18T19:08:35.550613+00:00",
+      "run_id": "44375977812",
       "result": {
         "status": "success",
         "found": 7,
-        "inserted": 0,
+        "inserted": 1,
         "message": "1 page(s), 7 unique item(s); unknown_dates=7"
       },
       "identity_preserved": true,
@@ -325,8 +325,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "75ed9b961c603c710d884a710e4c": {
-      "checked_at": "2026-11-18T06:57:25.082373+00:00",
-      "run_id": "44254311624",
+      "checked_at": "2026-11-18T19:08:35.550613+00:00",
+      "run_id": "44375977812",
       "result": {
         "status": "success",
         "found": 12,
@@ -553,12 +553,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "050884e1881fdd777f12cc9cb14e": {
-      "checked_at": "2026-11-18T07:16:46.753565+00:00",
-      "run_id": "44256848201",
+      "checked_at": "2026-11-18T19:08:35.550613+00:00",
+      "run_id": "44375977812",
       "result": {
         "status": "success",
         "found": 4,
-        "inserted": 1,
+        "inserted": 0,
         "message": "1 page(s), 4 unique item(s)"
       },
       "identity_preserved": true,
@@ -625,8 +625,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "b33479b74b661b29d5788aef2ebc": {
-      "checked_at": "2026-11-18T06:57:25.082373+00:00",
-      "run_id": "44254311624",
+      "checked_at": "2026-11-18T19:08:35.550613+00:00",
+      "run_id": "44375977812",
       "result": {
         "status": "success",
         "found": 0,
@@ -1453,13 +1453,13 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "9ac0bd99916b794c2381b0dc4583": {
-      "checked_at": "2026-11-18T07:16:46.753565+00:00",
-      "run_id": "44256848201",
+      "checked_at": "2026-11-18T19:08:35.550613+00:00",
+      "run_id": "44375977812",
       "result": {
         "status": "success",
-        "found": 24,
+        "found": 23,
         "inserted": 0,
-        "message": "1 page(s), 24 unique item(s)"
+        "message": "1 page(s), 23 unique item(s)"
       },
       "identity_preserved": true,
       "scope": "single cloud observation, not long-term acceptance"
