@@ -3,70 +3,55 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "b97f9d5949fbf6bfca0598bb6d24",
-    "9ba09558fb3b7fdf34768dfeecbb",
-    "f6bab3047fb0d17ce44759aebc23",
-    "139a43ef9fbf25faac5eb96b0dea",
-    "e182f39fee8d45ac923dcddfd7a1",
-    "24ba3f8f2edd5be1043e25cdd271"
+    "156b020c6e4752ed8004b4b8e39d",
+    "c17d6f96fa7ba97986add02f8a98",
+    "aebe2d30c8cde1240d5c7ea2a67e",
+    "a77c24dc79b43142711bac328f95"
   ],
   "results": [
     {
-      "id": "b97f9d5949fbf6bfca0598bb6d24",
+      "id": "156b020c6e4752ed8004b4b8e39d",
       "result": {
         "status": "success",
-        "found": 1,
-        "inserted": 0,
-        "message": "1 page(s), 1 unique item(s); unknown_dates=1"
+        "found": 16,
+        "inserted": 16,
+        "message": "1 page(s), 16 unique item(s)"
       }
     },
     {
-      "id": "9ba09558fb3b7fdf34768dfeecbb",
+      "id": "c17d6f96fa7ba97986add02f8a98",
       "result": {
-        "status": "error",
-        "found": 0,
+        "status": "success",
+        "found": 56,
         "inserted": 0,
-        "message": "No valid items extracted; existing RSS was preserved"
+        "message": "1 page(s), 56 unique item(s)"
       }
     },
     {
-      "id": "f6bab3047fb0d17ce44759aebc23",
+      "id": "aebe2d30c8cde1240d5c7ea2a67e",
       "result": {
         "status": "success",
         "found": 15,
-        "inserted": 1,
+        "inserted": 0,
         "message": "1 page(s), 15 unique item(s); unknown_dates=15"
       }
     },
     {
-      "id": "139a43ef9fbf25faac5eb96b0dea",
+      "id": "a77c24dc79b43142711bac328f95",
       "result": {
         "status": "success",
-        "found": 9,
+        "found": 10,
         "inserted": 0,
-        "message": "1 page(s), 9 unique item(s); unknown_dates=9"
-      }
-    },
-    {
-      "id": "e182f39fee8d45ac923dcddfd7a1",
-      "result": {
-        "status": "success",
-        "found": 3,
-        "inserted": 0,
-        "message": "1 page(s), 3 unique item(s); unknown_dates=3"
-      }
-    },
-    {
-      "id": "24ba3f8f2edd5be1043e25cdd271",
-      "result": {
-        "status": "success",
-        "found": 23,
-        "inserted": 5,
-        "message": "1 page(s), 23 unique item(s); unknown_dates=23"
+        "message": "1 page(s), 10 unique item(s)"
       }
     }
   ],
-  "deferred": [],
+  "deferred": [
+    {
+      "id": "2d84d29f731eadf159c4b079fbf5",
+      "reason": "domain_start_gap"
+    }
+  ],
   "next_schedule": [
     {
       "id": "1535321512999d4aafe5eaaadf4c",
@@ -270,7 +255,7 @@
     },
     {
       "id": "c17d6f96fa7ba97986add02f8a98",
-      "next_run": "2026-11-18T21:11:34+00:00",
+      "next_run": "2026-11-19T09:11:34+00:00",
       "schedule_phase_seconds": 33094
     },
     {
@@ -390,7 +375,7 @@
     },
     {
       "id": "aebe2d30c8cde1240d5c7ea2a67e",
-      "next_run": "2026-11-18T21:15:47+00:00",
+      "next_run": "2026-11-19T09:15:47+00:00",
       "schedule_phase_seconds": 33347
     },
     {
@@ -525,7 +510,7 @@
     },
     {
       "id": "a77c24dc79b43142711bac328f95",
-      "next_run": "2026-11-18T21:20:00+00:00",
+      "next_run": "2026-11-19T09:20:00+00:00",
       "schedule_phase_seconds": 33600
     },
     {
@@ -675,7 +660,7 @@
     },
     {
       "id": "156b020c6e4752ed8004b4b8e39d",
-      "next_run": "2026-11-18T21:07:22+00:00",
+      "next_run": "2026-11-19T09:07:22+00:00",
       "schedule_phase_seconds": 32842
     },
     {
@@ -921,8 +906,8 @@
   ],
   "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 301.763,
+  "elapsed_seconds": 181.605,
   "input_db_unchanged": true,
-  "input_sha256": "c79b08a21b20e1ffaf34903d6ba34f1699ba253029330050b6541222906ee9bf",
-  "shadow_sha256": "a5efcad577e9bf4d580b8ffff16eec82dbb932d9b6067a07cf0d8ed77d5e4caa"
+  "input_sha256": "efc75097711463379afb51a7e43b624cc8162680280654d0ac3c2339e41e1b01",
+  "shadow_sha256": "dd6bae1715192aff9ec3dcc44f61b3d868acc30b430e0593ab5c814a33ea3017"
 }
