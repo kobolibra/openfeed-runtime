@@ -37,8 +37,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "c3d7cf91ab2b9b298d1fc57a39e7": {
-      "checked_at": "2026-11-17T14:22:17.235579+00:00",
-      "run_id": "44101078888",
+      "checked_at": "2026-11-18T02:12:31.811985+00:00",
+      "run_id": "44220790676",
       "result": {
         "status": "success",
         "found": 16,
@@ -109,8 +109,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "c47ebed13a44559fc68b780e1bd4": {
-      "checked_at": "2026-11-17T14:22:17.235579+00:00",
-      "run_id": "44101078888",
+      "checked_at": "2026-11-18T02:12:31.811985+00:00",
+      "run_id": "44220790676",
       "result": {
         "status": "success",
         "found": 3,
@@ -1154,8 +1154,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "16dc1431f0ff881305c8538482fc": {
-      "checked_at": "2026-11-17T14:22:17.235579+00:00",
-      "run_id": "44101078888",
+      "checked_at": "2026-11-18T02:12:31.811985+00:00",
+      "run_id": "44220790676",
       "result": {
         "status": "success",
         "found": 14,
@@ -1718,12 +1718,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "df1b1d03d8267129ae36122ad4ae": {
-      "checked_at": "2026-11-17T14:22:17.235579+00:00",
-      "run_id": "44101078888",
+      "checked_at": "2026-11-18T02:12:31.811985+00:00",
+      "run_id": "44220790676",
       "result": {
         "status": "success",
         "found": 9,
-        "inserted": 0,
+        "inserted": 1,
         "message": "1 page(s), 9 unique item(s)"
       },
       "identity_preserved": true,
@@ -1838,8 +1838,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "0f26170745cc27fae679d587b933": {
-      "checked_at": "2026-11-17T13:59:39.615507+00:00",
-      "run_id": "44097503307",
+      "checked_at": "2026-11-18T02:12:31.811985+00:00",
+      "run_id": "44220790676",
       "result": {
         "status": "success",
         "found": 5,
