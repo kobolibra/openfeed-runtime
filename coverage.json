@@ -997,8 +997,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "54d4e7fd510dd894e7370a162676": {
-      "checked_at": "2026-11-18T11:00:00.375656+00:00",
-      "run_id": "44289684925",
+      "checked_at": "2026-11-18T22:50:40.837163+00:00",
+      "run_id": "44414469222",
       "result": {
         "status": "success",
         "found": 4,
@@ -1105,8 +1105,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "e18bbd2fe36bf9049a8f96bc2351": {
-      "checked_at": "2026-11-18T10:40:55.228958+00:00",
-      "run_id": "44286563242",
+      "checked_at": "2026-11-18T22:50:40.837163+00:00",
+      "run_id": "44414469222",
       "result": {
         "status": "success",
         "found": 13,
@@ -1585,12 +1585,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "204cdad44993bdd9cf8061a12fe6": {
-      "checked_at": "2026-11-18T10:40:55.228958+00:00",
-      "run_id": "44286563242",
+      "checked_at": "2026-11-18T22:50:40.837163+00:00",
+      "run_id": "44414469222",
       "result": {
         "status": "success",
         "found": 3,
-        "inserted": 1,
+        "inserted": 0,
         "message": "1 page(s), 3 unique item(s); unknown_dates=3"
       },
       "identity_preserved": true,
@@ -1957,8 +1957,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "12f6f4648ec2ccd5ee6ebb11efcc": {
-      "checked_at": "2026-11-18T11:00:00.375656+00:00",
-      "run_id": "44289684925",
+      "checked_at": "2026-11-18T22:50:40.837163+00:00",
+      "run_id": "44414469222",
       "result": {
         "status": "success",
         "found": 5,
@@ -2017,12 +2017,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "c5f0a109f31600ccb7177b58236b": {
-      "checked_at": "2026-11-18T11:00:00.375656+00:00",
-      "run_id": "44289684925",
+      "checked_at": "2026-11-18T22:50:40.837163+00:00",
+      "run_id": "44414469222",
       "result": {
         "status": "success",
         "found": 20,
-        "inserted": 0,
+        "inserted": 1,
         "message": "1 page(s), 20 unique item(s)"
       },
       "identity_preserved": true,
