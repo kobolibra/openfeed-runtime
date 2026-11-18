@@ -3,55 +3,70 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "dc84124b59341b4a2ee85458bae1",
-    "1ff79b2b49af40183397003d1e6a",
-    "aaaa6fe16f2220d3446b7e2401a0",
-    "d4195c70b086e1a849e1266295e5"
+    "36a875f2330c7b86f1bab851a010",
+    "9de058f25996c675723754e58c24",
+    "b8a01362be20ae4a0e1bd9e8faa2",
+    "1db6c9658190dce186c816897141",
+    "468916ea3ce7af24f3d2d5518e5c",
+    "4dbaf2d54515c1b11a1d67f65c2d"
   ],
   "results": [
     {
-      "id": "dc84124b59341b4a2ee85458bae1",
-      "result": {
-        "status": "success",
-        "found": 12,
-        "inserted": 0,
-        "message": "1 page(s), 12 unique item(s); unknown_dates=12"
-      }
-    },
-    {
-      "id": "1ff79b2b49af40183397003d1e6a",
-      "result": {
-        "status": "success",
-        "found": 30,
-        "inserted": 3,
-        "message": "1 page(s), 30 unique item(s); unknown_dates=30"
-      }
-    },
-    {
-      "id": "aaaa6fe16f2220d3446b7e2401a0",
-      "result": {
-        "status": "success",
-        "found": 14,
-        "inserted": 0,
-        "message": "1 page(s), 14 unique item(s); unknown_dates=14"
-      }
-    },
-    {
-      "id": "d4195c70b086e1a849e1266295e5",
-      "result": {
-        "status": "success",
-        "found": 24,
-        "inserted": 0,
-        "message": "1 page(s), 24 unique item(s); unknown_dates=24"
-      }
-    }
-  ],
-  "deferred": [
-    {
       "id": "36a875f2330c7b86f1bab851a010",
-      "reason": "domain_start_gap"
+      "result": {
+        "status": "success",
+        "found": 18,
+        "inserted": 0,
+        "message": "1 page(s), 18 unique item(s); unknown_dates=18"
+      }
+    },
+    {
+      "id": "9de058f25996c675723754e58c24",
+      "result": {
+        "status": "success",
+        "found": 15,
+        "inserted": 1,
+        "message": "1 page(s), 15 unique item(s)"
+      }
+    },
+    {
+      "id": "b8a01362be20ae4a0e1bd9e8faa2",
+      "result": {
+        "status": "success",
+        "found": 18,
+        "inserted": 0,
+        "message": "1 page(s), 18 unique item(s)"
+      }
+    },
+    {
+      "id": "1db6c9658190dce186c816897141",
+      "result": {
+        "status": "success",
+        "found": 6,
+        "inserted": 0,
+        "message": "1 page(s), 6 unique item(s); unknown_dates=6"
+      }
+    },
+    {
+      "id": "468916ea3ce7af24f3d2d5518e5c",
+      "result": {
+        "status": "success",
+        "found": 65,
+        "inserted": 0,
+        "message": "1 page(s), 65 unique item(s)"
+      }
+    },
+    {
+      "id": "4dbaf2d54515c1b11a1d67f65c2d",
+      "result": {
+        "status": "success",
+        "found": 0,
+        "inserted": 0,
+        "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
+      }
     }
   ],
+  "deferred": [],
   "next_schedule": [
     {
       "id": "1535321512999d4aafe5eaaadf4c",
@@ -105,7 +120,7 @@
     },
     {
       "id": "4dbaf2d54515c1b11a1d67f65c2d",
-      "next_run": "2026-11-18T03:22:06+00:00",
+      "next_run": "2026-11-18T15:22:06+00:00",
       "schedule_phase_seconds": 12126
     },
     {
@@ -245,12 +260,12 @@
     },
     {
       "id": "9de058f25996c675723754e58c24",
-      "next_run": "2026-11-18T03:09:28+00:00",
+      "next_run": "2026-11-18T15:09:28+00:00",
       "schedule_phase_seconds": 11368
     },
     {
       "id": "468916ea3ce7af24f3d2d5518e5c",
-      "next_run": "2026-11-18T03:26:18+00:00",
+      "next_run": "2026-11-18T15:26:18+00:00",
       "schedule_phase_seconds": 12378
     },
     {
@@ -480,7 +495,7 @@
     },
     {
       "id": "1db6c9658190dce186c816897141",
-      "next_run": "2026-11-18T03:17:53+00:00",
+      "next_run": "2026-11-18T15:17:53+00:00",
       "schedule_phase_seconds": 11873
     },
     {
@@ -615,7 +630,7 @@
     },
     {
       "id": "36a875f2330c7b86f1bab851a010",
-      "next_run": "2026-11-18T03:05:15+00:00",
+      "next_run": "2026-11-18T15:05:15+00:00",
       "schedule_phase_seconds": 11115
     },
     {
@@ -765,7 +780,7 @@
     },
     {
       "id": "b8a01362be20ae4a0e1bd9e8faa2",
-      "next_run": "2026-11-18T03:13:41+00:00",
+      "next_run": "2026-11-18T15:13:41+00:00",
       "schedule_phase_seconds": 11621
     },
     {
@@ -906,8 +921,8 @@
   ],
   "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 181.153,
+  "elapsed_seconds": 302.666,
   "input_db_unchanged": true,
-  "input_sha256": "77422aedf6c7746b3c1f97efacab2bfc4656478c56ca3e6ca2a21793fe492b5e",
-  "shadow_sha256": "68397a57e5096e8e34a2c6dfa882d91e1d74864ca931fedae95a2c86f23e0ad0"
+  "input_sha256": "68397a57e5096e8e34a2c6dfa882d91e1d74864ca931fedae95a2c86f23e0ad0",
+  "shadow_sha256": "d8bc612a0573a627fee70e35952b0bc0bf5416ddc6badb2ae25f6475f1f7dac8"
 }
