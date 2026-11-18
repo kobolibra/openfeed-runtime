@@ -25,12 +25,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "0191d431ee1ec76ccc886ed516a5": {
-      "checked_at": "2026-11-17T12:38:30.060851+00:00",
-      "run_id": "44084285249",
+      "checked_at": "2026-11-18T00:30:01.582457+00:00",
+      "run_id": "44207609525",
       "result": {
         "status": "success",
         "found": 45,
-        "inserted": 11,
+        "inserted": 0,
         "message": "3 page(s), 45 unique item(s); extraction limit reached; unknown_dates=45"
       },
       "identity_preserved": true,
@@ -85,8 +85,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "96908363d036fb892f9d26df303e": {
-      "checked_at": "2026-11-17T12:18:06.676189+00:00",
-      "run_id": "44081109290",
+      "checked_at": "2026-11-18T00:30:01.582457+00:00",
+      "run_id": "44207609525",
       "result": {
         "status": "success",
         "found": 6,
@@ -350,8 +350,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "1c38037ce85170da822671f398b8": {
-      "checked_at": "2026-11-17T12:18:06.676189+00:00",
-      "run_id": "44081109290",
+      "checked_at": "2026-11-18T00:30:01.582457+00:00",
+      "run_id": "44207609525",
       "result": {
         "status": "success",
         "found": 10,
@@ -926,8 +926,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "61e4a7eb46c8b76893cd81a18093": {
-      "checked_at": "2026-11-17T12:38:30.060851+00:00",
-      "run_id": "44084285249",
+      "checked_at": "2026-11-18T00:30:01.582457+00:00",
+      "run_id": "44207609525",
       "result": {
         "status": "success",
         "found": 20,
@@ -1802,8 +1802,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "263e0efaca3a799363c747ea1e13": {
-      "checked_at": "2026-11-17T12:38:30.060851+00:00",
-      "run_id": "44084285249",
+      "checked_at": "2026-11-18T00:30:01.582457+00:00",
+      "run_id": "44207609525",
       "result": {
         "status": "success",
         "found": 30,
