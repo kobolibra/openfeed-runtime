@@ -205,8 +205,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "3a5915df96d8f9e31c307348f558": {
-      "checked_at": "2026-11-19T05:36:50.265356+00:00",
-      "run_id": "44465762078",
+      "checked_at": "2026-11-19T17:49:41.423964+00:00",
+      "run_id": "44580046907",
       "result": {
         "status": "success",
         "found": 3,
@@ -601,8 +601,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "4401a5b18d5dd07acc8ee80b9a65": {
-      "checked_at": "2026-11-19T05:57:28.156844+00:00",
-      "run_id": "44468059474",
+      "checked_at": "2026-11-19T17:49:41.423964+00:00",
+      "run_id": "44580046907",
       "result": {
         "status": "success",
         "found": 72,
@@ -721,8 +721,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "ecbecdfc89c70e22710fef16c8f2": {
-      "checked_at": "2026-11-19T05:36:50.265356+00:00",
-      "run_id": "44465762078",
+      "checked_at": "2026-11-19T17:49:41.423964+00:00",
+      "run_id": "44580046907",
       "result": {
         "status": "success",
         "found": 10,
@@ -1237,8 +1237,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "d1beae3498463bcfe85cc730c54e": {
-      "checked_at": "2026-11-19T05:57:28.156844+00:00",
-      "run_id": "44468059474",
+      "checked_at": "2026-11-19T17:49:41.423964+00:00",
+      "run_id": "44580046907",
       "result": {
         "status": "success",
         "found": 0,
@@ -1309,11 +1309,13 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "ced67fb8de120a2c2dcce160c07d": {
-      "checked_at": "2026-11-19T17:29:52.174011+00:00",
-      "run_id": "44576411514",
+      "checked_at": "2026-11-19T17:49:41.423964+00:00",
+      "run_id": "44580046907",
       "result": {
-        "status": "cycle_deadline",
-        "history_preserved": true
+        "status": "error",
+        "found": 0,
+        "inserted": 0,
+        "message": "Upstream connection failed: timeout (TimeoutError)"
       },
       "identity_preserved": true,
       "scope": "single cloud observation, not long-term acceptance"
@@ -1751,8 +1753,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "f1d1dcc47c44790edd8d92ce14c5": {
-      "checked_at": "2026-11-19T05:36:50.265356+00:00",
-      "run_id": "44465762078",
+      "checked_at": "2026-11-19T17:49:41.423964+00:00",
+      "run_id": "44580046907",
       "result": {
         "status": "error",
         "found": 0,
