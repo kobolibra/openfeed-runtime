@@ -3,66 +3,56 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "65277d38b25ee2e9e8dcd2205bdb",
-    "f0ce0ac0c2d5fff18126e0c0562d",
-    "2271a98fe28dbe6eff10e907bb82",
-    "b107d4252ea0aa97e2da71ff1ed0",
-    "ced67fb8de120a2c2dcce160c07d",
-    "863ca92d5a2e922b14611890e3a0"
+    "63f21928026673f1b555b625b882",
+    "cad6c9f2576dd2af143567e610e3",
+    "e421960cd65285a070c5056b6d52",
+    "d9babe8486d2816ff18022162de9",
+    "b5b0e3074525c1f2745d3cfb76ee"
   ],
   "results": [
     {
-      "id": "65277d38b25ee2e9e8dcd2205bdb",
+      "id": "63f21928026673f1b555b625b882",
       "result": {
         "status": "success",
-        "found": 3,
-        "inserted": 0,
-        "message": "1 page(s), 3 unique item(s); unknown_dates=3"
+        "found": 50,
+        "inserted": 1,
+        "message": "1 page(s), 50 unique item(s)"
       }
     },
     {
-      "id": "f0ce0ac0c2d5fff18126e0c0562d",
+      "id": "cad6c9f2576dd2af143567e610e3",
       "result": {
         "status": "success",
-        "found": 100,
+        "found": 30,
         "inserted": 0,
-        "message": "1 page(s), 100 unique item(s); extraction limit reached"
+        "message": "1 page(s), 30 unique item(s); unknown_dates=30"
       }
     },
     {
-      "id": "2271a98fe28dbe6eff10e907bb82",
+      "id": "e421960cd65285a070c5056b6d52",
       "result": {
         "status": "success",
-        "found": 9,
+        "found": 8,
         "inserted": 0,
-        "message": "1 page(s), 9 unique item(s)"
+        "message": "1 page(s), 8 unique item(s); unknown_dates=7"
       }
     },
     {
-      "id": "b107d4252ea0aa97e2da71ff1ed0",
-      "result": {
-        "status": "error",
-        "found": 0,
-        "inserted": 0,
-        "message": "No valid items extracted; existing RSS was preserved"
-      }
-    },
-    {
-      "id": "ced67fb8de120a2c2dcce160c07d",
-      "result": {
-        "status": "error",
-        "found": 0,
-        "inserted": 0,
-        "message": "Upstream connection failed: timeout (TimeoutError)"
-      }
-    },
-    {
-      "id": "863ca92d5a2e922b14611890e3a0",
+      "id": "d9babe8486d2816ff18022162de9",
       "result": {
         "status": "success",
-        "found": 19,
+        "found": 20,
         "inserted": 0,
-        "message": "1 page(s), 19 unique item(s); unknown_dates=19"
+        "message": "1 page(s), 20 unique item(s); unknown_dates=20"
+      }
+    },
+    {
+      "id": "b5b0e3074525c1f2745d3cfb76ee",
+      "result": {
+        "status": "success",
+        "found": 10,
+        "inserted": 0,
+        "message": "1 page(s), 10 unique item(s)"
       }
     }
   ],
@@ -355,7 +345,7 @@
     },
     {
       "id": "cad6c9f2576dd2af143567e610e3",
-      "next_run": "2026-11-19T16:29:28+00:00",
+      "next_run": "2026-11-20T04:29:28+00:00",
       "schedule_phase_seconds": 16168
     },
     {
@@ -485,7 +475,7 @@
     },
     {
       "id": "b5b0e3074525c1f2745d3cfb76ee",
-      "next_run": "2026-11-19T16:42:06+00:00",
+      "next_run": "2026-11-20T04:42:06+00:00",
       "schedule_phase_seconds": 16926
     },
     {
@@ -515,7 +505,7 @@
     },
     {
       "id": "e421960cd65285a070c5056b6d52",
-      "next_run": "2026-11-19T16:33:41+00:00",
+      "next_run": "2026-11-20T04:33:41+00:00",
       "schedule_phase_seconds": 16421
     },
     {
@@ -620,7 +610,7 @@
     },
     {
       "id": "63f21928026673f1b555b625b882",
-      "next_run": "2026-11-19T16:25:15+00:00",
+      "next_run": "2026-11-20T04:25:15+00:00",
       "schedule_phase_seconds": 15915
     },
     {
@@ -905,7 +895,7 @@
     },
     {
       "id": "d9babe8486d2816ff18022162de9",
-      "next_run": "2026-11-19T16:37:53+00:00",
+      "next_run": "2026-11-20T04:37:53+00:00",
       "schedule_phase_seconds": 16673
     },
     {
@@ -929,8 +919,8 @@
     }
   ],
   "cooldowns": [],
-  "elapsed_seconds": 301.768,
+  "elapsed_seconds": 242.621,
   "input_db_unchanged": true,
-  "input_sha256": "da0e08d43cd141505e7295a3610f9e8be777784878dd49e5ad30ff2a2e212ede",
-  "shadow_sha256": "540a3566ae23b663769f8ae58b3ec12638566d0d9d1213a7da4236f9ffe5bf96"
+  "input_sha256": "20343ae9ec39ab5bc4b0eb38abc5f6aefd0638367fcb9e241e2e07aa70ee2d00",
+  "shadow_sha256": "f38e23753b4e9b9249bcaef95d4ab1894c8c4f3b15d344168109b8cefc1b2dc1"
 }
