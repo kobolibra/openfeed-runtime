@@ -590,8 +590,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "e71c7532d09dc7f365198c126981": {
-      "checked_at": "2026-11-19T02:53:26.150833+00:00",
-      "run_id": "44446981669",
+      "checked_at": "2026-11-19T14:46:31.179234+00:00",
+      "run_id": "44546099666",
       "result": {
         "status": "success",
         "found": 8,
@@ -650,8 +650,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "811d717a73c0b4bbe48616d78842": {
-      "checked_at": "2026-11-19T02:53:26.150833+00:00",
-      "run_id": "44446981669",
+      "checked_at": "2026-11-19T14:46:31.179234+00:00",
+      "run_id": "44546099666",
       "result": {
         "status": "success",
         "found": 30,
@@ -1658,12 +1658,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "5212e04a4df16d4dd515c6d42559": {
-      "checked_at": "2026-11-19T02:35:22.390528+00:00",
-      "run_id": "44444548514",
+      "checked_at": "2026-11-19T14:46:31.179234+00:00",
+      "run_id": "44546099666",
       "result": {
         "status": "success",
         "found": 100,
-        "inserted": 0,
+        "inserted": 4,
         "message": "1 page(s), 100 unique item(s); extraction limit reached; unknown_dates=100"
       },
       "identity_preserved": true,
@@ -1790,8 +1790,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "b6d176e550c91408a6fd0e5c7269": {
-      "checked_at": "2026-11-19T02:35:22.390528+00:00",
-      "run_id": "44444548514",
+      "checked_at": "2026-11-19T14:46:31.179234+00:00",
+      "run_id": "44546099666",
       "result": {
         "status": "success",
         "found": 0,
@@ -1994,8 +1994,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "b953da883ed4b6b10ae4d562b0f7": {
-      "checked_at": "2026-11-19T02:53:26.150833+00:00",
-      "run_id": "44446981669",
+      "checked_at": "2026-11-19T14:46:31.179234+00:00",
+      "run_id": "44546099666",
       "result": {
         "status": "success",
         "found": 4,
