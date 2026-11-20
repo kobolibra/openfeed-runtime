@@ -937,8 +937,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "2eb8b49b0b9c5e0169935df73497": {
-      "checked_at": "2026-11-19T13:24:04.052644+00:00",
-      "run_id": "44532092816",
+      "checked_at": "2026-11-20T01:35:35.691942+00:00",
+      "run_id": "44653996435",
       "result": {
         "status": "success",
         "found": 4,
@@ -1429,12 +1429,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "81b5366df03ba7abccbddefaa2c7": {
-      "checked_at": "2026-11-19T13:24:04.052644+00:00",
-      "run_id": "44532092816",
+      "checked_at": "2026-11-20T01:35:35.691942+00:00",
+      "run_id": "44653996435",
       "result": {
         "status": "success",
         "found": 27,
-        "inserted": 1,
+        "inserted": 0,
         "message": "1 page(s), 27 unique item(s); unknown_dates=27"
       },
       "identity_preserved": true,
@@ -1621,8 +1621,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "db44423d9c9c11a529bf77cca6fb": {
-      "checked_at": "2026-11-19T13:44:33.157297+00:00",
-      "run_id": "44534860501",
+      "checked_at": "2026-11-20T01:35:35.691942+00:00",
+      "run_id": "44653996435",
       "result": {
         "status": "success",
         "found": 10,
@@ -1909,13 +1909,13 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "8ec4c9da20a6ac465cf510ca03ee": {
-      "checked_at": "2026-11-19T13:24:04.052644+00:00",
-      "run_id": "44532092816",
+      "checked_at": "2026-11-20T01:35:35.691942+00:00",
+      "run_id": "44653996435",
       "result": {
-        "status": "success",
-        "found": 24,
+        "status": "error",
+        "found": 0,
         "inserted": 0,
-        "message": "1 page(s), 24 unique item(s); unknown_dates=24"
+        "message": "Upstream HTTP 403"
       },
       "identity_preserved": true,
       "scope": "single cloud observation, not long-term acceptance"
@@ -2029,8 +2029,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "1535321512999d4aafe5eaaadf4c": {
-      "checked_at": "2026-11-19T13:44:33.157297+00:00",
-      "run_id": "44534860501",
+      "checked_at": "2026-11-20T01:35:35.691942+00:00",
+      "run_id": "44653996435",
       "result": {
         "status": "success",
         "found": 100,
