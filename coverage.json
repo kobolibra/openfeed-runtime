@@ -1022,8 +1022,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "6c90db0503be0fd60e5eec3bd965": {
-      "checked_at": "2026-11-20T16:09:07.570596+00:00",
-      "run_id": "44769216300",
+      "checked_at": "2026-11-21T04:19:39.607026+00:00",
+      "run_id": "44864934361",
       "result": {
         "status": "success",
         "found": 30,
@@ -1070,8 +1070,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "2dd3aabfba0109b26be93ac2cb0d": {
-      "checked_at": "2026-11-20T16:09:07.570596+00:00",
-      "run_id": "44769216300",
+      "checked_at": "2026-11-21T04:19:39.607026+00:00",
+      "run_id": "44864934361",
       "result": {
         "status": "success",
         "found": 4,
@@ -1310,8 +1310,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "ced67fb8de120a2c2dcce160c07d": {
-      "checked_at": "2026-11-20T16:09:07.570596+00:00",
-      "run_id": "44769216300",
+      "checked_at": "2026-11-21T04:19:39.607026+00:00",
+      "run_id": "44864934361",
       "result": {
         "status": "success",
         "found": 18,
@@ -1634,12 +1634,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "f0ce0ac0c2d5fff18126e0c0562d": {
-      "checked_at": "2026-11-20T16:29:18.198867+00:00",
-      "run_id": "44772696017",
+      "checked_at": "2026-11-21T04:19:39.607026+00:00",
+      "run_id": "44864934361",
       "result": {
         "status": "success",
         "found": 100,
-        "inserted": 0,
+        "inserted": 1,
         "message": "1 page(s), 100 unique item(s); extraction limit reached"
       },
       "identity_preserved": true,
@@ -1970,8 +1970,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "65277d38b25ee2e9e8dcd2205bdb": {
-      "checked_at": "2026-11-20T16:29:18.198867+00:00",
-      "run_id": "44772696017",
+      "checked_at": "2026-11-21T04:19:39.607026+00:00",
+      "run_id": "44864934361",
       "result": {
         "status": "success",
         "found": 3,

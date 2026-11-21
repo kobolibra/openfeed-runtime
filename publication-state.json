@@ -1,14 +1,8 @@
 {
-  "slot": "2026-11-21T11",
+  "slot": "2026-11-21T12",
   "timezone": "Asia/Shanghai",
-  "result": "complete",
-  "at": "2026-11-21T03:17:42.315714+00:00",
-  "candidate_sha256": "d65cfb568c6cf668f49a436cd3aef6f5a8d977d91b8ed93c30781f3f6c8de025",
-  "origin_slot": "2026-11-21T11",
-  "public_commit": "3c73f2455b1dd45976335942a2baafe45f7c4d2d",
-  "pages": {
-    "status": "built",
-    "commit": "3c73f2455b1dd45976335942a2baafe45f7c4d2d"
-  },
-  "completed_at": "2026-11-21T03:17:45.836802+00:00"
+  "result": "attempt_reserved",
+  "at": "2026-11-21T04:19:39.608937+00:00",
+  "candidate_sha256": "21720436791fe3c706dc9ca2d39df3791ccda75d004a22d691ec4195fbb19582",
+  "origin_slot": "2026-11-21T12"
 }
