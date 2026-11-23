@@ -937,13 +937,13 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "2eb8b49b0b9c5e0169935df73497": {
-      "checked_at": "2026-11-23T01:36:23.996500+00:00",
-      "run_id": "45094937326",
+      "checked_at": "2026-11-23T13:26:04.631032+00:00",
+      "run_id": "45182913643",
       "result": {
         "status": "success",
-        "found": 4,
-        "inserted": 0,
-        "message": "1 page(s), 4 unique item(s); unknown_dates=4"
+        "found": 6,
+        "inserted": 2,
+        "message": "1 page(s), 6 unique item(s); unknown_dates=6"
       },
       "identity_preserved": true,
       "scope": "single cloud observation, not long-term acceptance"
@@ -1429,12 +1429,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "81b5366df03ba7abccbddefaa2c7": {
-      "checked_at": "2026-11-23T01:36:23.996500+00:00",
-      "run_id": "45094937326",
+      "checked_at": "2026-11-23T13:26:04.631032+00:00",
+      "run_id": "45182913643",
       "result": {
         "status": "success",
         "found": 26,
-        "inserted": 0,
+        "inserted": 1,
         "message": "1 page(s), 26 unique item(s); unknown_dates=26"
       },
       "identity_preserved": true,
@@ -1741,8 +1741,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "c6923ad9fd08764821bab65199f4": {
-      "checked_at": "2026-11-23T01:14:12.324595+00:00",
-      "run_id": "45092988799",
+      "checked_at": "2026-11-23T13:26:04.631032+00:00",
+      "run_id": "45182913643",
       "result": {
         "status": "success",
         "found": 12,
@@ -1909,13 +1909,13 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "8ec4c9da20a6ac465cf510ca03ee": {
-      "checked_at": "2026-11-23T01:36:23.996500+00:00",
-      "run_id": "45094937326",
+      "checked_at": "2026-11-23T13:26:04.631032+00:00",
+      "run_id": "45182913643",
       "result": {
-        "status": "error",
-        "found": 0,
+        "status": "success",
+        "found": 24,
         "inserted": 0,
-        "message": "Upstream HTTP 403"
+        "message": "1 page(s), 24 unique item(s); unknown_dates=24"
       },
       "identity_preserved": true,
       "scope": "single cloud observation, not long-term acceptance"
@@ -2029,8 +2029,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "1535321512999d4aafe5eaaadf4c": {
-      "checked_at": "2026-11-23T01:36:23.996500+00:00",
-      "run_id": "45094937326",
+      "checked_at": "2026-11-23T13:26:04.631032+00:00",
+      "run_id": "45182913643",
       "result": {
         "status": "error",
         "found": 0,
