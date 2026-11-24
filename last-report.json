@@ -3,52 +3,62 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "359aa798df9f6a2148c28e65cba3",
-    "4f0c0cbd0ddda6cc579749f7813d",
-    "404cdac92f0b8a48f80e086e86f1",
-    "3ec1fb4da7d5967e5b136eb3db03"
+    "6c90db0503be0fd60e5eec3bd965",
+    "2dd3aabfba0109b26be93ac2cb0d",
+    "ced67fb8de120a2c2dcce160c07d",
+    "f0ce0ac0c2d5fff18126e0c0562d",
+    "65277d38b25ee2e9e8dcd2205bdb"
   ],
   "results": [
     {
-      "id": "359aa798df9f6a2148c28e65cba3",
-      "result": {
-        "status": "success",
-        "found": 0,
-        "inserted": 0,
-        "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
-      }
-    },
-    {
-      "id": "4f0c0cbd0ddda6cc579749f7813d",
-      "result": {
-        "status": "success",
-        "found": 30,
-        "inserted": 0,
-        "message": "1 page(s), 30 unique item(s)"
-      }
-    },
-    {
-      "id": "404cdac92f0b8a48f80e086e86f1",
-      "result": {
-        "status": "success",
-        "found": 25,
-        "inserted": 1,
-        "message": "1 page(s), 25 unique item(s)"
-      }
-    },
-    {
-      "id": "3ec1fb4da7d5967e5b136eb3db03",
+      "id": "6c90db0503be0fd60e5eec3bd965",
       "result": {
         "status": "success",
         "found": 30,
         "inserted": 0,
         "message": "1 page(s), 30 unique item(s); unknown_dates=30"
       }
+    },
+    {
+      "id": "2dd3aabfba0109b26be93ac2cb0d",
+      "result": {
+        "status": "success",
+        "found": 4,
+        "inserted": 0,
+        "message": "1 page(s), 4 unique item(s)"
+      }
+    },
+    {
+      "id": "ced67fb8de120a2c2dcce160c07d",
+      "result": {
+        "status": "success",
+        "found": 19,
+        "inserted": 0,
+        "message": "1 page(s), 19 unique item(s)"
+      }
+    },
+    {
+      "id": "f0ce0ac0c2d5fff18126e0c0562d",
+      "result": {
+        "status": "success",
+        "found": 100,
+        "inserted": 0,
+        "message": "1 page(s), 100 unique item(s); extraction limit reached"
+      }
+    },
+    {
+      "id": "65277d38b25ee2e9e8dcd2205bdb",
+      "result": {
+        "status": "success",
+        "found": 5,
+        "inserted": 0,
+        "message": "1 page(s), 5 unique item(s); unknown_dates=5"
+      }
     }
   ],
   "deferred": [
     {
-      "id": "6c90db0503be0fd60e5eec3bd965",
+      "id": "863ca92d5a2e922b14611890e3a0",
       "reason": "domain_start_gap"
     }
   ],
@@ -160,7 +170,7 @@
     },
     {
       "id": "f0ce0ac0c2d5fff18126e0c0562d",
-      "next_run": "2026-11-24T04:08:25+00:00",
+      "next_run": "2026-11-24T16:08:25+00:00",
       "schedule_phase_seconds": 14905
     },
     {
@@ -235,7 +245,7 @@
     },
     {
       "id": "ced67fb8de120a2c2dcce160c07d",
-      "next_run": "2026-11-24T04:00:00+00:00",
+      "next_run": "2026-11-24T16:00:00+00:00",
       "schedule_phase_seconds": 14400
     },
     {
@@ -460,12 +470,12 @@
     },
     {
       "id": "6c90db0503be0fd60e5eec3bd965",
-      "next_run": "2026-11-24T03:51:34+00:00",
+      "next_run": "2026-11-24T15:51:34+00:00",
       "schedule_phase_seconds": 13894
     },
     {
       "id": "65277d38b25ee2e9e8dcd2205bdb",
-      "next_run": "2026-11-24T04:04:12+00:00",
+      "next_run": "2026-11-24T16:04:12+00:00",
       "schedule_phase_seconds": 14652
     },
     {
@@ -520,7 +530,7 @@
     },
     {
       "id": "2dd3aabfba0109b26be93ac2cb0d",
-      "next_run": "2026-11-24T03:55:47+00:00",
+      "next_run": "2026-11-24T15:55:47+00:00",
       "schedule_phase_seconds": 14147
     },
     {
@@ -906,8 +916,8 @@
   ],
   "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 301.802,
+  "elapsed_seconds": 301.745,
   "input_db_unchanged": true,
-  "input_sha256": "d6ddbd5039f3f2d863804067dc6d3811765af2604363726d49ef56cd3c9284c7",
-  "shadow_sha256": "dc0baf1b8c5a1275155ed219794395bfe4f12d6b4044cb192f2e5541f254cf33"
+  "input_sha256": "d06cf13df97511a0c0a932da82815e7f5bd926fcd7d8187abcd22d1449d6ccdb",
+  "shadow_sha256": "ae648d6b978f0fa8a44c6ae1ac4a083a02a0f42f638efcf820fa4569f9a2470f"
 }
