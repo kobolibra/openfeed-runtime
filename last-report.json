@@ -3,33 +3,43 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "81b5366df03ba7abccbddefaa2c7",
-    "8ec4c9da20a6ac465cf510ca03ee",
-    "1535321512999d4aafe5eaaadf4c",
-    "db44423d9c9c11a529bf77cca6fb",
-    "2eb8b49b0b9c5e0169935df73497"
+    "b38bc1a473f6f10e07bb88a7def2",
+    "1192bfe3fc600887efa0ba6e8f10",
+    "3e6e71ced7e2d7b4adc6e87d068c",
+    "f451dd0c3d136d6d947486868007",
+    "0f26170745cc27fae679d587b933",
+    "00c8b28e8d6c8e70207d6c928f57"
   ],
   "results": [
     {
-      "id": "81b5366df03ba7abccbddefaa2c7",
+      "id": "b38bc1a473f6f10e07bb88a7def2",
       "result": {
         "status": "success",
-        "found": 26,
+        "found": 0,
         "inserted": 0,
-        "message": "1 page(s), 26 unique item(s); unknown_dates=26"
+        "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
       }
     },
     {
-      "id": "8ec4c9da20a6ac465cf510ca03ee",
+      "id": "1192bfe3fc600887efa0ba6e8f10",
       "result": {
         "status": "success",
-        "found": 24,
+        "found": 3,
         "inserted": 0,
-        "message": "1 page(s), 24 unique item(s); unknown_dates=24"
+        "message": "1 page(s), 3 unique item(s); unknown_dates=3"
       }
     },
     {
-      "id": "1535321512999d4aafe5eaaadf4c",
+      "id": "3e6e71ced7e2d7b4adc6e87d068c",
+      "result": {
+        "status": "success",
+        "found": 0,
+        "inserted": 0,
+        "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
+      }
+    },
+    {
+      "id": "f451dd0c3d136d6d947486868007",
       "result": {
         "status": "success",
         "found": 100,
@@ -38,32 +48,28 @@
       }
     },
     {
-      "id": "db44423d9c9c11a529bf77cca6fb",
+      "id": "0f26170745cc27fae679d587b933",
       "result": {
         "status": "success",
-        "found": 10,
+        "found": 5,
         "inserted": 0,
-        "message": ""
+        "message": "1 page(s), 5 unique item(s); unknown_dates=5"
       }
     },
     {
-      "id": "2eb8b49b0b9c5e0169935df73497",
+      "id": "00c8b28e8d6c8e70207d6c928f57",
       "result": {
         "status": "success",
-        "found": 6,
-        "inserted": 0,
-        "message": "1 page(s), 6 unique item(s); unknown_dates=6"
+        "found": 30,
+        "inserted": 5,
+        "message": "1 page(s), 30 unique item(s); unknown_dates=30"
       }
     }
   ],
   "deferred": [
     {
-      "id": "b38bc1a473f6f10e07bb88a7def2",
-      "reason": "domain_start_gap"
-    },
-    {
-      "id": "1192bfe3fc600887efa0ba6e8f10",
-      "reason": "domain_start_gap"
+      "id": "c47ebed13a44559fc68b780e1bd4",
+      "reason": "max_feeds"
     }
   ],
   "next_schedule": [
@@ -129,7 +135,7 @@
     },
     {
       "id": "b38bc1a473f6f10e07bb88a7def2",
-      "next_run": "2026-11-25T01:24:12+00:00",
+      "next_run": "2026-11-25T13:24:12+00:00",
       "schedule_phase_seconds": 5052
     },
     {
@@ -224,7 +230,7 @@
     },
     {
       "id": "3e6e71ced7e2d7b4adc6e87d068c",
-      "next_run": "2026-11-25T01:41:03+00:00",
+      "next_run": "2026-11-25T13:41:03+00:00",
       "schedule_phase_seconds": 6063
     },
     {
@@ -574,7 +580,7 @@
     },
     {
       "id": "1192bfe3fc600887efa0ba6e8f10",
-      "next_run": "2026-11-25T01:32:37+00:00",
+      "next_run": "2026-11-25T13:32:37+00:00",
       "schedule_phase_seconds": 5557
     },
     {
@@ -734,7 +740,7 @@
     },
     {
       "id": "00c8b28e8d6c8e70207d6c928f57",
-      "next_run": "2026-11-25T01:36:50+00:00",
+      "next_run": "2026-11-25T13:36:50+00:00",
       "schedule_phase_seconds": 5810
     },
     {
@@ -829,7 +835,7 @@
     },
     {
       "id": "f451dd0c3d136d6d947486868007",
-      "next_run": "2026-11-25T01:45:15+00:00",
+      "next_run": "2026-11-25T13:45:15+00:00",
       "schedule_phase_seconds": 6315
     },
     {
@@ -894,7 +900,7 @@
     },
     {
       "id": "0f26170745cc27fae679d587b933",
-      "next_run": "2026-11-25T01:53:41+00:00",
+      "next_run": "2026-11-25T13:53:41+00:00",
       "schedule_phase_seconds": 6821
     },
     {
@@ -920,8 +926,8 @@
   ],
   "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 301.325,
+  "elapsed_seconds": 302.229,
   "input_db_unchanged": true,
-  "input_sha256": "96b823ae961f1d3228a8fb356cdafa87454f500b897d9728a6e7637595ef7d14",
-  "shadow_sha256": "fa6e512aca71b1520170b9f2e6b3a50fcfbea5fbcbc46ae7e9928084446494da"
+  "input_sha256": "fa6e512aca71b1520170b9f2e6b3a50fcfbea5fbcbc46ae7e9928084446494da",
+  "shadow_sha256": "a0ed1dd3a74eab250fa97fe0b9ef2c3a289cff7d0529be992a9ee316a5c3bc37"
 }
