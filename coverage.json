@@ -1,8 +1,8 @@
 {
   "sources": {
     "e367743c892e462a0843d6125e91": {
-      "checked_at": "2026-11-25T07:43:46.102989+00:00",
-      "run_id": "45569664230",
+      "checked_at": "2026-11-25T21:56:28.785741+00:00",
+      "run_id": "45707825823",
       "result": {
         "status": "success",
         "found": 10,
@@ -61,12 +61,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "a7627d5c8cc7e356db3cf8d3d11f": {
-      "checked_at": "2026-11-25T07:43:46.102989+00:00",
-      "run_id": "45569664230",
+      "checked_at": "2026-11-25T21:56:28.785741+00:00",
+      "run_id": "45707825823",
       "result": {
         "status": "success",
         "found": 100,
-        "inserted": 2,
+        "inserted": 1,
         "message": ""
       },
       "identity_preserved": true,
@@ -266,8 +266,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "ec6c0c383aa439816af5328b9426": {
-      "checked_at": "2026-11-25T08:05:13.644754+00:00",
-      "run_id": "45572287950",
+      "checked_at": "2026-11-25T21:56:28.785741+00:00",
+      "run_id": "45707825823",
       "result": {
         "status": "success",
         "found": 100,
@@ -914,8 +914,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "daeca82106f08a77d568b70c11cb": {
-      "checked_at": "2026-11-25T05:20:49.779529+00:00",
-      "run_id": "45552367286",
+      "checked_at": "2026-11-25T21:56:28.785741+00:00",
+      "run_id": "45707825823",
       "result": {
         "status": "success",
         "found": 8,
@@ -1502,8 +1502,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "e54297981a0dc41c175aca45f9d8": {
-      "checked_at": "2026-11-25T08:05:13.644754+00:00",
-      "run_id": "45572287950",
+      "checked_at": "2026-11-25T21:56:28.785741+00:00",
+      "run_id": "45707825823",
       "result": {
         "status": "success",
         "found": 96,
@@ -1874,8 +1874,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "5667928b6c41735f365c5d6d946b": {
-      "checked_at": "2026-11-25T07:24:50.590668+00:00",
-      "run_id": "45567007572",
+      "checked_at": "2026-11-25T21:56:28.785741+00:00",
+      "run_id": "45707825823",
       "result": {
         "status": "success",
         "found": 5,
