@@ -302,8 +302,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "61c77731a1719d9870623118e92f": {
-      "checked_at": "2026-11-25T08:45:59.761873+00:00",
-      "run_id": "45578114997",
+      "checked_at": "2026-11-25T22:37:06.556320+00:00",
+      "run_id": "45713746897",
       "result": {
         "status": "success",
         "found": 8,
@@ -494,12 +494,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "6331d34fefc82a4878f20374e167": {
-      "checked_at": "2026-11-25T09:06:18.235891+00:00",
-      "run_id": "45580262261",
+      "checked_at": "2026-11-25T22:37:06.556320+00:00",
+      "run_id": "45713746897",
       "result": {
         "status": "success",
         "found": 6,
-        "inserted": 1,
+        "inserted": 0,
         "message": "1 page(s), 6 unique item(s); unknown_dates=6"
       },
       "identity_preserved": true,
@@ -638,8 +638,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "9ba09558fb3b7fdf34768dfeecbb": {
-      "checked_at": "2026-11-25T09:06:18.235891+00:00",
-      "run_id": "45580262261",
+      "checked_at": "2026-11-25T22:37:06.556320+00:00",
+      "run_id": "45713746897",
       "result": {
         "status": "error",
         "found": 0,
@@ -734,8 +734,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "ce1637cba6137211a97fcfad09a3": {
-      "checked_at": "2026-11-25T08:45:59.761873+00:00",
-      "run_id": "45578114997",
+      "checked_at": "2026-11-25T22:37:06.556320+00:00",
+      "run_id": "45713746897",
       "result": {
         "status": "success",
         "found": 63,
@@ -1238,8 +1238,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "d1beae3498463bcfe85cc730c54e": {
-      "checked_at": "2026-11-25T05:43:31.126285+00:00",
-      "run_id": "45554728628",
+      "checked_at": "2026-11-25T22:37:06.556320+00:00",
+      "run_id": "45713746897",
       "result": {
         "status": "success",
         "found": 0,
@@ -1982,8 +1982,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "0165c6d38fff556f2d380c733ca7": {
-      "checked_at": "2026-11-25T08:45:59.761873+00:00",
-      "run_id": "45578114997",
+      "checked_at": "2026-11-25T22:37:06.556320+00:00",
+      "run_id": "45713746897",
       "result": {
         "status": "success",
         "found": 1,
