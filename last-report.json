@@ -3,73 +3,63 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "8e0482e5b14d62a7eb44e554e981",
-    "fd4ad1f12d4c068a071c414b7cbf",
-    "ce1637cba6137211a97fcfad09a3",
-    "0165c6d38fff556f2d380c733ca7",
-    "61c77731a1719d9870623118e92f",
-    "2de645ce3f85b2c6bae4c65ee4ed"
+    "8e2712e008f356d7e3910ce3657b",
+    "6331d34fefc82a4878f20374e167",
+    "9ba09558fb3b7fdf34768dfeecbb",
+    "f6bab3047fb0d17ce44759aebc23",
+    "32e834db8257908a0c3a65af6380"
   ],
   "results": [
     {
-      "id": "8e0482e5b14d62a7eb44e554e981",
+      "id": "8e2712e008f356d7e3910ce3657b",
       "result": {
         "status": "success",
-        "found": 2,
+        "found": 0,
         "inserted": 0,
-        "message": "1 page(s), 2 unique item(s); unknown_dates=2"
+        "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
       }
     },
     {
-      "id": "fd4ad1f12d4c068a071c414b7cbf",
+      "id": "6331d34fefc82a4878f20374e167",
       "result": {
         "status": "success",
-        "found": 10,
+        "found": 6,
         "inserted": 0,
-        "message": "1 page(s), 10 unique item(s)"
+        "message": "1 page(s), 6 unique item(s); unknown_dates=6"
       }
     },
     {
-      "id": "ce1637cba6137211a97fcfad09a3",
+      "id": "9ba09558fb3b7fdf34768dfeecbb",
       "result": {
-        "status": "success",
-        "found": 63,
+        "status": "error",
+        "found": 0,
         "inserted": 0,
-        "message": "1 page(s), 63 unique item(s); unknown_dates=63"
+        "message": "No valid items extracted; existing RSS was preserved"
       }
     },
     {
-      "id": "0165c6d38fff556f2d380c733ca7",
+      "id": "f6bab3047fb0d17ce44759aebc23",
       "result": {
         "status": "success",
-        "found": 1,
+        "found": 15,
         "inserted": 0,
-        "message": "1 page(s), 1 unique item(s)"
+        "message": "1 page(s), 15 unique item(s); unknown_dates=15"
       }
     },
     {
-      "id": "61c77731a1719d9870623118e92f",
+      "id": "32e834db8257908a0c3a65af6380",
       "result": {
         "status": "success",
-        "found": 8,
+        "found": 30,
         "inserted": 0,
-        "message": "1 page(s), 8 unique item(s)"
-      }
-    },
-    {
-      "id": "2de645ce3f85b2c6bae4c65ee4ed",
-      "result": {
-        "status": "success",
-        "found": 13,
-        "inserted": 0,
-        "message": "1 page(s), 13 unique item(s); unknown_dates=13"
+        "message": "1 page(s), 30 unique item(s); unknown_dates=30"
       }
     }
   ],
   "deferred": [
     {
-      "id": "8e2712e008f356d7e3910ce3657b",
-      "reason": "max_feeds"
+      "id": "b97f9d5949fbf6bfca0598bb6d24",
+      "reason": "domain_start_gap"
     }
   ],
   "next_schedule": [
@@ -130,7 +120,7 @@
     },
     {
       "id": "8e2712e008f356d7e3910ce3657b",
-      "next_run": "2026-11-26T20:16:50+00:00",
+      "next_run": "2026-11-27T08:16:50+00:00",
       "schedule_phase_seconds": 29810
     },
     {
@@ -195,7 +185,7 @@
     },
     {
       "id": "9ba09558fb3b7fdf34768dfeecbb",
-      "next_run": "2026-11-26T20:46:18+00:00",
+      "next_run": "2026-11-27T08:46:18+00:00",
       "schedule_phase_seconds": 31578
     },
     {
@@ -375,7 +365,7 @@
     },
     {
       "id": "6331d34fefc82a4878f20374e167",
-      "next_run": "2026-11-26T20:42:06+00:00",
+      "next_run": "2026-11-27T08:42:06+00:00",
       "schedule_phase_seconds": 31326
     },
     {
@@ -400,7 +390,7 @@
     },
     {
       "id": "32e834db8257908a0c3a65af6380",
-      "next_run": "2026-11-26T20:33:41+00:00",
+      "next_run": "2026-11-27T08:33:41+00:00",
       "schedule_phase_seconds": 30821
     },
     {
@@ -730,7 +720,7 @@
     },
     {
       "id": "f6bab3047fb0d17ce44759aebc23",
-      "next_run": "2026-11-26T20:50:31+00:00",
+      "next_run": "2026-11-27T08:50:31+00:00",
       "schedule_phase_seconds": 31831
     },
     {
@@ -926,8 +916,8 @@
   ],
   "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 302.129,
+  "elapsed_seconds": 301.803,
   "input_db_unchanged": true,
-  "input_sha256": "10526aa1af776f79f013d2d20bac6d2cef1079005c82a784702286a7c3536265",
-  "shadow_sha256": "1f5255523d19333b02142a0997689b6d74e08a5217cd3412ba9617fb97551574"
+  "input_sha256": "1f5255523d19333b02142a0997689b6d74e08a5217cd3412ba9617fb97551574",
+  "shadow_sha256": "1e85c300ac743a4eebbf59ce053fe471f5cde012e569bcb329767b81c3338256"
 }
