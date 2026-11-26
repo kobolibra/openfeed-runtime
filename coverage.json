@@ -25,12 +25,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "0191d431ee1ec76ccc886ed516a5": {
-      "checked_at": "2026-11-25T12:27:13.879165+00:00",
-      "run_id": "45613118240",
+      "checked_at": "2026-11-26T01:19:42.257786+00:00",
+      "run_id": "45734166010",
       "result": {
         "status": "success",
         "found": 45,
-        "inserted": 2,
+        "inserted": 0,
         "message": "3 page(s), 45 unique item(s); extraction limit reached; unknown_dates=45"
       },
       "identity_preserved": true,
@@ -133,8 +133,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "481313cd60acb1458d4ae5393671": {
-      "checked_at": "2026-11-25T12:48:22.825501+00:00",
-      "run_id": "45616375932",
+      "checked_at": "2026-11-26T01:19:42.257786+00:00",
+      "run_id": "45734166010",
       "result": {
         "status": "success",
         "found": 46,
@@ -926,8 +926,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "61e4a7eb46c8b76893cd81a18093": {
-      "checked_at": "2026-11-25T12:27:13.879165+00:00",
-      "run_id": "45613118240",
+      "checked_at": "2026-11-26T01:19:42.257786+00:00",
+      "run_id": "45734166010",
       "result": {
         "status": "success",
         "found": 20,
@@ -986,8 +986,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "c556cd117ca5011e45b89fdf179e": {
-      "checked_at": "2026-11-25T12:48:22.825501+00:00",
-      "run_id": "45616375932",
+      "checked_at": "2026-11-26T01:19:42.257786+00:00",
+      "run_id": "45734166010",
       "result": {
         "status": "success",
         "found": 9,
@@ -1046,13 +1046,13 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "082596eb0f11e08cd01ec0f6664c": {
-      "checked_at": "2026-11-25T07:24:50.590668+00:00",
-      "run_id": "45567007572",
+      "checked_at": "2026-11-26T01:19:42.257786+00:00",
+      "run_id": "45734166010",
       "result": {
-        "status": "success",
-        "found": 3,
+        "status": "error",
+        "found": 0,
         "inserted": 0,
-        "message": "1 page(s), 3 unique item(s); unknown_dates=3"
+        "message": "Upstream connection failed: timeout (TimeoutError)"
       },
       "identity_preserved": true,
       "scope": "single cloud observation, not long-term acceptance"
@@ -1538,12 +1538,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "ee2655e0114c7edee2f5c3537da0": {
-      "checked_at": "2026-11-25T12:48:22.825501+00:00",
-      "run_id": "45616375932",
+      "checked_at": "2026-11-26T01:19:42.257786+00:00",
+      "run_id": "45734166010",
       "result": {
         "status": "success",
         "found": 8,
-        "inserted": 0,
+        "inserted": 1,
         "message": "1 page(s), 8 unique item(s); unknown_dates=8"
       },
       "identity_preserved": true,
