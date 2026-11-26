@@ -3,68 +3,50 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "863ca92d5a2e922b14611890e3a0",
-    "f1d1dcc47c44790edd8d92ce14c5",
-    "4401a5b18d5dd07acc8ee80b9a65",
-    "d16e70f789387258e7baf6d59226",
-    "cad6c9f2576dd2af143567e610e3"
+    "d30386f6fe165ba7b2acc2d1985d",
+    "44ce86be10e4f2dafe8b6ee1e56f",
+    "76cef2b248308d8c8948ac4dce42",
+    "daeca82106f08a77d568b70c11cb"
   ],
   "results": [
     {
-      "id": "863ca92d5a2e922b14611890e3a0",
+      "id": "d30386f6fe165ba7b2acc2d1985d",
       "result": {
         "status": "success",
-        "found": 20,
-        "inserted": 0,
-        "message": "1 page(s), 20 unique item(s); unknown_dates=20"
-      }
-    },
-    {
-      "id": "f1d1dcc47c44790edd8d92ce14c5",
-      "result": {
-        "status": "error",
         "found": 0,
         "inserted": 0,
-        "message": "Upstream HTTP 403"
+        "message": "1 page(s), 0 unique item(s); official empty listing confirmed; existing RSS retained"
       }
     },
     {
-      "id": "4401a5b18d5dd07acc8ee80b9a65",
+      "id": "44ce86be10e4f2dafe8b6ee1e56f",
       "result": {
         "status": "success",
-        "found": 72,
+        "found": 9,
         "inserted": 0,
-        "message": "1 page(s), 72 unique item(s)"
+        "message": "1 page(s), 9 unique item(s); unknown_dates=9"
       }
     },
     {
-      "id": "d16e70f789387258e7baf6d59226",
+      "id": "76cef2b248308d8c8948ac4dce42",
       "result": {
         "status": "success",
-        "found": 21,
+        "found": 13,
         "inserted": 0,
-        "message": "1 page(s), 21 unique item(s)"
+        "message": "1 page(s), 13 unique item(s); unknown_dates=10"
       }
     },
     {
-      "id": "cad6c9f2576dd2af143567e610e3",
+      "id": "daeca82106f08a77d568b70c11cb",
       "result": {
         "status": "success",
-        "found": 30,
+        "found": 8,
         "inserted": 0,
-        "message": "1 page(s), 30 unique item(s); unknown_dates=30"
+        "message": "1 page(s), 8 unique item(s); unknown_dates=8"
       }
     }
   ],
   "deferred": [
-    {
-      "id": "d30386f6fe165ba7b2acc2d1985d",
-      "reason": "domain_start_gap"
-    },
-    {
-      "id": "daeca82106f08a77d568b70c11cb",
-      "reason": "domain_start_gap"
-    },
     {
       "id": "ecbecdfc89c70e22710fef16c8f2",
       "reason": "domain_start_gap"
@@ -75,6 +57,14 @@
     },
     {
       "id": "db5c13189d63d70687632e3589ae",
+      "reason": "domain_start_gap"
+    },
+    {
+      "id": "5d0fcb5517e78d2e0d9d3da9ac8b",
+      "reason": "domain_start_gap"
+    },
+    {
+      "id": "a25bcacb9970573fe3b6e1f4a17f",
       "reason": "domain_start_gap"
     }
   ],
@@ -151,7 +141,7 @@
     },
     {
       "id": "d30386f6fe165ba7b2acc2d1985d",
-      "next_run": "2026-11-26T16:50:31+00:00",
+      "next_run": "2026-11-27T04:50:31+00:00",
       "schedule_phase_seconds": 17431
     },
     {
@@ -216,7 +206,7 @@
     },
     {
       "id": "44ce86be10e4f2dafe8b6ee1e56f",
-      "next_run": "2026-11-26T17:49:28+00:00",
+      "next_run": "2026-11-27T05:49:28+00:00",
       "schedule_phase_seconds": 20968
     },
     {
@@ -411,7 +401,7 @@
     },
     {
       "id": "daeca82106f08a77d568b70c11cb",
-      "next_run": "2026-11-26T16:58:56+00:00",
+      "next_run": "2026-11-27T04:58:56+00:00",
       "schedule_phase_seconds": 17936
     },
     {
@@ -471,7 +461,7 @@
     },
     {
       "id": "76cef2b248308d8c8948ac4dce42",
-      "next_run": "2026-11-26T18:06:18+00:00",
+      "next_run": "2026-11-27T06:06:18+00:00",
       "schedule_phase_seconds": 21978
     },
     {
@@ -932,8 +922,8 @@
   ],
   "recoveries": [],
   "cooldowns": [],
-  "elapsed_seconds": 301.978,
+  "elapsed_seconds": 302.063,
   "input_db_unchanged": true,
-  "input_sha256": "af3034e2108a4c6b8a51ae1925595d526f479cec7b9a3c0177437b1e35b1a77b",
-  "shadow_sha256": "671173185a54056c1daad7003701435cb6af56fe6825be45bc86b66fcc41278b"
+  "input_sha256": "671173185a54056c1daad7003701435cb6af56fe6825be45bc86b66fcc41278b",
+  "shadow_sha256": "b32b1442f153dfc4d4bbeb76d9154df3ebbe2b794013c4b0926ad76ce9480d02"
 }
