@@ -73,12 +73,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "4f7af7fcd8ab3e0cfcb2922580f0": {
-      "checked_at": "2026-11-25T21:15:47.860253+00:00",
-      "run_id": "45701604810",
+      "checked_at": "2026-11-26T06:44:14.434445+00:00",
+      "run_id": "45769454293",
       "result": {
         "status": "success",
         "found": 3,
-        "inserted": 0,
+        "inserted": 1,
         "message": "1 page(s), 3 unique item(s)"
       },
       "identity_preserved": true,
@@ -109,8 +109,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "c47ebed13a44559fc68b780e1bd4": {
-      "checked_at": "2026-11-25T14:09:48.731238+00:00",
-      "run_id": "45629993053",
+      "checked_at": "2026-11-26T06:44:14.434445+00:00",
+      "run_id": "45769454293",
       "result": {
         "status": "success",
         "found": 3,
@@ -230,8 +230,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "e5609c170149df3d5d17a41655cd": {
-      "checked_at": "2026-11-25T21:15:47.860253+00:00",
-      "run_id": "45701604810",
+      "checked_at": "2026-11-26T06:44:14.434445+00:00",
+      "run_id": "45769454293",
       "result": {
         "status": "success",
         "found": 100,
@@ -806,8 +806,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "c6d6e9d90e5212f64b9cd81785c8": {
-      "checked_at": "2026-11-25T21:15:47.860253+00:00",
-      "run_id": "45701604810",
+      "checked_at": "2026-11-26T06:44:14.434445+00:00",
+      "run_id": "45769454293",
       "result": {
         "status": "success",
         "found": 11,
@@ -902,8 +902,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "00c8b28e8d6c8e70207d6c928f57": {
-      "checked_at": "2026-11-25T13:49:20.924221+00:00",
-      "run_id": "45626508455",
+      "checked_at": "2026-11-26T06:44:14.434445+00:00",
+      "run_id": "45769454293",
       "result": {
         "status": "success",
         "found": 30,
