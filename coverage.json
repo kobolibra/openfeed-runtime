@@ -974,12 +974,12 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "a5108315a70ff1a860a0d4658bbf": {
-      "checked_at": "2026-11-26T01:40:01.058270+00:00",
-      "run_id": "45736491010",
+      "checked_at": "2026-11-26T13:09:58.967724+00:00",
+      "run_id": "45824060425",
       "result": {
         "status": "success",
         "found": 10,
-        "inserted": 0,
+        "inserted": 1,
         "message": "1 page(s), 10 unique item(s)"
       },
       "identity_preserved": true,
@@ -1490,8 +1490,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "aae695eb5428e0c959f34d512150": {
-      "checked_at": "2026-11-26T04:02:01.791151+00:00",
-      "run_id": "45751881462",
+      "checked_at": "2026-11-26T13:09:58.967724+00:00",
+      "run_id": "45824060425",
       "result": {
         "status": "success",
         "found": 0,
@@ -1526,8 +1526,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "41d44ad61ae9532e31a558482fb3": {
-      "checked_at": "2026-11-26T01:40:01.058270+00:00",
-      "run_id": "45736491010",
+      "checked_at": "2026-11-26T13:09:58.967724+00:00",
+      "run_id": "45824060425",
       "result": {
         "status": "success",
         "found": 41,
@@ -1550,8 +1550,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "cae3ecc842cffe49c3a31b612f18": {
-      "checked_at": "2026-11-26T01:40:01.058270+00:00",
-      "run_id": "45736491010",
+      "checked_at": "2026-11-26T13:09:58.967724+00:00",
+      "run_id": "45824060425",
       "result": {
         "status": "success",
         "found": 9,
@@ -1598,8 +1598,8 @@
       "scope": "single cloud observation, not long-term acceptance"
     },
     "1cdb06f59e215f1506a980c3b207": {
-      "checked_at": "2026-11-26T04:02:01.791151+00:00",
-      "run_id": "45751881462",
+      "checked_at": "2026-11-26T13:09:58.967724+00:00",
+      "run_id": "45824060425",
       "result": {
         "status": "success",
         "found": 9,
