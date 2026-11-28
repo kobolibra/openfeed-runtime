@@ -3,56 +3,57 @@
   "shadow_only": true,
   "published": false,
   "selected": [
-    "811d717a73c0b4bbe48616d78842",
-    "e71c7532d09dc7f365198c126981",
-    "a02e0005b6600b90fbab864df853",
-    "dc84124b59341b4a2ee85458bae1",
-    "1ff79b2b49af40183397003d1e6a"
+    "aaaa6fe16f2220d3446b7e2401a0",
+    "d4195c70b086e1a849e1266295e5",
+    "36a875f2330c7b86f1bab851a010",
+    "9de058f25996c675723754e58c24",
+    "b8a01362be20ae4a0e1bd9e8faa2"
   ],
   "results": [
     {
-      "id": "811d717a73c0b4bbe48616d78842",
+      "id": "aaaa6fe16f2220d3446b7e2401a0",
       "result": {
         "status": "success",
-        "found": 30,
+        "found": 14,
         "inserted": 0,
-        "message": "1 page(s), 30 unique item(s); unknown_dates=30"
+        "message": "1 page(s), 14 unique item(s); unknown_dates=14"
       }
     },
     {
-      "id": "e71c7532d09dc7f365198c126981",
+      "id": "d4195c70b086e1a849e1266295e5",
       "result": {
         "status": "success",
-        "found": 8,
+        "found": 25,
         "inserted": 0,
-        "message": "1 page(s), 8 unique item(s)"
+        "message": "1 page(s), 25 unique item(s); unknown_dates=25"
       }
     },
     {
-      "id": "a02e0005b6600b90fbab864df853",
+      "id": "36a875f2330c7b86f1bab851a010",
       "result": {
         "status": "success",
-        "found": 11,
+        "found": 18,
         "inserted": 0,
-        "message": "1 page(s), 11 unique item(s); unknown_dates=11"
+        "message": "1 page(s), 18 unique item(s); unknown_dates=18"
       }
     },
     {
-      "id": "dc84124b59341b4a2ee85458bae1",
+      "id": "9de058f25996c675723754e58c24",
       "result": {
-        "status": "success",
-        "found": 12,
+        "status": "error",
+        "found": 0,
         "inserted": 0,
-        "message": "1 page(s), 12 unique item(s); unknown_dates=12"
+        "message": "Upstream HTTP 429",
+        "retry_after": 900
       }
     },
     {
-      "id": "1ff79b2b49af40183397003d1e6a",
+      "id": "b8a01362be20ae4a0e1bd9e8faa2",
       "result": {
         "status": "success",
-        "found": 30,
+        "found": 18,
         "inserted": 0,
-        "message": "1 page(s), 30 unique item(s); unknown_dates=30"
+        "message": "1 page(s), 18 unique item(s)"
       }
     }
   ],
@@ -250,7 +251,7 @@
     },
     {
       "id": "9de058f25996c675723754e58c24",
-      "next_run": "2026-11-28T03:09:28+00:00",
+      "next_run": "2026-11-28T15:09:28+00:00",
       "schedule_phase_seconds": 11368
     },
     {
@@ -620,7 +621,7 @@
     },
     {
       "id": "36a875f2330c7b86f1bab851a010",
-      "next_run": "2026-11-28T03:05:15+00:00",
+      "next_run": "2026-11-28T15:05:15+00:00",
       "schedule_phase_seconds": 11115
     },
     {
@@ -770,7 +771,7 @@
     },
     {
       "id": "b8a01362be20ae4a0e1bd9e8faa2",
-      "next_run": "2026-11-28T03:13:41+00:00",
+      "next_run": "2026-11-28T15:13:41+00:00",
       "schedule_phase_seconds": 11621
     },
     {
@@ -870,7 +871,7 @@
     },
     {
       "id": "aaaa6fe16f2220d3446b7e2401a0",
-      "next_run": "2026-11-28T02:56:50+00:00",
+      "next_run": "2026-11-28T14:56:50+00:00",
       "schedule_phase_seconds": 10610
     },
     {
@@ -900,7 +901,7 @@
     },
     {
       "id": "d4195c70b086e1a849e1266295e5",
-      "next_run": "2026-11-28T03:01:03+00:00",
+      "next_run": "2026-11-28T15:01:03+00:00",
       "schedule_phase_seconds": 10863
     },
     {
@@ -910,9 +911,14 @@
     }
   ],
   "recoveries": [],
-  "cooldowns": [],
-  "elapsed_seconds": 301.756,
+  "cooldowns": [
+    {
+      "host": "research-center.amundi.com",
+      "until_at": "2026-11-28T03:33:49.301424+00:00"
+    }
+  ],
+  "elapsed_seconds": 241.54,
   "input_db_unchanged": true,
-  "input_sha256": "ebc421b3085d42e9c4eaa77afbfe4a0512a22ef7730b47aab5bd061e0b8822e3",
-  "shadow_sha256": "bbd5f9cc4fd3ee86c391d07a41eadcb9ba59824f4c7dd520b2db1028dd265e3c"
+  "input_sha256": "bbd5f9cc4fd3ee86c391d07a41eadcb9ba59824f4c7dd520b2db1028dd265e3c",
+  "shadow_sha256": "79db9e4d3d7796e53c9139cc6a1d5be74ddd50c485122d7dd807dfedc3a2fa1a"
 }
